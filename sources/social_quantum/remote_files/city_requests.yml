@@ -1,0 +1,4392 @@
+requests:
+  level_up:
+    id: 1
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/level_up.png"
+    send_post: "level_up_post"
+    send_button: "level_up_post_button"
+    receive_post: "level_up_receive"
+    receive_button: "level_up_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  respect_level_up:
+    id: 2
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - respect: {min_quantity: 3}
+    image: "items/city/requests/respect_level_up.png"
+    send_post: "respect_level_up_post"
+    send_button: "respect_level_up_post_button"
+    receive_post: "respect_level_up_receive"
+    receive_button: "respect_level_up_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  buy_expand:
+    id: 3
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/expansion.png"
+    send_post: "buy_expand_post"
+    send_button: "buy_expand_post_button"
+    receive_post: "buy_expand_receive"
+    receive_button: "buy_expand_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  help_contract:
+    id: 4
+    request_type: common
+    not_wait_for_drop: true
+    image: "items/city/requests/help_contract.png"
+    send_post: "help_contract_post"
+    send_button: "help_contract_post_button"
+    receive_post: "help_contract_receive"
+    receive_button: "help_contract_receive_button"
+    expire: 24
+    max_count: 1
+    limited: false
+    on_accept: visit_farm
+
+  recover_contract:
+    id: 5
+    request_type: common
+    not_wait_for_drop: true
+    image: "items/city/requests/recover_contract.png"
+    send_post: "recover_contract_post"
+    send_button: "recover_contract_post_button"
+    receive_post: "recover_contract_receive"
+    receive_button: "recover_contract_receive_button"
+    expire: 24
+    max_count: 1
+    limited: false
+    on_accept: visit_farm
+
+  friend_helped:
+    id: 6
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    not_wait_for_drop: true
+    image: "items/city/requests/friend_helped.png"
+    send_post: "friend_helped_post"
+    send_button: "friend_helped_post_button"
+    receive_post: "friend_helped_receive"
+    receive_button: "friend_helped_receive_button"
+    expire: 24
+    max_count: 1
+    limited: false
+    delay: 500
+
+  help_railroad:
+    id: 7
+    request_type: common
+    not_wait_for_drop: true
+    image: "items/city/requests/help_railroad.png"
+    send_post: "help_railroad_post"
+    send_button: "help_railroad_post_button"
+    receive_post: "help_railroad_receive"
+    receive_button: "help_railroad_receive_button"
+    expire: 24
+    max_count: 1
+    limited: false
+    on_accept: visit_farm
+
+  hire_as_storekeeper:
+    id: 1000
+    request_type: staff
+    position: storekeeper
+    image: "items/city/requests/storekeeper.png"
+    send_post: "hire_as_storekeeper_post"
+    send_button: "hire_as_storekeeper_post_button"
+    receive_post: "hire_as_storekeeper_receive"
+    receive_button: "hire_as_storekeeper_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_security:
+    id: 1001
+    request_type: staff
+    position: security
+    image: "items/city/requests/security.png"
+    send_post: "hire_as_security_post"
+    send_button: "hire_as_security_post_button"
+    receive_post: "hire_as_security_receive"
+    receive_button: "hire_as_security_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_sawmill_director:
+    id: 1002
+    request_type: staff
+    position: sawmill_director
+    image: "items/city/requests/sawmill_director.png"
+    send_post: "hire_as_sawmill_director"
+    send_button: "hire_as_sawmill_director_post_button"
+    receive_post: "hire_as_sawmill_director_receive"
+    receive_button: "hire_as_sawmill_director_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_sawmill_integrator:
+    id: 1003
+    request_type: staff
+    position: sawmill_integrator
+    image: "items/city/requests/sawmill_integrator.png"
+    send_post: "hire_as_sawmill_integrator"
+    send_button: "hire_as_sawmill_integrator_post_button"
+    receive_post: "hire_as_sawmill_integrator_receive"
+    receive_button: "hire_as_sawmill_integrator_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_sawmill_gager:
+    id: 1004
+    request_type: staff
+    position: sawmill_gager
+    image: "items/city/requests/sawmill_gager.png"
+    send_post: "hire_as_sawmill_gager"
+    send_button: "hire_as_sawmill_gager_post_button"
+    receive_post: "hire_as_sawmill_gager_receive"
+    receive_button: "hire_as_sawmill_gager_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_sawmill_doorman:
+    id: 1005
+    request_type: staff
+    position: sawmill_doorman
+    image: "items/city/requests/sawmill_doorman.png"
+    send_post: "hire_as_sawmill_doorman"
+    send_button: "hire_as_sawmill_doorman_post_button"
+    receive_post: "hire_as_sawmill_doorman_receive"
+    receive_button: "hire_as_sawmill_doorman_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_sawmill_operator:
+    id: 1006
+    request_type: staff
+    position: sawmill_operator
+    image: "items/city/requests/sawmill_operator.png"
+    send_post: "hire_as_sawmill_operator"
+    send_button: "hire_as_sawmill_operator_post_button"
+    receive_post: "hire_as_sawmill_operator_receive"
+    receive_button: "hire_as_sawmill_operator_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_operator_gas_station:
+    id: 1007
+    request_type: staff
+    position: operator_gas_station
+    image: "items/city/requests/operator_gas_station.png"
+    send_post: "hire_as_operator_gas_station"
+    send_button: "hire_as_operator_gas_station_post_button"
+    receive_post: "hire_as_operator_gas_station_receive"
+    receive_button: "hire_as_operator_gas_station_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_fitter_boiler:
+    id: 1008
+    request_type: staff
+    position: fitter_boiler
+    image: "items/city/requests/fitter_boiler.png"
+    send_post: "hire_as_fitter_boiler"
+    send_button: "hire_as_fitter_boiler_post_button"
+    receive_post: "hire_as_fitter_boiler_receive"
+    receive_button: "hire_as_fitter_boiler_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_head_gas_station:
+    id: 1009
+    request_type: staff
+    position: head_gas_station
+    image: "items/city/requests/head_gas_station.png"
+    send_post: "hire_as_head_gas_station"
+    send_button: "hire_as_head_gas_station_post_button"
+    receive_post: "hire_as_head_gas_station_receive"
+    receive_button: "hire_as_head_gas_station_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_mechanic:
+    id: 1010
+    request_type: staff
+    position: mechanic
+    image: "items/city/requests/mechanic.png"
+    send_post: "hire_as_mechanic"
+    send_button: "hire_as_mechanic_post_button"
+    receive_post: "hire_as_mechanic_receive"
+    receive_button: "hire_as_mechanic_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_driller:
+    id: 1011
+    request_type: staff
+    position: driller
+    image: "items/city/requests/driller.png"
+    send_post: "hire_as_driller"
+    send_button: "hire_as_driller_post_button"
+    receive_post: "hire_as_driller_receive"
+    receive_button: "hire_as_driller_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_geologist:
+    id: 1012
+    request_type: staff
+    position: geologist
+    image: "items/city/requests/geologist.png"
+    send_post: "hire_as_geologist"
+    send_button: "hire_as_geologist_post_button"
+    receive_post: "hire_as_geologist_receive"
+    receive_button: "hire_as_geologist_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_railroader:
+    id: 1013
+    request_type: staff
+    position: rr_railroader
+    image: "items/city/requests/rr_railroader.png"
+    send_post: "hire_as_rr_railroader"
+    send_button: "hire_as_rr_railroader_post_button"
+    receive_post: "hire_as_rr_railroader_receive"
+    receive_button: "hire_as_rr_railroader_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_conductor:
+    id: 1014
+    request_type: staff
+    position: rr_conductor
+    image: "items/city/requests/rr_conductor.png"
+    send_post: "hire_as_rr_conductor"
+    send_button: "hire_as_rr_conductor_post_button"
+    receive_post: "hire_as_rr_conductor_receive"
+    receive_button: "hire_as_rr_conductor_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_manager:
+    id: 1015
+    request_type: staff
+    position: rr_manager
+    image: "items/city/requests/rr_manager.png"
+    send_post: "hire_as_rr_manager"
+    send_button: "hire_as_rr_manager_post_button"
+    receive_post: "hire_as_rr_manager_receive"
+    receive_button: "hire_as_rr_manager_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_dispatcher:
+    id: 1016
+    request_type: staff
+    position: rr_dispatcher
+    image: "items/city/requests/rr_dispatcher.png"
+    send_post: "hire_as_rr_dispatcher"
+    send_button: "hire_as_rr_dispatcher_post_button"
+    receive_post: "hire_as_rr_dispatcher_receive"
+    receive_button: "hire_as_rr_dispatcher_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_porter:
+    id: 1017
+    request_type: staff
+    position: rr_porter
+    image: "items/city/requests/rr_porter.png"
+    send_post: "hire_as_rr_porter"
+    send_button: "hire_as_rr_porter_post_button"
+    receive_post: "hire_as_rr_porter_receive"
+    receive_button: "hire_as_rr_porter_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_technician:
+    id: 1018
+    request_type: staff
+    position: rr_technician
+    image: "items/city/requests/rr_technician.png"
+    send_post: "hire_as_rr_technician"
+    send_button: "hire_as_rr_technician_post_button"
+    receive_post: "hire_as_rr_technician_receive"
+    receive_button: "hire_as_rr_technician_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_engineer:
+    id: 1019
+    request_type: staff
+    position: rr_engineer
+    image: "items/city/requests/rr_engineer.png"
+    send_post: "hire_as_rr_engineer"
+    send_button: "hire_as_rr_engineer_post_button"
+    receive_post: "hire_as_rr_engineer_receive"
+    receive_button: "hire_as_rr_engineer_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_insurance_agent:
+    id: 1020
+    request_type: staff
+    position: rr_insurance_agent
+    image: "items/city/requests/rr_insurance_agent.png"
+    send_post: "hire_as_rr_insurance_agent"
+    send_button: "hire_as_rr_insurance_agent_post_button"
+    receive_post: "hire_as_rr_insurance_agent_receive"
+    receive_button: "hire_as_rr_insurance_agent_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_radioman:
+    id: 1021
+    request_type: staff
+    position: rr_radioman
+    image: "items/city/requests/rr_radioman.png"
+    send_post: "hire_as_rr_radioman"
+    send_button: "hire_as_rr_radioman_post_button"
+    receive_post: "hire_as_rr_radioman_receive"
+    receive_button: "hire_as_rr_radioman_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_projector:
+    id: 1022
+    request_type: staff
+    position: rr_projector
+    image: "items/city/requests/rr_projector.png"
+    send_post: "hire_as_rr_projector"
+    send_button: "hire_as_rr_projector_post_button"
+    receive_post: "hire_as_rr_projector_receive"
+    receive_button: "hire_as_rr_projector_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_adjuster_hardware:
+    id: 1023
+    request_type: staff
+    position: rr_adjuster_hardware
+    image: "items/city/requests/rr_adjuster_hardware.png"
+    send_post: "hire_as_rr_adjuster_hardware"
+    send_button: "hire_as_rr_adjuster_hardware_post_button"
+    receive_post: "hire_as_rr_adjuster_hardware_receive"
+    receive_button: "hire_as_rr_adjuster_hardware_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_machinist:
+    id: 1024
+    request_type: staff
+    position: rr_machinist
+    image: "items/city/requests/rr_machinist.png"
+    send_post: "hire_as_rr_machinist"
+    send_button: "hire_as_rr_machinist_post_button"
+    receive_post: "hire_as_rr_machinist_receive"
+    receive_button: "hire_as_rr_machinist_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_mechanic:
+    id: 1025
+    request_type: staff
+    position: rr_mechanic
+    image: "items/city/requests/rr_mechanic.png"
+    send_post: "hire_as_rr_mechanic"
+    send_button: "hire_as_rr_mechanic_post_button"
+    receive_post: "hire_as_rr_mechanic_receive"
+    receive_button: "hire_as_rr_mechanic_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_governor:
+    id: 1026
+    request_type: staff
+    position: rr_governor
+    image: "items/city/requests/rr_governor.png"
+    send_post: "hire_as_rr_governor"
+    send_button: "hire_as_rr_governor_post_button"
+    receive_post: "hire_as_rr_governor_receive"
+    receive_button: "hire_as_rr_governor_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_military_secretary:
+    id: 1027
+    request_type: staff
+    position: rr_military_secretary
+    image: "items/city/requests/rr_military_secretary.png"
+    send_post: "hire_as_rr_military_secretary"
+    send_button: "hire_as_rr_military_secretary_post_button"
+    receive_post: "hire_as_rr_military_secretary_receive"
+    receive_button: "hire_as_rr_military_secretary_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_forestry_worker:
+    id: 1028
+    request_type: staff
+    position: rr_forestry_worker
+    image: "items/city/requests/rr_forestry_worker.png"
+    send_post: "hire_as_rr_forestry_worker"
+    send_button: "hire_as_rr_forestry_worker_post_button"
+    receive_post: "hire_as_rr_forestry_worker_receive"
+    receive_button: "hire_as_rr_forestry_worker_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_rr_crane_driver:
+    id: 1029
+    request_type: staff
+    position: rr_crane_driver
+    image: "items/city/requests/rr_crane_driver.png"
+    send_post: "hire_as_rr_crane_driver"
+    send_button: "hire_as_rr_crane_driver_post_button"
+    receive_post: "hire_as_rr_crane_driver_receive"
+    receive_button: "hire_as_rr_crane_driver_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  share_badge_friend_count1:
+    id: 2000
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_friend_count_1.png"
+    send_post: "badge_friend_count_1_post"
+    send_button: "badge_friend_count_1_post_button"
+    receive_post: "badge_friend_count_1_receive"
+    receive_button: "badge_friend_count_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_friend_count2:
+    id: 2001
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_friend_count_1.png"
+    send_post: "badge_friend_count_2_post"
+    send_button: "badge_friend_count_2_post_button"
+    receive_post: "badge_friend_count_2_receive"
+    receive_button: "badge_friend_count_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_friend_count3:
+    id: 2002
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_friend_count_1.png"
+    send_post: "badge_friend_count_3_post"
+    send_button: "badge_friend_count_3_post_button"
+    receive_post: "badge_friend_count_3_receive"
+    receive_button: "badge_friend_count_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_friend_count4:
+    id: 2003
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_friend_count_1.png"
+    send_post: "badge_friend_count_4_post"
+    send_button: "badge_friend_count_4_post_button"
+    receive_post: "badge_friend_count_4_receive"
+    receive_button: "badge_friend_count_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_collect_coins1:
+    id: 2004
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_collect_coins_1.png"
+    send_post: "badge_collect_coins_1_post"
+    send_button: "badge_collect_coins_1_post_button"
+    receive_post: "badge_collect_coins_1_receive"
+    receive_button: "badge_collect_coins_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_collect_coins2:
+    id: 2005
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_collect_coins_1.png"
+    send_post: "badge_collect_coins_2_post"
+    send_button: "badge_collect_coins_2_post_button"
+    receive_post: "badge_collect_coins_2_receive"
+    receive_button: "badge_collect_coins_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_collect_coins3:
+    id: 2006
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_collect_coins_1.png"
+    send_post: "badge_collect_coins_3_post"
+    send_button: "badge_collect_coins_3_post_button"
+    receive_post: "badge_collect_coins_3_receive"
+    receive_button: "badge_collect_coins_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_collect_coins4:
+    id: 2007
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_collect_coins_1.png"
+    send_post: "badge_collect_coins_4_post"
+    send_button: "badge_collect_coins_4_post_button"
+    receive_post: "badge_collect_coins_4_receive"
+    receive_button: "badge_collect_coins_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_spent_coins1:
+    id: 2008
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_spent_coins_1.png"
+    send_post: "badge_spent_coins_1_post"
+    send_button: "badge_spent_coins_1_post_button"
+    receive_post: "badge_spent_coins_1_receive"
+    receive_button: "badge_spent_coins_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_spent_coins2:
+    id: 2009
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_spent_coins_1.png"
+    send_post: "badge_spent_coins_2_post"
+    send_button: "badge_spent_coins_2_post_button"
+    receive_post: "badge_spent_coins_2_receive"
+    receive_button: "badge_spent_coins_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_spent_coins3:
+    id: 2010
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_spent_coins_1.png"
+    send_post: "badge_spent_coins_3_post"
+    send_button: "badge_spent_coins_3_post_button"
+    receive_post: "badge_spent_coins_3_receive"
+    receive_button: "badge_spent_coins_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_spent_coins4:
+    id: 2011
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_spent_coins_1.png"
+    send_post: "badge_spent_coins_4_post"
+    send_button: "badge_spent_coins_4_post_button"
+    receive_post: "badge_spent_coins_4_receive"
+    receive_button: "badge_spent_coins_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_population1:
+    id: 2012
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_population_1.png"
+    send_post: "badge_population_1_post"
+    send_button: "badge_population_1_post_button"
+    receive_post: "badge_population_1_receive"
+    receive_button: "badge_population_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_population2:
+    id: 2013
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_population_1.png"
+    send_post: "badge_population_2_post"
+    send_button: "badge_population_2_post_button"
+    receive_post: "badge_population_2_receive"
+    receive_button: "badge_population_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_population3:
+    id: 2014
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_population_1.png"
+    send_post: "badge_population_3_post"
+    send_button: "badge_population_3_post_button"
+    receive_post: "badge_population_3_receive"
+    receive_button: "badge_population_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_population4:
+    id: 2015
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_population_1.png"
+    send_post: "badge_population_4_post"
+    send_button: "badge_population_4_post_button"
+    receive_post: "badge_population_4_receive"
+    receive_button: "badge_population_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_tax_collect1:
+    id: 2016
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_tax_collect_1.png"
+    send_post: "badge_tax_collect_1_post"
+    send_button: "badge_tax_collect_1_post_button"
+    receive_post: "badge_tax_collect_1_receive"
+    receive_button: "badge_tax_collect_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_tax_collect2:
+    id: 2017
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_tax_collect_1.png"
+    send_post: "badge_tax_collect_2_post"
+    send_button: "badge_tax_collect_2_post_button"
+    receive_post: "badge_tax_collect_2_receive"
+    receive_button: "badge_tax_collect_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_tax_collect3:
+    id: 2018
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_tax_collect_1.png"
+    send_post: "badge_tax_collect_3_post"
+    send_button: "badge_tax_collect_3_post_button"
+    receive_post: "badge_tax_collect_3_receive"
+    receive_button: "badge_tax_collect_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_tax_collect4:
+    id: 2019
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_tax_collect_1.png"
+    send_post: "badge_tax_collect_4_post"
+    send_button: "badge_tax_collect_4_post_button"
+    receive_post: "badge_tax_collect_4_receive"
+    receive_button: "badge_tax_collect_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_water1:
+    id: 2020
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_water_1.png"
+    send_post: "badge_water_1_post"
+    send_button: "badge_water_1_post_button"
+    receive_post: "badge_water_1_receive"
+    receive_button: "badge_water_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_water2:
+    id: 2021
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_water_1.png"
+    send_post: "badge_water_2_post"
+    send_button: "badge_water_2_post_button"
+    receive_post: "badge_water_2_receive"
+    receive_button: "badge_water_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_water3:
+    id: 2022
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_water_1.png"
+    send_post: "badge_water_3_post"
+    send_button: "badge_water_3_post_button"
+    receive_post: "badge_water_3_receive"
+    receive_button: "badge_water_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_water4:
+    id: 2023
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_water_1.png"
+    send_post: "badge_water_4_post"
+    send_button: "badge_water_4_post_button"
+    receive_post: "badge_water_4_receive"
+    receive_button: "badge_water_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_power1:
+    id: 2024
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_power_1.png"
+    send_post: "badge_power_1_post"
+    send_button: "badge_power_1_post_button"
+    receive_post: "badge_power_1_receive"
+    receive_button: "badge_power_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_power2:
+    id: 2025
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_power_1.png"
+    send_post: "badge_power_2_post"
+    send_button: "badge_power_2_post_button"
+    receive_post: "badge_power_2_receive"
+    receive_button: "badge_power_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_power3:
+    id: 2026
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_power_1.png"
+    send_post: "badge_power_3_post"
+    send_button: "badge_power_3_post_button"
+    receive_post: "badge_power_3_receive"
+    receive_button: "badge_power_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_power4:
+    id: 2027
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_power_1.png"
+    send_post: "badge_power_4_post"
+    send_button: "badge_power_4_post_button"
+    receive_post: "badge_power_4_receive"
+    receive_button: "badge_power_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_field_size1:
+    id: 2028
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_field_size_1.png"
+    send_post: "badge_field_size_1_post"
+    send_button: "badge_field_size_1_post_button"
+    receive_post: "badge_field_size_1_receive"
+    receive_button: "badge_field_size_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_field_size2:
+    id: 2029
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_field_size_1.png"
+    send_post: "badge_field_size_2_post"
+    send_button: "badge_field_size_2_post_button"
+    receive_post: "badge_field_size_2_receive"
+    receive_button: "badge_field_size_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_field_size3:
+    id: 2030
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_field_size_1.png"
+    send_post: "badge_field_size_3_post"
+    send_button: "badge_field_size_3_post_button"
+    receive_post: "badge_field_size_3_receive"
+    receive_button: "badge_field_size_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_field_size4:
+    id: 2031
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_field_size_1.png"
+    send_post: "badge_field_size_4_post"
+    send_button: "badge_field_size_4_post_button"
+    receive_post: "badge_field_size_4_receive"
+    receive_button: "badge_field_size_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_send_gift1:
+    id: 2032
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_send_gift_1.png"
+    send_post: "badge_send_gift_1_post"
+    send_button: "badge_send_gift_1_post_button"
+    receive_post: "badge_send_gift_1_receive"
+    receive_button: "badge_send_gift_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_send_gift2:
+    id: 2033
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_send_gift_1.png"
+    send_post: "badge_send_gift_2_post"
+    send_button: "badge_send_gift_2_post_button"
+    receive_post: "badge_send_gift_2_receive"
+    receive_button: "badge_send_gift_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_send_gift3:
+    id: 2034
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_send_gift_1.png"
+    send_post: "badge_send_gift_3_post"
+    send_button: "badge_send_gift_3_post_button"
+    receive_post: "badge_send_gift_3_receive"
+    receive_button: "badge_send_gift_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_send_gift4:
+    id: 2035
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_send_gift_1.png"
+    send_post: "badge_send_gift_4_post"
+    send_button: "badge_send_gift_4_post_button"
+    receive_post: "badge_send_gift_4_receive"
+    receive_button: "badge_send_gift_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_pick_contract1:
+    id: 2036
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_pick_contract_1.png"
+    send_post: "badge_pick_contract_1_post"
+    send_button: "badge_pick_contract_1_post_button"
+    receive_post: "badge_pick_contract_1_receive"
+    receive_button: "badge_pick_contract_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_pick_contract2:
+    id: 2037
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_pick_contract_1.png"
+    send_post: "badge_pick_contract_2_post"
+    send_button: "badge_pick_contract_2_post_button"
+    receive_post: "badge_pick_contract_2_receive"
+    receive_button: "badge_pick_contract_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_pick_contract3:
+    id: 2038
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_pick_contract_1.png"
+    send_post: "badge_pick_contract_3_post"
+    send_button: "badge_pick_contract_3_post_button"
+    receive_post: "badge_pick_contract_3_receive"
+    receive_button: "badge_pick_contract_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_pick_contract4:
+    id: 2039
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_pick_contract_1.png"
+    send_post: "badge_pick_contract_4_post"
+    send_button: "badge_pick_contract_4_post_button"
+    receive_post: "badge_pick_contract_4_receive"
+    receive_button: "badge_pick_contract_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_metro_contract1:
+    id: 2040
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_metro_contract_1.png"
+    send_post: "badge_metro_contract_1_post"
+    send_button: "badge_metro_contract_1_post_button"
+    receive_post: "badge_metro_contract_1_receive"
+    receive_button: "badge_metro_contract_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_metro_contract2:
+    id: 2041
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_metro_contract_1.png"
+    send_post: "badge_metro_contract_2_post"
+    send_button: "badge_metro_contract_2_post_button"
+    receive_post: "badge_metro_contract_2_receive"
+    receive_button: "badge_metro_contract_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_metro_contract3:
+    id: 2042
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_metro_contract_1.png"
+    send_post: "badge_metro_contract_3_post"
+    send_button: "badge_metro_contract_3_post_button"
+    receive_post: "badge_metro_contract_3_receive"
+    receive_button: "badge_metro_contract_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_metro_contract4:
+    id: 2043
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_metro_contract_1.png"
+    send_post: "badge_metro_contract_4_post"
+    send_button: "badge_metro_contract_4_post_button"
+    receive_post: "badge_metro_contract_4_receive"
+    receive_button: "badge_metro_contract_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_road_junction1:
+    id: 2044
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_road_junction_1.png"
+    send_post: "badge_road_junction_1_post"
+    send_button: "badge_road_junction_1_post_button"
+    receive_post: "badge_road_junction_1_receive"
+    receive_button: "badge_road_junction_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_sq_city1:
+    id: 2045
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_sq_city_1.png"
+    send_post: "badge_sq_city_1_post"
+    send_button: "badge_sq_city_1_post_button"
+    receive_post: "badge_sq_city_1_receive"
+    receive_button: "badge_sq_city_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_naval_station1:
+    id: 2046
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_naval_station_1.png"
+    send_post: "badge_naval_station_1_post"
+    send_button: "badge_naval_station_1_post_button"
+    receive_post: "badge_naval_station_1_receive"
+    receive_button: "badge_naval_station_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_military_base1:
+    id: 2047
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_military_base_1.png"
+    send_post: "badge_military_base_1_post"
+    send_button: "badge_military_base_1_post_button"
+    receive_post: "badge_military_base_1_receive"
+    receive_button: "badge_military_base_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_armoured_military_base1:
+    id: 2048
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_armoured_military_base_1.png"
+    send_post: "badge_armoured_military_base_1_post"
+    send_button: "badge_armoured_military_base_1_post_button"
+    receive_post: "badge_armoured_military_base_1_receive"
+    receive_button: "badge_armoured_military_base_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_airbase1:
+    id: 2049
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_airbase_1.png"
+    send_post: "badge_airbase_1_post"
+    send_button: "badge_airbase_1_post_button"
+    receive_post: "badge_airbase_1_receive"
+    receive_button: "badge_airbase_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_cinc1:
+    id: 2050
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_cinc_1.png"
+    send_post: "badge_cinc_1_post"
+    send_button: "badge_cinc_1_post_button"
+    receive_post: "badge_cinc_1_receive"
+    receive_button: "badge_cinc_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_pharaon_ad1:
+    id: 2051
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_pharaon_ad_1.png"
+    send_post: "badge_pharaon_ad_1_post"
+    send_button: "badge_pharaon_ad_1_post_button"
+    receive_post: "badge_pharaon_ad_1_receive"
+    receive_button: "badge_pharaon_ad_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_bridge1:
+    id: 2052
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_bridge_1.png"
+    send_post: "badge_bridge_1_post"
+    send_button: "badge_bridge_1_post_button"
+    receive_post: "badge_bridge_1_receive"
+    receive_button: "badge_bridge_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_north_bridge1:
+    id: 2053
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_north_bridge_1.png"
+    send_post: "badge_north_bridge_1_post"
+    send_button: "badge_north_bridge_1_post_button"
+    receive_post: "badge_north_bridge_1_receive"
+    receive_button: "badge_north_bridge_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_bridge_architect1:
+    id: 2054
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_bridge_architect_1.png"
+    send_post: "badge_bridge_architect_1_post"
+    send_button: "badge_bridge_architect_1_post_button"
+    receive_post: "badge_bridge_architect_1_receive"
+    receive_button: "badge_bridge_architect_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_water_system1:
+    id: 2055
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_water_system_1.png"
+    send_post: "badge_water_system_1_post"
+    send_button: "badge_water_system_1_post_button"
+    receive_post: "badge_water_system_1_receive"
+    receive_button: "badge_water_system_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_wwtp_system1:
+    id: 2056
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_wwtp_system_1.png"
+    send_post: "badge_wwtp_system_1_post"
+    send_button: "badge_wwtp_system_1_post_button"
+    receive_post: "badge_wwtp_system_1_receive"
+    receive_button: "badge_wwtp_system_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_hps1:
+    id: 2057
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_hps_1.png"
+    send_post: "badge_hps_1_post"
+    send_button: "badge_hps_1_post_button"
+    receive_post: "badge_hps_1_receive"
+    receive_button: "badge_hps_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_water_infrastructure1:
+    id: 2058
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_water_infrastructure_1.png"
+    send_post: "badge_water_infrastructure_1_post"
+    send_button: "badge_water_infrastructure_1_post_button"
+    receive_post: "badge_water_infrastructure_1_receive"
+    receive_button: "badge_water_infrastructure_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_beach1:
+    id: 2059
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_beach_1.png"
+    send_post: "badge_beach_1_post"
+    send_button: "badge_beach_1_post_button"
+    receive_post: "badge_beach_1_receive"
+    receive_button: "badge_beach_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_island_hotel1:
+    id: 2060
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_island_hotel_1.png"
+    send_post: "badge_island_hotel_1_post"
+    send_button: "badge_island_hotel_1_post_button"
+    receive_post: "badge_island_hotel_1_receive"
+    receive_button: "badge_island_hotel_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_lighthouse1:
+    id: 2061
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_lighthouse_1.png"
+    send_post: "badge_lighthouse_1_post"
+    send_button: "badge_lighthouse_1_post_button"
+    receive_post: "badge_lighthouse_1_receive"
+    receive_button: "badge_lighthouse_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_yacht_club1:
+    id: 2062
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_yacht_club_1.png"
+    send_post: "badge_yacht_club_1_post"
+    send_button: "badge_yacht_club_1_post_button"
+    receive_post: "badge_yacht_club_1_receive"
+    receive_button: "badge_yacht_club_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_leisure1:
+    id: 2063
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_leisure_1.png"
+    send_post: "badge_leisure_1_post"
+    send_button: "badge_leisure_1_post_button"
+    receive_post: "badge_leisure_1_receive"
+    receive_button: "badge_leisure_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_sawmill1:
+    id: 2064
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_sawmill_1.png"
+    send_post: "badge_sawmill_1_post"
+    send_button: "badge_sawmill_1_post_button"
+    receive_post: "badge_sawmill_1_receive"
+    receive_button: "badge_sawmill_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_sawmill2:
+    id: 2065
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_sawmill_2.png"
+    send_post: "badge_sawmill_2_post"
+    send_button: "badge_sawmill_2_post_button"
+    receive_post: "badge_sawmill_2_receive"
+    receive_button: "badge_sawmill_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_sawmill3:
+    id: 2066
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 400}
+    image: "items/city/quests/badge_sawmill_3.png"
+    send_post: "badge_sawmill_3_post"
+    send_button: "badge_sawmill_3_post_button"
+    receive_post: "badge_sawmill_3_receive"
+    receive_button: "badge_sawmill_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_sawmill4:
+    id: 2067
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_sawmill_4.png"
+    send_post: "badge_sawmill_4_post"
+    send_button: "badge_sawmill_4_post_button"
+    receive_post: "badge_sawmill_4_receive"
+    receive_button: "badge_sawmill_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_port1:
+    id: 2068
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_port_1.png"
+    send_post: "badge_port_1_post"
+    send_button: "badge_port_1_post_button"
+    receive_post: "badge_port_1_receive"
+    receive_button: "badge_port_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_airport1:
+    id: 2069
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_airport_1.png"
+    send_post: "badge_airport_1_post"
+    send_button: "badge_airport_1_post_button"
+    receive_post: "badge_airport_1_receive"
+    receive_button: "badge_airport_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_merchant1:
+    id: 2070
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_merchant_1.png"
+    send_post: "badge_merchant_1_post"
+    send_button: "badge_merchant_1_post_button"
+    receive_post: "badge_merchant_1_receive"
+    receive_button: "badge_merchant_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_oil_industry1:
+    id: 2071
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_oil_industry_1.png"
+    send_post: "badge_oil_industry_1_post"
+    send_button: "badge_oil_industry_1_post_button"
+    receive_post: "badge_oil_industry_1_receive"
+    receive_button: "badge_oil_industry_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_oil_industry2:
+    id: 2072
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/badge_oil_industry_2.png"
+    send_post: "badge_oil_industry_2_post"
+    send_button: "badge_oil_industry_2_post_button"
+    receive_post: "badge_oil_industry_2_receive"
+    receive_button: "badge_oil_industry_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_oil_industry3:
+    id: 2073
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_oil_industry_3.png"
+    send_post: "badge_oil_industry_3_post"
+    send_button: "badge_oil_industry_3_post_button"
+    receive_post: "badge_oil_industry_3_receive"
+    receive_button: "badge_oil_industry_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_oil_industry4:
+    id: 2074
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 350}
+    image: "items/city/quests/badge_oil_industry_4.png"
+    send_post: "badge_oil_industry_4_post"
+    send_button: "badge_oil_industry_4_post_button"
+    receive_post: "badge_oil_industry_4_receive"
+    receive_button: "badge_oil_industry_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_warehouse1:
+    id: 2075
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 25}
+    image: "items/city/quests/badge_warehouse_1.png"
+    send_post: "badge_warehouse_1_post"
+    send_button: "badge_warehouse_1_post_button"
+    receive_post: "badge_warehouse_1_receive"
+    receive_button: "badge_warehouse_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_warehouse2:
+    id: 2076
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 125}
+    image: "items/city/quests/badge_warehouse_2.png"
+    send_post: "badge_warehouse_2_post"
+    send_button: "badge_warehouse_2_post_button"
+    receive_post: "badge_warehouse_2_receive"
+    receive_button: "badge_warehouse_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_warehouse3:
+    id: 2077
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 250}
+    image: "items/city/quests/badge_warehouse_3.png"
+    send_post: "badge_warehouse_3_post"
+    send_button: "badge_warehouse_3_post_button"
+    receive_post: "badge_warehouse_3_receive"
+    receive_button: "badge_warehouse_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_warehouse4:
+    id: 2078
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_warehouse_4.png"
+    send_post: "badge_warehouse_4_post"
+    send_button: "badge_warehouse_4_post_button"
+    receive_post: "badge_warehouse_4_receive"
+    receive_button: "badge_warehouse_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_geologist1:
+    id: 2079
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_geologist_1.png"
+    send_post: "badge_geologist_1_post"
+    send_button: "badge_geologist_1_post_button"
+    receive_post: "badge_geologist_1_receive"
+    receive_button: "badge_geologist_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_geologist2:
+    id: 2080
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_geologist_2.png"
+    send_post: "badge_geologist_2_post"
+    send_button: "badge_geologist_2_post_button"
+    receive_post: "badge_geologist_2_receive"
+    receive_button: "badge_geologist_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_gas_power1:
+    id: 2081
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_gas_power_1.png"
+    send_post: "badge_gas_power_1_post"
+    send_button: "badge_gas_power_1_post_button"
+    receive_post: "badge_gas_power_1_receive"
+    receive_button: "badge_gas_power_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_gas_power2:
+    id: 2082
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_gas_power_2.png"
+    send_post: "badge_gas_power_2_post"
+    send_button: "badge_gas_power_2_post_button"
+    receive_post: "badge_gas_power_2_receive"
+    receive_button: "badge_gas_power_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_gas_power3:
+    id: 2083
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 700}
+    image: "items/city/quests/badge_gas_power_3.png"
+    send_post: "badge_gas_power_3_post"
+    send_button: "badge_gas_power_3_post_button"
+    receive_post: "badge_gas_power_3_receive"
+    receive_button: "badge_gas_power_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_experimentator1:
+    id: 2084
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 600}
+    image: "items/city/quests/badge_experimentator_1.png"
+    send_post: "badge_experimentator_1_post"
+    send_button: "badge_experimentator_1_post_button"
+    receive_post: "badge_experimentator_1_receive"
+    receive_button: "badge_experimentator_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_experimentator2:
+    id: 2085
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_experimentator_2.png"
+    send_post: "badge_experimentator_2_post"
+    send_button: "badge_experimentator_2_post_button"
+    receive_post: "badge_experimentator_2_receive"
+    receive_button: "badge_experimentator_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_experimentator3:
+    id: 2086
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_experimentator_3.png"
+    send_post: "badge_experimentator_3_post"
+    send_button: "badge_experimentator_3_post_button"
+    receive_post: "badge_experimentator_3_receive"
+    receive_button: "badge_experimentator_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_hydromagnate1:
+    id: 2087
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 600}
+    image: "items/city/quests/badge_hydromagnate_1.png"
+    send_post: "badge_hydromagnate_1_post"
+    send_button: "badge_hydromagnate_1_post_button"
+    receive_post: "badge_hydromagnate_1_receive"
+    receive_button: "badge_hydromagnate_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_hydromagnate2:
+    id: 2088
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_hydromagnate_2.png"
+    send_post: "badge_hydromagnate_2_post"
+    send_button: "badge_hydromagnate_2_post_button"
+    receive_post: "badge_hydromagnate_2_receive"
+    receive_button: "badge_hydromagnate_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_hydromagnate3:
+    id: 2090
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/badge_hydromagnate_3.png"
+    send_post: "badge_hydromagnate_3_post"
+    send_button: "badge_hydromagnate_3_post_button"
+    receive_post: "badge_hydromagnate_3_receive"
+    receive_button: "badge_hydromagnate_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_east_railroad:
+    id: 2091
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_east_railroad.png"
+    send_post: "badge_east_railroad_post"
+    send_button: "badge_east_railroad_post_button"
+    receive_post: "badge_east_railroad_receive"
+    receive_button: "badge_east_railroad_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_railroader1:
+    id: 2092
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/badge_railroader.png"
+    send_post: "badge_railroader_1_post"
+    send_button: "badge_railroader_1_post_button"
+    receive_post: "badge_railroader_1_receive"
+    receive_button: "badge_railroader_1_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_railroader2:
+    id: 2093
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 150}
+    image: "items/city/quests/badge_railroader.png"
+    send_post: "badge_railroader_2_post"
+    send_button: "badge_railroader_2_post_button"
+    receive_post: "badge_railroader_2_receive"
+    receive_button: "badge_railroader_2_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_railroader3:
+    id: 2094
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 250}
+    image: "items/city/quests/badge_railroader.png"
+    send_post: "badge_railroader_3_post"
+    send_button: "badge_railroader_3_post_button"
+    receive_post: "badge_railroader_3_receive"
+    receive_button: "badge_railroader_3_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_railroader4:
+    id: 2094
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/badge_railroader.png"
+    send_post: "badge_railroader_4_post"
+    send_button: "badge_railroader_4_post_button"
+    receive_post: "badge_railroader_4_receive"
+    receive_button: "badge_railroader_4_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_badge_south_railroad:
+    id: 2095
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/badge_south_railroad.png"
+    send_post: "badge_south_railroad_post"
+    send_button: "badge_south_railroad_post_button"
+    receive_post: "badge_south_railroad_receive"
+    receive_button: "badge_south_railroad_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_quest1: &quest1
+    id: 100
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 10}
+    image: "items/city/quests/quest1.png"
+    send_post: "quest_complete_quest1_body"
+    send_button: "quest_complete_quest1_accept"
+    receive_post: "quest_complete_quest1_caption"
+    receive_button: "quest_complete_quest1_linkname"
+    expire: 24
+    max_count: 5
+    limited: false
+
+  share_quest2:
+    id: 101
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 20}
+    image: "items/city/quests/quest2.png"
+    send_post: "quest_complete_quest2_body"
+    send_button: "quest_complete_quest2_accept"
+    receive_post: "quest_complete_quest2_caption"
+    receive_button: "quest_complete_quest2_linkname"
+
+  share_quest3:
+    id: 102
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 30}
+    image: "items/city/quests/quest3.png"
+    send_post: "quest_complete_quest3_body"
+    send_button: "quest_complete_quest3_accept"
+    receive_post: "quest_complete_quest3_caption"
+    receive_button: "quest_complete_quest3_linkname"
+    max_count: 10
+
+  share_quest4:
+    id: 103
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 40}
+    image: "items/city/quests/quest4.png"
+    send_post: "quest_complete_quest4_body"
+    send_button: "quest_complete_quest4_accept"
+    receive_post: "quest_complete_quest4_caption"
+    receive_button: "quest_complete_quest4_linkname"
+
+  share_quest5:
+    id: 104
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 40}
+    image: "items/city/quests/quest5.png"
+    send_post: "quest_complete_quest5_body"
+    send_button: "quest_complete_quest5_accept"
+    receive_post: "quest_complete_quest5_caption"
+    receive_button: "quest_complete_quest5_linkname"
+    max_count: 10
+
+  share_quest6:
+    id: 105
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 30}
+    image: "items/city/quests/quest6.png"
+    send_post: "quest_complete_quest6_body"
+    send_button: "quest_complete_quest6_accept"
+    receive_post: "quest_complete_quest6_caption"
+    receive_button: "quest_complete_quest6_linkname"
+
+  share_quest7:
+    id: 106
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 40}
+    image: "items/city/quests/quest7.png"
+    send_post: "quest_complete_quest7_body"
+    send_button: "quest_complete_quest7_accept"
+    receive_post: "quest_complete_quest7_caption"
+    receive_button: "quest_complete_quest7_linkname"
+
+  share_quest8:
+    id: 107
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 35}
+    image: "items/city/quests/quest8.png"
+    send_post: "quest_complete_quest8_body"
+    send_button: "quest_complete_quest8_accept"
+    receive_post: "quest_complete_quest8_caption"
+    receive_button: "quest_complete_quest8_linkname"
+
+  share_quest9:
+    id: 108
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest9.png"
+    send_post: "quest_complete_quest9_body"
+    send_button: "quest_complete_quest9_accept"
+    receive_post: "quest_complete_quest9_caption"
+    receive_button: "quest_complete_quest9_linkname"
+
+  share_quest10:
+    id: 109
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 40}
+    image: "items/city/quests/quest10.png"
+    send_post: "quest_complete_quest10_body"
+    send_button: "quest_complete_quest10_accept"
+    receive_post: "quest_complete_quest10_caption"
+    receive_button: "quest_complete_quest10_linkname"
+
+  share_quest11:
+    id: 110
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 5}
+    image: "items/city/quests/quest11.png"
+    send_post: "quest_complete_quest11_body"
+    send_button: "quest_complete_quest11_accept"
+    receive_post: "quest_complete_quest11_caption"
+    receive_button: "quest_complete_quest11_linkname"
+
+  share_quest12:
+    id: 111
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 75}
+    image: "items/city/quests/quest12.png"
+    send_post: "quest_complete_quest12_body"
+    send_button: "quest_complete_quest12_accept"
+    receive_post: "quest_complete_quest12_caption"
+    receive_button: "quest_complete_quest12_linkname"
+
+  share_quest13:
+    id: 112
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 35}
+    image: "items/city/quests/quest13.png"
+    send_post: "quest_complete_quest13_body"
+    send_button: "quest_complete_quest13_accept"
+    receive_post: "quest_complete_quest13_caption"
+    receive_button: "quest_complete_quest13_linkname"
+
+  share_quest14:
+    id: 113
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 45}
+    image: "items/city/quests/quest14.png"
+    send_post: "quest_complete_quest14_body"
+    send_button: "quest_complete_quest14_accept"
+    receive_post: "quest_complete_quest14_caption"
+    receive_button: "quest_complete_quest14_linkname"
+
+  share_quest15:
+    id: 114
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 40}
+    image: "items/city/quests/quest15.png"
+    send_post: "quest_complete_quest15_body"
+    send_button: "quest_complete_quest15_accept"
+    receive_post: "quest_complete_quest15_caption"
+    receive_button: "quest_complete_quest15_linkname"
+
+  share_quest16:
+    id: 115
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest16.png"
+    send_post: "quest_complete_quest16_body"
+    send_button: "quest_complete_quest16_accept"
+    receive_post: "quest_complete_quest16_caption"
+    receive_button: "quest_complete_quest16_linkname"
+
+  share_quest17:
+    id: 116
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 30}
+    image: "items/city/quests/quest17.png"
+    send_post: "quest_complete_quest17_body"
+    send_button: "quest_complete_quest17_accept"
+    receive_post: "quest_complete_quest17_caption"
+    receive_button: "quest_complete_quest17_linkname"
+
+  share_quest18:
+    id: 117
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 40}
+    image: "items/city/quests/quest18.png"
+    send_post: "quest_complete_quest18_body"
+    send_button: "quest_complete_quest18_accept"
+    receive_post: "quest_complete_quest18_caption"
+    receive_button: "quest_complete_quest18_linkname"
+
+  share_quest19:
+    id: 118
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest19.png"
+    send_post: "quest_complete_quest19_body"
+    send_button: "quest_complete_quest19_accept"
+    receive_post: "quest_complete_quest19_caption"
+    receive_button: "quest_complete_quest19_linkname"
+
+  share_quest20:
+    id: 119
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 30}
+    image: "items/city/quests/quest20.png"
+    send_post: "quest_complete_quest20_body"
+    send_button: "quest_complete_quest20_accept"
+    receive_post: "quest_complete_quest20_caption"
+    receive_button: "quest_complete_quest20_linkname"
+
+  share_quest21:
+    id: 120
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest21.png"
+    send_post: "quest_complete_quest21_body"
+    send_button: "quest_complete_quest21_accept"
+    receive_post: "quest_complete_quest21_caption"
+    receive_button: "quest_complete_quest21_linkname"
+
+  share_quest22:
+    id: 121
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest22.png"
+    send_post: "quest_complete_quest22_body"
+    send_button: "quest_complete_quest22_accept"
+    receive_post: "quest_complete_quest22_caption"
+    receive_button: "quest_complete_quest22_linkname"
+
+  share_quest23:
+    id: 122
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest23.png"
+    send_post: "quest_complete_quest23_body"
+    send_button: "quest_complete_quest23_accept"
+    receive_post: "quest_complete_quest23_caption"
+    receive_button: "quest_complete_quest23_linkname"
+
+  share_quest24:
+    id: 123
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 30}
+    image: "items/city/quests/quest24.png"
+    send_post: "quest_complete_quest24_body"
+    send_button: "quest_complete_quest24_accept"
+    receive_post: "quest_complete_quest24_caption"
+    receive_button: "quest_complete_quest24_linkname"
+
+  share_quest25:
+    id: 124
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest25.png"
+    send_post: "quest_complete_quest25_body"
+    send_button: "quest_complete_quest25_accept"
+    receive_post: "quest_complete_quest25_caption"
+    receive_button: "quest_complete_quest25_linkname"
+
+  share_quest26:
+    id: 125
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest26.png"
+    send_post: "quest_complete_quest26_body"
+    send_button: "quest_complete_quest26_accept"
+    receive_post: "quest_complete_quest26_caption"
+    receive_button: "quest_complete_quest26_linkname"
+
+  share_quest27:
+    id: 126
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 60}
+    image: "items/city/quests/quest27.png"
+    send_post: "quest_complete_quest27_body"
+    send_button: "quest_complete_quest27_accept"
+    receive_post: "quest_complete_quest27_caption"
+    receive_button: "quest_complete_quest27_linkname"
+
+  share_quest28:
+    id: 127
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 45}
+    image: "items/city/quests/quest28.png"
+    send_post: "quest_complete_quest28_body"
+    send_button: "quest_complete_quest28_accept"
+    receive_post: "quest_complete_quest28_caption"
+    receive_button: "quest_complete_quest28_linkname"
+
+  share_quest29:
+    id: 128
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest29.png"
+    send_post: "quest_complete_quest29_body"
+    send_button: "quest_complete_quest29_accept"
+    receive_post: "quest_complete_quest29_caption"
+    receive_button: "quest_complete_quest29_linkname"
+
+  share_quest30:
+    id: 129
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/quest30.png"
+    send_post: "quest_complete_quest30_body"
+    send_button: "quest_complete_quest30_accept"
+    receive_post: "quest_complete_quest30_caption"
+    receive_button: "quest_complete_quest30_linkname"
+
+  share_quest31:
+    id: 130
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 60}
+    image: "items/city/quests/quest31.png"
+    send_post: "quest_complete_quest31_body"
+    send_button: "quest_complete_quest31_accept"
+    receive_post: "quest_complete_quest31_caption"
+    receive_button: "quest_complete_quest31_linkname"
+
+  share_quest32:
+    id: 131
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest32.png"
+    send_post: "quest_complete_quest32_body"
+    send_button: "quest_complete_quest32_accept"
+    receive_post: "quest_complete_quest32_caption"
+    receive_button: "quest_complete_quest32_linkname"
+
+  share_quest33:
+    id: 132
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest33.png"
+    send_post: "quest_complete_quest33_body"
+    send_button: "quest_complete_quest33_accept"
+    receive_post: "quest_complete_quest33_caption"
+    receive_button: "quest_complete_quest33_linkname"
+
+  share_quest34:
+    id: 133
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 60}
+    image: "items/city/quests/quest34.png"
+    send_post: "quest_complete_quest34_body"
+    send_button: "quest_complete_quest34_accept"
+    receive_post: "quest_complete_quest34_caption"
+    receive_button: "quest_complete_quest34_linkname"
+
+  share_quest35:
+    id: 134
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 120}
+    image: "items/city/quests/quest35.png"
+    send_post: "quest_complete_quest35_body"
+    send_button: "quest_complete_quest35_accept"
+    receive_post: "quest_complete_quest35_caption"
+    receive_button: "quest_complete_quest35_linkname"
+
+  share_quest36:
+    id: 135
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 60}
+    image: "items/city/quests/quest36.png"
+    send_post: "quest_complete_quest36_body"
+    send_button: "quest_complete_quest36_accept"
+    receive_post: "quest_complete_quest36_caption"
+    receive_button: "quest_complete_quest36_linkname"
+
+  share_quest37:
+    id: 136
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest37.png"
+    send_post: "quest_complete_quest37_body"
+    send_button: "quest_complete_quest37_accept"
+    receive_post: "quest_complete_quest37_caption"
+    receive_button: "quest_complete_quest37_linkname"
+
+  share_quest38:
+    id: 137
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/quest38.png"
+    send_post: "quest_complete_quest38_body"
+    send_button: "quest_complete_quest38_accept"
+    receive_post: "quest_complete_quest38_caption"
+    receive_button: "quest_complete_quest38_linkname"
+
+  share_quest39:
+    id: 138
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest39.png"
+    send_post: "quest_complete_quest39_body"
+    send_button: "quest_complete_quest39_accept"
+    receive_post: "quest_complete_quest39_caption"
+    receive_button: "quest_complete_quest39_linkname"
+
+  share_quest40:
+    id: 139
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest40.png"
+    send_post: "quest_complete_quest40_body"
+    send_button: "quest_complete_quest40_accept"
+    receive_post: "quest_complete_quest40_caption"
+    receive_button: "quest_complete_quest40_linkname"
+
+  share_quest41:
+    id: 140
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest41.png"
+    send_post: "quest_complete_quest41_body"
+    send_button: "quest_complete_quest41_accept"
+    receive_post: "quest_complete_quest41_caption"
+    receive_button: "quest_complete_quest41_linkname"
+
+  share_quest42:
+    id: 141
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest42.png"
+    send_post: "quest_complete_quest42_body"
+    send_button: "quest_complete_quest42_accept"
+    receive_post: "quest_complete_quest42_caption"
+    receive_button: "quest_complete_quest42_linkname"
+
+  share_quest43:
+    id: 142
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 120}
+    image: "items/city/quests/quest43.png"
+    send_post: "quest_complete_quest43_body"
+    send_button: "quest_complete_quest43_accept"
+    receive_post: "quest_complete_quest43_caption"
+    receive_button: "quest_complete_quest43_linkname"
+
+  share_quest44:
+    id: 143
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 40}
+    image: "items/city/quests/quest44.png"
+    send_post: "quest_complete_quest44_body"
+    send_button: "quest_complete_quest44_accept"
+    receive_post: "quest_complete_quest44_caption"
+    receive_button: "quest_complete_quest44_linkname"
+
+  share_quest45:
+    id: 144
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest45.png"
+    send_post: "quest_complete_quest45_body"
+    send_button: "quest_complete_quest45_accept"
+    receive_post: "quest_complete_quest45_caption"
+    receive_button: "quest_complete_quest45_linkname"
+
+  share_quest46:
+    id: 145
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 120}
+    image: "items/city/quests/quest46.png"
+    send_post: "quest_complete_quest46_body"
+    send_button: "quest_complete_quest46_accept"
+    receive_post: "quest_complete_quest46_caption"
+    receive_button: "quest_complete_quest46_linkname"
+
+  share_quest47:
+    id: 146
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest47.png"
+    send_post: "quest_complete_quest47_body"
+    send_button: "quest_complete_quest47_accept"
+    receive_post: "quest_complete_quest47_caption"
+    receive_button: "quest_complete_quest47_linkname"
+
+  share_quest48:
+    id: 147
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest48.png"
+    send_post: "quest_complete_quest48_body"
+    send_button: "quest_complete_quest48_accept"
+    receive_post: "quest_complete_quest48_caption"
+    receive_button: "quest_complete_quest48_linkname"
+
+  share_quest49:
+    id: 148
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 120}
+    image: "items/city/quests/quest49.png"
+    send_post: "quest_complete_quest49_body"
+    send_button: "quest_complete_quest49_accept"
+    receive_post: "quest_complete_quest49_caption"
+    receive_button: "quest_complete_quest49_linkname"
+
+  share_quest50:
+    id: 149
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/quest50.png"
+    send_post: "quest_complete_quest50_body"
+    send_button: "quest_complete_quest50_accept"
+    receive_post: "quest_complete_quest50_caption"
+    receive_button: "quest_complete_quest50_linkname"
+
+  share_quest51:
+    id: 150
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 220}
+    image: "items/city/quests/quest51.png"
+    send_post: "quest_complete_quest51_body"
+    send_button: "quest_complete_quest51_accept"
+    receive_post: "quest_complete_quest51_caption"
+    receive_button: "quest_complete_quest51_linkname"
+
+  share_quest52:
+    id: 151
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 180}
+    image: "items/city/quests/quest52.png"
+    send_post: "quest_complete_quest52_body"
+    send_button: "quest_complete_quest52_accept"
+    receive_post: "quest_complete_quest52_caption"
+    receive_button: "quest_complete_quest52_linkname"
+
+  share_quest53:
+    id: 152
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest53.png"
+    send_post: "quest_complete_quest53_body"
+    send_button: "quest_complete_quest53_accept"
+    receive_post: "quest_complete_quest53_caption"
+    receive_button: "quest_complete_quest53_linkname"
+
+  share_quest54:
+    id: 153
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest54.png"
+    send_post: "quest_complete_quest54_body"
+    send_button: "quest_complete_quest54_accept"
+    receive_post: "quest_complete_quest54_caption"
+    receive_button: "quest_complete_quest54_linkname"
+
+  share_quest55:
+    id: 154
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest55.png"
+    send_post: "quest_complete_quest55_body"
+    send_button: "quest_complete_quest55_accept"
+    receive_post: "quest_complete_quest55_caption"
+    receive_button: "quest_complete_quest55_linkname"
+
+  share_quest56:
+    id: 155
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 220}
+    image: "items/city/quests/quest56.png"
+    send_post: "quest_complete_quest56_body"
+    send_button: "quest_complete_quest56_accept"
+    receive_post: "quest_complete_quest56_caption"
+    receive_button: "quest_complete_quest56_linkname"
+
+  share_quest57:
+    id: 156
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 60}
+    image: "items/city/quests/quest57.png"
+    send_post: "quest_complete_quest57_body"
+    send_button: "quest_complete_quest57_accept"
+    receive_post: "quest_complete_quest57_caption"
+    receive_button: "quest_complete_quest57_linkname"
+
+  share_quest58:
+    id: 157
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 60}
+    image: "items/city/quests/quest58.png"
+    send_post: "quest_complete_quest58_body"
+    send_button: "quest_complete_quest58_accept"
+    receive_post: "quest_complete_quest58_caption"
+    receive_button: "quest_complete_quest58_linkname"
+
+  share_quest59:
+    id: 158
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest59.png"
+    send_post: "quest_complete_quest59_body"
+    send_button: "quest_complete_quest59_accept"
+    receive_post: "quest_complete_quest59_caption"
+    receive_button: "quest_complete_quest59_linkname"
+
+  share_quest60:
+    id: 159
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 90}
+    image: "items/city/quests/quest60.png"
+    send_post: "quest_complete_quest60_body"
+    send_button: "quest_complete_quest60_accept"
+    receive_post: "quest_complete_quest60_caption"
+    receive_button: "quest_complete_quest60_linkname"
+
+  share_quest61:
+    id: 160
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 110}
+    image: "items/city/quests/quest61.png"
+    send_post: "quest_complete_quest61_body"
+    send_button: "quest_complete_quest61_accept"
+    receive_post: "quest_complete_quest61_caption"
+    receive_button: "quest_complete_quest61_linkname"
+
+  share_quest62:
+    id: 161
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 60}
+    image: "items/city/quests/quest62.png"
+    send_post: "quest_complete_quest62_body"
+    send_button: "quest_complete_quest62_accept"
+    receive_post: "quest_complete_quest62_caption"
+    receive_button: "quest_complete_quest62_linkname"
+
+  share_quest63:
+    id: 162
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest63.png"
+    send_post: "quest_complete_quest63_body"
+    send_button: "quest_complete_quest63_accept"
+    receive_post: "quest_complete_quest63_caption"
+    receive_button: "quest_complete_quest63_linkname"
+
+  share_quest64:
+    id: 163
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/quest64.png"
+    send_post: "quest_complete_quest64_body"
+    send_button: "quest_complete_quest64_accept"
+    receive_post: "quest_complete_quest64_caption"
+    receive_button: "quest_complete_quest64_linkname"
+
+  share_quest65:
+    id: 64
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest65.png"
+    send_post: "quest_complete_quest65_body"
+    send_button: "quest_complete_quest65_accept"
+    receive_post: "quest_complete_quest65_caption"
+    receive_button: "quest_complete_quest65_linkname"
+
+  share_quest66:
+    id: 165
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest66.png"
+    send_post: "quest_complete_quest66_body"
+    send_button: "quest_complete_quest66_accept"
+    receive_post: "quest_complete_quest66_caption"
+    receive_button: "quest_complete_quest66_linkname"
+
+  share_quest67:
+    id: 166
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest67.png"
+    send_post: "quest_complete_quest67_body"
+    send_button: "quest_complete_quest67_accept"
+    receive_post: "quest_complete_quest67_caption"
+    receive_button: "quest_complete_quest67_linkname"
+
+  share_quest68:
+    id: 167
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 230}
+    image: "items/city/quests/quest68.png"
+    send_post: "quest_complete_quest68_body"
+    send_button: "quest_complete_quest68_accept"
+    receive_post: "quest_complete_quest68_caption"
+    receive_button: "quest_complete_quest68_linkname"
+
+  share_quest69:
+    id: 168
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest69.png"
+    send_post: "quest_complete_quest69_body"
+    send_button: "quest_complete_quest69_accept"
+    receive_post: "quest_complete_quest69_caption"
+    receive_button: "quest_complete_quest69_linkname"
+
+  share_quest70:
+    id: 169
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 180}
+    image: "items/city/quests/quest70.png"
+    send_post: "quest_complete_quest70_body"
+    send_button: "quest_complete_quest70_accept"
+    receive_post: "quest_complete_quest70_caption"
+    receive_button: "quest_complete_quest70_linkname"
+
+  share_quest71:
+    id: 170
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/quest71.png"
+    send_post: "quest_complete_quest71_body"
+    send_button: "quest_complete_quest71_accept"
+    receive_post: "quest_complete_quest71_caption"
+    receive_button: "quest_complete_quest71_linkname"
+
+  share_quest72:
+    id: 171
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 110}
+    image: "items/city/quests/quest72.png"
+    send_post: "quest_complete_quest72_body"
+    send_button: "quest_complete_quest72_accept"
+    receive_post: "quest_complete_quest72_caption"
+    receive_button: "quest_complete_quest72_linkname"
+
+  share_quest73:
+    id: 172
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest73.png"
+    send_post: "quest_complete_quest73_body"
+    send_button: "quest_complete_quest73_accept"
+    receive_post: "quest_complete_quest73_caption"
+    receive_button: "quest_complete_quest73_linkname"
+
+  share_quest74:
+    id: 173
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest74.png"
+    send_post: "quest_complete_quest74_body"
+    send_button: "quest_complete_quest74_accept"
+    receive_post: "quest_complete_quest74_caption"
+    receive_button: "quest_complete_quest74_linkname"
+
+  share_quest75:
+    id: 174
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/quest75.png"
+    send_post: "quest_complete_quest75_body"
+    send_button: "quest_complete_quest75_accept"
+    receive_post: "quest_complete_quest75_caption"
+    receive_button: "quest_complete_quest75_linkname"
+
+  share_quest76:
+    id: 175
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest76.png"
+    send_post: "quest_complete_quest76_body"
+    send_button: "quest_complete_quest76_accept"
+    receive_post: "quest_complete_quest76_caption"
+    receive_button: "quest_complete_quest76_linkname"
+
+  share_quest77:
+    id: 176
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest77.png"
+    send_post: "quest_complete_quest77_body"
+    send_button: "quest_complete_quest77_accept"
+    receive_post: "quest_complete_quest77_caption"
+    receive_button: "quest_complete_quest77_linkname"
+
+  share_quest78:
+    id: 177
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest78.png"
+    send_post: "quest_complete_quest78_body"
+    send_button: "quest_complete_quest78_accept"
+    receive_post: "quest_complete_quest78_caption"
+    receive_button: "quest_complete_quest78_linkname"
+
+  share_quest79:
+    id: 178
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 160}
+    image: "items/city/quests/quest79.png"
+    send_post: "quest_complete_quest79_body"
+    send_button: "quest_complete_quest79_accept"
+    receive_post: "quest_complete_quest79_caption"
+    receive_button: "quest_complete_quest79_linkname"
+
+  share_quest80:
+    id: 179
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest80.png"
+    send_post: "quest_complete_quest80_body"
+    send_button: "quest_complete_quest80_accept"
+    receive_post: "quest_complete_quest80_caption"
+    receive_button: "quest_complete_quest80_linkname"
+
+  share_quest81:
+    id: 180
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest81.png"
+    send_post: "quest_complete_quest81_body"
+    send_button: "quest_complete_quest81_accept"
+    receive_post: "quest_complete_quest81_caption"
+    receive_button: "quest_complete_quest81_linkname"
+
+  share_quest82:
+    id: 181
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/quest82.png"
+    send_post: "quest_complete_quest82_body"
+    send_button: "quest_complete_quest82_accept"
+    receive_post: "quest_complete_quest82_caption"
+    receive_button: "quest_complete_quest82_linkname"
+
+  share_quest83:
+    id: 182
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest83.png"
+    send_post: "quest_complete_quest83_body"
+    send_button: "quest_complete_quest83_accept"
+    receive_post: "quest_complete_quest83_caption"
+    receive_button: "quest_complete_quest83_linkname"
+
+  share_quest84:
+    id: 183
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 30}
+    image: "items/city/quests/quest84.png"
+    send_post: "quest_complete_quest84_body"
+    send_button: "quest_complete_quest84_accept"
+    receive_post: "quest_complete_quest84_caption"
+    receive_button: "quest_complete_quest84_linkname"
+
+  share_quest85:
+    id: 184
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest85.png"
+    send_post: "quest_complete_quest85_body"
+    send_button: "quest_complete_quest85_accept"
+    receive_post: "quest_complete_quest85_caption"
+    receive_button: "quest_complete_quest85_linkname"
+
+  share_quest86:
+    id: 185
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest86.png"
+    send_post: "quest_complete_quest86_body"
+    send_button: "quest_complete_quest86_accept"
+    receive_post: "quest_complete_quest86_caption"
+    receive_button: "quest_complete_quest86_linkname"
+
+  share_quest87:
+    id: 186
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 30}
+    image: "items/city/quests/quest87.png"
+    send_post: "quest_complete_quest87_body"
+    send_button: "quest_complete_quest87_accept"
+    receive_post: "quest_complete_quest87_caption"
+    receive_button: "quest_complete_quest87_linkname"
+
+  share_quest88:
+    id: 187
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest88.png"
+    send_post: "quest_complete_quest88_body"
+    send_button: "quest_complete_quest88_accept"
+    receive_post: "quest_complete_quest88_caption"
+    receive_button: "quest_complete_quest88_linkname"
+
+  share_quest89:
+    id: 188
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest89.png"
+    send_post: "quest_complete_quest89_body"
+    send_button: "quest_complete_quest89_accept"
+    receive_post: "quest_complete_quest89_caption"
+    receive_button: "quest_complete_quest89_linkname"
+
+  share_quest90:
+    id: 189
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest90.png"
+    send_post: "quest_complete_quest90_body"
+    send_button: "quest_complete_quest90_accept"
+    receive_post: "quest_complete_quest90_caption"
+    receive_button: "quest_complete_quest90_linkname"
+
+  share_quest91:
+    id: 190
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest91.png"
+    send_post: "quest_complete_quest91_body"
+    send_button: "quest_complete_quest91_accept"
+    receive_post: "quest_complete_quest91_caption"
+    receive_button: "quest_complete_quest91_linkname"
+
+  share_quest92:
+    id: 191
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 120}
+    image: "items/city/quests/quest92.png"
+    send_post: "quest_complete_quest92_body"
+    send_button: "quest_complete_quest92_accept"
+    receive_post: "quest_complete_quest92_caption"
+    receive_button: "quest_complete_quest92_linkname"
+
+  share_quest93:
+    id: 192
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 190}
+    image: "items/city/quests/quest93.png"
+    send_post: "quest_complete_quest93_body"
+    send_button: "quest_complete_quest93_accept"
+    receive_post: "quest_complete_quest93_caption"
+    receive_button: "quest_complete_quest93_linkname"
+
+  share_quest94:
+    id: 193
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/quest94.png"
+    send_post: "quest_complete_quest94_body"
+    send_button: "quest_complete_quest94_accept"
+    receive_post: "quest_complete_quest94_caption"
+    receive_button: "quest_complete_quest94_linkname"
+
+  share_quest95:
+    id: 194
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/quest95.png"
+    send_post: "quest_complete_quest95_body"
+    send_button: "quest_complete_quest95_accept"
+    receive_post: "quest_complete_quest95_caption"
+    receive_button: "quest_complete_quest95_linkname"
+
+  share_quest96:
+    id: 195
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 150}
+    image: "items/city/quests/quest96.png"
+    send_post: "quest_complete_quest96_body"
+    send_button: "quest_complete_quest96_accept"
+    receive_post: "quest_complete_quest96_caption"
+    receive_button: "quest_complete_quest96_linkname"
+
+  share_quest97:
+    id: 196
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 110}
+    image: "items/city/quests/quest97.png"
+    send_post: "quest_complete_quest97_body"
+    send_button: "quest_complete_quest97_accept"
+    receive_post: "quest_complete_quest97_caption"
+    receive_button: "quest_complete_quest97_linkname"
+
+  share_quest98:
+    id: 197
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+    image: "items/city/quests/quest98.png"
+    send_post: "quest_complete_quest98_body"
+    send_button: "quest_complete_quest98_accept"
+    receive_post: "quest_complete_quest98_caption"
+    receive_button: "quest_complete_quest98_linkname"
+
+  share_quest99:
+    id: 198
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+    image: "items/city/quests/quest99.png"
+    send_post: "quest_complete_quest99_body"
+    send_button: "quest_complete_quest99_accept"
+    receive_post: "quest_complete_quest99_caption"
+    receive_button: "quest_complete_quest99_linkname"
+
+  share_quest100:
+    id: 199
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 80}
+    image: "items/city/quests/quest100.png"
+    send_post: "quest_complete_quest100_body"
+    send_button: "quest_complete_quest100_accept"
+    receive_post: "quest_complete_quest100_caption"
+    receive_button: "quest_complete_quest100_linkname"
+
+  share_quest101:
+    id: 200
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest101.png"
+    send_post: "quest_complete_quest101_body"
+    send_button: "quest_complete_quest101_accept"
+    receive_post: "quest_complete_quest101_caption"
+    receive_button: "quest_complete_quest101_linkname"
+
+  share_quest102:
+    id: 201
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest102.png"
+    send_post: "quest_complete_quest102_body"
+    send_button: "quest_complete_quest102_accept"
+    receive_post: "quest_complete_quest102_caption"
+    receive_button: "quest_complete_quest102_linkname"
+
+  share_quest103:
+    id: 202
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest103.png"
+    send_post: "quest_complete_quest103_body"
+    send_button: "quest_complete_quest103_accept"
+    receive_post: "quest_complete_quest103_caption"
+    receive_button: "quest_complete_quest103_linkname"
+
+  share_quest104:
+    id: 203
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest104.png"
+    send_post: "quest_complete_quest104_body"
+    send_button: "quest_complete_quest104_accept"
+    receive_post: "quest_complete_quest104_caption"
+    receive_button: "quest_complete_quest104_linkname"
+
+  share_quest105:
+    id: 204
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest105.png"
+    send_post: "quest_complete_quest105_body"
+    send_button: "quest_complete_quest105_accept"
+    receive_post: "quest_complete_quest105_caption"
+    receive_button: "quest_complete_quest105_linkname"
+
+  share_quest106:
+    id: 205
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/quest106.png"
+    send_post: "quest_complete_quest106_body"
+    send_button: "quest_complete_quest106_accept"
+    receive_post: "quest_complete_quest106_caption"
+    receive_button: "quest_complete_quest106_linkname"
+
+  share_quest107:
+    id: 206
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+    image: "items/city/quests/quest107.png"
+    send_post: "quest_complete_quest107_body"
+    send_button: "quest_complete_quest107_accept"
+    receive_post: "quest_complete_quest107_caption"
+    receive_button: "quest_complete_quest107_linkname"
+
+  share_quest108:
+    id: 207
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest108.png"
+    send_post: "quest_complete_quest108_body"
+    send_button: "quest_complete_quest108_accept"
+    receive_post: "quest_complete_quest108_caption"
+    receive_button: "quest_complete_quest108_linkname"
+
+  share_quest109:
+    id: 208
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 230}
+    image: "items/city/quests/quest109.png"
+    send_post: "quest_complete_quest109_body"
+    send_button: "quest_complete_quest109_accept"
+    receive_post: "quest_complete_quest109_caption"
+    receive_button: "quest_complete_quest109_linkname"
+
+  share_quest110:
+    id: 209
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 330}
+    image: "items/city/quests/quest110.png"
+    send_post: "quest_complete_quest110_body"
+    send_button: "quest_complete_quest110_accept"
+    receive_post: "quest_complete_quest110_caption"
+    receive_button: "quest_complete_quest110_linkname"
+
+  share_quest111:
+    id: 210
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 230}
+    image: "items/city/quests/quest111.png"
+    send_post: "quest_complete_quest111_body"
+    send_button: "quest_complete_quest111_accept"
+    receive_post: "quest_complete_quest111_caption"
+    receive_button: "quest_complete_quest111_linkname"
+
+  share_quest112:
+    id: 211
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 270}
+    image: "items/city/quests/quest112.png"
+    send_post: "quest_complete_quest112_body"
+    send_button: "quest_complete_quest112_accept"
+    receive_post: "quest_complete_quest112_caption"
+    receive_button: "quest_complete_quest112_linkname"
+
+  share_quest113:
+    id: 212
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 230}
+    image: "items/city/quests/quest113.png"
+    send_post: "quest_complete_quest113_body"
+    send_button: "quest_complete_quest113_accept"
+    receive_post: "quest_complete_quest113_caption"
+    receive_button: "quest_complete_quest113_linkname"
+
+  share_quest114:
+    id: 213
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 70}
+    image: "items/city/quests/quest114.png"
+    send_post: "quest_complete_quest114_body"
+    send_button: "quest_complete_quest114_accept"
+    receive_post: "quest_complete_quest114_caption"
+    receive_button: "quest_complete_quest114_linkname"
+
+  share_quest115:
+    id: 214
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 400}
+    image: "items/city/quests/quest115.png"
+    send_post: "quest_complete_quest115_body"
+    send_button: "quest_complete_quest115_accept"
+    receive_post: "quest_complete_quest115_caption"
+    receive_button: "quest_complete_quest115_linkname"
+
+  share_quest116:
+    id: 215
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+    image: "items/city/quests/quest116.png"
+    send_post: "quest_complete_quest116_body"
+    send_button: "quest_complete_quest116_accept"
+    receive_post: "quest_complete_quest116_caption"
+    receive_button: "quest_complete_quest116_linkname"
+
+  share_quest117:
+    id: 216
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 270}
+    image: "items/city/quests/quest117.png"
+    send_post: "quest_complete_quest117_body"
+    send_button: "quest_complete_quest117_accept"
+    receive_post: "quest_complete_quest117_caption"
+    receive_button: "quest_complete_quest117_linkname"
+
+  share_quest118:
+    id: 217
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 130}
+    image: "items/city/quests/quest118.png"
+    send_post: "quest_complete_quest118_body"
+    send_button: "quest_complete_quest118_accept"
+    receive_post: "quest_complete_quest118_caption"
+    receive_button: "quest_complete_quest118_linkname"
+
+  share_quest119:
+    id: 218
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 270}
+    image: "items/city/quests/quest119.png"
+    send_post: "quest_complete_quest119_body"
+    send_button: "quest_complete_quest119_accept"
+    receive_post: "quest_complete_quest119_caption"
+    receive_button: "quest_complete_quest119_linkname"
+
+  share_quest120:
+    id: 219
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/quest120.png"
+    send_post: "quest_complete_quest120_body"
+    send_button: "quest_complete_quest120_accept"
+    receive_post: "quest_complete_quest120_caption"
+    receive_button: "quest_complete_quest120_linkname"
+
+  share_quest121:
+    id: 220
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest121.png"
+    send_post: "quest_complete_quest121_body"
+    send_button: "quest_complete_quest121_accept"
+    receive_post: "quest_complete_quest121_caption"
+    receive_button: "quest_complete_quest121_linkname"
+
+  share_quest122:
+    id: 221
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 270}
+    image: "items/city/quests/quest122.png"
+    send_post: "quest_complete_quest122_body"
+    send_button: "quest_complete_quest122_accept"
+    receive_post: "quest_complete_quest122_caption"
+    receive_button: "quest_complete_quest122_linkname"
+
+  share_quest123:
+    id: 222
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/quest123.png"
+    send_post: "quest_complete_quest123_body"
+    send_button: "quest_complete_quest123_accept"
+    receive_post: "quest_complete_quest123_caption"
+    receive_button: "quest_complete_quest123_linkname"
+
+  share_quest124:
+    id: 223
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest124.png"
+    send_post: "quest_complete_quest124_body"
+    send_button: "quest_complete_quest124_accept"
+    receive_post: "quest_complete_quest124_caption"
+    receive_button: "quest_complete_quest124_linkname"
+
+  share_quest125:
+    id: 224
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 270}
+    image: "items/city/quests/quest125.png"
+    send_post: "quest_complete_quest125_body"
+    send_button: "quest_complete_quest125_accept"
+    receive_post: "quest_complete_quest125_caption"
+    receive_button: "quest_complete_quest125_linkname"
+
+  share_quest126:
+    id: 225
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 180}
+    image: "items/city/quests/quest126.png"
+    send_post: "quest_complete_quest126_body"
+    send_button: "quest_complete_quest126_accept"
+    receive_post: "quest_complete_quest126_caption"
+    receive_button: "quest_complete_quest126_linkname"
+
+  share_quest127:
+    id: 226
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 270}
+    image: "items/city/quests/quest127.png"
+    send_post: "quest_complete_quest127_body"
+    send_button: "quest_complete_quest127_accept"
+    receive_post: "quest_complete_quest127_caption"
+    receive_button: "quest_complete_quest127_linkname"
+
+  share_quest128:
+    id: 227
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 170}
+    image: "items/city/quests/quest128.png"
+    send_post: "quest_complete_quest128_body"
+    send_button: "quest_complete_quest128_accept"
+    receive_post: "quest_complete_quest128_caption"
+    receive_button: "quest_complete_quest128_linkname"
+
+  share_quest129:
+    id: 228
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 270}
+    image: "items/city/quests/quest129.png"
+    send_post: "quest_complete_quest129_body"
+    send_button: "quest_complete_quest129_accept"
+    receive_post: "quest_complete_quest129_caption"
+    receive_button: "quest_complete_quest129_linkname"
+
+  share_quest130:
+    id: 229
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 120}
+    image: "items/city/quests/quest130.png"
+    send_post: "quest_complete_quest130_body"
+    send_button: "quest_complete_quest130_accept"
+    receive_post: "quest_complete_quest130_caption"
+    receive_button: "quest_complete_quest130_linkname"
+
+  share_quest131:
+    id: 230
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 175}
+    image: "items/city/quests/quest131.png"
+    send_post: "quest_complete_quest131_body"
+    send_button: "quest_complete_quest131_accept"
+    receive_post: "quest_complete_quest131_caption"
+    receive_button: "quest_complete_quest131_linkname"
+
+  share_quest132:
+    id: 231
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 150}
+    image: "items/city/quests/quest132.png"
+    send_post: "quest_complete_quest132_body"
+    send_button: "quest_complete_quest132_accept"
+    receive_post: "quest_complete_quest132_caption"
+    receive_button: "quest_complete_quest132_linkname"
+
+  share_quest133:
+    id: 232
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+    image: "items/city/quests/quest133.png"
+    send_post: "quest_complete_quest133_body"
+    send_button: "quest_complete_quest133_accept"
+    receive_post: "quest_complete_quest133_caption"
+    receive_button: "quest_complete_quest133_linkname"
+
+  share_quest134:
+    id: 233
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 135}
+    image: "items/city/quests/quest134.png"
+    send_post: "quest_complete_quest134_body"
+    send_button: "quest_complete_quest134_accept"
+    receive_post: "quest_complete_quest134_caption"
+    receive_button: "quest_complete_quest134_linkname"
+
+  share_quest135:
+    id: 234
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 150}
+    image: "items/city/quests/quest135.png"
+    send_post: "quest_complete_quest135_body"
+    send_button: "quest_complete_quest135_accept"
+    receive_post: "quest_complete_quest135_caption"
+    receive_button: "quest_complete_quest135_linkname"
+
+  share_quest136:
+    id: 235
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 275}
+    image: "items/city/quests/quest136.png"
+    send_post: "quest_complete_quest136_body"
+    send_button: "quest_complete_quest136_accept"
+    receive_post: "quest_complete_quest136_caption"
+    receive_button: "quest_complete_quest136_linkname"
+
+  share_quest137:
+    id: 236
+    <<: *quest1
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 150}
+    image: "items/city/quests/quest137.png"
+    send_post: "quest_complete_quest137_body"
+    send_button: "quest_complete_quest137_accept"
+    receive_post: "quest_complete_quest137_caption"
+    receive_button: "quest_complete_quest137_linkname"
+
+  ask_movie_ticket:
+    id: 3000
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1500}
+    image: "items/city/quest_invite_friends.png"
+    send_post: "ask_movie_ticket_post"
+    send_button: "ask_movie_ticket_post_button"
+    receive_post: "ask_movie_ticket_receive"
+    receive_button: "ask_movie_ticket_receive_button"
+    expire: 24
+    max_count: 5
+    limited: true
+    call_back_request: "ask_movie_ticket_back"
+
+  ask_movie_ticket_back:
+    id: 3001
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - movie_ticket: {min_quantity: 1}
+    image: "items/city/quest_invite_friends.png"
+    send_post: "ask_movie_ticket_back_post"
+    send_button: "ask_movie_ticket_back_post_button"
+    receive_post: "ask_movie_ticket_back_receive"
+    receive_button: "ask_movie_ticket_back_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+    is_callback: true
+
+  ask_racket:
+    id: 3002
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    image: "items/city/quest_tennis_racket.png"
+    send_post: "ask_racket_post"
+    send_button: "ask_racket_post_button"
+    receive_post: "ask_racket_receive"
+    receive_button: "ask_racket_receive_button"
+    expire: 24
+    max_count: 5
+    limited: true
+    call_back_request: "ask_racket_back"
+
+  ask_racket_back:
+    id: 3003
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - racket: {min_quantity: 1}
+    image: "items/city/quest_tennis_racket.png"
+    send_post: "ask_racket_back_post"
+    send_button: "ask_racket_back_post_button"
+    receive_post: "ask_racket_back_receive"
+    receive_button: "ask_racket_back_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+    is_callback: true
+
+  ask_paper_pack:
+    id: 3004
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    image: "items/city/quest_paper_pack.png"
+    send_post: "ask_paper_pack_post"
+    send_button: "ask_paper_pack_post_button"
+    receive_post: "ask_paper_pack_receive"
+    receive_button: "ask_paper_pack_receive_button"
+    expire: 24
+    max_count: 10
+    limited: true
+    call_back_request: "ask_paper_pack_back"
+
+  ask_paper_pack_back:
+    id: 3005
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - paper_pack: {min_quantity: 1}
+    image: "items/city/quest_paper_pack.png"
+    send_post: "ask_paper_pack_back_post"
+    send_button: "ask_paper_pack_back_post_button"
+    receive_post: "ask_paper_pack_back_receive"
+    receive_button: "ask_paper_pack_back_receive_button"
+    expire: 24
+    max_count: 10
+    limited: false
+    is_callback: true
+
+  ask_neon_lights:
+    id: 3006
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1500}
+    image: "items/city/quest_neon_lights.png"
+    send_post: "ask_neon_lights_post"
+    send_button: "ask_neon_lights_post_button"
+    receive_post: "ask_neon_lights_receive"
+    receive_button: "ask_neon_lights_receive_button"
+    expire: 24
+    max_count: 10
+    limited: true
+    call_back_request: "ask_neon_lights_back"
+
+  ask_neon_lights_back:
+    id: 3007
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - neon_lights: {min_quantity: 1}
+    image: "items/city/quest_invite_friends.png"
+    send_post: "ask_neon_lights_back_post"
+    send_button: "ask_neon_lights_back_post_button"
+    receive_post: "ask_neon_lights_back_receive"
+    receive_button: "ask_neon_lights_back_receive_button"
+    expire: 24
+    max_count: 10
+    limited: false
+    is_callback: true
+
+  ask_water_thermometer:
+    id: 3008
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 2000}
+    image: "items/city/quest_water_thermometer.png"
+    send_post: "ask_water_thermometer_post"
+    send_button: "ask_water_thermometer_post_button"
+    receive_post: "ask_water_thermometer_receive"
+    receive_button: "ask_water_thermometer_receive_button"
+    expire: 24
+    max_count: 10
+    limited: true
+    call_back_request: "ask_water_thermometer_back"
+
+  ask_water_thermometer_back:
+    id: 3009
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - water_thermometer: {min_quantity: 1}
+    image: "items/city/quest_water_thermometer.png"
+    send_post: "ask_water_thermometer_back_post"
+    send_button: "ask_water_thermometer_back_post_button"
+    receive_post: "ask_water_thermometer_back_receive"
+    receive_button: "ask_water_thermometer_back_receive_button"
+    expire: 24
+    max_count: 10
+    limited: false
+    is_callback: true
+
+  ask_military_construction_permission:
+    id: 3010
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1500}
+    image: "items/city/quest_military_base_permission.png"
+    send_post: "ask_military_construction_permission_post"
+    send_button: "ask_military_construction_permission_post_button"
+    receive_post: "ask_military_construction_permission_receive"
+    receive_button: "ask_military_construction_permission_receive_button"
+    expire: 24
+    max_count: 10
+    limited: true
+    call_back_request: "ask_military_construction_permission_back"
+
+  ask_military_construction_permission_back:
+    id: 3011
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - military_construction_permission: {min_quantity: 1}
+    image: "items/city/quest_military_base_permission.png"
+    send_post: "ask_military_construction_permission_back_post"
+    send_button: "ask_military_construction_permission_back_post_button"
+    receive_post: "ask_military_construction_permission_back_receive"
+    receive_button: "ask_military_construction_permission_back_receive_button"
+    expire: 24
+    max_count: 10
+    limited: false
+    is_callback: true
+
+  ask_control_block:
+    id: 3012
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 2000}
+    image: "items/city/quest_control_block.png"
+    send_post: "ask_control_block_post"
+    send_button: "ask_control_block_post_button"
+    receive_post: "ask_control_block_receive"
+    receive_button: "ask_control_block_receive_button"
+    expire: 24
+    max_count: 10
+    limited: true
+    call_back_request: "ask_control_block_back"
+
+  ask_control_block_back:
+    id: 3013
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - control_block: {min_quantity: 1}
+    image: "items/city/quest_control_block.png"
+    send_post: "ask_control_block_back_post"
+    send_button: "ask_control_block_back_post_button"
+    receive_post: "ask_control_block_back_receive"
+    receive_button: "ask_control_block_back_receive_button"
+    expire: 24
+    max_count: 10
+    limited: false
+    is_callback: true
+
+  ask_equipment_for_photography:
+    id: 3014
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 2000}
+    image: "items/city/quest_equipment_for_photography.png"
+    send_post: "ask_equipment_for_photography_post"
+    send_button: "ask_equipment_for_photography_post_button"
+    receive_post: "ask_equipment_for_photography_receive"
+    receive_button: "ask_equipment_for_photography_receive_button"
+    expire: 24
+    max_count: 10
+    limited: true
+    call_back_request: "ask_equipment_for_photography_back"
+
+  ask_equipment_for_photography_back:
+    id: 3015
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - equipment_for_photography: {min_quantity: 1}
+    image: "items/city/quest_equipment_for_photography.png"
+    send_post: "ask_equipment_for_photography_back_post"
+    send_button: "ask_equipment_for_photography_back_post_button"
+    receive_post: "ask_equipment_for_photography_back_receive"
+    receive_button: "ask_equipment_for_photography_back_receive_button"
+    expire: 24
+    max_count: 10
+    limited: false
+    is_callback: true
+
+  ask_element_of_the_smoke_protection:
+    id: 3016
+    not_wait_for_drop: true
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 3000}
+    image: "items/city/quest_smoke_protection.png"
+    send_post: "ask_element_of_the_smoke_protection_post"
+    send_button: "ask_element_of_the_smoke_protection_post_button"
+    receive_post: "ask_element_of_the_smoke_protection_receive"
+    receive_button: "ask_element_of_the_smoke_protection_receive_button"
+    expire: 24
+    max_count: 10
+    limited: true
+    call_back_request: "ask_element_of_the_smoke_protection_back"
+
+  ask_element_of_the_smoke_protection_back:
+    id: 3017
+    not_wait_for_drop: true
+    request_type: personal
+    reward:
+      - roll: 0
+        items:
+          - element_of_the_smoke_protection: {min_quantity: 1}
+    image: "items/city/quest_smoke_protection.png"
+    send_post: "ask_element_of_the_smoke_protection_back_post"
+    send_button: "ask_element_of_the_smoke_protection_back_post_button"
+    receive_post: "ask_element_of_the_smoke_protection_back_receive"
+    receive_button: "ask_element_of_the_smoke_protection_back_receive_button"
+    expire: 24
+    max_count: 10
+    limited: false
+    is_callback: true
+
+  visit_international_passenger_traffic:
+    id: 4000
+    request_type: visit
+    image: "items/city/intl_passenger.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1500}
+    expire: 24
+    max_count: 6
+    limited: false
+
+  visit_carriage_engines_for_missiles:
+    id: 4001
+    request_type: visit
+    image: "items/city/engines_for_missiles.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1500}
+    expire: 24
+    max_count: 3
+    limited: false
+
+  visit_power_transformers_transportation:
+    id: 4002
+    request_type: visit
+    image: "items/city/power_transformers.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 800}
+    expire: 24
+    max_count: 3
+    limited: false
+
+  visit_superfast_passenger_transportation:
+    id: 4003
+    request_type: visit
+    image: "items/city/superfast_passenger.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 8
+    limited: false
+
+  visit_petroleum_products_transportation:
+    id: 4004
+    request_type: visit
+    image: "items/city/petroleum_products.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1100}
+    expire: 24
+    max_count: 4
+    limited: false
+
+  visit_suburban_passanger_transportation:
+    id: 4005
+    request_type: visit
+    image: "items/city/suburban_passanger.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1200}
+    expire: 24
+    max_count: 10
+    limited: false
+
+  visit_ground_forces_transportation:
+    id: 4006
+    request_type: visit
+    image: "items/city/superfast_passenger.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1300}
+    expire: 24
+    max_count: 11
+    limited: false
+
+  visit_timber_transportation:
+    id: 4007
+    request_type: visit
+    image: "items/city/superfast_passenger.png"
+    send_post: "visit_railroad_post"
+    send_button: "visit_railroad_post_button"
+    receive_post: "visit_railroad_receive"
+    receive_button: "visit_railroad_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1300}
+    expire: 24
+    max_count: 3
+    limited: false

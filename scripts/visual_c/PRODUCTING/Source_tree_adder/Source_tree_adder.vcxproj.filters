@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="producting">
+      <UniqueIdentifier>{089394c4-b135-4e12-85da-ebb789f43f97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="producting\source_tree_adder">
+      <UniqueIdentifier>{4f34d62c-1776-4596-b035-d444a671f44f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\producting\source_tree_adder\main_source_tree_adder.cpp">
+      <Filter>producting\source_tree_adder</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

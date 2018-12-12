@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{6b79d04e-2390-40f0-b696-9a9d89c49ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie">
+      <UniqueIdentifier>{2f64f04f-6f60-4b0f-b3cc-6759b10c1834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows">
+      <UniqueIdentifier>{b1bbc4fc-888c-44d4-8061-891bf4588ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows\realizations">
+      <UniqueIdentifier>{b771bd84-086d-4990-906e-6e88e178d5df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_dll.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_Event.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_EventArray.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_include.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_creator_OperatingSystem.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\realizations\EventHandleCache.h">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.hxx">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_creator_OperatingSystem.hxx">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\realizations\EventHandleCache.hxx">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_EventArray.hxx">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_Mutex.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\realizations\ms_windows_hidden_Thread.h">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_File.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_BufferedFile.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_UnbufferedFile.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_FileSystemControl.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_FileSystemControl.hxx">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.hxx">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_Stopwatch.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_UtilityControl.h">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_UtilityControl.hxx">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_Event.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_EventArray.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_creator_OperatingSystem.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\realizations\EventHandleCache.cpp">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_Mutex.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\realizations\ms_windows_hidden_Thread.cpp">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_File.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_BufferedFile.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_UnbufferedFile.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_FileSystemControl.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_Stopwatch.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\osie\ms_windows\ms_windows_UtilityControl.cpp">
+      <Filter>jmsf\osie\ms_windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+﻿- Compete Cule
+- Check and Complete Memory Management
+- 
+
+Old.
++ Complete Reals
++ Recheck Naturals and Integers.
+- Check Ansii_char and Ansii_string (remember an allocator).
+- Check list.
+- Complete Fixed_size_heap_allocator
+- Build Cule
+- Write tests for jmsf/typing
+- Write tests for jmsf/memorying
+- Write tests for jmsf/structing 
+
+
+Very Old.
+1. Create VA exception template with new conception
+2. Create VA file/line number template (exception parameter template)
+3. Create exceptions for the new code (types)
+4. Create test suites for the new code (types)

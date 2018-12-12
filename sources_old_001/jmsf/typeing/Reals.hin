@@ -1,0 +1,246 @@
+#pragma once
+
+
+#include "Reals.hpp"
+
+#include "Boolean.h"
+
+#include "jmsf/al_std/stl_hin/cmath_al_std.hin"
+
+
+namespace jmsf {
+namespace typeing {
+
+
+template< class A_type >
+Reals< A_type > Reals< A_type >::get_absolute() const noexcept {
+	return Reals< A_type >( math_compute_absolute( _real_value ) );
+}
+
+template< class A_type >
+Boolean Reals< A_type >::is_about_zero() const noexcept {
+	return math_is_about_zero( _real_value );
+}
+
+// math
+template< class A_type >
+Reals< A_type > Reals< A_type >::operator +( const Reals< A_type > &another ) const noexcept {
+	Reals< A_type > result = *this;
+	result += another;
+	return result;
+}
+
+template< class A_type >
+Reals< A_type > &Reals< A_type >::operator +=( const Reals< A_type > &another ) noexcept {
+	_real_value += another._real_value;
+	return *this;
+}
+
+template< class A_type >
+Reals< A_type > Reals< A_type >::operator -( const Reals< A_type > &another ) const noexcept {
+	Reals< A_type > result = *this;
+	result -= another;
+	return result;
+}
+
+template< class A_type >
+Reals< A_type > Reals< A_type >::operator -=( const Reals< A_type > &another ) noexcept {
+	_real_value -= another._real_value;
+	return *this;
+}
+
+template< class A_type >
+Reals< A_type > Reals< A_type >::operator -() const noexcept {
+	return Real( -_real_value );
+}
+
+template< class A_type >
+Reals< A_type > Reals< A_type >::operator *( const Reals< A_type > &another ) const noexcept {
+	Reals< A_type > result = *this;
+	result *= another;
+	return result;
+}
+
+template< class A_type >
+Reals< A_type > &Reals< A_type >::operator *=( const Reals< A_type > &another ) noexcept {
+	_real_value *= another._real_value;
+	return *this;
+}
+
+template< class A_type >
+Reals< A_type > Reals< A_type >::operator /( const Reals< A_type > &another ) const {
+	if ( another.is_about_zero() ) {
+		// throw division by zero
+	}
+
+	Reals< A_type > result = *this;
+	result *= another;
+	return result;
+}
+
+template< class A_type >
+Reals< A_type > &Reals< A_type >::operator /=( const Reals< A_type > &another ) {
+	if ( another.is_about_zero() ) {
+		// throw division by zero
+	}
+
+	_real_value *= another._real_value;
+	return *this;
+}
+
+template< class A_type >
+Reals< A_type > Reals< A_type >::operator %( const Reals< A_type > &another ) const {
+	if ( another.is_about_zero() ) {
+		// throw division by zero
+	}
+
+	Reals< A_type > result = *this;
+	result %= another;
+	return result;
+}
+
+template< class A_type >
+Reals< A_type > &Reals< A_type >::operator %=( const Reals< A_type > &another ) {
+	if ( another.is_about_zero() ) {
+		// throw division by zero
+	}
+
+	_real_value  = ::std::fmod( math_compute_absolute( _real_value ), math_compute_absolute( another._real_value ) );
+	return *this;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// comparison
+template< class A_type >
+Boolean Reals< A_type >::operator ==( const Reals< A_type > &another ) const noexcept {
+	return math_are_almost_equal( _real_value, another._real_value );
+}
+
+template< class A_type >
+Boolean Reals< A_type >::operator !=( const Reals< A_type > &another ) const noexcept {
+	return ( *this == another ).inversion();
+}
+
+template< class A_type >
+Boolean Reals< A_type >::operator <( const Reals< A_type > &another ) const noexcept {
+	return math_are_almost_equal( _real_value, another._real_value ) ? False : Boolean::create( _real_value < another._real_value );
+}
+
+template< class A_type >
+Boolean Reals< A_type >::operator <=( const Reals< A_type > &another ) const noexcept {
+	return math_are_almost_equal( _real_value, another._real_value ) ? True : Boolean::create( _real_value < another._real_value );
+}
+
+template< class A_type >
+Boolean Reals< A_type >::operator >( const Reals< A_type > &another ) const noexcept {
+	return math_are_almost_equal( _real_value, another._real_value ) ? False : Boolean::create( _real_value > another._real_value );
+}
+
+template< class A_type >
+Boolean Reals< A_type >::operator >=( const Reals< A_type > &another ) const noexcept {
+	return math_are_almost_equal( _real_value, another._real_value ) ? True : Boolean::create( _real_value > another._real_value );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Boolean Reals< A_type >::is_nill() const noexcept {
+	const Boolean is_this_real_zero = math_is_about_zero( _real_value );
+
+	if ( is_this_real_zero ) {
+		Reals< A_type > &non_constant_this = const_cast< Reals< A_type > & >( *this );
+		non_constant_this._real_value = A_type( 0 );
+	}
+
+	return is_this_real_zero;
+}
+
+template< class A_type >
+Boolean Reals< A_type >::is_not_nill() const noexcept {
+	return is_nill().inversion();
+}
+
+template< class A_type >
+Boolean Reals< A_type >::is_positive() const noexcept {
+	return is_negative().inversion();
+}
+
+template< class A_type >
+Boolean Reals< A_type >::is_negative() const noexcept {
+	if ( is_nill() ) return False;
+
+	return Boolean::create( _real_value < A_type( 0 ) );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+A_type Reals< A_type >::get_native_value() const noexcept {
+	return _real_value;
+}
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type >
+Reals< A_type >::~Reals() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Reals< A_type >::Reals() noexcept {
+	_real_value = A_type( 0 );
+}
+
+// static
+template< class A_type >
+Reals< A_type > Reals< A_type >::create( const A_type real_value ) noexcept {
+	return Reals< A_type >( real_value );
+}
+
+template< class A_type >
+Reals< A_type >::Reals( const A_type real_value ) noexcept {
+	_real_value = real_value;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Reals< A_type >::Reals( const Reals< A_type > &another ) noexcept {
+	_real_value = another._real_value;
+}
+
+template< class A_type >
+const Reals< A_type > &Reals< A_type >::operator =( const Reals< A_type > &another ) noexcept {
+	if ( &another == this ) return *this;
+
+	_real_value = another._real_value;
+	return *this;
+}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// statics
+template< class A_type >
+A_type Reals< A_type >::math_compute_absolute( const A_type real_value ) noexcept {
+	return real_value < A_type( 0 ) ? -real_value : real_value;
+}
+
+// template<>
+// Boolean Reals< internals::platform_short_real >::math_is_about_zero( const internals::platform_short_real real_value ) noexcept {
+// 	return Boolean::create( !( math_compute_absolute( real_value ) > SHORT_REAL_DEFAULT_ACCURACY ) );
+// }
+//
+// template<>
+// Boolean Reals< internals::platform_real >::math_is_about_zero( const internals::platform_real real_value ) noexcept {
+// 	return Boolean::create( !( math_compute_absolute( real_value ) > REAL_DEFAULT_ACCURACY ) );
+// }
+
+template< class A_type >
+Boolean Reals< A_type >::math_are_almost_equal( const A_type real_value, const A_type another_real_value ) noexcept {
+	return math_is_about_zero( real_value - another_real_value );
+}
+//~statics
+
+
+} // namespace typeing
+} // namespace jmsf

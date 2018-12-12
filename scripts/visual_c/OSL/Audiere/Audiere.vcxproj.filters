@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{9a5712df-754e-445e-8e82-97219e20f630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\audiere">
+      <UniqueIdentifier>{4618a917-bf42-4fa8-a52c-fcbec5455a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\audiere\hiddens">
+      <UniqueIdentifier>{374a6c32-9049-405f-8f00-18921e68ff3f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\audiere_dll.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\audiere.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\basic_source.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\debug.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\default_file.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_ds.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_ds_buffer.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_ds_stream.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_mixer.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_mm.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_null.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\dumb_resample.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\input_aiff.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\input_ogg.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\input_wav.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\internal.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\mci_device.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\memory_file.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\resampler.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\resource.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\threads.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\timer.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\types.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\utility.h">
+      <Filter>osl\audiere</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\basic_source.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\cd_win32.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\debug.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_ds.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_ds_buffer.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_ds_stream.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_mixer.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_mm.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_null.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\dumb_resample.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\dxguid.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\file_ansi.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input_aiff.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input_ogg.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input_wav.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\loop_point_source.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\memory_file.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\midi_mci.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\noise.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\resampler.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\sample_buffer.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\sound.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\sound_effect.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\square_wave.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\threads_win32.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\timer_win32.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\tone.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\utility.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\version.cpp">
+      <Filter>osl\audiere</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

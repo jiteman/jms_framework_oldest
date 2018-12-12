@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ea">
+      <UniqueIdentifier>{b87feeaf-1580-4614-81eb-94066bf4e68e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\threading">
+      <UniqueIdentifier>{b9b49532-8361-4018-8e95-96e70e1fb15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\threading\internal">
+      <UniqueIdentifier>{7cdcbd9a-b313-4b30-8002-bdb27b7e9205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\threading\null">
+      <UniqueIdentifier>{22e4b866-33da-48e2-8a88-6165152b4127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\threading\x86">
+      <UniqueIdentifier>{68f5972b-8d3a-4187-a6b7-40701afbc4b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\threading\x86-64">
+      <UniqueIdentifier>{2f8ff5f9-24cd-4f7d-82bf-6088178066ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\internal\atomic.h">
+      <Filter>ea\threading\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\internal\config.h">
+      <Filter>ea\threading\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\internal\dllinfo.h">
+      <Filter>ea\threading\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\x86-64\eathread_atomic_x86-64.h">
+      <Filter>ea\threading\x86-64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\x86-64\eathread_sync_x86-64.h">
+      <Filter>ea\threading\x86-64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\x86\eathread_atomic_x86.h">
+      <Filter>ea\threading\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\x86\eathread_sync_x86.h">
+      <Filter>ea\threading\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_atomic.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_atomicstruct.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_barrier.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_callstack.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_callstack_context.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_condition.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_fiber.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_futex.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_list.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_lockfree.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_mutex.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_pool.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_rwmutex.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_rwmutex_ip.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_rwspinlock.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_rwspinlockw.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_semaphore.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_spinlock.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_storage.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_sync.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\eathread_thread.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\shared_array_mt.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\shared_ptr_mt.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\threading\version.h">
+      <Filter>ea\threading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\x86\eathread_callstack_x86.cpp">
+      <Filter>ea\threading\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\null\eathread_callstack_null.cpp">
+      <Filter>ea\threading\null</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_atomic.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_barrier.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_callstack.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_condition.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_fiber.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_futex.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_mutex.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_pool.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_rwmutex.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_rwmutex_ip.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_semaphore.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_storage.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\eathread_thread.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\threading\version.cpp">
+      <Filter>ea\threading</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

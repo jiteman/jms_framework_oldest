@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{accbaf8a-9dcd-469e-a48b-ad6be5ec2b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libmng">
+      <UniqueIdentifier>{f3d55514-f45f-4011-b539-c5e2a1898cf4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_chunk_descr.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_chunk_io.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_chunk_prc.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_chunks.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_cms.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_conf.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_data.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_display.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_dither.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_error.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_filter.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_jpeg.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_memory.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_object_prc.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_objects.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_pixels.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_read.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_trace.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_types.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_write.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_zlib.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libmng\libmng_dll.h">
+      <Filter>osl\libmng</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_callback_xs.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_chunk_descr.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_chunk_io.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_chunk_prc.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_chunk_xs.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_cms.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_display.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_dither.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_error.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_filter.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_hlapi.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_jpeg.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_object_prc.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_pixels.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_prop_xs.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_read.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_trace.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_write.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libmng\libmng_zlib.c">
+      <Filter>osl\libmng</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

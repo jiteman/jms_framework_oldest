@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nppntt">
+      <UniqueIdentifier>{f44cb6b2-ac52-4caf-b61b-1368f06a27de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm">
+      <UniqueIdentifier>{6fc90815-118f-420f-99d3-56986fab5ca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\file_filters">
+      <UniqueIdentifier>{59478c37-9303-4f64-a135-8ccb4e1b7164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\exceptions">
+      <UniqueIdentifier>{3993f026-8425-4200-8efa-d9d8c2a74eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\staticstics">
+      <UniqueIdentifier>{1603f6ba-2e6e-4a16-994b-83f4c05058ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\processing">
+      <UniqueIdentifier>{40012cb9-dfc8-4795-8b7f-45cb42e76157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals">
+      <UniqueIdentifier>{b1f6bd8d-9db0-40ee-a794-cb518f420acf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals\data">
+      <UniqueIdentifier>{c2d60cbb-035f-4197-93b7-f963b12564c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals\software">
+      <UniqueIdentifier>{ecd97465-bb4b-4462-8ad1-e418220a1899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals\others">
+      <UniqueIdentifier>{f8bf8bc8-e903-412d-964b-c20296731277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals\data\statistics">
+      <UniqueIdentifier>{45e41f0b-f345-4209-a2b6-2bc365f02ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\realizations">
+      <UniqueIdentifier>{50da884f-2438-42cd-8e5a-db4097731d43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\staticstics\realizations">
+      <UniqueIdentifier>{9a69b297-fcc8-4fd7-9090-e77c122abe25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\processing\realizations">
+      <UniqueIdentifier>{33a8c79c-0964-478c-8131-cbf8c999f8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\file_filters\realizations">
+      <UniqueIdentifier>{8bb34c36-b58b-4330-9ff0-9f20142b121d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals\data\realizations">
+      <UniqueIdentifier>{d0e7ab0f-41e4-4c61-a5e5-247a47128bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals\data\statistics\realizations">
+      <UniqueIdentifier>{9a048906-864e-4d1c-a274-3dd41988662f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\mdm\externals\software\realizations">
+      <UniqueIdentifier>{af8b5ebb-06cc-4a57-a058-ea54295e7cd8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\ExternalSoftware.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\factory_MaskDm.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\factory_MaskDmObjects.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\FileFilters.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\interface_MaskDm.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\MaskDm.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\ProcessingProcesses.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\ProcessingQueues.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\StatisticsProcesses.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\StatisticsQueues.cpp">
+      <Filter>nppntt\mdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_CantConnectToDataBase.cpp">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_CantStartDecipheringHardware.cpp">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_DllNotFound.cpp">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_StatisticsError.cpp">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\DecipheredVoiceFileAndKeyPairStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\DeletedServiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\DeletedVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\factory_StatisticsProcesses.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\NewServiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\NewVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\NotDecipheredVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultServiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultVoiceFileAndServiceFilePairStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\VoiceFileForDecipheringStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\factory_ProcessingProcesses.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\ImmediateVoiceFileAndKeyPairVerifier.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\KeyArray.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\LastChanceServiceFileMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\NewFileAppenders.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\NewKeyDispatcher.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\NewServiceFileDispatcher.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\NewVoiceFileDispatcher.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\PreliminaryVoiceFileAndKeyMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\RecurrentVoiceFileAndKeyMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\ResultToStorageAppender.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileAndKeyMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileArray.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileDeleter.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\VoiceFileDecipher.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\VoiceFileDeleter.cpp">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\file_filters\factory_FileFilters.cpp">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\file_filters\observable_FileFilter.cpp">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\file_filters\observer_FileFilter.cpp">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_FileFilter.cpp">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_Key.cpp">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_ServiceFile.cpp">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_VoiceFile.cpp">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\factory_ExternalData.cpp">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_AppendedFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_DecipheringFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_DeletedFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_StoredFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_Summary.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\factory_ed_Statistics.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractApplyKey.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractCheckMatchVoiceSMS.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractDataBase.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractDecipher.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractFileDescriptor.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractFilter.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractKcDll.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractKey.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractLog.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractStatistics.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\DirectoryWalker.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\exception_FileAppender.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\FileAppender.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\FileFinder.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\StringAlgorithms.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\others\TimeFunctions.cpp">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_ExternalSoftware.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_factory_MaskDm.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_factory_MaskDmObjects.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_FileFilters.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_MaskDm.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_ProcessingProcesses.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_ProcessingQueues.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_StatisticsProcesses.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_StatisticsQueues.cpp">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_DecipheredVoiceFileAndKeyPairStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_DeletedServiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_DeletedVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_factory_StatisticsProcesses.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_NewServiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_NewVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_NotDecipheredVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_ResultServiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_ResultVoiceFileAndServiceFilePairStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_ResultVoiceFileStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_VoiceFileForDecipheringStatisticsProcess.cpp">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_factory_ProcessingProcesses.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ImmediateVoiceFileAndKeyPairVerifier.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_KeyArray.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_LastChanceServiceFileMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewFileAppenders.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewKeyDispatcher.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewServiceFileDispatcher.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewVoiceFileDispatcher.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_PreliminaryVoiceFileAndKeyMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_RecurrentVoiceFileAndKeyMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ResultToStorageAppender.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ServiceFileAndKeyMatchFinder.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ServiceFileArray.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ServiceFileDeleter.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_VoiceFileDecipher.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_VoiceFileDeleter.cpp">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\file_filters\realizations\realization_factory_FileFilters.cpp">
+      <Filter>nppntt\mdm\file_filters\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\file_filters\realizations\realization_observable_FileFilter.cpp">
+      <Filter>nppntt\mdm\file_filters\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\file_filters\realizations\realization_observer_FileFilter.cpp">
+      <Filter>nppntt\mdm\file_filters\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_FileFilter.cpp">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_Key.cpp">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_ServiceFile.cpp">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_VoiceFile.cpp">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_factory_ExternalData.cpp">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_AppendedFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_DecipheringFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_DeletedFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_StoredFiles.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_Summary.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_factory_ed_Statistics.cpp">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_Decipher.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_FileAppender.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_FileDeleter.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_ServiceFileAndKeyPairMatchChecker.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_StatisticsUpdater.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_StorageAppender.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_VoiceFileAndKeyPairMatchChecker.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\factory_ExternalSoftware.cpp">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_Decipher.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_FileAppender.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_FileDeleter.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_ServiceFileAndKeyPairMatchChecker.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_StatisticsUpdater.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_StorageAppender.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_VoiceFileAndKeyPairMatchChecker.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_factory_ExternalSoftware.cpp">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\ExternalSoftware.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\ExternalSoftware.hxx">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\factory_MaskDm.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\factory_MaskDmObjects.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\FileFilters.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\FileFilters.hxx">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\interface_MaskDm.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\MaskDm.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\MaskDm.hxx">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\mdm.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\mdm_dll.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\ProcessingProcesses.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\ProcessingProcesses.hxx">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\ProcessingQueues.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\ProcessingQueues.hxx">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\StatisticsProcesses.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\StatisticsProcesses.hxx">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\StatisticsQueues.h">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\StatisticsQueues.hxx">
+      <Filter>nppntt\mdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_CantConnectToDataBase.h">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_CantStartDecipheringHardware.h">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_DllNotFound.h">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\exceptions\exception_StatisticsError.h">
+      <Filter>nppntt\mdm\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\DecipheredVoiceFileAndKeyPairStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\DecipheredVoiceFileAndKeyPairStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\DeletedServiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\DeletedServiceFileStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\DeletedVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\DeletedVoiceFileStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\factory_StatisticsProcesses.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\NewServiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\NewServiceFileStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\NewVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\NewVoiceFileStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\NotDecipheredVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\NotDecipheredVoiceFileStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultServiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultServiceFileStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultVoiceFileAndServiceFilePairStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultVoiceFileAndServiceFilePairStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\ResultVoiceFileStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\VoiceFileForDecipheringStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\VoiceFileForDecipheringStatisticsProcess.hxx">
+      <Filter>nppntt\mdm\staticstics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\factory_ProcessingProcesses.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ImmediateVoiceFileAndKeyPairVerifier.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ImmediateVoiceFileAndKeyPairVerifier.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\KeyArray.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\KeyArray.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\LastChanceServiceFileMatchFinder.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\LastChanceServiceFileMatchFinder.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewFileAppenders.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewFileAppenders.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewKeyDispatcher.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewKeyDispatcher.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewServiceFileDispatcher.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewServiceFileDispatcher.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewVoiceFileDispatcher.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\NewVoiceFileDispatcher.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\PreliminaryVoiceFileAndKeyMatchFinder.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\PreliminaryVoiceFileAndKeyMatchFinder.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\RecurrentVoiceFileAndKeyMatchFinder.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\RecurrentVoiceFileAndKeyMatchFinder.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ResultToStorageAppender.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ResultToStorageAppender.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileAndKeyMatchFinder.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileAndKeyMatchFinder.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileArray.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileArray.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileDeleter.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\ServiceFileDeleter.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\VoiceFileDecipher.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\VoiceFileDecipher.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\VoiceFileDeleter.h">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\VoiceFileDeleter.hxx">
+      <Filter>nppntt\mdm\processing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\factory_FileFilters.h">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\observable_FileFilter.h">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\observable_FileFilter.hxx">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\observer_FileFilter.h">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\observer_FileFilter.hxx">
+      <Filter>nppntt\mdm\file_filters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_FileFilter.h">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_FileFilter.hxx">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_Key.h">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_Key.hxx">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_ServiceFile.h">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_ServiceFile.hxx">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_VoiceFile.h">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\ed_VoiceFile.hxx">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\factory_ExternalData.h">
+      <Filter>nppntt\mdm\externals\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_AppendedFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_AppendedFiles.hxx">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_DecipheringFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_DecipheringFiles.hxx">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_DeletedFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_DeletedFiles.hxx">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_StoredFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_StoredFiles.hxx">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_Summary.h">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\ed_Summary.hxx">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\factory_ed_Statistics.h">
+      <Filter>nppntt\mdm\externals\data\statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractApplyKey.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractCheckMatchVoiceSMS.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractDataBase.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractDecipher.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractEmulationDefines.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractFileDescriptor.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractFilter.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractKcDll.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractKey.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractLog.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\abstractStatistics.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\checkKeyStruct.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\DirectoryWalker.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\exception_FileAppender.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\external_header_antiwarning.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\external_source_antiwarning.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\FileAppender.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\FileDescription.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\FileFinder.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\StringAlgorithms.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\TimeFunctions.h">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_ExternalSoftware.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_factory_MaskDm.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_factory_MaskDm.hxx">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_factory_MaskDmObjects.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_factory_MaskDmObjects.hxx">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_FileFilters.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_MaskDm.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_ProcessingProcesses.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_ProcessingQueues.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_StatisticsProcesses.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\realizations\realization_StatisticsQueues.h">
+      <Filter>nppntt\mdm\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_DecipheredVoiceFileAndKeyPairStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_DeletedServiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_DeletedVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_factory_StatisticsProcesses.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_factory_StatisticsProcesses.hxx">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_NewServiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_NewVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_NotDecipheredVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_ResultServiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_ResultVoiceFileAndServiceFilePairStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_ResultVoiceFileStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\statistics\realizations\realization_VoiceFileForDecipheringStatisticsProcess.h">
+      <Filter>nppntt\mdm\staticstics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_factory_ProcessingProcesses.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_factory_ProcessingProcesses.hxx">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ImmediateVoiceFileAndKeyPairVerifier.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_KeyArray.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_LastChanceServiceFileMatchFinder.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewFileAppenders.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewKeyDispatcher.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewServiceFileDispatcher.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_NewVoiceFileDispatcher.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_PreliminaryVoiceFileAndKeyMatchFinder.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_RecurrentVoiceFileAndKeyMatchFinder.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ResultToStorageAppender.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ServiceFileAndKeyMatchFinder.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ServiceFileArray.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_ServiceFileDeleter.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_VoiceFileDecipher.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\processing\realizations\realization_VoiceFileDeleter.h">
+      <Filter>nppntt\mdm\processing\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\realizations\realization_factory_FileFilters.h">
+      <Filter>nppntt\mdm\file_filters\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\realizations\realization_observable_FileFilter.h">
+      <Filter>nppntt\mdm\file_filters\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\realizations\realization_observer_FileFilter.h">
+      <Filter>nppntt\mdm\file_filters\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_FileFilter.h">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_Key.h">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_ServiceFile.h">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_ed_VoiceFile.h">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_factory_ExternalData.h">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_AppendedFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_DecipheringFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_DeletedFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_StoredFiles.h">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_ed_Summary.h">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_factory_ed_Statistics.h">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_Decipher.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_Decipher.hxx">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_FileAppender.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_FileAppender.hxx">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_FileDeleter.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_FileDeleter.hxx">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_ServiceFileAndKeyPairMatchChecker.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_ServiceFileAndKeyPairMatchChecker.hxx">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_StatisticsUpdater.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_StatisticsUpdater.hxx">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_StorageAppender.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_StorageAppender.hxx">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_VoiceFileAndKeyPairMatchChecker.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\es_VoiceFileAndKeyPairMatchChecker.hxx">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\factory_ExternalSoftware.h">
+      <Filter>nppntt\mdm\externals\software</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_Decipher.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_FileAppender.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_FileDeleter.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_ServiceFileAndKeyPairMatchChecker.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_StatisticsUpdater.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_StorageAppender.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_es_VoiceFileAndKeyPairMatchChecker.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_factory_ExternalSoftware.h">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\software\realizations\realization_factory_ExternalSoftware.hxx">
+      <Filter>nppntt\mdm\externals\software\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\others\DataTypes.hxx">
+      <Filter>nppntt\mdm\externals\others</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\realizations\realization_factory_ExternalData.hxx">
+      <Filter>nppntt\mdm\externals\data\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\externals\data\statistics\realizations\realization_factory_ed_Statistics.hxx">
+      <Filter>nppntt\mdm\externals\data\statistics\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\mdm\file_filters\realizations\realization_factory_FileFilters.hxx">
+      <Filter>nppntt\mdm\file_filters\realizations</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

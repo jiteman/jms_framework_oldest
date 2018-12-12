@@ -1,0 +1,142 @@
+#pragma once
+
+
+#include "Amp.hpp"
+
+#include "Allocator.h"
+#include "jmsf/typeing/Boolean.h"
+
+#include "jmsf/validating/Should.hin"
+#include "Womp.hin"
+
+#include "jmsf/validating/logging_macroses.h"
+
+
+namespace jmsf {
+namespace memorying {
+
+
+template< class A_type >
+typeing::Boolean Amp< A_type >::is_empty() const noexcept {
+	return _the_memory_pointer.is_empty();
+}
+
+template< class A_type >
+typeing::Boolean Amp< A_type >::is_not_empty() const noexcept {
+	return _the_memory_pointer.is_not_empty();
+}
+
+template< class A_type >
+const A_type *Amp< A_type >::get() const {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Amp< A_type >::get()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< const A_type * >( _the_memory_pointer.get() );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+A_type *Amp< A_type >::take() {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Amp< A_type >::take()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< A_type * >( _the_memory_pointer.take() );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Memory_pointer Amp< A_type >::get_memory() const {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Amp< A_type >::get_memory()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return _the_memory_pointer;
+}
+
+template< class A_type >
+typeing::Memory_natural Amp< A_type >::get_quantity() const noexcept {
+	return _the_quantity;
+}
+
+template< class A_type >
+Womp< Allocator > Amp< A_type >::get_allocator() const noexcept {
+	return _the_allocator;
+}
+
+template< class A_type >
+typeing::Memory_natural Amp< A_type >::get_alignment() const noexcept {
+	return _the_alignment;
+}
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type >
+Amp< A_type >::~Amp() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Amp< A_type >::Amp() noexcept
+{}
+
+// static
+template< class A_type >
+Amp< A_type > Amp< A_type >::create(
+	const Memory_pointer &a_memory_pointer,
+	const typeing::Memory_natural a_quantity,
+	const Womp< Allocator > &an_allocator,
+	const typeing::Memory_natural an_alignment )
+{
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( a_memory_pointer.is_empty(), "Amp< A_type >::create()", JMSF_TYPE_NAME( A_type ) );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( a_quantity.is_nill(), "Amp< A_type >::create()", JMSF_TYPE_NAME( A_type ) );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( a_quantity.is_max(), "Amp< A_type >::create()", JMSF_TYPE_NAME( A_type ) );
+
+	if ( a_memory_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT( "Amp< A_type >::create()" );
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	} else if ( a_quantity.is_nill() || a_quantity.is_max() ) {
+		JMSF_LOG_ERROR_OUTPUT( "Amp< A_type >::create()" );
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	return Amp< A_type >( a_memory_pointer, a_quantity, an_allocator, an_alignment );
+}
+
+template< class A_type >
+Amp< A_type >::Amp(
+	const Memory_pointer &a_memory_pointer,
+	const typeing::Memory_natural a_quantity,
+	const Womp< Allocator > &an_allocator,
+	const typeing::Memory_natural an_alignment ) noexcept
+	:
+		_the_memory_pointer( a_memory_pointer ),
+		_the_quantity( a_quantity ),
+		_the_allocator( an_allocator ),
+		_the_alignment( an_alignment )
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Amp< A_type >::Amp( const Amp< A_type > &another ) noexcept
+	:
+		_the_memory_pointer( another._the_memory_pointer ),
+		_the_quantity( another._the_quantity ),
+		_the_allocator( another._the_allocator ),
+		_the_alignment( another._the_alignment )
+{}
+
+template< class A_type >
+const Amp< A_type > &Amp< A_type >::operator =( const Amp< A_type > &another ) noexcept {
+	if ( &another == this ) return *this;
+
+	_the_memory_pointer = another._the_memory_pointer;
+	_the_quantity = another._the_quantity;
+	_the_allocator = another._the_allocator;
+	_the_alignment = another._the_alignment;
+	return *this;
+}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+} // namespace memorying
+} // namespace jmsf

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{2cb8b426-47c6-4545-a7ea-d4ccef48a739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule">
+      <UniqueIdentifier>{13a0efaf-9f65-4f04-a01b-e526c90437f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule\execution">
+      <UniqueIdentifier>{83fe7c30-18e4-4146-922a-de9f10413baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule\printers">
+      <UniqueIdentifier>{89627fdd-3dcf-4735-8017-5194015342e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule\results">
+      <UniqueIdentifier>{a8e03801-1f99-4e79-bf34-39ff9a7be838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule\to_libs">
+      <UniqueIdentifier>{b9f6955a-0c0f-4a14-8166-39ad27e74931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule\user_interfaces">
+      <UniqueIdentifier>{ebcc6cf6-8557-491b-b56e-dc189f5531fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule\to_libs\system">
+      <UniqueIdentifier>{0b25fdc0-a809-488e-b6f7-9eba43823ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\cule\realizing">
+      <UniqueIdentifier>{6122df92-7e63-48be-ae58-8c8cafb50b0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\Assert.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\cule_main.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\exception_Cule.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\Test.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\TestFailure.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\TestRegistry.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\execution\SingleTestRunner.cpp">
+      <Filter>jmsf\cule\execution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\execution\TestRunner.cpp">
+      <Filter>jmsf\cule\execution</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\user_interfaces\DebugOutputUi.cpp">
+      <Filter>jmsf\cule\user_interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\user_interfaces\TextOutputUi.cpp">
+      <Filter>jmsf\cule\user_interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\user_interfaces\UiOutput.cpp">
+      <Filter>jmsf\cule\user_interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\to_libs\system\SystemTime.cpp">
+      <Filter>jmsf\cule\to_libs\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\results\TestResult.cpp">
+      <Filter>jmsf\cule\results</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\results\TestResultCollector.cpp">
+      <Filter>jmsf\cule\results</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\printers\TestFailurePrinter.cpp">
+      <Filter>jmsf\cule\printers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\printers\TestResultPrinter.cpp">
+      <Filter>jmsf\cule\printers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\realizing\realizing_Test_stop_watch.cpp">
+      <Filter>jmsf\cule\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\Cule_allocators.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\new_Test_stop_watch.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\cule\Test_stop_watch.cpp">
+      <Filter>jmsf\cule</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\Assert.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\cule.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\cule_dll.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\cule_main.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\exception_Cule.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\Test.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\Test.hxx">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\TestFailure.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\TestFailure.hxx">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\TestMacros.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\TestRegistry.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\TestRegistry.hxx">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\user_interfaces\DebugOutputUi.h">
+      <Filter>jmsf\cule\user_interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\user_interfaces\TextOutputUi.h">
+      <Filter>jmsf\cule\user_interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\user_interfaces\UiOutput.h">
+      <Filter>jmsf\cule\user_interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\user_interfaces\UiOutput.hxx">
+      <Filter>jmsf\cule\user_interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\to_libs\system\SystemTime.h">
+      <Filter>jmsf\cule\to_libs\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\to_libs\system\SystemTime.hxx">
+      <Filter>jmsf\cule\to_libs\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\results\TestResult.h">
+      <Filter>jmsf\cule\results</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\results\TestResult.hxx">
+      <Filter>jmsf\cule\results</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\results\TestResultCollector.h">
+      <Filter>jmsf\cule\results</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\printers\TestFailurePrinter.h">
+      <Filter>jmsf\cule\printers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\printers\TestResultPrinter.h">
+      <Filter>jmsf\cule\printers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\execution\TestRunner.h">
+      <Filter>jmsf\cule\execution</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\execution\SingleTestRunner.h">
+      <Filter>jmsf\cule\execution</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\realizing\realizing_Test_stop_watch.h">
+      <Filter>jmsf\cule\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\Cule_allocators.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\new_Test_stop_watch.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\cule\Test_stop_watch.h">
+      <Filter>jmsf\cule</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

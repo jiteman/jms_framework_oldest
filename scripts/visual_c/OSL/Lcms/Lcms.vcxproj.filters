@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{bea3b47d-739f-43cf-aeed-1aab57b17584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\lcms">
+      <UniqueIdentifier>{8752cd53-e965-45cd-9fdc-54c828e0d896}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmscam02.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmscgats.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmscnvrt.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmserr.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsgamma.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsgmt.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsintrp.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsio0.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsio1.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmslut.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsmd5.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsmtrx.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsnamed.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsopt.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmspack.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmspcs.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsplugin.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsps2.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmssamp.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmssm.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmstypes.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsvirt.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmswtpnt.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\lcms\cmsxform.c">
+      <Filter>osl\lcms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\lcms\lcms_dll.h">
+      <Filter>osl\lcms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\lcms\lcms2.h">
+      <Filter>osl\lcms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\lcms\lcms2_internal.h">
+      <Filter>osl\lcms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\lcms\lcms2_plugin.h">
+      <Filter>osl\lcms</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

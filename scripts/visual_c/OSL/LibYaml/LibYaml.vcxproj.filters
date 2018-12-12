@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{0b0f1336-6bea-49b5-8d5a-44bd91d1a8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libyaml">
+      <UniqueIdentifier>{a65c8297-2920-47a3-b0da-adbaaf53939b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\api.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\dumper.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\emitter.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\loader.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\parser.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\reader.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\scanner.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libyaml\writer.c">
+      <Filter>osl\libyaml</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libyaml\libyaml_dll.h">
+      <Filter>osl\libyaml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libyaml\yaml.h">
+      <Filter>osl\libyaml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libyaml\yaml_private.h">
+      <Filter>osl\libyaml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libyaml\config.h">
+      <Filter>osl\libyaml</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

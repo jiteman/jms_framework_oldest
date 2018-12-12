@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ea">
+      <UniqueIdentifier>{ff14435c-2f47-41c9-b8e7-7b3810132c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\stdc">
+      <UniqueIdentifier>{3a548676-79c5-4bb8-b59c-0582739fca94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\stdc\internal">
+      <UniqueIdentifier>{42359caa-542e-4da7-a5ab-2114db338288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\stdc\win32">
+      <UniqueIdentifier>{142c82ef-635e-4136-9f6c-96fd6348b5ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAAlignment.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EABitTricks.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAByteCrackers.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EACallback.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EACType.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EADateTime.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAEndian.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAFixedPoint.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAGlobal.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAHashCRC.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAHashString.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAMathHelp.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAMemory.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAProcess.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EARandom.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EARandomDistribution.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAScanf.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EASingleton.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EASprintf.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EASprintfOrdered.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAStdC.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAStopwatch.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EAString.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\EATextUtil.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\Int128_t.h">
+      <Filter>ea\stdc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\internal\Config.h">
+      <Filter>ea\stdc\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\internal\IntrusiveList.h">
+      <Filter>ea\stdc\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\internal\ScanfCore.h">
+      <Filter>ea\stdc\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\internal\SprintfCore.h">
+      <Filter>ea\stdc\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\internal\stdioEA.h">
+      <Filter>ea\stdc\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\stdc\internal\Thread.h">
+      <Filter>ea\stdc\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EACallback.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EACType.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EADateTime.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAFixedPoint.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAGlobal.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAHashCRC.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAHashString.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAMemory.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAProcess.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EARandom.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAScanf.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAScanfCore.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EASprintf.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EASprintfCore.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EASprintfOrdered.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAStdC.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAStopwatch.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EAString.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\EATextUtil.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\stdc\Int128_t.cpp">
+      <Filter>ea\stdc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\sources\ea\stdc\internal\EAMemory.inl">
+      <Filter>ea\stdc\internal</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\ea\stdc\internal\Thread.inl">
+      <Filter>ea\stdc\internal</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\ea\stdc\Win32\EAMathHelpWin32.inl">
+      <Filter>ea\stdc\win32</Filter>
+    </None>
+  </ItemGroup>
+</Project>

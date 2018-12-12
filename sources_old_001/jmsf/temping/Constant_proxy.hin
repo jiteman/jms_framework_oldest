@@ -1,0 +1,88 @@
+#pragma once
+
+
+#include "Constant_proxy.hpp"
+
+#include "internals/Base_for_constant_pointer_and_constant_proxy.hin"
+#include "internals/Type_data.hin"
+#include "internals/Proxy_deleter.hin"
+
+
+namespace jmsf {
+namespace temping {
+
+
+template< class A_type >
+const Constant_proxy< A_type > Constant_proxy< A_type >::get_nonlinked() const {
+	return create_nonlinked_for( this->get() );
+}
+
+// template< class A_type >
+// const Constant_proxy< A_type > Constant_proxy< A_type >::getWeakConstant() const {
+// 	return Constant_proxy< A_type >::create_nonlinked_for( get() );
+// }
+
+template< class A_type >
+const Constant_proxy< A_type > Constant_proxy< A_type >::get_as_shared( const memorying::Womp< memorying::Allocator > reference_counters_allocator ) const {
+	Constant_proxy< A_type > sharedProxy = Constant_proxy< A_type >::create_none();
+	static_cast< const internals::Base_for_both_constant_and_nonconstant< Proxy_deleter< A_type > > & >( sharedProxy ) = this->create_shared_from_this( reference_counters_allocator );
+	return sharedProxy;
+}
+
+// static
+template< class A_type >
+Constant_proxy< A_type > Constant_proxy< A_type >::create_none() {
+	return Constant_proxy< A_type >( temping_Constant_proxy_base_class_type::type_None, nullptr );
+}
+
+// static
+template< class A_type >
+Constant_proxy< A_type > Constant_proxy< A_type >::create_empty() {
+	return Constant_proxy< A_type >( temping_Constant_proxy_base_class_type::type_Empty, A_type::get_null() );
+}
+
+// static
+template< class A_type >
+Constant_proxy< A_type > Constant_proxy< A_type >::create_nonlinked_for( const memorying::Omp< A_type > &an_object_memory_pointer ) {
+	if ( an_object_memory_pointer.is_empty() ) {
+		return Constant_proxy< A_type >( temping_Constant_proxy_base_class_type::type_None, an_object_memory_pointer );
+	} else if ( an_object_memory_pointer.get_memory()->is_null() ) {
+		return Constant_proxy< A_type >( temping_Constant_proxy_base_class_type::type_Empty, an_object_memory_pointer );
+	} else {
+		return Constant_proxy< A_type >( temping_Constant_proxy_base_class_type::type_Nonlinked, an_object_memory_pointer );
+	}
+}
+
+// static
+template< class A_type >
+Constant_proxy< A_type > Constant_proxy< A_type >::create_unique( const memorying::Omp< A_type > &an_object_memory_pointer ) {
+	return Constant_proxy< A_type >( temping_Constant_proxy_base_class_type::type_Unique, an_object_memory_pointer );
+}
+
+// static
+template< class A_type >
+Constant_proxy< A_type > Constant_proxy< A_type >::create_shared( const memorying::Womp< memorying::Allocator > &reference_counters_allocator, const memorying::Omp< A_type > &pointerToObject ) {
+	return Constant_proxy< A_type >( reference_counters_allocator, pointerToObject );
+}
+
+template< class A_type >
+Constant_proxy< A_type >::Constant_proxy() noexcept
+	:
+		temping_Constant_proxy_base_class_type( temping_Constant_proxy_base_class_type::type_Empty, A_type::getNull().get() )
+{}
+
+template< class A_type >
+Constant_proxy< A_type >::Constant_proxy( const typeing::Shortest_natural type, const memorying::Omp< A_type > &an_object_memory_pointer )
+	:
+		temping_Constant_proxy_base_class_type( type, an_object_memory_pointer )
+{}
+
+template< class A_type >
+Constant_proxy< A_type >::Constant_proxy( const memorying::Womp< memorying::Allocator > &reference_counters_allocator, const memorying::Omp< A_type > &an_object_memory_pointer )
+	:
+		temping_Constant_proxy_base_class_type( reference_counters_allocator, an_object_memory_pointer )
+{}
+
+
+} // namespace internals
+} // namespace jmsf

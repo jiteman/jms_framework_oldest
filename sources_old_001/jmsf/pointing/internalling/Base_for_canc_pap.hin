@@ -1,0 +1,414 @@
+#pragma once
+
+#include "Base_for_canc_pap.hpp"
+
+#include "Reference_counters.h"
+#include "jmsf/memorying/Omp.hin"
+#include "jmsf/memorying/Destructor.hin"
+#include "jmsf/memorying/Constructor.hin"
+#include "jmsf/typeing/Naturals.hin"
+#include "jmsf/typeing/Boolean.h"
+
+#include "jmsf/validating/Should.h"
+
+#include "jmsf/validating/logging_macroses.h"
+
+
+namespace jmsf {
+namespace pointing {
+namespace internalling {
+
+
+// statics
+template< class A_type >
+const typeing::Shortest_natural Base_for_canc_pap< A_type >::type_Empty = typeing::Shortest_natural::create( 32 );
+
+template< class A_type >
+const typeing::Shortest_natural Base_for_canc_pap< A_type >::type_Nonlinked = typeing::Shortest_natural::create( 16 );
+
+template< class A_type >
+const typeing::Shortest_natural Base_for_canc_pap< A_type >::type_Weak = typeing::Shortest_natural::create( 8 );
+
+template< class A_type >
+const typeing::Shortest_natural Base_for_canc_pap< A_type >::type_Shared = typeing::Shortest_natural::create( 4 );
+//~statics
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+typename A_type::the_type &Base_for_canc_pap< A_type >::operator *() {
+	validate();
+	jmsf_Should_never_be_null( _object_memory_pointer );
+	return *_object_memory_pointer;
+}
+
+template< class A_type >
+const typename A_type::the_type &Base_for_canc_pap< A_type >::operator *() const {
+	validate();
+	jmsf_Should_never_be_null( _object_memory_pointer );
+	return *_object_memory_pointer;
+}
+
+template< class A_type >
+typename A_type::the_type *Base_for_canc_pap< A_type >::operator ->() {
+	validate();
+	jmsf_Should_never_be_null( _object_memory_pointer );
+	return _object_memory_pointer.get();
+}
+
+template< class A_type >
+const typename A_type::the_type *Base_for_canc_pap< A_type >::operator ->() const {
+	validate();
+	jmsf_Should_never_be_null( _object_memory_pointer );
+	return _object_memory_pointer.get();
+}
+
+template< class A_type >
+typeing::Boolean Base_for_canc_pap< A_type >::is_empty() const {
+	return typeing::Boolean::create( _type == type_Empty );
+}
+
+template< class A_type >
+typeing::Boolean Base_for_canc_pap< A_type >::is_not_empty() const {
+	return typeing::Boolean::create( _type != type_Empty );
+}
+
+template< class A_type >
+typeing::Boolean Base_for_canc_pap< A_type >::is_expired() const {
+	if ( _reference_counters.is_empty() ) return typeing::True;
+
+	if ( _type == type_Nonlinked ) return typeing::False;
+
+	return _reference_counters->is_strong_nill();
+}
+
+template< class A_type >
+typeing::Boolean Base_for_canc_pap< A_type >::is_not_expired() const {
+	return is_expired().inversion();
+}
+
+template< class A_type >
+typeing::Boolean Base_for_canc_pap< A_type >::operator ==( const Base_for_canc_pap< A_type > &another ) const {
+	if ( is_empty() && another.is_empty() ) return typeing::True;
+
+	return
+		_object_memory_pointer.get_memory().get_address() ==
+		another._object_memory_pointer.get_memory().get_address();
+}
+
+template< class A_type >
+typeing::Boolean Base_for_canc_pap< A_type >::operator !=( const Base_for_canc_pap< A_type > &another ) const {
+	return operator ==( another ).inversion();
+}
+
+template< class A_type >
+template< class A_return_type >
+A_return_type Base_for_canc_pap< A_type >::get_as_weak() noexcept {
+	// empty
+	if ( is_empty() ) return A_return_type();
+
+	// non linked
+	if ( _type == type_Nonlinked ) return A_return_type( _object_memory_pointer );
+
+	// weak and shared
+	if ( is_expired() ) return A_return_type();
+
+	A_return_type result_object;
+	_reference_counters->increase_weak();
+	result_object._object_memory_pointer = _object_memory_pointer;
+	result_object._reference_counters = _reference_counters;
+	result_object._type = type_Weak;
+	return result_object;
+}
+
+template< class A_type >
+template< class A_return_type >
+A_return_type Base_for_canc_pap< A_type >::get_as_weak() const noexcept {
+	return const_cast< Base_for_canc_pap< A_type > * >( this )->get_as_weak< A_return_type >();
+}
+
+template< class A_type >
+template< class A_return_type >
+A_return_type Base_for_canc_pap< A_type >::get_as_shared() noexcept {
+	// empty
+	if ( is_empty() ) return A_return_type();
+
+	// non linked
+	if ( _type == type_Nonlinked ) return A_return_type( _object_memory_pointer );
+
+	// weak and shared
+	if ( is_expired() ) return A_return_type();
+
+	A_return_type result_object;
+	_reference_counters->increase_shared();
+	result_object._object_memory_pointer = _object_memory_pointer;
+	result_object._reference_counters = _reference_counters;
+	result_object._type = type_Shared;
+	return result_object;
+}
+
+template< class A_type >
+template< class A_return_type >
+A_return_type Base_for_canc_pap< A_type >::get_as_shared() const noexcept {
+	return const_cast< Base_for_canc_pap< A_type > * >( this )->get_as_shared< A_return_type >();
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+memorying::Omp< typename A_type::the_type > Base_for_canc_pap< A_type >::release() {
+	validate();
+	memorying::Omp< typename A_type::the_type > pointer_to_object;
+
+	if ( _type == type_Empty ) {
+	} else if ( _type == type_Nonlinked ) {
+		_object_memory_pointer = memorying::Omp< typename A_type::the_type >::create_from_weak( A_type::the_deleter::get_null_object_via_deleter() );
+		_type = type_Empty;
+	} else if ( _type == type_Weak ) {
+		_reference_counters->decrease_weak();
+
+		if ( _reference_counters->is_strong_nill() ) {
+			if ( _reference_counters->is_weak_nill() ) {
+				memorying::Destructor< Reference_counters >::destruct( _reference_counters );
+			}
+		}
+
+		_object_memory_pointer = memorying::Omp< typename A_type::the_type >::create_from_weak( A_type::the_deleter::get_null_object_via_deleter() );
+		_reference_counters = memorying::Omp< Reference_counters >();
+		_type = type_Empty;
+	} else if ( _type == type_Shared ) {
+		_reference_counters->decrease_strong();
+
+		if ( _reference_counters->is_strong_nill() ) {
+			if ( _reference_counters->is_weak_nill() ) {
+				memorying::Destructor< Reference_counters >::destruct( _reference_counters );
+			}
+
+			pointer_to_object = _object_memory_pointer;
+		}
+
+		_object_memory_pointer = memorying::Omp< typename A_type::the_type >::create_from_weak( A_type::the_deleter::get_null_object_via_deleter() );
+		_reference_counters = memorying::Omp< Reference_counters >();
+		_type = type_Empty;
+	}
+
+	validate();
+	return pointer_to_object;
+}
+
+template< class A_type >
+const memorying::Omp< typename A_type::the_type > Base_for_canc_pap< A_type >::release() const {
+	return const_cast< Base_for_canc_pap< A_type > * >( this )->release();
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+memorying::Omp< typename A_type::the_type > &Base_for_canc_pap< A_type >::get() {
+	validate();
+	return _object_memory_pointer;
+}
+
+template< class A_type >
+const memorying::Omp< typename A_type::the_type > &Base_for_canc_pap< A_type >::get() const {
+	validate();
+	return _object_memory_pointer;
+}
+
+template< class A_type >
+void Base_for_canc_pap< A_type >::empty() {
+	A_type::the_deleter::delete_object( release() );
+}
+
+template< class A_type >
+void Base_for_canc_pap< A_type >::empty() const {
+	const_cast< Base_for_canc_pap< A_type > * >( this )->empty();
+}
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type >
+Base_for_canc_pap< A_type >::~Base_for_canc_pap() noexcept {
+	empty();
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Base_for_canc_pap< A_type >::Base_for_canc_pap() noexcept
+	:
+		_object_memory_pointer( A_type::the_deleter::get_null_object_via_deleter() )
+{
+	_type = type_Empty;
+	validate();
+}
+
+template< class A_type >
+Base_for_canc_pap< A_type >::Base_for_canc_pap( const memorying::Omp< typename A_type::the_type > &object_memory_pointer ) noexcept
+	:
+		_object_memory_pointer( object_memory_pointer )
+{
+	_type = type_Nonlinked;
+}
+
+template< class A_type >
+Base_for_canc_pap< A_type >::Base_for_canc_pap(
+	const memorying::Womp< memorying::Allocator > &reference_counters_allocator,
+	const memorying::Omp< typename A_type::the_type > &object_memory_pointer ) noexcept
+	:
+		_object_memory_pointer( object_memory_pointer )
+{
+	_type = type_Shared;
+
+	_reference_counters =
+		memorying::Constructor< Reference_counters, Reference_counters >::construct(
+			reference_counters_allocator );
+
+	_reference_counters->increase_strong();
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Base_for_canc_pap< A_type >::Base_for_canc_pap( const Base_for_canc_pap< A_type > &another ) noexcept
+	:
+		_object_memory_pointer( another._object_memory_pointer ),
+		_reference_counters( another._reference_counters )
+{
+	_type = another._type;
+
+	if ( _type == type_Weak ) {
+		_reference_counters->increase_weak();
+	} else if ( _type == type_Shared ) {
+		_reference_counters->increase_strong();
+	}
+}
+
+template< class A_type >
+const Base_for_canc_pap< A_type >  &Base_for_canc_pap< A_type >::operator =( const Base_for_canc_pap< A_type > &another ) noexcept {
+	if ( &another == this ) return *this;
+
+	A_type::the_deleter::delete_object( release() );
+
+	_object_memory_pointer = another._object_memory_pointer;
+	_reference_counters = another._reference_counters;
+	_type = another._type;
+
+	if ( _type == type_Weak ) {
+		_reference_counters->increase_weak();
+	} else if ( _type == type_Shared ) {
+		_reference_counters->increase_strong();
+	}
+
+	return *this;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Base_for_canc_pap< A_type >::Base_for_canc_pap( Base_for_canc_pap< A_type > &&another ) noexcept
+	:
+		_object_memory_pointer( another._object_memory_pointer ),
+		_reference_counters( another._reference_counters )
+{
+	_type = another._type;
+
+	another._object_memory_pointer = memorying::Omp< typename A_type::the_type >::create_from_weak( A_type::the_deleter::get_null_object_via_deleter() );
+	another._reference_counters = memorying::Omp< Reference_counters >();
+	another._type = type_Empty;
+}
+
+template< class A_type >
+Base_for_canc_pap &Base_for_canc_pap< A_type >::operator =( Base_for_canc_pap< A_type > &&another ) noexcept {
+	if ( &another == this ) return *this;
+
+	A_type::the_deleter::delete_object( release() );
+
+	_object_memory_pointer = another._object_memory_pointer;
+	_reference_counters = another._reference_counters;
+	_type = another._type;
+
+	another._object_memory_pointer = memorying::Omp< typename A_type::the_type >::create_from_weak( A_type::the_deleter::get_null_object_via_deleter() );
+	another._reference_counters = memorying::Omp< Reference_counters >();
+	another._type = type_Empty;
+
+	return *this;
+}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+template< class A_type >
+void Base_for_canc_pap< A_type >::validate() const {
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Base_for_canc_pap< %A_type% >::validate()", JMSF_TYPE_NAME( A_type ) );
+
+	if ( _type == type_Empty ) {
+		jmsf_Should_always_be_null( _reference_counters );
+
+		if ( A_type::the_deleter::get_null_object_via_deleter().is_empty() ) {
+			// Pointer
+			jmsf_Should_always_be_null( _object_memory_pointer );
+		} else {
+			// Proxy
+			jmsf_Should_never_be_null( _object_memory_pointer );
+
+			jmsf_Should_always_be(
+				typeing::Boolean::create(
+					_object_memory_pointer.get_memory().get_address() ==
+						A_type::the_deleter::get_null_object_via_deleter().get_memory().get_address() ) );
+		}
+	} else if ( _type == type_Nonlinked ) {
+		jmsf_Should_always_be_null( _reference_counters );
+		jmsf_Should_never_be_null( _object_memory_pointer );
+
+		if ( A_type::the_deleter::get_null_object_via_deleter().is_not_empty() ) {
+			// Proxy
+			jmsf_Should_never_be(
+				typeing::Boolean::create(
+					_object_memory_pointer.get_memory().get_address() ==
+						A_type::the_deleter::get_null_object_via_deleter().get_memory().get_address() ) );
+		}
+
+		JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Base_for_canc_pap< %A_type% >::validate()", JMSF_TYPE_NAME( A_type ) );
+	} else if ( _type == type_Weak ) {
+		jmsf_Should_never_be_null( _reference_counters );
+
+		// deleting reference counters on update if needed
+		if ( _reference_counters->is_strong_nill() ) {
+			const_cast< Base_for_canc_pap< A_type > * >( this )->_reference_counters->decrease_weak();
+
+			if ( _reference_counters->is_weak_nill() ) {
+				memorying::Destructor< Reference_counters >::destruct( _reference_counters );
+				const_cast< Base_for_canc_pap< A_type > * >( this )->_reference_counters = memorying::Omp< Reference_counters >();
+
+				const_cast< Base_for_canc_pap< A_type > * >( this )->_object_memory_pointer =
+					memorying::Omp< typename A_type::the_type >::create_from_weak( A_type::the_deleter::get_null_object_via_deleter() );
+
+				const_cast< Base_for_canc_pap< A_type > * >( this )->_type = type_Empty;
+			}
+		}
+	} else if ( _type == type_Shared ) {
+		jmsf_Should_never_be_null( _reference_counters );
+		jmsf_Should_never_be_null( _object_memory_pointer );
+		jmsf_Should_never_be( _reference_counters->is_strong_nill() );
+
+		if ( A_type::the_deleter::get_null_object_via_deleter().is_not_empty() ) {
+			// Proxy
+			jmsf_Should_never_be(
+				typeing::Boolean::create(
+					_object_memory_pointer.get_memory().get_address() ==
+						A_type::the_deleter::get_null_object_via_deleter().get_memory().get_address() ) );
+		}
+	} else {
+		jmsf_Should_never_reach_here( BASE_FOR_CANC_PAP_WRONG_TYPE );
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// static
+template< class A_type >
+const typeing::internals::platform_character *const Base_for_canc_pap< A_type >::BASE_FOR_CANC_PAP_WRONG_TYPE =
+	"Base_for_both_constant_and_nonconstant< A_type > - Wrong type detected";
+
+// static
+template< class A_type >
+const typeing::internals::platform_character *const Base_for_canc_pap< A_type >::BASE_FOR_CANC_PAP_INITIALIZATION_ORDER_IS_VIOLATED =
+	"Base_for_both_constant_and_nonconstant< A_type > - Initialization order is violated";
+
+
+} // namespace internalling
+} // namespace pointing
+} // namespace jmsf

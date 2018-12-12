@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ea">
+      <UniqueIdentifier>{6ceb73e9-7653-43a8-a2f5-6a30c65ce404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\asserts">
+      <UniqueIdentifier>{7b75d466-1d32-4402-9b75-26d3b8c250ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\ea\asserts\eaassert.cpp">
+      <Filter>ea\asserts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\ea\asserts\eaassert.h">
+      <Filter>ea\asserts</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

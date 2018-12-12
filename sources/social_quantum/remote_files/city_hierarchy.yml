@@ -1,0 +1,3387 @@
+#
+# hirerarchy
+#
+hierarchy:
+  surrogate:
+    - "coins"
+    - "exp"
+    - "gold"
+    - "river"
+    - "desert"
+    - "forest"
+    - "mountains"
+    - "level"
+    - "invitees"
+    - "population"
+    - "auto"
+    - "city_factory_actions"
+    - "city_factory_states"
+    - "goverment_actions"
+    - "goverment_states"
+    - "house_actions"
+    - "house_states"
+    - "leisure_actions"
+    - "leisure_states"
+    - "materials_actions"
+    - "power_actions"
+    - "static_states"
+    - "tax_collector_action"
+    - "terrain_actions"
+    - "unique_building_actions"
+    - "water_actions"
+    - "building_place_actions"
+  base:
+    - "city_object_base"
+    - "bouquet_base"
+  contract_base:
+    - "slot_contract_base"
+  leisure_base:
+    - "acropolis_leisure_base"
+    - "art_gallery_leisure_base"
+    - "arc_de_triomphe_leisure_base"
+    - "artillery_museum_leisure_base"
+    - "amusement_park_leisure_base"
+    - "bank_leisure_base"
+    - "bank_of_china_leisure_base"
+    - "baseball_arena_stage2"
+    - "beauty_salon_leisure_base"
+    - "big_ben_leisure_base"
+    - "business_center_leisure_base"
+    - "burj_khalifa_leisure_base"
+    - "casino_leisure_base"
+    - "car_wash_leisure_base"
+    - "central_plaza_leisure_base"
+    - "christmas_tree_leisure_base"
+    - "church_leisure_base"
+    - "circus_stage2"
+    - "city_centre_offices_leisure_base"
+    - "climbing_wall_leisure_base"
+    - "corrida_stage1"
+    - "court_house_leisure_base"
+    - "college_leisure_base"    
+    - "colosseum_leisure_base"
+    - "cycle_track_leisure_base"
+    - "dolphinarium_stage2"
+    - "eiffel_tower_leisure_base"
+    - "empire_state_building_leisure_base"
+    - "extreme_place_leisure_base"
+    - "fire_station_leisure_base"
+    - "football_stadium_leisure_base"
+    - "golf_club_stage2"
+    - "historical_museum_leisure_base"
+    - "hospital_leisure_base"
+    - "hypermarket_stage2"
+    - "ice_arena_stage2"
+    - "ski_slope_stage2"
+    - "ise_shrine_leisure_base"
+    - "john_hancock_tower_leisure_base"
+    - "kremlin_leisure_base"
+    - "pharmacy_leisure_base"
+    - "matrimandir_leisure_base"
+    - "mosque_leisure_base"
+    - "movie_studio_stage2"
+    - "museum_of_archaeology_leisure_base"
+    - "neuschwanstein_castle_leisure_base"
+    - "night_club_leisure_base"
+    - "nina_tower_leisure_base"
+    - "notr_dam_de_pari_leisure_base"
+    - "observatory_leisure_base"
+    - "oceanarium_stage2"
+    - "oncologic_center_leisure_base"
+    - "paintball_field_leisure_base"
+    - "petronas_towers_leisure_base"
+    - "police_department_leisure_base"
+    - "post_office_leisure_base"
+    - "radio_station_leisure_base"
+    - "registry_office_leisure_base"
+    - "rockefeller_center_leisure_base"
+    - "roman_pantheon_leisure_base"
+    - "sears_tower_leisure_base"
+    - "skyscraper_leisure_base"
+    - "small_office_building_leisure_base"
+    - "space_museum_stage2"
+    - "st_basils_cathedral_leisure_base"
+    - "statue_of_christ_leisure_base"
+    - "statue_of_liberty_leisure_base"
+    - "stonehenge_leisure_base"
+    - "sushi_bar_leisure_base"
+    - "swimming_pool_leisure_base"
+    - "taipei_leisure_base"
+    - "taj_mahal_leisure_base"
+    - "tennis_court_leisure_base"
+    - "thai_restaurant_leisure_base"
+    - "theater_leisure_base"
+    - "tower_of_pisa_leisure_base"
+    - "turning_torso_leisure_base"
+    - "tv_tower_leisure_base"
+    - "university_leisure_base"
+    - "water_complex_stage2"
+    - "water_slide_pool_leisure_base"
+    - "water_tower_terrain_base"
+    - "westminster_abbey_leisure_base"
+    - "yuksam_building_leisure_base"
+    - "zoo_leisure_base"  
+    - "billiard_room_leisure_base"
+    - "chrysler_building_leisure_base" 
+    - "volleyball_leisure_base"
+  shop_department_leisure_base:
+    - "orangery"
+  power_base:
+    - "atomic_power_power_base"
+    - "solar_power_power_base"
+    - "thermal_power_power_base"
+    - "advanced_atomic_power_power_base"
+  house_base:
+    - "acacia_house_house_base"
+    - "babylon_house_house_base"
+    - "bungalow"
+    - "bristol_house_house_base"
+    - "condo_house_base"
+    - "continent_house_house_base"
+    - "cottage"
+    - "cottage_albion_house_base"
+    - "dream_house_house_base"
+    - "galleon_house_house_base"
+    - "grain_house_house_base"
+    - "high_rise_apartment_house_base"
+    - "hotel_continent_house_base"
+    - "hotel_renaissance_house_base"
+    - "italian_villa_house_base"
+    - "luxury_apartment_building_house_base"
+    - "mansion_house_base"
+    - "nature_site"
+    - "novous_house_house_base"
+    - "pegasus_house_house_base"
+    - "residential_house_house_base"
+    - "rich_hotel_house_base"
+    - "rivera_house_house_base"
+    - "small_apartment_house_base"
+    - "zodiac_house_house_base"
+  bungalow:
+    - "blue_bungalow"
+    - "brown_bungalow"
+    - "green_bungalow"
+    - "yellow_bungalow"
+  terrain_base:
+    - "advanced_military_plant_terrain_base"
+    - "aircraft_stella_terrain_base"
+    - "chess_park_terrain_base"
+    - "circus_terrain_base"
+    - "city_accelerator_base"
+    - "clock_park_terrain_base"
+    - "desalination_plant_terrain_base"
+    - "dragon_park_terrain_base"
+    - "flower_patch_terrain_base"
+    - "fish_pond_terrain_base"
+    - "fountain_terrain_base"
+    - "fountain_elephant_terrain_base"
+    - "fountain_farber_terrain_base"
+    - "fountain_grande_terrain_base"
+    - "fountain_tokyo_terrain_base"
+    - "furniture_factory_terrain_base"
+    - "great_park_terrain_base"
+    - "hps_hydroelectric_terrain_base"
+    - "ice_cream_cart_terrain_base"
+    - "japanese_cherry_terrain_base"
+    - "japanese_pond_terrain_base"
+    - "little_metro_terrain_base"
+    - "large_metro_terrain_base"
+    - "marine_corps_terrain_base"
+    - "military_plant_terrain_base"
+    - "monument_pason_terrain_base"
+    - "palm1_terrain_base"
+    - "palm2_terrain_base"
+    - "park_sand_figures_terrain_base"
+    - "park_with_a_grotto_terrain_base"
+    - "pavilion_hyanvondzhon_terrain_base"
+    - "pavilion_kenhoru_terrain_base"
+    - "pearl_river_tower_leisure_base"
+    - "poseidon_terrain_base"
+    - "secret_military_plant_terrain_base"
+    - "statue_of_a_lion_terrain_base"
+    - "sun_park_terrain_base"
+    - "tidal_power_station_terrain_base"
+    - "tent_with_balls_terrain_base"
+    - "tunnel_love_terrain_base"
+    - "vender_park_terrain_base"
+    - "fruit_park_terrain_base"
+    - "playground_terrain_base"
+    - "park_with_a_trampoline_terrain_base"
+    - "park_gulliver_terrain_base"
+    - "railroad_tunnel_object_base"
+    - "free_tunnel_base"
+    - "free_railroad"
+  building_place:
+    - "gas_power_station_building_place_base"
+    - "train_oil_loading_station_place"
+  inactive_place:
+  road_junction_buildsite_terrain_base:
+  warehouse_buildsite_terrain_base:
+  city_staff_buildsite_base:
+  city_buildsite_base:
+    - "advanced_furniture_factory_terrain_base"
+    - "advanced_water_tower_1_water_system_base"
+    - "advanced_water_tower_2_water_system_base"
+    - "airbase_airplanable_base"
+    - "airbase_city_factory_base"
+    - "airport_buildsite_city_factory_base"
+    - "armoured_military_base_stages"
+    - "artesian_well_buildsite_terrain_base"
+    - "buildsite_terrain_base"
+    - "baseball_arena_buildsite"
+    - "baseball_arena_buildsite_real"
+    - "baseball_arena_stage1"
+    - "cargo_train_animated_object_base"
+    - "circus_buildsite"
+    - "circus_buildsite_real"
+    - "circus_stage1"
+    - "corrida_leisure_base"
+    - "derrick_buildsite_terrain_base"
+    - "dolphinarium_terrain_base"
+    - "gas_power_station_buildsite_terrain_base"
+    - "gaslift_buildsite_terrain_base"
+    - "hps_buildsite_terrain_base"
+    - "hps_hydroelectric1"
+    - "hps_hydroelectric2"
+    - "hps_hydroelectric3"
+    - "hps_hydroelectric4"
+    - "hps_hydroelectric5"
+    - "improved_water_tower_water_system_base"
+#    - "island_hotel_buildsite_terrain_base"
+    - "lighthouse_stages"
+    - "logging_train_animated_object_base"
+    - "military_base_stages"
+    - "middle_metro_terrain_base"
+    - "middle_metro_terrain_base"
+    - "movie_studio_buildsite"
+    - "movie_studio_buildsite_real"
+    - "movie_studio_stage1"
+    - "museum_of_ancient_egypt_terrain_base"
+    - "department_of_archaeology_terrain_base"
+    - "naval_station_city_factory_base"
+    - "north_bridge_buildsite_terrain_base"
+    - "oil_pipeline_buildsite_terrain_base"
+    - "oil_storage_buildsite_terrain_base"
+    - "gaslift_buildsite_terrain_base"
+    - "buildsite_terrain_base"
+    - "armoured_military_base_stages"
+    - "port_buildsite_terrain_base"
+    - "pyramid_stages"
+    - "railroad_bridge"
+    - "railroad_tunnel_base"
+    - "sawmill_buildsite_terrain_base"
+    - "sea_naval_station_city_factory_base"
+    - "selfconstruct_track_double_buildsite"
+    - "ski_slope_buildsite"
+    - "ski_slope_buildsite_real"
+    - "ski_slope_stage1"
+    - "space_museum_buildsite"
+    - "space_museum_buildsite_real"
+    - "space_museum_stage1"
+    - "sq_city_buildsite_city_factory_base"
+    - "train_animated_object_base"
+    - "train_east_station_stage4"
+    - "train_east_station_stage5"
+    - "ice_arena_buildsite"
+    - "ice_arena_buildsite_real"
+    - "ice_arena_stage1"
+    - "water_system_base"
+    - "water_system_stages"
+    - "wwtp_system_buildsite_base"
+    - "wwtp_stages"
+    - "yacht_club_stages"
+    - "mototrail_buildsite_terrain_base"
+    - "hypermarket_terrain_base"
+    - "oceanarium_terrain_base"
+    - "golf_club_buildsite"
+    - "golf_club_buildsite_real"
+    - "golf_club_stage1"
+    - "train_station_small_buildsite_base"
+    - "central_station_west_buildsite_terrain_base"
+    - "central_station_east_buildsite_terrain_base"
+    - "extended_buildable_city_factory_base"
+    - "railroad_buildsite"
+    - "railroad_track_double_buildsite"
+    - "railroad_tunnel_base"
+    - "oil_train_animated_object_base"
+    - "water_complex_buildsite"
+    - "water_complex_buildsite_real"
+    - "water_complex_stage1"
+  city_factory_base:
+    - "conveyor_city_factory_base"
+    - "factory_car_center_city_factory_base"
+    - "factory_farm_city_factory_base"
+    - "factory_research_center_city_factory_base"
+    - "srnu_factory_city_factory_base"
+    - "central_station_east_buildsite_terrain_base"
+  materials:
+    - "water_material"
+  city_automate:
+    - "city_automate100"
+    - "city_automate1000"
+    - "city_automate250"
+    - "city_automate2500"
+    - "city_automate30"
+    - "city_automate500"
+    - "city_automate5000"
+  complex_buildsite_factory_base:
+    - "airport_stage1_level1"
+    - "airport_stage1_level1_real"
+    - "airport_stage1_level1_real_level"
+    - "airport_stage1_level1_real_level2"
+    - "airport_stage1_level2"
+    - "airport_stage1_level3"
+    - "airport_stage2_level1"
+    - "airport_stage2_level2"
+    - "airport_stage2_level3"
+    - "airport_stage3_level1"
+    - "airport_stage3_level2"
+    - "airport_stage3_level3"
+    - "airport_stage4_level1"
+    - "airport_stage4_level2"
+    - "airport_stage4_level3"
+    - "airport_stage5_level1"
+    - "airport_stage5_level2"
+    - "airport_stage5_level3"
+    - "airport_stage6_level1"
+    - "naval_station_buildsite"
+    - "naval_station_buildsite_real"
+    - "naval_station_buildsite_real_level"
+    - "naval_station_stage1"
+    - "naval_station_stage2"
+    - "naval_station_stage3"
+    - "naval_station_stage4"
+    - "naval_station_stage5"
+    - "naval_station_stage6"
+    - "naval_station_stage7"
+    - "naval_station_stage8"
+    - "sawmill_factory_base"
+    - "sea_naval_station_buildsite"
+    - "sea_naval_station_buildsite_real"
+    - "sea_naval_station_buildsite_real_level"
+    - "sea_naval_station_stage1"
+    - "sea_naval_station_stage2"
+    - "sea_naval_station_stage3"
+    - "sea_naval_station_stage4"
+    - "sea_naval_station_stage5"
+    - "sea_naval_station_stage6"
+    - "sea_naval_station_stage7"
+    - "sea_naval_station_stage8"
+    - "subway_depot_buildsite"
+    - "subway_depot_buildsite_real"
+    - "subway_depot_buildsite_real_level"
+    - "subway_depot_buildsite_real_level2"
+    - "little_subway_depot"
+    - "middle_subway_depot"
+    - "large_subway_depot"
+    - "sq_city_buildsite"
+    - "sq_city_buildsite_real"
+    - "sq_city_stage1"
+    - "sq_city_stage2"
+    - "sq_city_stage3"
+    - "sq_city_stage4"
+    - "sq_city_stage5"
+    - "mototrail_factory_base"
+    - "karnak_temple_factory_base"
+    - "port_stage2"
+    - "pyramid"
+    
+sport_complex_terrain_base:
+    - "sport_complex_terrain_base"
+
+overridden_property_create:
+  sport_complex_stage1_real: true
+
+overridden_property_description:
+  blue_bungalow:
+    description.ru: "Деревянный дом"
+    description.ko: "소형주택"
+    description.en: "Wooden house"
+  brown_bungalow:
+    description.ru: "Деревянный дом"
+    description.ko: "소형주택"
+    description.en: "Wooden house"
+  green_bungalow:
+    description.ru: "Деревянный дом"
+    description.ko: "소형주택"
+    description.en: "Wooden house"
+  yellow_bungalow:
+    description.ru: "Деревянный дом"
+    description.ko: "소형주택"
+    description.en: "Wooden house"
+
+drawing:
+  duplicate_texture:
+    overpass_out_place:
+      step_x: 5.16
+      step_y: 1.0
+  popup_offset_correction:
+    beach_stage1:
+      x: -0.5
+      y: -0.5
+    beach_stage2:
+      x: -0.5
+      y: -0.5
+    road_junction_buildsite_terrain_base:
+      x: -3.0
+      y: 3.0
+    road_junction_place:
+      x: -3.0
+      y: 3.0
+    road_junction:
+      x: -3.0
+      y: 3.0
+  has_animation:
+    - "train_station_small_stage1"
+    - "train_station_small_stage1_real"
+    - "train_station_small_stage1_real_level"
+    - "train_station_small_stage2"
+    - "central_station_stage1"
+    - "central_station_stage1_real1"
+    - "central_station_stage1_real2"
+    - "ice_cream_cart"
+    - "ice_cream_cart_real"
+    - "area_baloon"
+    - "amphitheater"
+    - "extreme_place"
+    - "extreme_place_real"
+    - "thermal_power"
+    - "thermal_power_real"
+    - "beach"
+    - "log_cabin"
+    - "machine_shop"
+    - "blamco_inc"
+    - "car_wash"
+    - "car_wash_real"
+    - "climbing_wall"
+    - "climbing_wall_real"
+    - "conveyor"
+    - "conveyor_real"
+    - "cycle_track"
+    - "cycle_track_real"
+    - "factory_farm"
+    - "factory_farm_real"
+    - "factory_research_center"
+    - "factory_research_center_real"
+    - "farmers_market"
+    - "football_stadium"
+    - "football_stadium_real"
+    - "fountain"
+    - "fountain_real"
+    - "amusement_park"
+    - "amusement_park_real"
+    - "ice_arena_buildsite"
+    - "ice_arena_buildsite_real"
+    - "ice_arena_stage1"
+    - "ice_arena_stage2"
+    - "island_hotel_buildsite"
+    - "island_hotel_buildsite_real"
+    - "island_hotel_buildsite_real_level"
+    - "island_hotel_stage2"
+    - "island_hotel_stage3"
+    - "island_hotel_stage4"
+    - "island_hotel_stage5"
+    - "lighthouse"
+    - "literary_garden"
+    - "logging_railway_station_stage1"
+    - "logging_railway_station_stage1_real"
+    - "logging_railway_station_stage1_real_level"
+    - "logging_railway_station_stage2"
+    - "logging_railway_station_stage3"
+    - "logging_railway_station_stage4"
+    - "logging_railway_station_stage5"
+    - "luxury_apartment_building"
+    - "luxury_apartment_building_real"
+    - "movie_theatre"
+    - "movie_studio_buildsite"
+    - "movie_studio_buildsite_real"
+    - "movie_studio_stage1"
+    - "movie_studio_stage2"
+    - "night_club"
+    - "night_club_real"
+    - "observatory"
+    - "oceanarium_buildsite"
+    - "oceanarium_buildsite_real"
+    - "oceanarium_stage1"
+    - "oceanarium_stage2"   
+    - "observatory_real"
+    - "park_with_a_grotto"
+    - "park_with_a_grotto_real"
+    - "playground"
+    - "playground_real"
+    - "pyramid_buildsite"
+    - "pyramid_buildsite"
+    - "pyramid_buildsite_real"
+    - "pyramid_buildsite_real_level"
+    - "pyramid_buildsite_real_level2"
+    - "pyramid_stage1"
+    - "pyramid_stage2"
+    - "pyramid"
+    - "railroad_bridge_stage1"
+    - "railroad_bridge_stage2"
+    - "selfconstruct_track_double_buildsite"
+    - "skyscraper"
+    - "skyscraper_real"
+    - "small_apartment"
+    - "small_apartment_real"
+    - "solar_power"
+    - "solar_power_real"
+    - "historic_statue"
+    - "ski_slope_buildsite"
+    - "ski_slope_buildsite_real"
+    - "ski_slope_stage1"
+    - "ski_slope_stage2"
+    - "space_museum_buildsite"
+    - "space_museum_buildsite_real"
+    - "space_museum_stage1"
+    - "space_museum_stage2"
+    - "sushi_bar"
+    - "sushi_bar_real"
+    - "swimming_pool"
+    - "swimming_pool_real"
+    - "taj_mahal"
+    - "taj_mahal_real"
+    - "tennis_court"
+    - "tennis_court_real"
+    - "thai_restaurant"
+    - "thai_restaurant_real"
+    - "srnu_factory"
+    - "srnu_factory_real"
+    - "water_complex_buildsite"
+    - "water_complex_buildsite_real"
+    - "water_complex_stage1"
+    - "water_complex_stage2"
+    - "water_slide_pool"
+    - "water_slide_pool_real"
+    - "wind_power"
+    - "windy_park"
+    - "log_hut"
+    - "zoo"
+    - "zoo_real"
+    - "hydroelectric_power_station_place"
+    - "hps_buildsite"
+    - "hps_buildsite_real"
+    - "hps_buildsite_real_level"
+    - "hps_stage1"
+    - "hps_stage2"
+    - "hps_stage3"
+    - "hps_hydroelectric1"
+    - "hps_hydroelectric2"
+    - "hps_hydroelectric3"
+    - "hps_hydroelectric4"
+    - "hps_hydroelectric5"
+    - "water_system_stage2"
+    - "water_system_stage3"
+    - "burger_joint"
+    - "casino"
+    - "casino_real"
+    - "corrida_buildsite"
+    - "corrida_buildsite_real"
+    - "corrida_stage1"
+    - "christmas_tree_stage3"
+    - "subway_depot_buildsite_real_level2"
+    - "little_subway_depot"
+    - "middle_subway_depot"
+    - "large_subway_depot"
+    - "bigbon_factory"
+    - "airbase_buildsite"
+    - "airbase_stage1"
+    - "airbase_stage2"
+    - "airbase_stage3"
+    - "advanced_military_plant"
+    - "chess_park"
+    - "clock_park"
+    - "chess_park_real"
+    - "clock_park_real"
+    - "petard"
+    - "picnic_fountain"
+    - "secret_military_plant"
+    - "dolphinarium_buildsite"
+    - "dolphinarium_buildsite_real"
+    - "dolphinarium_stage1"
+    - "dolphinarium_stage2"
+    - "picnic_factory"
+    - "armoured_military_base_stage1"
+    - "armoured_military_base_stage2"
+    - "armoured_military_base_buildsite"
+    - "armoured_military_base_buildsite_real"
+    - "armoured_military_base_buildsite_real_level"
+    - "yacht_club_stages"
+    - "yacht_club"
+    - "yacht_club_real"
+    - "military_base"
+    - "military_base_stage1"
+    - "military_base_stage2"
+    - "military_base_buildsite"
+    - "military_base_buildsite_real"
+    - "military_base_buildsite_real_level"
+    - "naval_station_stage1"
+    - "naval_station_stage2"
+    - "naval_station_stage3"
+    - "naval_station_stage4"
+    - "naval_station_stage5"
+    - "naval_station_stage6"
+    - "naval_station_stage7"
+    - "naval_station_stage8"
+    - "park_with_a_trampoline"
+    - "park_with_a_trampoline_real"
+    - "park_gulliver"
+    - "park_gulliver_real"
+    - "sea_naval_station_stage1"
+    - "sea_naval_station_stage2"
+    - "sea_naval_station_stage3"
+    - "sea_naval_station_stage4"
+    - "sea_naval_station_stage5"
+    - "sea_naval_station_stage6"
+    - "sea_naval_station_stage7"
+    - "sea_naval_station_stage8"
+    - "fruit_park"
+    - "fruit_park_real"
+    - "mototrail_buildsite"
+    - "mototrail_buildsite_real"
+    - "mototrail_buildsite_real_level"
+    - "mototrail_stage1"
+    - "mototrail_stage2"
+    - "baseball_arena_buildsite"
+    - "baseball_arena_buildsite_real"
+    - "baseball_arena_stage1"
+    - "baseball_arena_stage2"
+    - "big_ben"
+    - "big_ben_real"
+    - "carousel_dsv"
+    - "circus_buildsite"
+    - "circus_buildsite_real"
+    - "circus_stage1"
+    - "circus_stage2"
+    - "fountain_elephant"
+    - "fountain_elephant_real"
+    - "fountain_farber"
+    - "fountain_farber_real"
+    - "fountain_grande"
+    - "fountain_grande_real"
+    - "fountain_tokyo"
+    - "fountain_tokyo_real"
+    - "fountain_ausonius_real"
+    - "furniture_factory"
+    - "furniture_factory_real"
+    - "furniture_factory_stage2"
+    - "gas_power_station_buildsite"
+    - "gas_power_station_buildsite_real"
+    - "gas_power_station_buildsite_real_level"
+    - "gas_power_station_buildsite_stage1"
+    - "gas_power_station_buildsite_stage2"
+    - "gas_power_station"
+    - "golf_club_buildsite"
+    - "golf_club_buildsite_real"
+    - "golf_club_stage1"
+    - "golf_club_stage2"
+    - "great_park"
+    - "great_park_real"
+    - "park_sand_figures"
+    - "park_sand_figures_real"
+    - "hypermarket_buildsite"
+    - "hypermarket_buildsite_real"
+    - "hypermarket_stage1"
+    - "poseidon"
+    - "poseidon_real"
+    - "sun_park"
+    - "sun_park_real"
+    - "tent_with_balls"
+    - "tent_with_balls_real"
+    - "tidal_power_station_stage2"
+    - "tidal_power_station_stage3"
+    - "tidal_power_station_stage4"
+    - "volleyball_court"
+    - "volleyball_court_real"
+    - "warehouse_buildsite"
+    - "warehouse_buildsite_real"
+    - "warehouse"
+    - "train_oil_loading_station_stage1"
+    - "train_oil_loading_station_stage2"
+    - "train_oil_loading_station_stage3"
+    - "train_station_small_stage1"
+    - "train_station_small_stage2"
+    - "train_east_station_stage1"
+    - "train_east_station_stage2"
+    - "train_east_station_stage3"
+    - "train_east_station_stage4"
+    - "railroad_tunnel1_stage1"
+    - "railroad_tunnel1_stage2"
+    - "railroad_tunnel2_stage1"
+    - "railroad_tunnel2_stage2"
+    - "railroad_tunnel3_stage1"
+    - "railroad_tunnel3_stage2"
+    - "railroad_tunnel4_stage1"
+    - "railroad_tunnel4_stage2"
+    - "railroad_tunnel5_stage1"
+    - "railroad_tunnel5_stage2"
+    - "railroad_tunnel6_stage1"
+    - "railroad_tunnel6_stage2"
+    - "railroad_tunnel7_stage1"
+    - "railroad_tunnel7_stage2"
+    - "karnak_temple_buildsite"
+    - "karnak_temple_buildsite_real"
+    - "karnak_temple_buildsite_real_level"
+    - "karnak_temple_stage1"
+    - "karnak_temple_stage2"
+    - "water_complex_buildsite"
+    - "water_complex_buildsite_real"
+    - "water_complex_stage1"
+    - "water_complex_stage2"
+  has_no_first_frame:
+    - "train_station_small_stage1"
+    - "train_station_small_stage1_real"
+    - "train_station_small_stage1_real_level"
+    - "train_station_small_stage2"
+    - "central_station_stage1"
+    - "central_station_stage1_real1"
+    - "central_station_stage1_real2"
+    - "playground"
+    - "playground_real"
+    - "taj_mahal"
+    - "taj_mahal_real"
+    - "thai_restaurant"
+    - "thai_restaurant_real"
+    - "car_wash"
+    - "car_wash_real"
+    - "climbing_wall"
+    - "climbing_wall_real"
+    - "cycle_track"
+    - "cycle_track_real"
+    - "ice_arena_buildsite"
+    - "ice_arena_buildsite_real"
+    - "ice_arena_stage1"
+    - "ice_arena_stage2"
+    - "logging_railway_station_stage1"
+    - "logging_railway_station_stage1_real"
+    - "logging_railway_station_stage1_real_level"
+    - "logging_railway_station_stage2"
+    - "logging_railway_station_stage3"
+    - "logging_railway_station_stage4"
+    - "logging_railway_station_stage5"
+    - "area_baloon"
+    - "extreme_place"
+    - "extreme_place_real"
+    - "thermal_power"
+    - "thermal_power_real"
+    - "amphitheater"
+    - "beach"
+    - "pyramid_stage1"
+    - "pyramid_stage2"
+    - "pyramid"
+    - "ski_slope_buildsite"
+    - "ski_slope_buildsite_real"
+    - "ski_slope_stage1"
+    - "ski_slope_stage2"
+    - "skyscraper"
+    - "skyscraper_real"
+    - "small_apartment"
+    - "small_apartment_real"
+    - "movie_theatre"
+    - "selfconstruct_track_double_buildsite"
+    - "solar_power"
+    - "solar_power_real"
+    - "space_museum_buildsite"
+    - "space_museum_buildsite_real"
+    - "space_museum_stage1"
+    - "space_museum_stage2"
+    - "srnu_factory"
+    - "srnu_factory_real"
+    - "tennis_court"
+    - "tennis_court_real"
+    - "water_complex_buildsite"
+    - "water_complex_buildsite_real"
+    - "water_complex_stage1"
+    - "water_complex_stage2"
+    - "water_slide_pool"
+    - "water_slide_pool_real"
+    - "wind_power"
+    - "farmers_market"
+    - "football_stadium"
+    - "literary_garden"
+    - "zoo"
+    - "zoo_real"
+    - "log_hut"
+    - "sushi_bar"
+    - "sushi_bar_real"
+    - "luxury_apartment_building"
+    - "luxury_apartment_building_real"
+    - "movie_studio_buildsite"
+    - "movie_studio_buildsite_real"
+    - "movie_studio_stage1"
+    - "movie_studio_stage2"
+    - "night_club"
+    - "night_club_real"
+    - "observatory"
+    - "observatory_real"
+    - "oceanarium_buildsite"
+    - "oceanarium_buildsite_real"
+    - "oceanarium_stage1"
+    - "oceanarium_stage2"    
+    - "historic_statue"
+    - "windy_park"
+    - "log_cabin"
+    - "burger_joint"
+    - "amusement_park"
+    - "amusement_park_real"
+    - "casino"
+    - "casino_real"
+    - "carousel_dsv"
+    - "corrida_buildsite"
+    - "corrida_buildsite_real"
+    - "corrida_stage1"
+    - "machine_shop"
+    - "blamco_inc"
+    - "conveyor"
+    - "conveyor_real"
+    - "factory_farm"
+    - "factory_farm_real"
+    - "factory_research_center"
+    - "factory_research_center_real"
+    - "water_system_stage2"
+    - "water_system_stage3"
+    - "hydroelectric_power_station_place"
+    - "hps_buildsite"
+    - "hps_buildsite_real"
+    - "hps_buildsite_real_level"
+    - "hps_stage1"
+    - "hps_stage2"
+    - "hps_stage3"
+    - "hps_hydroelectric1"
+    - "hps_hydroelectric2"
+    - "hps_hydroelectric3"
+    - "hps_hydroelectric4"
+    - "hps_hydroelectric5"
+    - "hydroelectric_power_station_place"
+    - "water_system_stage2"
+    - "water_system_stage3"
+    - "island_hotel_buildsite"
+    - "island_hotel_buildsite_real"
+    - "island_hotel_buildsite_real_level"
+    - "island_hotel_stage2"
+    - "island_hotel_stage3"
+    - "island_hotel_stage4"
+    - "island_hotel_stage5"
+    - "lighthouse"
+    - "christmas_tree_stage3"
+    - "subway_depot_buildsite_real_level2"
+    - "little_subway_depot"
+    - "middle_subway_depot"
+    - "large_subway_depot"
+    - "bigbon_factory"
+    - "airbase_buildsite"
+    - "airbase_stage1"
+    - "airbase_stage2"
+    - "airbase_stage3"
+    - "advanced_military_plant"
+    - "chess_park"
+    - "clock_park"
+    - "chess_park_real"
+    - "clock_park_real"
+    - "petard"
+    - "picnic_fountain"
+    - "secret_military_plant"
+    - "dolphinarium_buildsite"
+    - "dolphinarium_buildsite_real"
+    - "dolphinarium_stage1"
+    - "dolphinarium_stage2"
+    - "picnic_factory"
+    - "armoured_military_base_stage1"
+    - "armoured_military_base_stage2"
+    - "armoured_military_base_buildsite"
+    - "armoured_military_base_buildsite_real_level"
+    - "armoured_military_base_buildsite_real"
+    - "yacht_club_stages"
+    - "yacht_club"
+    - "yacht_club_real"
+    - "military_base"
+    - "military_base_stage1"
+    - "military_base_stage2"
+    - "military_base_buildsite"
+    - "military_base_buildsite_real"
+    - "military_base_buildsite_real_level"
+    - "naval_station_stage1"
+    - "naval_station_stage2"
+    - "naval_station_stage3"
+    - "naval_station_stage4"
+    - "naval_station_stage5"
+    - "naval_station_stage6"
+    - "naval_station_stage7"
+    - "naval_station_stage8"
+    - "park_with_a_trampoline"
+    - "park_with_a_trampoline_real"
+    - "park_gulliver"
+    - "park_gulliver_real"
+    - "railroad_bridge_stage1"
+    - "railroad_bridge_stage2"
+    - "sea_naval_station_stage1"
+    - "sea_naval_station_stage2"
+    - "sea_naval_station_stage3"
+    - "sea_naval_station_stage4"
+    - "sea_naval_station_stage5"
+    - "sea_naval_station_stage6"
+    - "sea_naval_station_stage7"
+    - "sea_naval_station_stage8"
+    - "fruit_park"
+    - "fruit_park_real"
+    - "mototrail_buildsite"
+    - "mototrail_buildsite_real"
+    - "mototrail_buildsite_real_level"
+    - "mototrail_stage1"
+    - "mototrail_stage2"
+    - "baseball_arena_buildsite"
+    - "baseball_arena_buildsite_real"
+    - "baseball_arena_stage1"
+    - "baseball_arena_stage2"
+    - "big_ben"
+    - "big_ben_real"
+    - "circus_buildsite"
+    - "circus_buildsite_real"
+    - "circus_stage1"
+    - "circus_stage2"
+    - "fountain_ausonius_real"
+    - "fountain_elephant"
+    - "fountain_elephant_real"
+    - "fountain_farber"
+    - "fountain_farber_real"
+    - "fountain_grande"
+    - "fountain_grande_real"
+    - "fountain_tokyo"
+    - "fountain_tokyo_real"
+    - "furniture_factory"
+    - "furniture_factory_real"
+    - "furniture_factory_stage2"
+    - "gas_power_station_buildsite"
+    - "gas_power_station_buildsite_real"
+    - "gas_power_station_buildsite_real_level"
+    - "gas_power_station_buildsite_stage1"
+    - "gas_power_station_buildsite_stage2"
+    - "gas_power_station"
+    - "golf_club_buildsite"
+    - "golf_club_buildsite_real"
+    - "golf_club_stage1"
+    - "golf_club_stage2"
+    - "great_park"
+    - "great_park_real"
+    - "park_sand_figures"
+    - "park_sand_figures_real"
+    - "hypermarket_buildsite"
+    - "hypermarket_buildsite_real"
+    - "hypermarket_stage1"
+    - "park_with_a_grotto"
+    - "park_with_a_grotto_real"
+    - "poseidon"
+    - "poseidon_real"
+    - "sun_park"
+    - "sun_park_real"
+    - "tent_with_balls"
+    - "tent_with_balls_real"
+    - "tidal_power_station_stage2"
+    - "tidal_power_station_stage3"
+    - "tidal_power_station_stage4"
+    - "volleyball_court"
+    - "volleyball_court_real"
+    - "warehouse_buildsite"
+    - "warehouse_buildsite_real"
+    - "warehouse"
+    - "train_oil_loading_station_stage1"
+    - "train_oil_loading_station_stage2"
+    - "train_oil_loading_station_stage3"
+    - "train_station_small_stage1"
+    - "train_station_small_stage2"
+    - "train_east_station_stage1"
+    - "train_east_station_stage2"
+    - "train_east_station_stage3"
+    - "train_east_station_stage4"
+    - "railroad_tunnel1_stage1"
+    - "railroad_tunnel1_stage2"
+    - "railroad_tunnel2_stage1"
+    - "railroad_tunnel2_stage2"
+    - "railroad_tunnel3_stage1"
+    - "railroad_tunnel3_stage2"
+    - "railroad_tunnel4_stage1"
+    - "railroad_tunnel4_stage2"
+    - "railroad_tunnel5_stage1"
+    - "railroad_tunnel5_stage2"
+    - "railroad_tunnel6_stage1"
+    - "railroad_tunnel6_stage2"
+    - "railroad_tunnel7_stage1"
+    - "railroad_tunnel7_stage2"
+    - "karnak_temple_buildsite"
+    - "karnak_temple_buildsite_real"
+    - "karnak_temple_buildsite_real_level"
+    - "karnak_temple_stage1"
+    - "karnak_temple_stage2"
+    - "water_complex_buildsite"
+    - "water_complex_buildsite_real"
+    - "water_complex_stage1"
+    - "water_complex_stage2"
+  has_selectable_part:
+    - "sport_complex_stage1"
+    - "sport_complex_stage1_real"
+    - "sport_complex_stage2"
+    - "sport_complex_stage3"
+    - "sport_complex_stage4"
+    - "sport_complex"
+    - "airport_stage1_level1"
+    - "airport_stage1_level1_real"
+    - "airport_stage1_level1_real_level"
+    - "airport_stage1_level1_real_level2"
+    - "airport_stage1_level2"
+    - "airport_stage1_level3"
+    - "airport_stage2_level1"
+    - "airport_stage2_level2"
+    - "airport_stage2_level3"
+    - "airport_stage3_level1"
+    - "airport_stage3_level2"
+    - "airport_stage3_level3"
+    - "airport_stage4_level1"
+    - "airport_stage4_level2"
+    - "airport_stage4_level3"
+    - "airport_stage5_level1"
+    - "airport_stage5_level2"
+    - "airport_stage5_level3"
+    - "airport_stage6_level1"
+    - "sea_naval_station_stage1"
+    - "sea_naval_station_stage2"
+    - "sea_naval_station_stage3"
+    - "sea_naval_station_stage4"
+    - "sea_naval_station_stage5"
+    - "sea_naval_station_stage6"
+    - "sea_naval_station_stage7"
+    - "sea_naval_station_stage8"
+    - "sq_city_buildsite"
+    - "sq_city_buildsite_real"
+    - "sq_city_stage1"
+    - "sq_city_stage2"
+    - "sq_city_stage3"
+    - "sq_city_stage4"
+    - "sq_city_stage5"
+  custom_can_rotate:
+    - "baseball_arena_buildsite"
+    - "baseball_arena_buildsite_real"
+    - "baseball_arena_stage1"
+    - "baseball_arena_stage2"
+    - "circus_buildsite"
+    - "circus_buildsite_real"
+    - "circus_stage1"
+    - "circus_stage2"
+    - "corrida_buildsite"
+    - "corrida_buildsite_real"
+    - "corrida_stage1"
+    - "dolphinarium_buildsite"
+    - "dolphinarium_buildsite_real"
+    - "dolphinarium_stage1"
+    - "dolphinarium_stage2"
+    - "furniture_factory"
+    - "furniture_factory_real"
+    - "furniture_factory_stage2"
+    - "golf_club_buildsite"
+    - "golf_club_buildsite_real"
+    - "golf_club_stage1"
+    - "golf_club_stage2"
+    - "hypermarket_buildsite"
+    - "hypermarket_buildsite_real"
+    - "hypermarket_stage1"
+    - "hypermarket_stage2"
+    - "ice_arena_buildsite"
+    - "ice_arena_buildsite_real"
+    - "ice_arena_stage1"
+    - "ice_arena_stage2"
+    - "movie_studio_buildsite"
+    - "movie_studio_buildsite_real"
+    - "movie_studio_stage1"
+    - "movie_studio_stage2"
+    - "oceanarium_buildsite"
+    - "oceanarium_buildsite_real"
+    - "oceanarium_stage1"
+    - "oceanarium_stage2"
+    - "ski_slope_buildsite"
+    - "ski_slope_buildsite_real"
+    - "ski_slope_stage1"
+    - "ski_slope_stage2"
+    - "space_museum_buildsite"
+    - "space_museum_buildsite_real"
+    - "space_museum_stage1"
+    - "space_museum_stage2"
+    - "warehouse_buildsite"
+    - "warehouse_buildsite_real"
+    - "warehouse_staff_buildsite"
+    - "warehouse"
+    - "water_complex_buildsite"
+    - "water_complex_buildsite_real"
+    - "water_complex_stage1"
+    - "water_complex_stage2"
+
+  custom_images:
+    sq_city_stage5: "sq-city_stage5"
+    water_system_stage1: "water_supply_complete_1"
+    water_system_stage2: "water_supply_complete_2"
+    water_system_stage3: "water_supply_complete_3"
+    #central_station_west_stage2_level3: "train_main_station_western_2_3"
+    road: "road"
+    parking: "parking"
+
+
+
+# The list of all railroad objects
+
+  railroad_objects:
+    railroad: &railroad
+      objects:
+        - "railroad_object_base"
+        - "railroad_tunnel_object_base"
+        - "railroad_bridge"
+    railroad_moved:
+      <<: *railroad
+    railroad_track_double:
+      <<: *railroad
+
+  central_station: &central_station
+    objects:
+      - "central_station"
+      - "central_station_place"
+      - "central_station_stage1"
+      - "central_station_stage1_real1"
+      - "central_station_stage1_real2"
+      - "central_station_stage2"
+      - "central_station_stage3"
+      
+  relations:
+    logging_railway_station_stage5:
+      <<: *central_station
+    train_east_station_stage5:
+      <<: *central_station
+    train_oil_loading_station_stage5:
+      <<: *central_station
+    train_station_small_stage5:
+      <<: *central_station
+
+#
+# The objects which has the animation which are differend from default behavoir for these object classes.
+# The enumerator are stages on which animation is enabled
+#
+
+  road_links:
+    island_hotel_stage4:
+      bridge:
+        x: 1
+        y: 4
+        flag: 1
+    island_hotel_stage5:
+      bridge:
+        x: 1
+        y: 4
+        flag: 1
+    island_hotel_complete:
+      bridge:
+        x: 1
+        y: 4
+        flag: 1
+    bridge_place:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+        log_hut:
+      north_point:
+        x: 0
+        y: 2
+        flag: 177
+    bridge_buildsite:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+        log_hut:
+      north_point:
+        x: 0
+        y: 2
+        flag: 177
+    bridge_buildsite_real:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+        log_hut:
+      north_point:
+        x: 0
+        y: 2
+        flag: 177
+    bridge:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+        log_hut:
+      north_point:
+        x: 0
+        y: 2
+        flag: 177
+    north_bridge_buildsite:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+      north_point:
+        x: 0
+        y: 4
+        flag: 177
+    north_bridge_buildsite_real:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+      north_point:
+        x: 0
+        y: 4
+        flag: 177
+    north_bridge_buildsite_real_level:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+      north_point:
+        x: 0
+        y: 4
+        flag: 177
+    north_bridge:
+      south_point:
+        x: 0
+        y: 0
+        flag: 113
+      north_point:
+        x: 0
+        y: 4
+        flag: 177
+    overpass_in_place:
+      overpassIn:
+        x: 16
+        y: 0
+        flag: 129
+    road_junction:
+      overpassIn:
+        x: 1
+        y: 0
+        flag: 113
+    airport_stage1_level3:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage2_level1:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage2_level2:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage2_level3:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage3_level1:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage3_level2:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage3_level3:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage4_level1:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage4_level2:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage4_level3:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage5_level1:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage5_level2:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage5_level3:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+    airport_stage6_level1:
+      road_west:
+        x: 0
+        y: 0
+        flag: 1  
+      road_east:
+        x: 13
+        y: 0
+        flag: 1
+        
+  custom_animated_stages:
+    conveyor:
+      - 2
+      - 3
+    conveyor_real:
+      - 2
+      - 3
+    factory_research_center:
+      - 2
+      - 3
+      - 4
+    factory_research_center_real:
+      - 2
+      - 3
+      - 4
+  shop_departments:
+    orangery: "bouquets"
+  traffic_item_category:
+    police_station: "policy"
+    fire_station: "fire"
+    military_base: "military"
+  custom_build_icons:
+    hps_stage1: "hps_2_build"
+    hps_stage2: "hps_3_build"
+    hps_stage3: "hps_4_build"
+    hps_hydroelectric1: "hydroelectric"
+    hps_hydroelectric2: "hydroelectric"
+    hps_hydroelectric3: "hydroelectric"
+    hps_hydroelectric4: "hydroelectric"
+    lighthouse: "lighthouse"
+    sport_complex_stage2: "sport_complex_1_3"
+    sport_complex_stage3: "sport_complex_2_3"
+    sport_complex_stage4: "sport_complex_3_3"
+    sport_complex: "sport_complex_4_3"
+    gaslift_buildsite_terrain_base: "gaslift_icon"
+    oil_pipeline_buildsite_terrain_base: "oil_pipeline_icon"
+    oil_storage_buildsite_terrain_base: "oil_storage_icon"
+    port_stage1: "port_complete"
+    port_stage2: "port_icon_stage2"
+    port_buildsite: "port_icon_stage1"
+    port_buildsite_real: "port_icon_stage1"
+    airport_stage1_level1: "airport_level1"
+    airport_stage1_level1_real: "airport_level1"
+    airport_stage1_level1_real_level: "airport_level1"
+    airport_stage1_level1_real_level2: "airport_level1"
+    airport_stage1_level2: "airport_level2"
+    airport_stage1_level3: "airport_level3"
+    airport_stage2_level1: "airport_level4"
+    airport_stage2_level2: "airfield_level2"
+    airport_stage2_level3: "airfield_level3"
+    airport_stage3_level1: "airfield_level4"
+    airport_stage3_level2: "runway_level2"
+    airport_stage3_level3: "runway_level3"
+    airport_stage4_level1: "runway_level4"
+    airport_stage4_level2: "terminal_level1"
+    airport_stage4_level3: "terminal_level2"
+    airport_stage5_level1: "terminal_level3"
+    airport_stage5_level2: "aircontrol_level1"
+    airport_stage5_level3: "aircontrol_level2"
+    airport_stage6_level1: "aircontrol_level3_icon"
+    aircraft_stella_terrian_base: "aircraft_stella_shop"
+    central_station_stage1: "train_main_station_terminal_1"
+    central_station_stage2: "train_main_station_terminal_2"
+    central_station_stage3: "train_main_station_terminal_3"
+    central_station_stage1_real1: "train_main_station_terminal_1"
+    central_station_stage1_real2: "train_main_station_terminal_1"
+    island_hotel_buildsite_terrain_base: island_hotel_1_icon
+    island_hotel_buildsite: island_hotel_1_icon
+    naval_station_buildsite: "nava_station_for_shop"
+    naval_station_buildsite_real: "nava_station_for_shop"
+    naval_station_buildsite_real_level: "nava_station_for_shop"
+    naval_station_stage1: "naval_station_1"
+    naval_station_stage2: "naval_station_4"
+    naval_station_stage3: "shipyard_2"
+    naval_station_stage4: "shipyard_3"
+    naval_station_stage5: "shipyard_4"
+    naval_station_stage6: "shipyard_5"
+    naval_station_stage7: "shipyard_6"
+    naval_station_stage8: "shipyard_7"
+    sea_naval_station_buildsite: "submarine_station_0"
+    sea_naval_station_buildsite_real: "submarine_station_0"
+    sea_naval_station_buildsite_real_level: "submarine_station_0"
+    sea_naval_station_stage1: "submarine_station_1"
+    sea_naval_station_stage2: "submarine_station_2"
+    sea_naval_station_stage3: "aircraft_carrier_1"
+    sea_naval_station_stage4: "aircraft_carrier_4"
+    sea_naval_station_stage5: "aircraft_carrier_5"
+    sea_naval_station_stage6: "aircraft_carrier_6"
+    sea_naval_station_stage7: "aircraft_carrier_7"
+    sea_naval_station_stage8: "aircraft_carrier_8"
+    sq_city_buildsite: "sq-city_null_v1"
+    sq_city_buildsite_real: "sq-city_null_v1"
+    sq_city_stage1: "sq-city_stage1_v1"
+    sq_city_stage2: "sq-city_stage2_v1"
+    sq_city_stage3: "sq-city_stage3_v1"
+    sq_city_stage4: "sq-city_stage4_v1"
+    sq_city_stage5: "sq-city_stage5_v1"
+    pyramid_stage1: "pyramid_2_v1_no_ff"
+    pyramid_stage2: "pyramid_3_v1_no_ff"
+    pyramid: "pyramid_4_v1_no_ff"
+    ice_arena_buildsite: "ice_arena_1_v2"
+    ice_arena_stage1: "ice_arena_2_v2_no_ff"
+    ice_arena_stage2: "ice_arena_3_v2_no_ff"
+    ice_arena_buildsite_real: "ice_arena_1_v2"
+    golf_club_buildsite: "golf_club_1_v2_no_ff"
+    golf_club_buildsite_real: "golf_club_1_v2_no_ff"
+    golf_club_stage1: "golf_club_2_v2_no_ff"
+    golf_club_stage2: "golf_club_3_v2_no_ff"
+    railroad: "trail"
+    railroad_moved: "trail"
+    railroad_track_double: "trail_double"
+    train_oil_loading_station_stage1: "train_oil_loading_station_1"
+    train_oil_loading_station_stage1_real: "train_oil_loading_station_1"
+    train_oil_loading_station_stage1_real_level: "train_oil_loading_station_1"
+    train_oil_loading_station_stage2: "train_oil_loading_station_2"
+    train_oil_loading_station_stage3: "train_oil_loading_station_3"
+    train_oil_loading_station_stage5: "train_oil_loading_station_4"
+    train_station_small_stage1: "train_station_small_1"
+    train_station_small_stage2: "train_station_small_2"
+    train_station_small_stage3: "train_station_small_3"
+    train_station_small_stage5: "train_station_small_4"
+            
+  complex_objects:
+    oil_pipeline_place:
+      subitems:
+        - booth:
+            stage_textures:
+              - "oil_pipeline_booth_none"
+        - pipe1:
+            stage_textures:
+              - "oil_pipeline_pipe1_none"
+        - pipe2:
+            stage_textures:
+              - "shipyard_3"
+        - tower1:
+            stage_textures:
+              - "oil_pipeline_tower1_none"
+        - tower2:
+            stage_textures:
+              - "oil_pipeline_tower2_none"
+
+    oil_pipeline_buildsite_terrain_base:
+      subitems:
+        - booth:
+            stage_textures:
+              - "oil_pipeline_booth_none"
+              - "oil_pipeline_booth_building"
+              - "oil_pipeline_booth_complete"
+            animated_stages:
+              - 1
+              - 2
+            key_objects:
+              - "filter"
+              - "system_plum_oil"
+        - pipe1:
+            stage_textures:
+              - "oil_pipeline_pipe1_none"
+              - "oil_pipeline_pipe1_building"
+              - "oil_pipeline_pipe1_complete"
+            animated_stages:
+              - 1
+            key_objects:
+              - "tube"
+        - pipe2:
+            stage_textures:
+              - "oil_pipeline_pipe2_none"
+              - "oil_pipeline_pipe2_building"
+              - "oil_pipeline_pipe2_complete"
+            animated_stages:
+              - 1
+            key_objects:
+              - "polyurethane"
+        - tower1:
+            stage_textures:
+              - "oil_pipeline_tower1_none"
+              - "oil_pipeline_tower1_building"
+              - "oil_pipeline_tower1_complete"
+            animated_stages:
+              - 1
+            key_objects:
+              - "block_oil"
+        - tower2:
+            stage_textures:
+              - "oil_pipeline_tower2_none"
+              - "oil_pipeline_tower2_building"
+              - "oil_pipeline_tower2_complete"
+            animated_stages:
+              - 1
+            key_objects:
+              - "oil_valve"
+
+    oil_storage_place:
+      subitems:
+        - tower1:
+            stage_textures:
+              - "oil_storage_tower1_none"
+        - tower2:
+            stage_textures:
+              - "oil_storage_tower2_none"
+        - jack:
+            stage_textures:
+              - "oil_storage_jack_none"
+        - fixture:
+            stage_textures:
+              - "oil_storage_fixture_none"
+        - telpher:
+            stage_textures:
+              - "oil_storage_telipher_none"
+
+    oil_storage_buildsite_terrain_base:
+      subitems:
+        - tower1:
+            stage_textures:
+              - "oil_storage_tower1_none"
+              - "oil_storage_tower1_building"
+              - "oil_storage_tower1_complete"
+            animated_stages:
+              - 1
+            key_objects:
+              - "tube"
+        - tower2:
+            stage_textures:
+              - "oil_storage_tower2_none"
+              - "oil_storage_tower2_building"
+              - "oil_storage_tower2_complete"
+            animated_stages:
+              - 1
+            key_objects:
+              - "steel"
+        - jack:
+            stage_textures:
+              - "oil_storage_jack_none"
+              - "oil_storage_jack_building"
+              - "oil_storage_jack_complete"
+            animated_stages:
+              - 1
+              - 2
+            key_objects:
+              - "jack"
+        - fixture:
+            stage_textures:
+              - "oil_storage_fixture_none"
+              - "oil_storage_fixture_building"
+              - "oil_storage_fixture_complete"
+            key_objects:
+              - "fixture"
+        - telpher:
+            stage_textures:
+              - "oil_storage_telipher_none"
+              - "oil_storage_telipher_building"
+              - "oil_storage_telipher_complete"
+            animated_stages:
+              - 1
+              - 2
+            key_objects:
+              - "telpher"
+
+    gaslift_place:
+      subitems:
+        - obj3:
+            stage_textures:
+              - "gaslift_obj_3_none"
+        - obj0:
+            stage_textures:
+              - "gaslift_obj_0_none"
+        - obj1:
+            stage_textures:
+              - "gaslift_obj_1_none"
+        - obj2:
+            stage_textures:
+              - "gaslift_obj_2_none"
+
+    gaslift_buildsite_terrain_base:
+      subitems:
+        - obj3:
+            stage_textures:
+              - "gaslift_obj_3_none"
+              - "gaslift_obj_3_building"
+              - "gaslift_obj_3_complete"
+            animated_stages:
+              - 2
+            key_objects:
+              - "diesel_generator"
+        - obj0:
+            stage_textures:
+              - "gaslift_obj_0_none"
+              - "gaslift_obj_0_building"
+              - "gaslift_obj_0_complete"
+            animated_stages:
+              - 1
+              - 2
+            key_objects:
+              - "tube"
+              - "drilling_bit"
+        - obj1:
+            stage_textures:
+              - "gaslift_obj_1_none"
+              - "gaslift_obj_1_building"
+              - "gaslift_obj_1_complete"
+            animated_stages:
+              - 1
+              - 2
+            key_objects:
+              - "gas_capacity"
+        - obj2:
+            stage_textures:
+              - "gaslift_obj_2_none"
+              - "gaslift_obj_2_building"
+              - "gaslift_obj_2_complete"
+            animated_stages:
+              - 2
+            key_objects:
+              - "compressor"
+
+    port_place:
+      subitems:
+        - ship_management:
+            stage_textures:
+              - "port_ship_management_none"
+        - technical_pipeline:
+            stage_textures:
+              - "port_technical_pipeline_none"
+        - tanker_pump_station:
+            stage_textures:
+              - "port_tanker_pump_station_none"
+        - main:
+            stage_textures:
+              - "port_begin"
+
+    port_buildsite: &port_buildsite_base
+      subitems:
+        - ship_management:
+            stage_textures:
+              - "port_ship_management_building"
+              - "port_ship_management_building"
+              - "port_ship_management_complete"
+            animated_stages:
+              - 0
+              - 1
+              - 2
+            key_objects:
+              - "amplifier"
+              - "radar_antenna"
+        - technical_pipeline:
+            stage_textures:
+              - "port_technical_pipeline_building"
+              - "port_technical_pipeline_building"
+              - "port_technical_pipeline_complete"
+            key_objects:
+              - "dosing_unit"
+        - tanker_pump_station:
+            stage_textures:
+              - "port_tanker_pump_station_building"
+              - "port_tanker_pump_station_building"
+              - "port_tanker_pump_station_complete"
+            animated_stages:
+              - 2
+            key_objects:
+              - "reservoir"
+        - main:
+            stage_textures:
+              - "port_begin"
+
+    port_buildsite_real:
+      <<: *port_buildsite_base
+
+    port_buildsite_real_level:
+      <<: *port_buildsite_base
+
+    port_stage1:
+      subitems:
+        - ship_management:
+            stage_textures:
+              - "port_ship_management_complete"
+            animated_stages:
+              - 0
+        - technical_pipeline:
+            stage_textures:
+              - "port_technical_pipeline_complete"
+        - tanker_pump_station:
+            stage_textures:
+              - "port_tanker_pump_station_complete"
+            animated_stages:
+              - 0
+        - main:
+            stage_textures:
+              - "port_middle"
+            animated_stages:
+              - 0
+
+    port_stage2:
+      subitems:
+        - ship_management:
+            stage_textures:
+              - "port_ship_management_complete"
+            animated_stages:
+              - 0
+        - technical_pipeline:
+            stage_textures:
+              - "port_technical_pipeline_complete"
+        - tanker_pump_station:
+            stage_textures:
+              - "port_tanker_pump_station_complete"
+            animated_stages:
+              - 0
+        - main:
+            stage_textures:
+              - "port_complete"
+            animated_stages:
+              - 0
+        - tanker:
+            stage_textures:
+              - "port_tanker"
+            animated_stages:
+              - 0
+        - tugboat:
+            stage_textures:
+              - "port_tugboat"
+            animated_stages:
+              - 0
+
+    sport_complex_stage1: &sport_complex_stage1_base
+      subitems:
+        - dancehall:
+            stage_textures:
+              - "sport_complex_2_1"
+        - sporthall:
+            stage_textures:
+              - "sport_complex_1_1"
+            animated_stages:
+              - 0
+        - wrestlinghall:
+            stage_textures:
+              - "sport_complex_3_1"
+        - swimmingpool:
+            stage_textures:
+              - "sport_complex_4_1"
+
+    sport_complex_stage1_real:
+      <<: *sport_complex_stage1_base
+
+    sport_complex_stage2:
+      subitems:
+        - dancehall:
+            stage_textures:
+              - "sport_complex_2_1"
+            animated_stages:
+              - 0
+        - sporthall:
+            stage_textures:
+              - "sport_complex_1_3"
+        - wrestlinghall:
+            stage_textures:
+              - "sport_complex_3_1"
+        - swimmingpool:
+            stage_textures:
+              - "sport_complex_4_1"
+    
+    sport_complex_stage3:
+      subitems:
+        - dancehall:
+            stage_textures:
+              - "sport_complex_2_3"
+            animated_stages:
+              - 0
+        - sporthall:
+            stage_textures:
+              - "sport_complex_1_3"
+        - wrestlinghall:
+            stage_textures:
+              - "sport_complex_3_1"
+            animated_stages:
+              - 0
+        - swimmingpool:
+            stage_textures:
+              - "sport_complex_4_1"
+
+    sport_complex_stage4:
+      subitems:
+        - dancehall:
+            stage_textures:
+              - "sport_complex_2_3"
+            animated_stages:
+              - 0
+        - sporthall:
+            stage_textures:
+              - "sport_complex_1_3"
+        - wrestlinghall:
+            stage_textures:
+              - "sport_complex_3_3"
+            animated_stages:
+              - 0
+        - swimmingpool:
+            stage_textures:
+              - "sport_complex_4_1"
+            animated_stages:
+              - 0
+
+    sport_complex:
+      subitems:
+        - dancehall:
+            stage_textures:
+              - "sport_complex_2_3"
+            animated_stages:
+              - 0
+        - sporthall:
+            stage_textures:
+              - "sport_complex_1_3"
+        - wrestlinghall:
+            stage_textures:
+              - "sport_complex_3_3"
+            animated_stages:
+              - 0
+        - swimmingpool:
+            stage_textures:
+              - "sport_complex_4_3"
+            animated_stages:
+              - 0
+
+    central_station_stage1: &central_station_stage1_base
+      subitems:
+        - left:
+            stage_textures:
+              - "train_main_station_terminal_1_left"
+            animated_stages:
+              - 0
+        - right:
+            stage_textures:
+              - "train_main_station_terminal_1_right"
+    
+    central_station_stage1_real1:
+      <<: *central_station_stage1_base
+    
+    central_station_stage1_real2:
+      <<: *central_station_stage1_base
+    
+    central_station_stage2: 
+      subitems:
+        - left:
+            stage_textures:
+              - "train_main_station_terminal_2_left"
+            animated_stages:
+              - 0
+        - right:
+            stage_textures:
+              - "train_main_station_terminal_2_right"
+    
+    central_station_stage3: 
+      subitems:
+        - left:
+            stage_textures:
+              - "train_main_station_terminal_3_left"
+        - right:
+            stage_textures:
+              - "train_main_station_terminal_3_right"
+
+    central_station:
+      subitems:
+        - left:
+            stage_textures:
+              - "train_main_station_terminal_3_left"
+        - right:
+            stage_textures:
+              - "train_main_station_terminal_3_right"
+              
+    airport_place:
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level0"
+        - main:
+            stage_textures:
+              - "airport_level0"
+        - runway:
+            stage_textures:
+              - "runway_level0"
+              
+    airport_caption: &airport_main_caption
+      main_caption: 
+        description.ru: "Аэропорт"
+        description.ko: "국제공항"
+        description.en: "Airport"
+
+
+    airport_stage1_level1: &airport_stage1_level1_base
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level0"
+            popup_info: "null"
+        - main:
+            stage_textures:
+              - "airport_level1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            popup_info: "airport_stage2_level1"
+            isbuid: true
+        - runway:
+            stage_textures:
+              - "runway_level0"
+            popup_info: "null"
+
+    airport_stage1_level1_real:
+      <<: *airport_stage1_level1_base
+
+    airport_stage1_level1_real_level:
+      <<: *airport_stage1_level1_base
+
+    airport_stage1_level1_real_level2:
+      <<: *airport_stage1_level1_base
+
+    airport_stage1_level2:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level0"
+            popup_info: "null"
+        - main:
+            stage_textures:
+              - "airport_level2"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            isbuid: true
+        - runway:
+            stage_textures:
+              - "runway_level0"
+            popup_info: "null"
+
+    airport_stage1_level3:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level0"
+            popup_info: "null"
+        - main:
+            stage_textures:
+              - "airport_level3"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            isbuid: true
+        - runway:
+            stage_textures:
+              - "runway_level0"
+            popup_info: "null"
+
+    airport_stage2_level1:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage2_level2"
+            isbuid: true
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+        - runway:
+            stage_textures:
+              - "runway_level0"
+            popup_info: "null"
+
+    airport_stage2_level2:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level2"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            isbuid: true
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+            popup_info: "airport_stage2_level1"
+        - runway:
+            stage_textures:
+              - "runway_level0"
+            popup_info: "null"
+
+    airport_stage2_level3:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level3"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            isbuid: true
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+            popup_info: "airport_stage2_level1"
+        - runway:
+            stage_textures:
+              - "runway_level0"
+            popup_info: "null"
+
+    airport_stage3_level1:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+            popup_info: "airport_stage2_level1"
+        - runway:
+            stage_textures:
+              - "runway_level1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            popup_info: "airport_stage3_level2"
+            isbuid: true
+
+    airport_stage3_level2:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+            popup_info: "airport_stage2_level1"
+        - runway:
+            stage_textures:
+              - "runway_level2"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            isbuid: true
+
+    airport_stage3_level3:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+            popup_info: "airport_stage2_level1"
+        - runway:
+            stage_textures:
+              - "runway_level3"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            isbuid: true
+
+    airport_stage4_level1:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+            popup_info: "airport_stage2_level1"
+        - runway:
+            stage_textures:
+              - "runway_level4"
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+        - terminal:
+            stage_textures:
+              - "terminal_level0"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -3.5
+              y: -3.0
+            popup_info: "airport_stage4_level2"
+            isbuid: true
+
+    airport_stage4_level2:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            popup_info: "airport_stage2_level1"
+            factory_object : true
+        - runway:
+            stage_textures:
+              - "runway_level4"
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            popup_info: "airport_stage4_level1"
+        - terminal:
+            stage_textures:
+              - "terminal_level1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -3.5
+              y: -3.0
+            isbuid: true
+
+    airport_stage4_level3:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            popup_info: "airport_stage2_level1"
+            factory_object : true
+        - runway:
+            stage_textures:
+              - "runway_level4"
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            popup_info: "airport_stage4_level1"
+        - terminal:
+            stage_textures:
+              - "terminal_level2"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -3.5
+              y: -3.0
+            isbuid: true
+
+    airport_stage5_level1:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            factory_object : true
+            popup_info: "airport_stage2_level1"
+        - runway:
+            stage_textures:
+              - "runway_level4"
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            popup_info: "airport_stage4_level1"
+        - terminal:
+            stage_textures:
+              - "terminal_level3"
+            popup_offset_correction:
+              x: -3.5
+              y: -3.0
+        - aircontrol:
+            stage_textures:
+              - "aircontrol_level0"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -6.0
+              y: 3.5
+            popup_info: "airport_stage5_level2"
+            isbuid: true
+
+    airport_stage5_level2:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            popup_info: "airport_stage2_level1"
+            factory_object : true
+        - runway:
+            stage_textures:
+              - "runway_level4"
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            popup_info: "airport_stage4_level1"
+        - terminal:
+            stage_textures:
+              - "terminal_level3"
+            popup_offset_correction:
+              x: -3.5
+              y: -3.0
+            popup_info: "airport_stage5_level1"
+        - aircontrol:
+            stage_textures:
+              - "aircontrol_level1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -8.0
+              y: 6.0
+            isbuid: true
+
+    airport_stage5_level3:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            popup_info: "airport_stage2_level1"
+            factory_object : true
+        - runway:
+            stage_textures:
+              - "runway_level4"
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            popup_info: "airport_stage4_level1"
+        - terminal:
+            stage_textures:
+              - "terminal_level3"
+            popup_offset_correction:
+              x: -3.5
+              y: -3.0
+            popup_info: "airport_stage5_level1"
+        - aircontrol:
+            stage_textures:
+              - "aircontrol_level2"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -8.5
+              y: 6.0
+            isbuid: true
+
+    airport_stage6_level1:
+      <<: *airport_main_caption
+      subitems:
+        - airfield:
+            stage_textures:
+              - "airfield_level4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "airport_stage3_level1"
+        - main:
+            stage_textures:
+              - "airport_level4"
+            popup_offset_correction:
+              x: -3.0
+              y: -7.5
+            popup_info: "airport_stage2_level1"
+            factory_object : true
+        - runway:
+            stage_textures:
+              - "runway_level4"
+            popup_offset_correction:
+              x: 6.0
+              y: 1.5
+            popup_info: "airport_stage4_level1"
+        - terminal:
+            stage_textures:
+              - "terminal_level3"
+            popup_offset_correction:
+              x: -3.5
+              y: -3.0
+            popup_info: "airport_stage5_level1"
+        - aircontrol:
+            stage_textures:
+              - "aircontrol_level3"
+            popup_offset_correction:
+              x: -8.5
+              y: 6.0
+            popup_info: "airport_stage5_level2"
+            
+    naval_station_caption: &naval_station_main_caption
+      main_caption: 
+            description.ru: "Военно-морская база"
+            description.ko: "해군 기지"
+            description.en: "Naval station"
+    
+    naval_station_place:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            stage_textures:
+              - "millitary_seaport_null_1_v1"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+        - main:
+            stage_textures:
+              - "millitary_seaport_null_v1"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+    
+    naval_station_buildsite: &naval_station_buildsite
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup_info: "naval_station_buildsite"
+            stage_textures:
+              - "naval_station_0"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            isbuid: true
+        - main:
+            popup_info: "naval_station_buildsite"
+            stage_textures:
+              - "shipyard_0"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            isbuid: true
+            
+    naval_station_buildsite_real:
+        <<: *naval_station_buildsite
+    
+    naval_station_buildsite_real_level:
+        <<: *naval_station_buildsite
+    
+    naval_station_stage1:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup_info: "naval_station_buildsite"
+            stage_textures:
+              - "naval_station_1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            isbuid: true
+        - main:
+            popup_info: "naval_station_buildsite"
+            stage_textures:
+              - "shipyard_0"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            isbuid: true
+
+    sq_city_caption: &sq_city_main_caption
+      main_caption: 
+          description.ru: "SQ-Сити"
+          description.ko: "디지털 미디어 시티"
+          description.en: "SQ-City"
+        
+    sq_city_buildsite:
+      subitems:       
+         - main: 
+            stage_textures:
+              - "sq-city_null"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "sq_city_buildsite"
+            custom_texture_counter: "sq-city_null_base"
+            isbuid: true
+            rotated: true
+            animated_stages:
+              - 0           
+            use_custom_animation:
+              - "sq_sity"          
+    sq_city_buildsite_real:
+      subitems:       
+         - main: 
+            stage_textures:
+              - "sq-city_null"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "sq_city_buildsite"
+            custom_texture_counter: "sq-city_null_base"
+            isbuid: true
+            rotated: true
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sq_sity"
+              
+    sq_city_stage1:
+      <<: *sq_city_main_caption
+      subitems:
+        - main:
+            popup:
+              apply: "*Construction"
+            stage_textures:
+              - "sq-city_stage1"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "sq_city_buildsite"
+            custom_texture_counter: "sq-city_null_base"
+            factory_object : true            
+            rotated: true
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sq_sity"
+              
+    sq_city_stage2:
+      <<: *sq_city_main_caption
+      subitems:
+        - main:
+            popup:
+              apply: "*Construction"
+            stage_textures:
+              - "sq-city_stage2"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "sq_city_buildsite"
+            custom_texture_counter: "sq-city_null_base"
+            factory_object : true            
+            rotated: true
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sq_sity"
+              
+    sq_city_stage3:
+      <<: *sq_city_main_caption
+      subitems:
+        - main:
+            popup:
+              apply: "*Construction"
+            stage_textures:
+              - "sq-city_stage3"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "sq_city_buildsite"
+            custom_texture_counter: "sq-city_null_base"
+            factory_object : true            
+            rotated: true
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sq_sity"
+              
+    sq_city_stage4:
+      <<: *sq_city_main_caption
+      subitems:
+        - main:
+            popup:
+              apply: "*Construction"
+            stage_textures:
+              - "sq-city_stage4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "sq_city_buildsite"
+            custom_texture_counter: "sq-city_null_base"
+            factory_object : true            
+            rotated: true
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sq_sity"
+              
+    sq_city_stage5:
+      <<: *sq_city_main_caption
+      subitems:
+        - main:
+            stage_textures:
+              - "sq-city_stage5"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "sq_city_buildsite"
+            custom_texture_counter: "sq-city_null_base"
+            factory_object : true            
+            rotated: true
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sq_sity"
+            
+    naval_station_stage2:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "naval_station_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "naval_station_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+        - main:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "shipyard_1"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+            
+    naval_station_stage3:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "naval_station_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "naval_station_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+        - main:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "shipyard_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "shipyard_1"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+            
+    naval_station_stage4:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "naval_station_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "naval_station_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+        - main:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "shipyard_3"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "shipyard_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+            
+    naval_station_stage5:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "naval_station_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "naval_station_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+        - main:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "shipyard_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "shipyard_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+                    
+    naval_station_stage6:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "naval_station_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "naval_station_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+        - main:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "shipyard_5"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "shipyard_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+            
+    naval_station_stage7:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "naval_station_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "naval_station_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+        - main:
+            popup:
+              apply: "*Cruiser"
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "shipyard_6"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "shipyard_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+            
+    naval_station_stage8:
+      <<: *naval_station_main_caption
+      subitems:
+        - appendix:
+            popup:
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "naval_station_4"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "naval_station_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+        - main:
+            popup:
+              build: "*Buildings"
+            shop_department: "naval_station"
+            stage_textures:
+              - "shipyard_7"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "shipyard_4"
+            popup_offset_correction:
+              x: 0.1
+              y: 0.1
+            popup_info: "naval_station_buildsite"
+            factory_object : true
+    
+    sea_naval_station_caption: &sea_naval_station_main_caption
+      main_caption: 
+          description.ru: "База стратегического назначения"
+          description.ko: "해군 전술 기지"
+          description.en: "Naval base strategy"
+    
+    sea_naval_station_buildsite: &sea_naval_station_buildsite
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            stage_textures:
+              - "submarine_station_0"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "sea_naval_station_stage1"
+            isbuid: true
+        - dock:
+            stage_textures:
+              - "sea_naval_station_null"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "sea_naval_station_stage1"
+            isbuid: true
+            
+    sea_naval_station_buildsite_real:
+        <<: *sea_naval_station_buildsite
+    
+    sea_naval_station_buildsite_real_level:
+        <<: *sea_naval_station_buildsite
+    
+    sea_naval_station_stage1:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            stage_textures:
+              - "submarine_station_1"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_1"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "sea_naval_station_stage1"
+            isbuid: true
+        - dock:
+            stage_textures:
+              - "sea_naval_station_null"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "sea_naval_station_stage1"
+            isbuid: true
+            
+    sea_naval_station_stage2:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "submarine_station_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+        - dock:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "sea_naval_station_null"
+            popup_offset_correction:
+              x: -2.0
+              y: 0.0
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+            
+    sea_naval_station_stage3:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "submarine_station_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+        - dock:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "aircraft_carrier_1"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage3"
+            factory_object : true
+            
+    sea_naval_station_stage4:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "submarine_station_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+        - dock:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "aircraft_carrier_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage4"
+            factory_object : true
+    
+    sea_naval_station_stage5:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "submarine_station_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+        - dock:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "aircraft_carrier_5"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage4"
+            factory_object : true
+        
+    sea_naval_station_stage6:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "submarine_station_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+        - dock:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "aircraft_carrier_6"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage4"
+            factory_object : true
+    
+    sea_naval_station_stage7:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "submarine_station_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+        - dock:
+            popup:
+              apply: "*Fighter"
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "aircraft_carrier_7"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage4"
+            factory_object : true
+    
+    sea_naval_station_stage8:
+      <<: *sea_naval_station_main_caption
+      subitems:
+        - stantion:
+            popup:
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "submarine_station_2"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "submarine_station_4"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage2"
+            factory_object : true
+        - dock:
+            popup:
+              build: "*Buildings"
+            shop_department: "sea_naval_station"
+            stage_textures:
+              - "aircraft_carrier_8"
+            popup_offset_correction:
+              x: -2.0
+              y: 1.5
+            popup_info: "sea_naval_station_stage4"
+            factory_object : true
+    
+    subway_depot_buildsite: &subway_depot_buildsite_base
+      subitems:
+        - subway:
+            stage_textures:
+              - "subway_depot_1_v1_1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            isbuid: true
+
+    subway_depot_buildsite_real:
+      <<: *subway_depot_buildsite_base
+    
+    subway_depot_buildsite_real_level:
+      <<: *subway_depot_buildsite_base
+    
+    subway_depot_buildsite_real_level2:
+      <<: *subway_depot_buildsite_base
+
+    little_subway_depot:
+      subitems:
+        - subway:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "metro"
+            stage_textures:
+              - "subway_depot_2_v1_1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+    
+    middle_subway_depot:
+      subitems:
+        - subway:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: "metro"
+            stage_textures:
+              - "subway_depot_3_v1_1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+            
+    large_subway_depot:
+      subitems:
+        - subway:
+            popup:
+              build: "*Buildings"
+            shop_department: "metro"
+            stage_textures:
+              - "subway_depot_4_v1_1"
+            animated_stages:
+              - 0
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+    
+    mototrail_stage2:
+      subitems:
+        - moto:
+            stage_textures:
+              - "mototrack_3_v1_1"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "mototrack_3_0_2"
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+    
+    karnak_temple_stage2:
+      subitems:
+        - temple:
+            stage_textures:
+              - "karnak_temple_3_v1_1"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "karnak_temple_3_0_2"
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+    
+    port_stage2:
+      subitems:
+        - temple:
+            stage_textures:
+              - "port_complete"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "port_complete"
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+          
+    sawmill:
+      subitems:
+        - sawmill:
+            stage_textures:
+              - "sawmill_complete_v1_1"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sawmill_complete_0_2"
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+            draw_all_forest: true
+    
+    sawmill_middle:
+      subitems:
+        - sawmill_middle:
+            popup:
+              apply: "*Construction"
+              build: "*Buildings"
+            shop_department: furniture
+            stage_textures:
+              - "sawmill_upgrade_1_v1_1"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sawmill_upgrade_1_0_2"
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+            draw_all_forest: false
+    
+    sawmill_large:
+      subitems:
+        - sawmill_large:
+            popup:
+              build: "*Buildings"
+            shop_department: furniture
+            stage_textures:
+              - "sawmill_upgrade_2_v1_1"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "sawmill_upgrade_2_0_2"
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+            draw_all_forest: false
+            
+    pyramid:
+      subitems:
+        - pyramid:
+            stage_textures:
+              - "pyramid_4_v1"
+            animated_stages:
+              - 0
+            use_custom_animation:
+              - "pyramid_4_0_2"
+            popup_offset_correction:
+              x: -0.1
+              y: 0.0
+            factory_object : true
+    

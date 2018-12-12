@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{2c2f22f9-2e7f-4d99-8401-a22f837c0c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\glew">
+      <UniqueIdentifier>{5b60d60b-4a49-4c35-8808-86dec720c3fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\glew\gl">
+      <UniqueIdentifier>{1f31efe5-f425-4e7d-b824-bac335a2b174}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\glew\glew_dll.h">
+      <Filter>osl\glew</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\glew\gl\glew.h">
+      <Filter>osl\glew\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\glew\gl\glxew.h">
+      <Filter>osl\glew\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\glew\gl\wglew.h">
+      <Filter>osl\glew\gl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\glew\gl\glew.c">
+      <Filter>osl\glew\gl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

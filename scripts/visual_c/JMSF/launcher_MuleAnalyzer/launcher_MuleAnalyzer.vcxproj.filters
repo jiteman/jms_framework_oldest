@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{511d3b1b-e1d0-4318-a4aa-1863ef49cde2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging">
+      <UniqueIdentifier>{162f99a9-8ba6-4241-ad64-fc0dd980cfd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\mulan">
+      <UniqueIdentifier>{149a01a5-1d42-44cc-ae37-07d6a9af6fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\mulan\launchers">
+      <UniqueIdentifier>{88ffed0a-896c-49c9-8536-be9b51b9a848}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\launchers\launcher_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan\launchers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

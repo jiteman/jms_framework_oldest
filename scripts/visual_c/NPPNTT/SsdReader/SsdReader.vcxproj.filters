@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nppntt">
+      <UniqueIdentifier>{7e9a0454-c799-4c04-abe8-2b5cf46c1efd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\ssd_reading">
+      <UniqueIdentifier>{f6d25a21-1311-47c8-abf8-e1b458409e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\ssd_reading\exceptions">
+      <UniqueIdentifier>{8aad8145-29b6-47a1-9135-682a7e782bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\ssd_reading\realization">
+      <UniqueIdentifier>{78d977f6-6a4a-4df2-8995-0f5eb02e5bd3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\Configuration.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\DriveChannel.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\DriveChannelArray.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\DriveChannelRequestDistributor.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\DriveTable.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\impl_SsdReader.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\ReadingChannel.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\ReadingChannelInformation.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\ReadingChannelRequestDistributionLauncher.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\RequestClearer.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\ResultDataGroup.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\ResultDataGroupCollection.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\SingleRequestData.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\SsdReader.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\VirtualFileTable.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\VirtualFileTableElement.cpp">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\exceptions\exception_SsdReading.cpp">
+      <Filter>nppntt\ssd_reading\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\ssd_reading\realizations\realization_Configuration.cpp">
+      <Filter>nppntt\ssd_reading\realization</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\Configuration.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\DriveChannel.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\DriveChannelArray.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\DriveChannelRequestDistributor.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\DriveTable.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\impl_SsdReader.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\ReadingChannel.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\ReadingChannelInformation.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\ReadingChannelRequestDistributionLauncher.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\RequestClearer.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\ResultDataGroup.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\ResultDataGroupCollection.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\SingleRequestData.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\SsdReader.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\SsdReader_dll.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\VirtualFileTable.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\VirtualFileTableElement.h">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\exceptions\exception_SsdReading.h">
+      <Filter>nppntt\ssd_reading\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\realizations\realization_Configuration.h">
+      <Filter>nppntt\ssd_reading\realization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\DriveTable.hxx">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\ssd_reading\VirtualFileTable.hxx">
+      <Filter>nppntt\ssd_reading</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

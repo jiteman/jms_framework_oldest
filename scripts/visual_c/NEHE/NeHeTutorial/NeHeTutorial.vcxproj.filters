@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nehe">
+      <UniqueIdentifier>{4474c0c2-386a-492b-9503-f8b1c8314954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nehe\tutorials">
+      <UniqueIdentifier>{89f24f7b-4103-4b84-8cdb-9e09e6f97973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nehe\tutorials\realizations">
+      <UniqueIdentifier>{0cbc217f-631b-4ea8-8747-765789d2fa16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_factory_SceneDrawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\DrawScene.cpp">
+      <Filter>nehe\tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\factory_SceneDrawer.cpp">
+      <Filter>nehe\tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\KeyboardArray.cpp">
+      <Filter>nehe\tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\NeHeTutorial.cpp">
+      <Filter>nehe\tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\SceneDrawer.cpp">
+      <Filter>nehe\tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene01Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene02Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene03Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene04Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene05Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene06Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene07Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene08Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene09Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene10Drawer.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\TutorialScenes.cpp">
+      <Filter>nehe\tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_TutorialScenes.cpp">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_factory_SceneDrawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_factory_SceneDrawer.hxx">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\DrawScene.h">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\factory_SceneDrawer.h">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\KeyboardArray.h">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\NeHeTutorial.h">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\NeHeTutorial_dll.h">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\SceneDrawer.h">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\SceneDrawer.hxx">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene01Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene02Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene03Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene04Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene05Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene06Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene07Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene08Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene09Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_Scene10Drawer.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\TutorialScenes.h">
+      <Filter>nehe\tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nehe\tutorials\realizations\realization_TutorialScenes.h">
+      <Filter>nehe\tutorials\realizations</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

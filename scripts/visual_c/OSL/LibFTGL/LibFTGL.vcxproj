@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EAB5320C-1051-4F0B-9D4C-56320B89415F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibFTGL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OSL_FTGL_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenGL32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OSL_FTGL_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>OpenGL32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OSL_FTGL_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenGL32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OSL_FTGL_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>OpenGL32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibFreeType\LibFreeType.vcxproj">
+      <Project>{d3b1a54a-620c-4962-a443-837f4a59a423}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTBBox.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTCharmap.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTContour.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTFace.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBitmapFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBufferFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTExtrudeFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTOutlineFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPixmapFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPolygonFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTTextureFont.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTGlyphContainer.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBitmapGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBufferGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTExtrudeGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTOutlineGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPixmapGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPolygonGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTTextureGlyph.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTLayout.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTSimpleLayout.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTLibrary.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTPoint.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTSize.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTVectoriser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTBBox.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTBuffer.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTCharmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTCharToGlyphIndexMap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTContour.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTFace.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBitmapFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBufferFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBufferFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTExtrudeFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLBitmapFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLExtrudeFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLOutlineFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLPixmapFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLPolygonFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLTextureFont.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTOutlineFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPixmapFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPolygonFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTTextureFontImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftgl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTGlyphContainer.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBitmapGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBitmapGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBufferGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBufferGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTExtrudeGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTExtrudeGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTOutlineGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTOutlineGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPixmapGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPixmapGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPolygonGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPolygonGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTTextureGlyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTTextureGlyphImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftgl_config.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftgl_dll.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTInternals.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTLayout.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTLayoutImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTSimpleLayout.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTSimpleLayoutImpl.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTLibrary.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTList.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTPoint.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTSize.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTUnicode.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTVector.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTVectoriser.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

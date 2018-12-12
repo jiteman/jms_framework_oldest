@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{51d7d51c-02ad-43bc-9eb8-d7ada8c31382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\mtf">
+      <UniqueIdentifier>{941b7833-3f64-4234-994a-e9029166e8f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie">
+      <UniqueIdentifier>{eca5b8f4-6d2c-48bf-9dc4-0b1bc028a5da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\runup">
+      <UniqueIdentifier>{d793ee09-d327-42c0-b4ed-003ba316fbe7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\functional_tests\jmsf\functional_tests_Jmfs_launcher.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\functional_tests\jmsf\osie\runup\testing_Runnable.cpp">
+      <Filter>jmsf\osie\runup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\functional_tests\jmsf\osie\runup\test_Runnable.cpp">
+      <Filter>jmsf\osie\runup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\functional_tests\jmsf\osie\runup\testing_Runnable.h">
+      <Filter>jmsf\osie\runup</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

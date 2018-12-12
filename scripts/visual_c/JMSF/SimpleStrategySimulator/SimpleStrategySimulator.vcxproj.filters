@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{d0baadb4-4a80-4910-8e2b-40746262bc9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\sss">
+      <UniqueIdentifier>{255f89be-203a-4417-ba2e-c40ea0538267}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\sss\launchers">
+      <UniqueIdentifier>{55926b0d-e9e5-497e-b271-7b22c810bc32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\_OLD_remSnd.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\AI.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Animation.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Bases.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Control.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Diplomation.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\DrawPolygon.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Filer.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Game.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Graph2d.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Group.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\GUI.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\main4.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\MainGL.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Menu.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Missiles.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\MyFuns.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Network.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Order.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Packer.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Polygon.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\remSnd.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Report.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\SafeFloat.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\SendRecv.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\sock.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Sound.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Textures.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\Units.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\vbo.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\warfog.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\wid.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\zamer.cpp">
+      <Filter>jmsf\sss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources_oldest\jmsf\sss\launchers\launcher_SimpleStrategySimulator.cpp">
+      <Filter>jmsf\sss\launchers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\_OLD_remSnd.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\AI.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\AllDefinitions.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Animation.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Bases.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Control.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Diplomation.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\DrawPolygon.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Filer.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Game.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Graph2d.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Group.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\GUI.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\MainGL.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Menu.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Missiles.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\MyFuns.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\NetWork.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\open_gl.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Order.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Packer.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Polygon.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\remSnd.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Report.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\SafeFloat.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\SendRecv.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\sock.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Sound.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\sss.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\sss_dll.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\st.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Textures.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\Units.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\vbo.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\warfog.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\wid.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources_oldest\jmsf\sss\zamer.h">
+      <Filter>jmsf\sss</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

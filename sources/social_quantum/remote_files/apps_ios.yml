@@ -1,0 +1,225 @@
+#
+# iCity
+#
+
+city.common.dev: &city_dev
+  servers_statics:
+    - "88.212.222.182/mobile_assets"
+    - "88.212.222.201/mobile_assets"
+    - "88.212.222.200/mobile_assets"
+
+city.common.prod: &city_prod
+  servers_statics:
+    - "88.212.222.182/mobile_assets"
+    - "88.212.222.201/mobile_assets"
+    - "88.212.222.200/mobile_assets"
+
+#
+# iCity dev
+#  
+
+city.sq.dev:
+  <<: *city_dev
+  app_id: CBANKBABABABABABA
+  social: "SQ.Dev"
+  servers:
+   - "77.91.226.132:8200"
+
+city.gc.dev:
+  <<: *city_dev
+  app_id: CBANKBABABABABABA
+  social: "GC.Dev"
+  servers:
+   - "77.91.226.132:8200"
+
+city.mm.dev:
+  <<: *city_dev
+  app_id: 512711
+  social: "MM.Dev"
+  servers:
+   - "77.91.226.132:8250"
+
+city.od.dev:
+  <<: *city_dev
+  app_id: CBAKKBABABABABABA
+  mobile_app_id: CBAKKBABABABABABA
+  social: "OD.Dev"
+  servers:
+    - "77.91.226.132:8200"
+
+city.vk.dev:
+  <<: *city_dev
+  app_id: 1906419
+  social: "VK.Dev"
+  servers:
+   - "77.91.226.132:9700"
+
+city.fb.dev:
+  <<: *city_dev
+  social: "FB.Dev"
+  servers:
+    - "77.91.226.132:12201"
+
+city.of.dev:
+  <<: *city_dev
+  app_id: CBANKBABABABABABA
+  social: "OF.Dev"
+  servers:
+   - "77.91.226.132:8200"
+
+#
+# iCity production
+#
+
+city.sq.prod:
+  <<: *city_prod
+  app_id: CBAKKBABABABABABA
+  social: "SQ.Prod"
+  servers:
+   - "city-gc-prod.socialquantum.com"
+
+city.gc.prod:
+  <<: *city_prod
+  social: "GC.Prod"
+  app_id: CBAKKBABABABABABA
+  servers:
+   - "city-gc-prod.socialquantum.com"
+
+city.mm.prod:
+  <<: *city_prod
+  app_id: 494497
+  social: "MM.Prod"
+  servers:
+    - "88.212.222.164/city_server_mm_prod"
+
+city.vk.prod:
+  <<: *city_prod
+  app_id: 1858070
+  social: "VK.Prod"
+  servers:
+    - "88.212.222.164/city_server_vk_prod"
+
+city.od.prod:
+  <<: *city_prod
+  app_id: CBANKBABABABABABA
+  mobile_app_id: CBAJBFABABABABABA
+  social: "OD.Prod"
+  servers:
+    - "88.212.222.223/city_server_od_prod"
+    - "88.212.222.224/city_server_od_prod"
+    - "88.212.222.226/city_server_od_prod"
+
+city.fb.prod:
+  <<: *city_prod
+  social: "FB.Prod"
+  servers:
+    - "77.91.226.132:12201"
+    
+city.of.prod:
+  <<: *city_dev
+  app_id: CBANKBABABABABABA
+  social: "OF.Prod"
+  servers:
+   - "77.91.226.132:8200"
+
+#
+# iFarm
+#
+
+farm.common.dev: &farm_dev
+  servers_statics:
+    - "88.212.222.182/mobile_assets"
+    - "88.212.222.201/mobile_assets"
+    - "88.212.222.200/mobile_assets"
+
+farm.common.prod: &farm_prod
+  servers_statics:
+    - "88.212.222.182/mobile_assets"
+    - "88.212.222.201/mobile_assets"
+    - "88.212.222.200/mobile_assets"
+
+#
+# iFarm dev
+#
+
+farm.sq.dev:
+  <<: *farm_dev
+  app_id: CBADKBABABABABABA
+  servers:
+   - "77.91.226.132:9200"
+
+farm.gc.dev:
+  <<: *farm_dev
+  app_id: CBADKBABABABABABA
+  servers:
+   - "77.91.226.132:9200"
+
+farm.mm.dev:
+  <<: *farm_dev
+  app_id: 488632
+  servers:
+    - "77.91.226.132:9350"
+
+farm.od.dev:
+  <<: *farm_dev
+  app_id: CBADKBABABABABABA
+  servers:
+    - "77.91.226.132:9200"
+
+farm.vk.dev:
+  <<: *farm_dev
+  app_id: 1900317
+  servers:
+    - "77.91.226.132:9100"
+
+farm.fb.dev:
+  <<: *farm_dev
+  servers:
+   - "77.91.226.132:9200"
+
+#
+# iFarm production
+#
+
+farm.sq.prod:
+  <<: *farm_prod
+  app_id: CBAFKBABABABABABA
+  servers:
+   - "77.91.226.132:9200"
+
+farm.gc.prod:
+  <<: *farm_prod
+  app_id: CBAFKBABABABABABA
+  servers:
+   - "77.91.226.132:9200"
+
+farm.mm.prod:
+  <<: *farm_prod
+  app_id: 497874
+  servers:
+  - "77.91.226.144"
+  - "77.91.226.145"
+
+farm.vk.prod:
+  <<: *farm_prod
+  app_id: 1895587
+  servers:
+#   - "77.91.226.211"
+   - "77.91.226.202"
+
+farm.od.prod:
+  <<: *city_prod
+  app_id: CBAFKBABABABABABA
+  servers:
+    - "77.91.226.192"
+    - "77.91.226.209"
+    - "77.91.226.191"
+    - "77.91.226.194"
+    - "77.91.226.142"
+    - "77.91.226.195"
+    - "77.91.226.196"
+    - "77.91.226.215"
+    - "77.91.226.187"
+    - "77.91.226.188"
+    - "77.91.226.218"
+    - "77.91.226.158"

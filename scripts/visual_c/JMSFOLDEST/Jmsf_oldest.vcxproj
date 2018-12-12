@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Stdal\Stdal.vcxproj">
+      <Project>{57d2be6c-986c-4fd0-ac12-f65e78e7b408}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\BitFields.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\ConstantFunctor.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\DoForEvery.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Find.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\flyweight_factory_Functor.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Functor.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Functors.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Functors.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_ConstantFunctor.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_flyweight_factory_Functor.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_flyweight_factory_Functor.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_Functor.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForBothConstantAndNonconstant.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForBothConstantAndNonconstant.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForConstantPointerAndConstantProxy.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForConstantPointerAndConstantProxy.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForPointerAndProxy.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForPointerAndProxy.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\ReferenceCounters.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\ReferenceCounters.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\Array.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\Buffer.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\DoublyLinkedNode.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\List.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\ConstantIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Container.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Container.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\ContainerAgent.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Iterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Iterators.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Iterators.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\BinaryNode.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\BinaryNode.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\DoublyLinkedNode.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\DoublyLinkedNode.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\SinglyLinkedNode.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\SinglyLinkedNode.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ArrayConstantIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ArrayIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ConstantIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ContainerAgent.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ContainerArray.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ContainerList.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_Iterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ListConstantIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ListIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ArrayCreationLogging.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ArrayDeletionLogging.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\factory_DebuggingObject.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\FileAndLine.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\FileAndLine.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\Log.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\Log.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MemoryLoggingSwitch.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\factory_MuleAnalyzer.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\mulan.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\mulan_dll.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\MuleAnalyzer.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\MuleAnalyzer.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_MuleAnalyzer.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayCreationInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayCreationInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayDeletionInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayDeletionInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulInformationCreator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectCreationInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectCreationInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectDeletionInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectDeletionInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ObjectCreationLogging.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ObjectDeletionLogging.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_factory_DebuggingObject.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_factory_DebuggingObject.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_Log.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayCreationLogger.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayDeletionLogger.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectCreationLogger.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectDeletionLogger.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadContainerDereferencing.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadDynamicCast.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_CantOpenFile.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_DivisionByZero.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_InitializationOrderIsViolated.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_UnexpectedStlException.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\memory\memory.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\memory\NativeAllocator.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\memory\realizations\realization_SystemNativeAllocator.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Exception.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Object.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observable.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observer.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Object.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Observable.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\assists\AutoLocker.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableException.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableIsAlreadyRegisteredForThisThread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\RunnableExceptionInformation.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\RunnableExceptionInformation.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\factory_GenericMultithreading.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\factory_Multithreading.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Lockable.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Lockable.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_Lockable.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Lockable.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Runnable.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_GenericMultithreading.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_GenericMultithreading.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_Multithreading.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_Multithreading.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_SynchronizedQueue.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_Thread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Runnable.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Runnable.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\SynchronizedQueue.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\SynchronizedQueue.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Thread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Thread.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\assists\FileReader.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventArrayIsNullptr.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsAlreadyAdded.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsNullptr.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventListIsEmpty.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_FileException.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_PriorityLevelIsOutOfRange.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnableToCreateThread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnsetCreator.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_WaitingForEvenetIsFailed.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\hiddens\hidden_Thread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\hiddens\hidden_Thread.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mixins\mixin_osie_Thread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mixins\null_mixin_osie_Thread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mocks\mocks.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mocks\mocks_dll.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\hiddens\ms_windows_hidden_Thread.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_BufferedFile.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Event.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_EventArray.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_EventArray.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_File.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_FileSystemControl.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_FileSystemControl.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_include.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Mutex.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MutexSpecial.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_PopUpMessage.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Stopwatch.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UnbufferedFile.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UtilityControl.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UtilityControl.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\realizations\EventHandleCache.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\realizations\EventHandleCache.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\constant_TextString.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\exception_exception_Object.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\exception_Should.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextStream.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextString.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Container.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Container.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Pair.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Pair.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_TextObject.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_Pair.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_Array.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_Array.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ConstantForwardIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ConstantReverseIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ForwardIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_List.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_List.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ReverseIterator.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextStream.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextString.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\AlignmentAndSize.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\AlignmentAndSize.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Asd.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Asd.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Bitwise.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Bitwise.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Boolean.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Boolean.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Integer.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Integer.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\internals\internal_types.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongInteger.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongInteger.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongNatural.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongNatural.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Natural.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Natural.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Real.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Real.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestInteger.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestInteger.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestNatural.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestNatural.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortInteger.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortInteger.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortNatural.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortNatural.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortReal.h" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortReal.hxx" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\_data_structures\Buffer.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\_data_structures\Queue.hpp" />
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\_data_structures\Stack.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForBothConstantAndNonconstant.inl" />
+    <None Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForConstantPointerAndConstantProxy.inl" />
+    <None Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForPointerAndProxy.inl" />
+    <None Include="..\..\..\sources_oldest\jmsf\types\AlignmentAndSize.inl" />
+    <None Include="..\..\..\sources_oldest\jmsf\types\Bitwise.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\base_pointing\ReferenceCounters.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\factory_DebuggingObject.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\FileAndLine.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\Log.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MemoryLoggingSwitch.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\factory_MuleAnalyzer.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\launchers\launcher_MuleAnalyzer.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\MuleAnalyzer.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_MuleAnalyzer.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayCreationInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayDeletionInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectCreationInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectDeletionInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_factory_DebuggingObject.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_Log.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayCreationLogger.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayDeletionLogger.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectCreationLogger.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectDeletionLogger.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadContainerDereferencing.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadDynamicCast.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_CantOpenFile.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_DivisionByZero.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_InitializationOrderIsViolated.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_UnexpectedStlException.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\memory\NativeAllocator.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\memory\realizations\realization_SystemNativeAllocator.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Exception.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Object.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observable.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observer.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Object.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Observable.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\assists\AutoLocker.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableException.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableIsAlreadyRegisteredForThisThread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\RunnableExceptionInformation.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\factory_Multithreading.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\Lockable.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_Lockable.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Lockable.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Runnable.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_Multithreading.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_Thread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\Runnable.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\Thread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventArrayIsNullptr.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsAlreadyAdded.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsNullptr.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventListIsEmpty.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_FileException.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_PriorityLevelIsOutOfRange.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnableToCreateThread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnsetCreator.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_WaitingForEvenetIsFailed.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\hiddens\hidden_Thread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\mixins\mixin_osie_Thread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\mixins\null_mixin_osie_Thread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\hiddens\ms_windows_hidden_Thread.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_BufferedFile.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Event.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_EventArray.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_File.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_FileSystemControl.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Mutex.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MutexSpecial.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_PopUpMessage.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_static_factory_OperatingSystemSpecial.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Stopwatch.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UnbufferedFile.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UtilityControl.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\realizations\EventHandleCache.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\constant_TextString.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\exception_exception_Object.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\exception_Should.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextStream.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextString.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_TextObject.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextStream.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextString.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Asd.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Boolean.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Integer.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\internals\internal_types.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\LongInteger.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\LongNatural.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Natural.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Real.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortestInteger.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortestNatural.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortInteger.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortNatural.cpp" />
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortReal.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC881868-97BB-4E42-AA0B-452946929450}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Jmsf_oldest</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources_oldest;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources_oldest;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources_oldest;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources_oldest;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290;4251;4514;4250;4710</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_RESEARCH_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

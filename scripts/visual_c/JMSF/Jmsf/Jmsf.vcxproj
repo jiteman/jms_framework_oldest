@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Stdal\Stdal.vcxproj">
+      <Project>{57d2be6c-986c-4fd0-ac12-f65e78e7b408}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Comparator.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Comparator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Find.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Find.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\jmsf.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\jmsf_dll.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\jmsf_language_support.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocated.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocated.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_address_comparator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_address_comparator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_returned_address_comparator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_returned_address_comparator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_comparator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_comparator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_fit_comparator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_fit_comparator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Fixed_size_heap_allocator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Fixed_size_heap_allocator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_block_descriptor.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_block_descriptor.hxx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_list_allocator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_list_allocator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Heap_status_descriptor.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Heap_status_descriptor.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Memory_block_descriptor.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Memory_block_descriptor.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Pool_block_descriptor.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Pool_block_descriptor.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\System_memory_allocator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\System_memory_allocator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Top_pool_allocator.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Top_pool_allocator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocator.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Amp.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Amp.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Buffer.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Buffer.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Constructor.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Constructor.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Destructor.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Destructor.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\excepting\exception_Memory_is_depleted.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\excepting\exception_Memory_is_depleted.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Memory_pointer.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Memory_pointer.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Omp.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Omp.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\temporary_Allocator.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Wamp.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Wamp.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Womp.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Womp.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\excepting\exception_exception_Object.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_exception_Object.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_exception_Object.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_null_Object.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_null_Object.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_Object.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_Object.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\Object.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\Singleton.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\Singleton.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Automatic_pointer.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Automatic_pointer.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_pointer.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_pointer.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_proxy.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_proxy.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_both_constant_and_nonconstant.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_both_constant_and_nonconstant.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_constant_pointer_and_constant_proxy.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_constant_pointer_and_constant_proxy.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_pointer_and_proxy.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_pointer_and_proxy.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Pointer_deleter.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Pointer_deleter.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Proxy_deleter.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Proxy_deleter.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Reference_counters.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Reference_counters.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Type_data.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Type_data.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Pointer.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Pointer.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Proxy.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Proxy.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List_agent.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List_agent.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\noding\Doubly_linked_node.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\noding\Doubly_linked_node.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\traversing\List_traverser.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\traversing\List_traverser.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Aso.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Aso.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Aso.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_character.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_character.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Comparasion_result.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Comparasion_result.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\deprecating\C_character_string.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\deprecating\C_character_string.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\examples\Char_string.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Integers.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Integers.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Bitwise.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Bitwise.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Boolean.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Boolean.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\internals\Floating_point_converter.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\internals\internal_types.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\internals\String_input_and_output.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Naturals.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Naturals.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Reals.hpp" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Reals.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeCharacter.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeCharacter.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeString.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeString.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\utilities\AnsiiStream.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\utilities\AnsiiStream.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\excepting\exception_Should.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\Exception.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\Exception.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\File_and_line.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\File_and_line.hxx" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\mixing\mixin_Exception.h" />
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\Should.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\Allocated.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_address_comparator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_returned_address_comparator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_comparator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_fit_comparator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Fixed_size_heap_allocator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_block_descriptor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_list_allocator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Heap_status_descriptor.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Memory_block_descriptor.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Pool_block_descriptor.inl" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\System_memory_allocator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Top_pool_allocator.inl" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\Allocator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\excepting\exception_Memory_is_depleted.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\Memory_pointer.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\temporary_Allocator.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\_samples\dl_malloc.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\excepting\exception_exception_Object.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_exception_Object.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_null_Object.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_Object.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\Object.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\pointing\internals\Reference_counters.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Ansii_character.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Ansii_string.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Aso.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Boolean.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Comparasion_result.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\deprecating\C_character_string.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\examples\Char_string.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Integers.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\internals\Floating_point_converter.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\internals\internal_types.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\internals\String_input_and_output.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Naturals.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Reals.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\UnicodeCharacter.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\UnicodeString.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\utilities\AnsiiStream.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\excepting\exception_Should.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\Exception.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\File_and_line.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\mixing\mixin_Exception.cpp" />
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\Should.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\sources\jmsf\assisting\Comparator.inl" />
+    <None Include="..\..\..\..\sources\jmsf\assisting\Find.inl" />
+    <None Include="..\..\..\..\sources\jmsf\memorying\Amp.inl" />
+    <None Include="..\..\..\..\sources\jmsf\memorying\Buffer.inl" />
+    <None Include="..\..\..\..\sources\jmsf\memorying\Constructor.inl" />
+    <None Include="..\..\..\..\sources\jmsf\memorying\Destructor.inl" />
+    <None Include="..\..\..\..\sources\jmsf\memorying\Omp.inl" />
+    <None Include="..\..\..\..\sources\jmsf\memorying\Wamp.inl" />
+    <None Include="..\..\..\..\sources\jmsf\memorying\Womp.inl" />
+    <None Include="..\..\..\..\sources\jmsf\patterning\Singleton.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\Automatic_pointer.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\Constant_pointer.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\Constant_proxy.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_both_constant_and_nonconstant.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_constant_pointer_and_constant_proxy.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_pointer_and_proxy.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Pointer_deleter.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Proxy_deleter.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Type_data.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\Pointer.inl" />
+    <None Include="..\..\..\..\sources\jmsf\pointing\Proxy.inl" />
+    <None Include="..\..\..\..\sources\jmsf\structing\containing\List.inl" />
+    <None Include="..\..\..\..\sources\jmsf\structing\containing\List_agent.inl" />
+    <None Include="..\..\..\..\sources\jmsf\structing\noding\Doubly_linked_node.inl" />
+    <None Include="..\..\..\..\sources\jmsf\structing\traversing\List_traverser.inl" />
+    <None Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.inl" />
+    <None Include="..\..\..\..\sources\jmsf\typing\Aso.inl" />
+    <None Include="..\..\..\..\sources\jmsf\typing\Bitwise.inl" />
+    <None Include="..\..\..\..\sources\jmsf\typing\Integers.inl" />
+    <None Include="..\..\..\..\sources\jmsf\typing\Naturals.inl" />
+    <None Include="..\..\..\..\sources\jmsf\typing\Reals.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A114D58-A46E-49F7-BDD0-A5DB1074D221}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Jmsf</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)..\..\..\..\sources\;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290;4251;4514;4250;4710</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_RESEARCH_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JMSF_NOEXEPT_SUPPORT;JMSF_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

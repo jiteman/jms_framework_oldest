@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{ae1bc5f1-3d3e-44c9-bd37-226cac59081e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libxml">
+      <UniqueIdentifier>{4bf55b89-de0e-4097-a1e5-be0ba75749fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\acconfig.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\c14n.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\catalog.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\chvalid.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\config.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\debugXML.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\dict.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\DOCBparser.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\elfgcchack.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\encoding.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\entities.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\globals.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\hash.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\HTMLparser.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\HTMLtree.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\libxml.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\list.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\nanoftp.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\nanohttp.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\parser.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\parserInternals.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\pattern.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\relaxng.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\SAX.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\SAX2.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\schemasInternals.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\schematron.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\threads.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\tree.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\trio.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\triodef.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\trionan.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\triop.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\triostr.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\uri.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\valid.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\win32config.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\wsockcompat.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xinclude.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xlink.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlautomata.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlerror.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlexports.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlIO.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlmemory.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlmodule.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlreader.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlregexp.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlsave.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlschemas.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlschemastypes.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlstring.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlunicode.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlversion.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xmlwriter.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xpath.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xpathInternals.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libxml\xpointer.h">
+      <Filter>osl\libxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\c14n.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\catalog.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\chvalid.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\debugXML.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\dict.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\DOCBparser.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\encoding.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\entities.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\error.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\globals.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\hash.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\HTMLparser.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\HTMLtree.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\legacy.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\list.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\nanoftp.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\nanohttp.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\parser.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\parserInternals.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\pattern.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\relaxng.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\SAX.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\SAX2.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\schematron.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\threads.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\tree.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\trio.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\trionan.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\triostr.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\uri.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\valid.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xinclude.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xlink.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlIO.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlmemory.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlmodule.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlreader.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlregexp.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlsave.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlschemas.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlschemastypes.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlstring.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlunicode.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xmlwriter.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xpath.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libxml\xpointer.c">
+      <Filter>osl\libxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

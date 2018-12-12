@@ -1,0 +1,1355 @@
+quest: &quest
+  id: -10000
+  repeatable: false
+  super_class: "farm_quest_base"
+
+badge_crop_count_1: &badge
+  <<: *quest
+  id: 20000
+  super_class: "badge_base"
+  swf_name: "agronom.swf"
+  name.ru: "Агроном, Медная медаль"
+  name.ko: "씨앗 매니아, 초급 레벨"
+  description_text.ru: "Собрать 100 растений"
+  description_text.ko:  "씨앗류 100개 수확하기"
+  hint.ru: "100 опыта и 1000 монет"
+  hint.ko: "100 경험치와 1000 코인 보상"
+  complete_image: "agronom.png"
+  complete_text.ru: 'Молодец! Ты [sex:показал|показала], что хорошо умеешь выращивать культуры, и за это получаешь \"Медную медаль\" в достижении \"Агроном\"'
+  complete_text.ko: '축하합니다! \"씨앗 매니아\" \"초급 레벨\" 을 달성하셨습니다! 씨뿌리고 수확하는 재미를 느껴보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Медную медаль\" в достижении \"Агроном\" и ценные призы!'
+  wall_text.ko: '축! \"씨앗 매니아\" \"초급 레벨\" 달성!'
+  splash_text.ru: '{0} умеет хорошо выращивать культуры, и за это [sex:получил|получила] \"Медную медаль\" в достижении \"Агроном\"'
+  splash_text.ko: '{0} \"씨앗 매니아\" \"초급 레벨\" 이 되었네요! 이제 씨뿌리고 수확하는 재미를 어느 정도 알 것 같아요~'
+  achievement: "crop_count"
+  goal:
+    - {type: event, klass: crop_base, count: 100, initial: 0, action: pick}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+          - coins: {min_quantity: 1000}
+
+badge_crop_count_2:
+  <<: *badge
+  id: 20001
+  swf_name: "agronom.swf"
+  name.ru: "Агроном, Бронзовая медаль"
+  name.ko: "씨앗 매니아, 중급 레벨"
+  description_text.ru: "Собрать 500 растений"
+  description_text.ko: "씨앗류 500개 수확하기"
+  hint.ru: "300 опыта и 2000 монет"
+  hint.ko: "300 경험치와 2000 코인 보상"
+  complete_image: "agronom.png"
+  complete_text.ru: 'Молодец! Ты [sex:показал|показала], что отлично умеешь выращивать культуры, и за это получаешь \"Бронзовую медаль\" в достижении \"Агроном\"'
+  complete_text.ko: '축하합니다! \"씨앗 매니아\" \"중급 레벨\" 을 달성하셨습니다! 씨뿌리고 수확하는 재미를 느껴보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Агроном\" и ценные призы!'
+  wall_text.ko: '축! \"씨앗 매니아\" \"중급 레벨\" 달성!'
+  splash_text.ru: '{0} отлично умеет выращивать культуры, и за это [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Агроном\"'
+  splash_text.ko: '{0} \"씨앗 매니아\" \"중급 레벨\" 이 되었네요! 이제 씨뿌리고 수확하는 재미를 어느 정도 알 것 같아요~'
+  achievement: "crop_count"
+  goal:
+    - {type: event, klass: crop_base, count: 500, initial: 100, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20000}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+          - coins: {min_quantity: 2000}
+
+badge_crop_count_3:
+  <<: *badge
+  id: 20002
+  swf_name: "agronom.swf"
+  name.ru: "Агроном, Серебряная медаль"
+  name.ko: "씨앗 매니아, 고급 레벨"
+  description_text.ru: "Собрать 2500 растений"
+  description_text.ko: "씨앗류 2500개 수확하기"
+  hint.ru: "500 опыта и 5000 монет"
+  hint.ko: "500 경험치와 5000 코인 보상"
+  complete_image: "agronom.png"
+  complete_text.ru: 'Молодец! Ты [sex:показал|показала], что великолепно выращиваешь культуры, и за это получаешь \"Серебряную медаль\" в достижении \"Агроном\"'
+  complete_text.ko: '축하합니다! \"씨앗 매니아\" \"고급 레벨\" 을 달성하셨습니다! 씨뿌리고 수확하는 재미를 느껴보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Серебряную медаль\" в достижении \"Агроном\" и ценные призы!'
+  wall_text.ko: '축! \"씨앗 매니아\" \"고급 레벨\" 달성!'
+  splash_text.ru: '{0} великолепно выращивает культуры, и за это [sex:получил|получила] \"Серебряную медаль\" в достижении \"Агроном\"'
+  splash_text.ko: '{0} \"씨앗 매니아\" \"고급 레벨\" 이 되었네요! 이제 씨뿌리고 수확하는 재미를 어느 정도 알 것 같아요~'
+  achievement: "crop_count"
+  goal:
+    - {type: event, klass: crop_base, count: 2500, initial: 500, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20001}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+          - coins: {min_quantity: 5000}
+
+badge_crop_count_4:
+  <<: *badge
+  id: 20003
+  swf_name: "agronom.swf"
+  name.ru: " Агроном, Золотая медаль"
+  name.ko: "씨앗 매니아, 최고급 레벨"
+  description_text.ru: "Собрать 7500 растений"
+  description_text.ko: "씨앗류 7500개 수확하기"
+  hint.ru: "1000 опыта и 1000 очков астоматизации"
+  hint.ko: "1000 경험치와 1000 자동화 포인트 보상"
+  complete_text.ru: 'Молодец! Ты [sex:показал|показала], что превосходно умеешь выращивать культуры, и за это получаешь \"Золотую медаль\" в достижении \"Агроном\"'
+  complete_text.ko: '축하합니다! \"씨앗 매니아\" \"최고급 레벨\" 을 달성하셨습니다! 씨뿌리고 수확하는 재미를 느껴보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Золотую медаль\" в достижении \"Агроном\" и ценные призы!'
+  wall_text.ko: '축! \"씨앗 매니아\" \"최고급 레벨\" 달성!'
+  splash_text.ru: '{0} превосходно умеет выращивать культуры, и за это [sex:получил|получила] \"Золотую медаль\" в достижении \"Агроном\"'
+  splash_text.ko: '{0} \"씨앗 매니아\" \"최고급 레벨\" 이 되었네요! 이제 씨뿌리고 수확하는 재미를 어느 정도 알 것 같아요~'
+  achievement: "crop_count"
+  goal:
+    - {type: event, klass: crop_base, count: 7500, initial: 2500, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20002}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 1000}
+          - auto: {min_quantity: 1000}
+          #- population: {min_quantity: 10000}
+
+badge_crop_count_5:
+  <<: *badge
+  id: 20004
+  swf_name: "agronom.swf"
+  name.ru: "Агроном, Платиновая медаль"
+  name.ko: "씨앗 매니아, 지존 레벨"
+  description_text.ru: "Собрать 15000 растений"
+  description_text.ko: "씨앗류 15000개 수확하기"
+  hint.ru: "2000 опыта и 2000 очков автоматизации"
+  hint.ko: "2000 경험치와 2000 자동화 포인트 보상"
+  complete_image: "agronom.png"
+  complete_text.ru: 'Молодец! Ты [sex:показал|показала], что тебе нет равных в выращивании культур, и за это получаешь \"Платиновую медаль\" в достижении \"Агроном\"'
+  complete_text.ko: '축하합니다! \"씨앗 매니아\" \"지존 레벨\" 을 달성하셨습니다! 씨뿌리고 수확하는 재미를 느껴보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Платиновую медаль\" в достижении \"Агроном\" и ценные призы!'
+  wall_text.ko: '축! \"씨앗 매니아\" \"지존 레벨\" 달성!'
+  splash_text.ru: '{0} умеет хорошо выращивать культуры, и за это [sex:получил|получила] \"Платиновую медаль\" в достижении \"Агроном\"'
+  splash_text.ko: '{0} \"씨앗 매니아\" \"지존 레벨\" 이 되었네요! 이제 씨뿌리고 수확하는 데에는 도가 텄어요~'
+  achievement: "crop_count"
+  goal:
+    - {type: event, klass: crop_base, count: 15000, initial: 7500, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20003}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 2000}
+          - auto: {min_quantity: 2000}
+
+badge_crop_count_6:
+  <<: *badge
+  id: 20005
+  swf_name: "agronom.swf"
+  name.ru: " Агроном, Алмазная медаль"
+  name.ko: "씨앗 매니아, 신 레벨"
+  description_text.ru: "Собрать 50000 растений"
+  description_text.ko: "씨앗류 50000개 수확하기"
+  hint.ru: "4000 опыта и 50000 монет"
+  hint.ko: "4000 경험치와 5000 코인 보상"
+  complete_image: "agronom.png"
+  complete_text.ru: 'Великолепно! Ты [sex:проявил|проявила] недюжинное упорство и удостаиваешься высшей награды \"Алмазная медаль\" в достижении \"Агроном\"'
+  complete_text.ko: '축하합니다! \"씨앗 매니아\" \"신 레벨\" 을 달성하셨습니다! 씨뿌리고 수확하는 재미를 느껴보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] высшую награду \"Алмазная медаль\" в достижении \"Агроном\" и ценные призы!'
+  wall_text.ko: '축! \"씨앗 매니아\" \"신 레벨\" 달성!'
+  splash_text.ru: '{0}  [sex:проявил|проявила] недюжинное упорство и [sex:получил|получила] \"Алмазная медаль\" в достижении \"Агроном\"'
+  splash_text.ko: '{0} \"씨앗 매니아\" \"신 레벨\" 이 되었네요! 이제 씨뿌리고 수확하는 데에는 도가 텄어요~'
+  achievement: "crop_count"
+  goal:
+    - {type: event, klass: crop_base, count: 50000, initial: 15000, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20004}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 4000}
+          - coins: {min_quantity: 50000}
+
+badge_auto_count_1:
+  <<: *quest
+  id: 20006
+  super_class: "badge_base"
+  swf_name: "avtomatizator.swf"
+  name.ru: "Автоматизатор, Медная медаль"
+  name.ko: "농장 자동화 기술자, 초급 레벨"
+  description_text.ru: "за 100 автоматизированных действий"
+  description_text.ko: "자동화 100회 사용"
+  hint.ru: "100 опыта и 1000 монет"
+  hint.ko: "100 경험치와 1000 코인 보상"
+  complete_image: "avtomatizator.png"
+  complete_text.ru: 'Хорошо! Ты успешно автоматизируешь работу на своей ферме! За это ты получаешь  \"Медную медаль\" в достижении \"Автоматизатор\"'
+  complete_text.ko: '축하합니다! \"농장 자동화 기술자 \" \"초급 레벨\" 을 달성하셨습니다! 계속해서 보다 효율적인 농장으로 발전시켜 보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Медную медаль\" в достижении \"Автоматизатор\" и ценные призы!'
+  wall_text.ko: '축! \"농장 자동화 기술자\" \"초급 레벨\" 달성!'
+  splash_text.ru: '{0} успешно автоматизирует работу на своей ферме, и за это [sex:получил|получила] \"Медную медаль\" в достижении \"Автоматизатор\"'
+  splash_text.ko: '{0} \"농장 자동화 기술자\" \"초급 레벨\" 이 되었네요! 자동화는 정말 편리한 기능이군요~~'
+  achievement: "auto_count"
+  goal:
+    - {type: event, klass: auto, count: 100, initial: 0, action: spend}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+          - coins: {min_quantity: 1000}
+
+badge_auto_count_2:
+  <<: *quest
+  id: 20007
+  super_class: "badge_base"
+  swf_name: "avtomatizator.swf"
+  name.ru: " Автоматизатор, Бронзовая медаль"
+  name.ko: "농장 자동화 기술자, 중급 레벨"
+  description_text.ru: " за 500 автоматизированных действий"
+  description_text.ko: "자동화 500회 사용"
+  hint.ru: "300 опыта и 2000 монет"
+  hint.ko: "300 경험치와 2000 코인 보상"
+  complete_image: "avtomatizator.png"
+  complete_text.ru: 'Отлично! Ты успешно автоматизируешь работу на своей ферме! За это ты получаешь  \"Бронзовую медаль\" в достижении \"Автоматизатор\"'
+  complete_text.ko: '축하합니다! \"농장 자동화 기술자 \" \"중급 레벨\" 을 달성하셨습니다! 계속해서 보다 효율적인 농장으로 발전시켜 보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Автоматизатор\" и ценные призы!'
+  wall_text.ko: '축! \"농장 자동화 기술자\" \"중급 레벨\" 달성!'
+  splash_text.ru: '{0} успешно автоматизирует работу на своей ферме, и за это [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Автоматизатор\"'
+  splash_text.ko: '{0} \"농장 자동화 기술자\" \"중급 레벨\" 이 되었네요! 자동화는 정말 편리한 기능이군요~~'
+  achievement: "auto_count"
+  goal:
+    - {type: event, klass: auto, count: 500, initial: 100, action: spend}
+  require:
+    - {type: parent, klass: id, count: 20006}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+          - coins: {min_quantity: 2000}
+
+badge_auto_count_3:
+  <<: *quest
+  id: 20008
+  super_class: "badge_base"
+  swf_name: "avtomatizator.swf"
+  name.ru: "Автоматизатор, Серебряная медаль"
+  name.ko: "농장 자동화 기술자, 고급 레벨"
+  description_text.ru: "за 5000 автоматизированных действий"
+  description_text.ko: "자동화 5000회 사용"
+  hint.ru: "500 опыта и 5000 монет"
+  hint.ko: "500 경험치와 5000 코인 보상"
+  complete_image: "avtomatizator.png"
+  complete_text.ru: 'Замечательно! Ты успешно автоматизируешь работу на своей ферме! За это ты получаешь  \"Серебряную медаль\" в достижении \"Автоматизатор\"'
+  complete_text.ko: '축하합니다! \"농장 자동화 기술자 \" \"고급 레벨\" 을 달성하셨습니다! 계속해서 보다 효율적인 농장으로 발전시켜 보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Серебряную медаль\" в достижении \"Автоматизатор\" и ценные призы!'
+  wall_text.ko: '축! \"농장 자동화 기술자\" \"고급 레벨\" 달성!'
+  splash_text.ru: '{0} успешно автоматизирует работу на своей ферме, и за это [sex:получил|получила] \"Серебряную медаль\" в достижении \"Автоматизатор\"'
+  splash_text.ko: '{0} \"농장 자동화 기술자\" \"고급 레벨\" 이 되었네요! 자동화는 정말 편리한 기능이군요~~'
+  achievement: "auto_count"
+  goal:
+    - {type: event, klass: auto, count: 5000, initial: 500, action: spend}
+  require:
+    - {type: parent, klass: id, count: 20007}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+          - coins: {min_quantity: 5000}
+
+badge_auto_count_4:
+  <<: *quest
+  id: 20009
+  super_class: "badge_base"
+  swf_name: "avtomatizator.swf"
+  name.ru: " Автоматизатор, Золотая медаль"
+  name.ko: "농장 자동화 기술자, 최고급 레벨"
+  description_text.ru: " за 30000 автоматизированных действий"
+  description_text.ko: "자동화 30000회 사용"
+  hint.ru: "1000 опыта и 10000 монет"
+  hint.ko: "1000 경험치와 10000 코인 보상"
+  complete_image: "avtomatizator.png"
+  complete_text.ru: 'Великолепно! Ты успешно автоматизируешь работу на своей ферме! За это ты получаешь  \"Золотую медаль\" в достижении \"Автоматизатор\"'
+  complete_text.ko: '축하합니다! \"농장 자동화 기술자 \" \"최고급 레벨\" 을 달성하셨습니다! 계속해서 보다 효율적인 농장으로 발전시켜 보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Золотую медаль\" в достижении \"Автоматизатор\" и ценные призы!'
+  wall_text.ko: '축! \"농장 자동화 기술자\" \"최고급 레벨\" 달성!'
+  splash_text.ru: '{0} успешно автоматизирует работу на своей ферме, и за это [sex:получил|получила] \"Золотую медаль\" в достижении \"Автоматизатор\"'
+  splash_text.ko: '{0} \"농장 자동화 기술자\" \"최고급 레벨\" 이 되었네요! 자동화는 정말 편리한 기능이군요~~'
+  achievement: "auto_count"
+  goal:
+    - {type: event, klass: auto, count: 30000, initial: 5000, action: spend}
+  require:
+    - {type: parent, klass: id, count: 20008}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 1000}
+          - coins: {min_quantity: 10000}
+
+badge_auto_count_5:
+  <<: *quest
+  id: 20010
+  super_class: "badge_base"
+  swf_name: "avtomatizator.swf"
+  name.ru: "Автоматизатор, Платиновая медаль"
+  name.ko: "농장 자동화 기술자, 지존 레벨"
+  description_text.ru: "за 100000 автоматизированных действий"
+  description_text.ko: "자동화 100000회 사용"
+  hint.ru: "2000 опыта и 20000 монет"
+  hint.ko: "2000 경험치와 20000 코인 보상"
+  complete_image: "avtomatizator.png"
+  complete_text.ru: 'Грандиозно! Ты успешно автоматизируешь работу на своей ферме! За это ты получаешь  \"Платиновая медаль\" в достижении \"Автоматизатор\"'
+  complete_text.ko: '축하합니다! \"농장 자동화 기술자 \" \"지존 레벨\" 을 달성하셨습니다! 계속해서 보다 효율적인 농장으로 발전시켜 보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Платиновая медаль\" в достижении \"Автоматизатор\" и ценные призы!'
+  wall_text.ko: '축! \"농장 자동화 기술자\" \"지존 레벨\" 달성!'
+  splash_text.ru: '{0} успешно автоматизирует работу на своей ферме, и за это [sex:получил|получила] \"Платиновая медаль\" в достижении \"Автоматизатор\"'
+  splash_text.ko: '{0} \"농장 자동화 기술자\" \"지존 레벨\" 이 되었네요! 자동화는 정말 편리한 기능이군요~~'
+  achievement: "auto_count"
+  goal:
+    - {type: event, klass: auto, count: 100000, initial: 30000, action: spend}
+  require:
+    - {type: parent, klass: id, count: 20009}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 2000}
+          - coins: {min_quantity: 20000}
+
+badge_auto_count_6:
+  <<: *quest
+  id: 20011
+  super_class: "badge_base"
+  swf_name: "avtomatizator.swf"
+  name.ru: "Автоматизатор, Алмазная медальь"
+  name.ko: "농장 자동화 기술자, 신 레벨"
+  description_text.ru: " за 300000 автоматизированных действий"
+  description_text.ko: "자동화 300000회 사용"
+  hint.ru: "4000 опыта и 5000 очков автоматизации"
+  hint.ko: "4000 경험치와 5000 자동화 포인트 보상"
+  complete_image: "avtomatizator.png"
+  complete_text.ru: 'Тебе нет равных в применении машин на ферме! Ты получаешь высшую награду \"Алмазная медаль\" в достижении \"Автоматизатор\".'
+  complete_text.ko: '축하합니다! \"농장 자동화 기술자 \" \"신 레벨\" 을 달성하셨습니다! 정말 멋지네요~~'
+  wall_text.ru: 'Я [sex:получил|получила] высшую награду \"Алмазная медаль\" в достижении \"Автоматизатор\" и ценные призы!'
+  wall_text.ko: '축! \"농장 자동화 기술자\" \"신 레벨\" 달성!'
+  splash_text.ru: '{0} превосходно автоматизирует работу на своей ферме, и получает высшую награду \"Алмазная медаль\" в достижении \"Автоматизатор\".'
+  splash_text.ko: '{0} \"농장 자동화 기술자\" \"신 레벨\" 이 되었네요! 자동화는 정말 편리한 기능이군요~~'
+  achievement: "auto_count"
+  goal:
+    - {type: event, klass: auto, count: 300000, initial: 100000, action: spend}
+  require:
+    - {type: parent, klass: id, count: 20010}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 4000}
+          - auto: {min_quantity: 5000}
+
+badge_factory_pick_1:
+  <<: *quest
+  id: 20012
+  super_class: "badge_base"
+  swf_name: "manufacturer.swf"
+  name.ru: "Производитель, Медная медаль."
+  name.ko: "제조 기술자, 초급 레벨"
+  description_text.ru: "за создание 50 предметов"
+  description_text.ko: "생산시설에서 아이템 50개 생산하기"
+  hint.ru: "50 опыта и 500 монет"
+  hint.ko: "50 경험치와 500 코인 보상"
+  complete_image: "manufacturer.png"
+  complete_text.ru: 'Ты знаешь насколько выгодно перерабатывать продукцию на фабриках и заводах! За свои труды ты получаешь \"Медную медаль\" в достижении \"Производитель\".'
+  complete_text.ko: '축하합니다! \"제조 기술자\" \"초급 레벨\" 을 달성하셨습니다! 생산시설을 잘 활용하면 농장 발전에 큰 도움이 되요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Медную медаль\" в достижении \"Производитель\"'
+  wall_text.ko: '축! \"제조 기술자\" \"초급 레벨\" 달성!'
+  splash_text.ru: '{0} перерабатывает продукцию на фабриках и заводах! За свою работу [sex:он|она] получает \"Медную медаль\" в достижении \"Производитель\".'
+  splash_text.ko: '{0} \"제조 기술자\" \"초급 레벨\" 이 되었네요! 이제 생산시설을 잘 사용할 수 있을 것 같아요~'
+  achievement: "factory_pick"
+  goal:
+    - {type: event, klass: factory_pick, count: 50, initial: 0, action: pick}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+          - coins: {min_quantity: 500}
+
+badge_factory_pick_2:
+  <<: *quest
+  id: 20013
+  super_class: "badge_base"
+  swf_name: "manufacturer.swf"
+  name.ru: "Производитель, Бронзовая медаль"
+  name.ko: "제조 기술자, 중급 레벨"
+  description_text.ru: " за создание 250 предметов"
+  description_text.ko: "생산시설에서 아이템 250개 생산하기"
+  hint.ru: "250 опыта и 100 очков автоматизации"
+  hint.ko: "250 경험치와 100 자동화 포인트 보상"
+  complete_image: "manufacturer.png"
+  complete_text.ru: 'Ты знаешь на сколько выгодно перерабатывать продукцию на фабриках и заводах! За свои труды ты получаешь \"Бронзовую медаль\" в достижении \"Производитель\".'
+  complete_text.ko: '축하합니다! \"제조 기술자\" \"중급 레벨\" 을 달성하셨습니다! 생산시설을 잘 활용하면 농장 발전에 큰 도움이 되요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Производитель\".'
+  wall_text.ko: '축! \"제조 기술자\" \"중급 레벨\" 달성!'
+  splash_text.ru: '{0} перерабатывает продукцию на фабриках и заводах! За свою работу [sex:он|она] получает \"Бронзовую медаль\" в достижении \"Производитель\".'
+  splash_text.ko: '{0} \"제조 기술자\" \"중급 레벨\" 이 되었네요! 이제 생산시설을 잘 사용할 수 있을 것 같아요~'
+  achievement: "factory_pick"
+  goal:
+    - {type: event, klass: factory_pick, count: 250, initial: 50, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20012}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 250}
+          - auto: {min_quantity: 100}
+
+badge_factory_pick_3:
+  <<: *quest
+  id: 20014
+  super_class: "badge_base"
+  swf_name: "manufacturer.swf"
+  name.ru: "Производитель, Cеребряная медаль"
+  name.ko: "제조 기술자, 고급 레벨"
+  description_text.ru: "за создание 1000 предметов."
+  description_text.ko: "생산시설에서 아이템 1000개 생산하기"
+  hint.ru: "500 опыта и 5000 монет"
+  hint.ko: "500 경험치와 5000 코인 보상"
+  complete_image: "manufacturer.png"
+  complete_text.ru: 'Ты знаешь насколько выгодно перерабатывать продукцию на фабриках и заводах! За свои труды ты получаешь \"Серебряную медаль\" в достижении \"Производитель\"'
+  complete_text.ko: '축하합니다! \"제조 기술자\" \"고급 레벨\" 을 달성하셨습니다! 생산시설을 잘 활용하면 농장 발전에 큰 도움이 되요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Серебряную медаль\" в достижении \"Производитель\"'
+  wall_text.ko: '축! \"제조 기술자\" \"고급 레벨\" 달성!'
+  splash_text.ru: '{0} перерабатывает продукцию на фабриках и заводах! За свою работу [sex:он|она] получает \"Серебряную медаль\" в достижении \"Производитель\"'
+  splash_text.ko: '{0} \"제조 기술자\" \"고급 레벨\" 이 되었네요! 이제 생산시설을 잘 사용할 수 있을 것 같아요~'
+  achievement: "factory_pick"
+  goal:
+    - {type: event, klass: factory_pick, count: 1000, initial: 250, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20013}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+          - coins: {min_quantity: 5000}
+
+badge_factory_pick_4:
+  <<: *quest
+  id: 20015
+  super_class: "badge_base"
+  swf_name: "manufacturer.swf"
+  name.ru: "Производитель, Золотая медаль"
+  name.ko: "제조 기술자, 최고급 레벨"
+  description_text.ru: "за создание 5000 предметов"
+  description_text.ko: "생산시설에서 아이템 5000개 생산하기"
+  hint.ru: "1000 опыта и 10000 монет"
+  hint.ko: "1000 경험치와 10000 코인 보상"
+  complete_image: "manufacturer.png"
+  complete_text.ru: 'Ты знаешь на сколько выгодно перерабатывать продукцию на фабриках и заводах! За свои труды ты получаешь \"Золотую медаль\" в достижении \"Производитель\"'
+  complete_text.ko: '축하합니다! \"제조 기술자\" \"최고급 레벨\" 을 달성하셨습니다! 생산시설을 잘 활용하면 농장 발전에 큰 도움이 되요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Золотую медаль\" в достижении \"Производитель\"'
+  wall_text.ko: '축! \"제조 기술자\" \"최고급 레벨\" 달성!'
+  splash_text.ru: '{0} перерабатывает продукцию на фабриках и заводах! За свою работу [sex:он|она] получает \"Золотую медаль\" в достижении \"Производитель\"'
+  splash_text.ko: '{0} \"제조 기술자\" \"최고급 레벨\" 이 되었네요! 생산시설을 아주 능숙하게 사용하고 있어요~'
+  achievement: "factory_pick"
+  goal:
+    - {type: event, klass: factory_pick, count: 5000, initial: 1000, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20014}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 1000}
+          - coins: {min_quantity: 10000}
+
+badge_factory_pick_5:
+  <<: *quest
+  id: 20016
+  super_class: "badge_base"
+  swf_name: "manufacturer.swf"
+  name.ru: "Производитель, Платиновая медаль"
+  name.ko: "제조 기술자, 지존 레벨"
+  description_text.ru: "за создание 15000 предметов"
+  description_text.ko: "생산시설에서 아이템 15000개 생산하기 "
+  hint.ru: "2000 опыта и 2000 очков автоматизации"
+  hint.ko: "2000 경험치와 2000 자동화 포인트 보상"
+  complete_image: "manufacturer.png"
+  complete_text.ru: 'Ты знаешь на сколько выгодно перерабатывать продукцию на фабриках и заводах! За свой титанический труд ты получаешь \"Платиновую медаль\" в достижении \"Производитель\"'
+  complete_text.ko: '축하합니다! \"제조 기술자\" \"지존 레벨\" 을 달성하셨습니다! 생산시설을 잘 활용하면 농장 발전에 큰 도움이 되요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Платиновую медаль\" в достижении \"Производитель\"'
+  wall_text.ko: '축! \"제조 기술자\" \"지존 레벨\" 달성!'
+  splash_text.ru: '{0} перерабатывает продукцию на фабриках и заводах! За свою работу [sex:он|она] получает \"Платиновую медаль\" в достижении \"Производитель\"'
+  splash_text.ko: '{0} \"제조 기술자\" \"지존 레벨\" 이 되었네요! 생산시설을 아주 능숙하게 사용하고 있어요~'
+  achievement: "factory_pick"
+  goal:
+    - {type: event, klass: factory_pick, count: 15000, initial: 5000, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20015}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 2000}
+          - auto: {min_quantity: 2000}
+
+badge_factory_pick_6:
+  <<: *quest
+  id: 20017
+  super_class: "badge_base"
+  swf_name: "manufacturer.swf"
+  name.ru: "Производитель, Алмазная медаль"
+  name.ko: "제조 기술자, 신 레벨"
+  description_text.ru: " за создание 50000 предметов."
+  description_text.ko: "생산시설에서 아이템 50000개 생산하기"
+  hint.ru: "4000 опыта и 50000 монет"
+  hint.ko: "4000 경험치와 50000 코인 보상"
+  complete_image: "manufacturer.png"
+  complete_text.ru: 'Тебе нет равных в производстве товаров на фабриках и заводах! За свое упорство и труд ты получаешь \"Алмазную медаль\" в достижении \"Производитель\"'
+  complete_text.ko: '축하합니다! \"제조 기술자\" \"신 레벨\" 을 달성하셨습니다! 생산시설을 잘 활용하면 농장 발전에 큰 도움이 되요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Алмазную медаль\" в достижении \"Производитель\"'
+  wall_text.ko: '축! \"제조 기술자\" \"신 레벨\" 달성!'
+  splash_text.ru: '{0} нет равных в производстве товаров на фабриках и заводах! За свою работу [sex:он|она] получает \"Алмазную медаль\" в достижении \"Производитель\"'
+  splash_text.ko: '{0} \"제조 기술자\" \"신 레벨\" 이 되었네요! 생산시설을 아주 능숙하게 사용하고 있어요~'
+  achievement: "factory_pick"
+  goal:
+    - {type: event, klass: factory_pick, count: 50000, initial: 15000, action: pick}
+  require:
+  - {type: parent, klass: id, count: 20016}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 4000}
+          - coins: {min_quantity: 50000}
+
+badge_animal_pick_1:
+  <<: *quest
+  id: 20018
+  super_class: "badge_base"
+  swf_name: "livestock_breeder.swf"
+  name.ru: "Животновод, Медная медаль"
+  name.ko: "동물 관리자, 초급 레벨"
+  description_text.ru: "Необходимо 50 раз собрать ресурс с животных"
+  description_text.ko: "동물로부터 50회 수확을 해보세요~"
+  hint.ru: "75 опыта и 750 монет"
+  hint.ko: "75 경험치와 750 코인 보상"
+  complete_image: "livestock_breeder.png"
+  complete_text.ru: 'Отлично! Ты умеешь обращаться с животными! За это ты получаешь \"Медную медаль\" в достижении \"Животновод\"'
+  complete_text.ko: '축하합니다! \"동물 관리자\" \"초급 레벨\" 을 달성하셨습니다! 동물 친구들을 정말 잘 관리하시는군요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Медную медаль\" в достижении \"Животновод\"'
+  wall_text.ko: '축! \"동물 관리자\" \"초급 레벨\" 달성!'
+  splash_text.ru: '{0} успешно разводит животных на своей ферме и получил \"Медную медаль\" в достижении \"Животновод\"'
+  splash_text.ko: '{0} \"동물 관리자\" \"초급 레벨\" 이 되었네요! 앞으로도 동물 친구들을 많이 사랑하고 아껴줘야죠~~'
+  achievement: "animal_pick"
+  goal:
+    - {type: event, klass: animal_pick, count: 50, initial: 0, action: pick}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 75}
+          - coins: {min_quantity: 750}
+
+badge_animal_pick_2:
+  <<: *quest
+  id: 20019
+  super_class: "badge_base"
+  swf_name: "livestock_breeder.swf"
+  name.ru: "Животновод, Бронзовая медаль"
+  name.ko: "동물 관리자, 중급 레벨"
+  description_text.ru: "Необходимо 250 раз собрать ресурс с животных"
+  description_text.ko: "동물로부터 250회 수확을 해보세요~"
+  hint.ru: "250 опыта и 2500 монет"
+  hint.ko: "250 경험치와 2500 코인 보상"
+  complete_image: "livestock_breeder.png"
+  complete_text.ru: 'Отлично! Ты умело обращаться с животными! За это ты получаешь \"Бронзовую медаль\" в достижении \"Животновод\"'
+  complete_text.ko: '축하합니다! \"동물 관리자\" \"중급 레벨\" 을 달성하셨습니다! 동물 친구들을 정말 잘 관리하시는군요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Животновод\"'
+  wall_text.ko: '축! \"동물 관리자\" \"중급 레벨\" 달성!'
+  splash_text.ru: '{0} успешно разводит животных на своей ферме и получил \"Бронзовую медаль\" в достижении \"Животновод\"'
+  splash_text.ko: '{0} \"동물 관리자\" \"중급 레벨\" 이 되었네요! 앞으로도 동물 친구들을 많이 사랑하고 아껴줘야죠~~'
+  achievement: "animal_pick"
+  goal:
+    - {type: event, klass: animal_pick, count: 250, initial: 50, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20018}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 250}
+          - coins: {min_quantity: 2500}
+
+badge_animal_pick_3:
+  <<: *quest
+  id: 20020
+  super_class: "badge_base"
+  swf_name: "livestock_breeder.swf"
+  name.ru: "Животновод, Cеребряная медаль"
+  name.ko: "동물 관리자, 고급 레벨"
+  description_text.ru: "Необходимо 1000 раз собрать ресурс с животных"
+  description_text.ko: "동물로부터 1000회 수확을 해보세요~"
+  hint.ru: "500 опыта и 400 очков автоматизации"
+  hint.ko: "500 경험치와 400 자동화포인트 보상"
+  complete_image: "livestock_breeder.png"
+  complete_text.ru: 'Отлично! Ты хорошо умеешь обращаться с животными! За это ты получаешь \"Серебряную медаль\" в достижении \"Животновод\"'
+  complete_text.ko: '축하합니다! \"동물 관리자\" \"고급 레벨\" 을 달성하셨습니다! 동물 친구들을 정말 잘 관리하시는군요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Серебряную медаль\" в достижении \"Животновод\"'
+  wall_text.ko: '축! \"동물 관리자\" \"고급 레벨\" 달성!'
+  splash_text.ru: '{0} успешно разводит животных на своей ферме и получил \"Серебряную медаль\" в достижении \"Животновод\"'
+  splash_text.ko: '{0} \"동물 관리자\" \"고급 레벨\" 이 되었네요! 앞으로도 동물 친구들을 많이 사랑하고 아껴줘야죠~~'
+  achievement: "animal_pick"
+  goal:
+    - {type: event, klass: animal_pick, count: 1000, initial: 250, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20019}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+          - auto: {min_quantity: 400}
+
+badge_animal_pick_4:
+  <<: *quest
+  id: 20021
+  super_class: "badge_base"
+  swf_name: "livestock_breeder.swf"
+  name.ru: "Животновод, Золотая медаль"
+  name.ko: "동물 관리자, 최고급 레벨"
+  description_text.ru: "Необходимо 5000 раз собрать ресурс с животных"
+  description_text.ko: "동물로부터 5000회 수확을 해보세요~"
+  hint.ru: "1000 опыта и 1000 очков автоматизации"
+  hint.ko: "1000 경험치와 1000 자동화포인트 보상"
+  complete_image: "livestock_breeder.png"
+  complete_text.ru: 'Ты великолепно умеешь обращаться с животными! За это ты получаешь \"Золотую медаль\" в достижении \"Животновод\"'
+  complete_text.ko: '축하합니다! \"동물 관리자\" \"최고급 레벨\" 을 달성하셨습니다! 동물 친구들을 정말 잘 관리하시는군요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Золотую медаль\" в достижении \"Животновод\"'
+  wall_text.ko: '축! \"동물 관리자\" \"최고급 레벨\" 달성!'
+  splash_text.ru: '{0} великолепно разводит животных на своей ферме и получил \"Золотую медаль\" в достижении \"Животновод\"'
+  splash_text.ko: '{0} \"동물 관리자\" \"최고급 레벨\" 이 되었네요! 앞으로도 동물 친구들을 많이 사랑하고 아껴줘야죠~~'
+  achievement: "animal_pick"
+  goal:
+    - {type: event, klass: animal_pick, count: 5000, initial: 1000, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20020}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 1000}
+          - auto: {min_quantity: 1000}
+
+badge_animal_pick_5:
+  <<: *quest
+  id: 20022
+  super_class: "badge_base"
+  swf_name: "livestock_breeder.swf"
+  name.ru: "Животновод, Платиновая медаль"
+  name.ko: "동물 관리자, 지존 레벨"
+  description_text.ru: "Необходимо 15000 раз собрать ресурс с животных"
+  description_text.ko: "동물로부터 15000회 수확을 해보세요~"
+  hint.ru: "2000 опыта и 20000 монет"
+  hint.ko: "2000 경험치와 20000 코인 보상"
+  complete_image: "livestock_breeder.png"
+  complete_text.ru: 'Ты превосходно умеешь обращаться с животными! За это ты получаешь \"Платиновую медаль\" в достижении \"Животновод\"'
+  complete_text.ko: '축하합니다! \"동물 관리자\" \"지존 레벨\" 을 달성하셨습니다! 동물 친구들을 정말 잘 관리하시는군요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Платиновую медаль\" в достижении \"Животновод\"'
+  wall_text.ko: '축! \"동물 관리자\" \"지존 레벨\" 달성!'
+  splash_text.ru: '{0} превосходно умеет разводит животных на своей ферме и получил \"Платиновую медаль\" в достижении \"Животновод\"'
+  splash_text.ko: '{0} \"동물 관리자\" \"지존 레벨\" 이 되었네요! 앞으로도 동물 친구들을 많이 사랑하고 아껴줘야죠~~'
+  achievement: "animal_pick"
+  goal:
+    - {type: event, klass: animal_pick, count: 15000, initial: 5000, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20021}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 2000}
+          - coins: {min_quantity: 20000}
+
+badge_animal_pick_6:
+  <<: *quest
+  id: 20023
+  super_class: "badge_base"
+  swf_name: "livestock_breeder.swf"
+  name.ru: "Животновод, Алмазная медаль"
+  name.ko: "동물 관리자, 신 레벨"
+  description_text.ru: "Необходимо 50000 раз собрать ресурс с животных"
+  description_text.ko: "동물로부터 50000회 수확을 해보세요~"
+  hint.ru: "4000 опыта и 50000 монет"
+  hint.ko: "4000 경험치와 50000 코인 보상"
+  complete_image: "livestock_breeder.png"
+  complete_text.ru: 'Тебе нет равных в обращении с животными! За это ты получаешь \"Алмазную медаль\" в достижении \"Животновод\"'
+  complete_text.ko: '축하합니다! \"동물 관리자\" \"신 레벨\" 을 달성하셨습니다! 동물 친구들을 정말 잘 관리하시는군요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Алмазную медаль\" в достижении \"Животновод\"'
+  wall_text.ko: '축! \"동물 관리자\" \"신 레벨\" 달성!'
+  splash_text.ru: '{0} нет равных в разведении животных на ферме! [sex:Он получил|Она получила] \"Алмазную медаль\" в достижении \"Животновод\"'
+  splash_text.ko: '{0} \"동물 관리자\" \"신 레벨\" 이 되었네요! 앞으로도 동물 친구들을 많이 사랑하고 아껴줘야죠~~'
+  achievement: "animal_pick"
+  goal:
+    - {type: event, klass: animal_pick, count: 50000, initial: 15000, action: pick}
+  require:
+  - {type: parent, klass: id, count: 20022}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 4000}
+          - coins: {min_quantity: 50000}
+
+badge_tree_pick_1:
+  <<: *quest
+  id: 20024
+  super_class: "badge_base"
+  swf_name: "gardener.swf"
+  name.ru: "Фруктовый мастер, Медная медаль"
+  name.ko: "나무 애호가, 초급 레벨"
+  description_text.ru: "За сбор 100 плодов с деревьев"
+  description_text.ko: "나무에서 100개  수확하기"
+  hint.ru: "100 опыта и 1000 монет"
+  hint.ko: "100 경험치와 1000 코인 보상"
+  complete_image: "gardener.png"
+  complete_text.ru: 'Ты знаешь толк в том, как ухаживать за деревьями! За свои труды ты получаешь \"Медную медаль\" в достижении \"Садовод\"'
+  complete_text.ko: '축하합니다! \"나무 애호가 \" \"초급 레벨\" 을 달성하셨습니다! 나무를 더욱 더 많이 심어보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Медную медаль\" в достижении \"Садовод\"'
+  wall_text.ko: '축! \"나무 애호가\" \"초급 레벨\" 달성!'
+  splash_text.ru: '{0} знает толк в том, как ухаживать за деревьями и получил \"Медную медаль\" в достижении \"Садовод\"'
+  splash_text.ko: '{0} \"나무 애호가\" \"초급 레벨\" 이 되었네요! 나무를 심으니 농장이 매우 풍성해 보여서 좋네요~ '
+  achievement: "tree_pick"
+  goal:
+    - {type: event, klass: tree_pick, count: 100, initial: 0, action: pick}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 100}
+          - coins: {min_quantity: 1000}
+
+badge_tree_pick_2:
+  <<: *quest
+  id: 20025
+  super_class: "badge_base"
+  swf_name: "gardener.swf"
+  name.ru: "Фруктовый мастер, Бронзовая медаль"
+  name.ko: "나무 애호가, 중급 레벨"
+  description_text.ru: "За сбор 300 плодов с деревьев"
+  description_text.ko: "나무에서 300개  수확하기"
+  hint.ru: "300 опыта и 3000 монет"
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "gardener.png"
+  complete_text.ru: 'Ты знаешь толк в том, как ухаживать за деревьями! За свои труды ты получаешь \"Бронзовую медаль\" в достижении \"Садовод\"'
+  complete_text.ko: '축하합니다! \"나무 애호가 \" \"중급 레벨\" 을 달성하셨습니다! 나무를 더욱 더 많이 심어보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Садовод\"'
+  wall_text.ko: '축! \"나무 애호가\" \"중급 레벨\" 달성!'
+  splash_text.ru: '{0} знает толк в том, как ухаживать за деревьями и получил \"Бронзовую медаль\" в достижении \"Садовод\"'
+  splash_text.ko: '{0} \"나무 애호가\" \"중급 레벨\" 이 되었네요! 나무를 심으니 농장이 매우 풍성해 보여서 좋네요~'
+  achievement: "tree_pick"
+  goal:
+    - {type: event, klass: tree_pick, count: 300, initial: 100, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20024}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+          - coins: {min_quantity: 3000}
+
+badge_tree_pick_3:
+  <<: *quest
+  id: 20026
+  super_class: "badge_base"
+  swf_name: "gardener.swf"
+  name.ru: "Фруктовый мастер, Cеребряная медаль"
+  name.ko: "나무 애호가, 고급 레벨"
+  description_text.ru: "За сбор 1000 плодов с деревьев"
+  description_text.ko: "나무에서 1000개  수확하기"
+  hint.ru: "500 опыта и 400 очков автоматизации"
+  hint.ko: "500 경험치와 400 자동화 포인트 보상"
+  complete_image: "gardener.png"
+  complete_text.ru: 'Ты знаешь толк в том, как ухаживать за деревьями! За свои труды ты получаешь \"Серебряную медаль\" в достижении \"Садовод\"'
+  complete_text.ko: '축하합니다! \"나무 애호가 \" \"고급 레벨\" 을 달성하셨습니다! 나무를 더욱 더 많이 심어보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Серебряную медаль\" в достижении \"Садовод\"'
+  wall_text.ko: '축! \"나무 애호가\" \"고급 레벨\" 달성!'
+  splash_text.ru: '{0} знает толк в том, как ухаживать за деревьями и получил \"Серебряную медаль\" в достижении \"Садовод\"'
+  splash_text.ko: '{0} \"나무 애호가\" \"고급 레벨\" 이 되었네요! 나무를 심으니 농장이 매우 풍성해 보여서 좋네요~'
+  achievement: "tree_pick"
+  goal:
+    - {type: event, klass: tree_pick, count: 1000, initial: 300, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20025}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+          - auto: {min_quantity: 400}
+
+badge_tree_pick_4:
+  <<: *quest
+  id: 20027
+  super_class: "badge_base"
+  swf_name: "gardener.swf"
+  name.ru: "Фруктовый мастер, Золотая медаль"
+  name.ko: "나무 애호가, 최고급 레벨"
+  description_text.ru: "За сбор 5000 плодов с деревьев"
+  description_text.ko: "나무에서 5000개  수확하기"
+  hint.ru: "1000 опыта и 10000 монет"
+  hint.ko: "1000 경험치와 10000 코인 보상"
+  complete_image: "gardener.png"
+  complete_text.ru: 'Ты знаешь толк в том, как ухаживать за деревьями! За свои труды ты получаешь \"Золотую медаль\" в достижении \"Садовод\"'
+  complete_text.ko: '축하합니다! \"나무 애호가 \" \"최고급 레벨\" 을 달성하셨습니다! 나무를 더욱 더 많이 심어보세요~~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Золотую медаль\" в достижении \"Садовод\"'
+  wall_text.ko: '축! \"나무 애호가\" \"최고급 레벨\" 달성!'
+  splash_text.ru: '{0} знает толк в том, как ухаживать за деревьями и получил \"Золотую медаль\" в достижении \"Садовод\"'
+  splash_text.ko: '{0} \"나무 애호가\" \"최고급 레벨\" 이 되었네요! 나무를 심으니 농장이 매우 풍성해 보여서 좋네요~'
+  achievement: "tree_pick"
+  goal:
+    - {type: event, klass: tree_pick, count: 5000, initial: 1000, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20026}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 1000}
+          - coins: {min_quantity: 10000}
+
+badge_tree_pick_5:
+  <<: *quest
+  id: 20028
+  super_class: "badge_base"
+  swf_name: "gardener.swf"
+  name.ru: "Фруктовый мастер, Платиновая медаль"
+  name.ko: "나무 애호가, 지존 레벨"
+  description_text.ru: "За сбор 15000 плодов с деревьев"
+  description_text.ko: "나무에서 15000개  수확하기"
+  hint.ru: "2000 опыта и 20000 монет"
+  hint.ko: "2000 경험치와 20000 코인 보상"
+  complete_image: "gardener.png"
+  complete_text.ru: 'Ты знаешь толк в том, как ухаживать за деревьями! За свои труды ты получаешь \"Платиновую медаль\" в достижении \"Садовод\"'
+  complete_text.ko: '축하합니다! \"나무 애호가 \" \"지존 레벨\" 을 달성하셨습니다! 나무를 정말 엄청나게 심으셨네요!'
+  wall_text.ru: 'Я [sex:получил|получила] \"Платиновую медаль\" в достижении \"Садовод\"'
+  wall_text.ko: '축! \"나무 애호가\" \"지존 레벨\" 달성!'
+  splash_text.ru: '{0} знает толк в том, как ухаживать за деревьями и получил \"Платиновую медаль\" в достижении \"Садовод\"'
+  splash_text.ko: '{0} \"나무 애호가\" \"지존 레벨\" 이 되었네요! 나무를 심으니 농장이 매우 풍성해 보여서 좋네요~'
+  achievement: "tree_pick"
+  goal:
+    - {type: event, klass: tree_pick, count: 15000, initial: 5000, action: pick}
+  require:
+    - {type: parent, klass: id, count: 20027}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 2000}
+          - coins: {min_quantity: 20000}
+
+badge_tree_pick_6:
+  <<: *quest
+  id: 20029
+  super_class: "badge_base"
+  swf_name: "gardener.swf"
+  name.ru: "Фруктовый мастер, Алмазная медаль"
+  name.ko: "나무 애호가, 신 레벨"
+  description_text.ru: "За сбор 50000 плодов с деревьев"
+  description_text.ko: "나무에서 50000개  수확하기"
+  hint.ru: "4000 опыта и 5000 очков автоматизации"
+  hint.ko: "4000 경험치와 5000 자동화 포인트 보상"
+  complete_image: "gardener.png"
+  complete_text.ru: 'Тебе нет равных в сборе урожая с деревьев! За свои труды ты получаешь \"Алмазную медаль\" в достижении \"Садовод\"'
+  complete_text.ko: '축하합니다! \"나무 애호가 \" \"신 레벨\" 을 달성하셨습니다! 나무를 정말 엄청나게 심으셨네요!'
+  wall_text.ru: 'Я [sex:получил|получила] \"Алмазную медаль\" в достижении \"Садовод\"'
+  wall_text.ko: '축! \"나무 애호가\" \"신 레벨\" 달성!'
+  splash_text.ru: '{0} нет равных в сборе урожая с деревьев! [sex:Он получил|Она получила] \"Алмазную медаль\" в достижении \"Садовод\"'
+  splash_text.ko: '{0} \"나무 애호가\" \"신 레벨\" 이 되었네요! 나무를 심으니 농장이 매우 풍성해 보여서 좋네요~'
+  achievement: "tree_pick"
+  goal:
+    - {type: event, klass: tree_pick, count: 50000, initial: 15000, action: pick}
+  require:
+  - {type: parent, klass: id, count: 20028}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 4000}
+          - auto: {min_quantity: 5000}
+
+
+badge_great_farmer_1:
+  <<: *quest
+  id: 20030
+  sort_order: 1
+  super_class: "badge_base"
+  swf_name: "great_farmer.swf"
+  name.ru: "Великий фермер, Медная медаль"
+  name.ko: "위대한 농부, 초급 레벨"
+  description_text.ru: "За 5 медных медалей (других категорий)"
+  description_text.ko: "초급 뱃지 5개 이상 보유하기"
+  hint.ru: "200 опыта и 100 очков автоматизации"
+  hint.ko: "200 경험치와 100 자동화 포인트 보상"
+  complete_image: "great_farmer.png"
+  complete_text.ru: 'Отлично, на твоей ферме нет слабых мест, развитие идет по всем направлениям! За это ты получаешь \"Медную медаль\" в достижении \"Великий фермер\"'
+  complete_text.ko: '축하합니다! \"위대한 농부\" \"초급 레벨\" 을 달성하셨습니다! 농장 전반에 대해 정말 많은 노하우를 갖고 있네요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Медную медаль\" в достижении \"Великий фермер\"'
+  wall_text.ko: '축! \"위대한 농부\" \"초급 레벨\" 달성!'
+  splash_text.ru: '{0} развивает ферму во всех направлениях и получил \"Медную медаль\" в достижении \"Великий фермер\"'
+  splash_text.ko: '{0} \"위대한 농부\" \"초급 레벨\" 이 되었네요! 진정한 농부가 되어가고 있어요~'
+  achievement: "great_farmer"
+  goal:
+    - {type: user, klass: medal_1_count, count: 5, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+          - auto: {min_quantity: 100}
+
+badge_great_farmer_2:
+  <<: *quest
+  id: 20031
+  sort_order: 2
+  super_class: "badge_base"
+  swf_name: "great_farmer.swf"
+  name.ru: "Великий фермер, Бронзовая медаль"
+  name.ko: "위대한 농부, 중급 레벨"
+  description_text.ru: "За 5 бронзовых медалей (других категорий)"
+  description_text.ko: "중급 뱃지 5개 이상 보유하기"
+  hint.ru: "500 опыта и 200 очков автоматизации"
+  hint.ko: "500 경험치와 200 자동화 포인트 보상"
+  complete_image: "great_farmer.png"
+  complete_text.ru: 'Отлично, на твоей ферме нет слабых мест, развитие идет по всем направлениям! За это ты получаешь \"Бронзовую медаль\" в достижении \"Великий фермер\"'
+  complete_text.ko: '축하합니다! \"위대한 농부\" \"중급 레벨\" 을 달성하셨습니다! 농장 전반에 대해 정말 많은 노하우를 갖고 있네요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Великий фермер\"'
+  wall_text.ko: '축! \"위대한 농부\" \"중급 레벨\" 달성!'
+  splash_text.ru: '{0} развивает ферму во всех направлениях и получил \"Бронзовую медаль\" в достижении \"Великий фермер\"'
+  splash_text.ko: '{0} \"위대한 농부\" \"중급 레벨\" 이 되었네요! 진정한 농부가 되어가고 있어요~'
+  achievement: "great_farmer"
+  goal:
+    - {type: user, klass: medal_2_count, count: 5, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+          - auto: {min_quantity: 200}
+
+badge_great_farmer_3:
+  <<: *quest
+  id: 20032
+  sort_order: 3
+  super_class: "badge_base"
+  swf_name: "great_farmer.swf"
+  name.ru: "Великий фермер, Cеребряная медаль"
+  name.ko: "위대한 농부, 고급 레벨"
+  description_text.ru: "За 5 серебряных медалей (других категорий)"
+  description_text.ko: "고급 뱃지 5개 이상 보유하기"
+  hint.ru: "750 опыта и 1000 очков автоматизации"
+  hint.ko: "750 경험치와 1000 자동화 포인트 보상"
+  complete_image: "great_farmer.png"
+  complete_text.ru: 'Отлично, на твоей ферме нет слабых мест, развитие идет по всем направлениям! За это ты получаешь \"Серебряную медаль\" в достижении \"Великий фермер\"'
+  complete_text.ko: '축하합니다! \"위대한 농부\" \"고급 레벨\" 을 달성하셨습니다! 농장 전반에 대해 정말 많은 노하우를 갖고 있네요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Серебряную медаль\" в достижении \"Великий фермер\"'
+  wall_text.ko: '축! \"위대한 농부\" \"고급 레벨\" 달성!'
+  splash_text.ru: '{0} развивает ферму во всех направлениях и получил \"Серебряную медаль\" в достижении \"Великий фермер\"'
+  splash_text.ko: '{0} \"위대한 농부\" \"고급 레벨\" 이 되었네요! 진정한 농부가 되어가고 있어요~'
+  achievement: "great_farmer"
+  goal:
+    - {type: user, klass: medal_3_count, count: 5, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 750}
+          - auto: {min_quantity: 1000}
+
+badge_great_farmer_4:
+  <<: *quest
+  id: 20033
+  sort_order: 4
+  super_class: "badge_base"
+  swf_name: "great_farmer.swf"
+  name.ru: "Великий фермер, Золотая медаль"
+  name.ko: "위대한 농부, 최고급 레벨"
+  description_text.ru: "За 5 золотых медалей (других категорий)"
+  description_text.ko: "최고급 뱃지 5개 이상 보유하기"
+  hint.ru: "1500 опыта и 2000 очков автоматизации"
+  hint.ko: "1500 경험치와 2000 자동화 포인트 보상"
+  complete_image: "great_farmer.png"
+  complete_text.ru: 'Отлично, на твоей ферме нет слабых мест, развитие идет по всем направлениям! За это ты получаешь \"Золотую медаль\" в достижении \"Великий фермер\"'
+  complete_text.ko: '축하합니다! \"위대한 농부\" \"최고급 레벨\" 을 달성하셨습니다! 농장 전반에 대해 정말 많은 노하우를 갖고 있네요~'
+  wall_text.ru: 'Я [sex:получил|получила] \"Золотую медаль\" в достижении \"Великий фермер\"'
+  wall_text.ko: '축! \"위대한 농부\" \"최고급 레벨\" 달성!'
+  splash_text.ru: '{0} развивает ферму во всех направлениях и получил \"Золотую медаль\" в достижении \"Великий фермер\"'
+  splash_text.ko: '{0} \"위대한 농부\" \"최고급 레벨\" 이 되었네요! 진정한 농부가 되어가고 있어요~'
+  achievement: "great_farmer"
+  goal:
+    - {type: user, klass: medal_4_count, count: 5, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 1500}
+          - auto: {min_quantity: 2000}
+
+badge_great_farmer_5:
+  <<: *quest
+  id: 20034
+  sort_order: 5
+  super_class: "badge_base"
+  swf_name: "great_farmer.swf"
+  name.ru: "Великий фермер, Платиновая медаль"
+  name.ko: "위대한 농부, 지존 레벨"
+  description_text.ru: "За 5 платиновых медалей (других категорий)"
+  description_text.ko: "지존 뱃지 5개 이상 보유하기"
+  hint.ru: "3000 опыта и 4000 очков автоматизации"
+  hint.ko: "3000 경험치와 4000 자동화 포인트 보상"
+  complete_image: "great_farmer.png"
+  complete_text.ru: 'Отлично, на твоей ферме нет слабых мест, развитие идет по всем направлениям! За это ты получаешь \"Платиновую медаль\" в достижении \"Великий фермер\"'
+  complete_text.ko: '축하합니다! \"위대한 농부\" \"지존 레벨\" 을 달성하셨습니다! 진정한 농부임을 인정합니다!!'
+  wall_text.ru: 'Я [sex:получил|получила] \"Платиновую медаль\" в достижении \"Великий фермер\"'
+  wall_text.ko: '축! \"위대한 농부\" \"지존 레벨\" 달성!'
+  splash_text.ru: '{0} развивает ферму во всех направлениях и получил \"Платиновую медаль\" в достижении \"Великий фермер\"'
+  splash_text.ko: '{0} \"위대한 농부\" \"지존 레벨\" 이 되었네요! 귀농 생활은 정말 즐거워요~'
+  achievement: "great_farmer"
+  goal:
+    - {type: user, klass: medal_5_count, count: 5, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 3000}
+          - auto: {min_quantity: 4000}
+
+badge_australian_exotic_1:
+  <<: *quest
+  id: 20037
+  sort_order: 1
+  super_class: "badge_base"
+  swf_name: "badge_australian_exotic.swf"
+  name.ru: "Австралийский натуралист"
+  name.ko: "호주 매니아"
+  description_text.ru: "За размещение трех различных австралийских животных на поле"
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: "Посылку с животными можно купить в магазине"
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "badge_australian_exotic.png"     #badge_australian_exotic.png
+  complete_text.ru: 'Поздравляем! Ты [sex:собрал|собрала] всех австралийских животных на своей ферме! В награду ты получаешь медаль \"Австралийский натуралист\"'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Я [sex:собрал|собрала] всех австралийских животных и [sex:получил|получила] медаль \"Австралийский натуралист\"'
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru: '{0} [sex:собрал|собрала] всех всех австралийских животных и [sex:получил|получила] медаль \"Австралийский натуралист\"'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "australian_exotic"
+  goal:
+    - {type: user, klass: australian_exotic, count: 3, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 300}
+          - coins: {min_quantity: 3000}
+
+
+
+############# May 9 ###############
+badge_may9_1:
+  <<: *quest
+  id: 20036
+  sort_order: 1
+  super_class: "badge_base"
+  swf_name: "badge_may9.swf"
+  name.ru: "День Победы"
+  name.ko: ""
+  description_text.ru: "За размещение на поле 5 предметов декора из набора ко Дню Победы"
+  description_text.ko: ""
+  hint.ru: "Купи и запусти фейрверк чтобы получить нужные предметы"
+  hint.ko: ""
+  complete_image: "badge_may9.png"
+  complete_text.ru: 'Великолепно! Весь набор декора ко Дню Победы собран! В награду ты получаешь \"Вечный огонь\" и медаль \"День Победы\"! '
+  complete_text.ko: ""
+  wall_text.ru: 'Я [sex:собрал|собрала] весь набор декора ко Дню Победы и [sex:получил|получила] медаль \"День Победы\" '
+  wall_text.ko: ""
+  splash_text.ru: '{0} [sex:собрал|собрала] весь набор декора ко Дню Победы и [sex:получил|получила] медаль \"День Победы\"'
+  splash_text.ko: ""
+  achievement: "badge_may9"
+  goal:
+    - {type: user, klass: 9_may_items_count, count: 5, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+          - coins: {min_quantity: 1000}
+          - eternal_flame: {min_quantity: 1}
+
+
+beater:
+  <<: *quest
+  id: 20038
+  sort_order: 1
+  super_class: "badge_base"
+  swf_name: "beater.swf"
+  name.ru: "Загонщик"
+  name.ko: "호주 매니아"
+  description_text.ru: 'За строительство загонов для всех мясных животных'
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: ""
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "beater.png"     #badge_australian_exotic.png
+  complete_text.ru: 'Поздравляем! Ты [sex:построил|построила] загоны на своей ферме! В награду ты получаешь достижение \"Загонщик\"'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Я хорошо ухаживаю за животными и [sex:получил|получила] достижение \"Загонщик\"! '
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru:  '{0} отлично ухаживает за животными и за это [sex:получил|получила] достижение \"Загонщик\"!'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "beater"
+  goal:
+    - {type: user, klass: pen, count: 3, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - auto: {min_quantity: 100}
+
+######################################################
+capitalist_1:
+  <<: *quest
+  id: 20039
+  sort_order: 1
+  super_class: "badge_base"
+  swf_name: "capitalist.swf"
+  name.ru: "Капиталист"
+  name.ko: "호주 매니아"
+  description_text.ru: "За рост капитала."
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: "Необходимо состояние в 5000."
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "capitalist.png"
+  complete_text.ru: 'Отлично! твой капитал постоянно растет! Ты получаешь за это \”Медную медаль\” в достижении \”Капиталист\”'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Мой капитал постоянно растет, благодаря этому я получил \”Медную медаль\” в достижении \”Капиталист\”'
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru: '{0} постоянно наращивает свой капитал и за это [sex:получил|получила] \"Медную медаль\" в достижении \"Капиталист\" !'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "capitalist_1"
+  goal:
+    - {type: user, klass: coins, count: 5000, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 50}
+          - coins: {min_quantity: 500}
+
+capitalist_2:
+  <<: *quest
+  id: 20040
+  sort_order: 2
+  super_class: "badge_base"
+  swf_name: "capitalist.swf"
+  name.ru: "Капиталист"
+  name.ko: "호주 매니아"
+  description_text.ru: "За рост капитала."
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: "Необходимо состояние в 25000."
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "capitalist.png"
+  complete_text.ru: 'Отлично! твой капитал постоянно растет! Ты получаешь за это \”Бронзовую медаль\” в достижении \”Капиталист\”'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Мой капитал постоянно растет, благодаря этому я получил \”Бронзовую медаль\” в достижении \”Капиталист\”'
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru: '{0} постоянно наращивает свой капитал и за это [sex:получил|получила] \"Бронзовую медаль\" в достижении \"Капиталист\" !'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "capitalist_1"
+  goal:
+    - {type: user, klass: coins, count: 25000, initial: 5000}
+  require:
+    - {type: parent, klass: id, count: 20039}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 200}
+          - coins: {min_quantity: 1000}
+          - auto: {min_quantity: 100}
+
+capitalist_3:
+  <<: *quest
+  id: 20041
+  sort_order: 3
+  super_class: "badge_base"
+  swf_name: "capitalist.swf"
+  name.ru: "Капиталист"
+  name.ko: "호주 매니아"
+  description_text.ru: "За рост капитала."
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: "Необходимо состояние в 100000."
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "capitalist.png"
+  complete_text.ru: 'Отлично! твой капитал постоянно растет! Ты получаешь за это \”Серебряную медаль\” в достижении \”Капиталист\”'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Мой капитал постоянно растет, благодаря этому я получил \”Серебряную медаль\” в достижении \”Капиталист\”'
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru: '{0} постоянно наращивает свой капитал и за это [sex:получил|получила] \"Серебряную медаль\" в достижении \"Капиталист\" !'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "capitalist_1"
+  goal:
+    - {type: user, klass: coins, count: 100000, initial: 25000}
+  require:
+    - {type: parent, klass: id, count: 20040}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 500}
+          - coins: {min_quantity: 5000}
+
+capitalist_4:
+  <<: *quest
+  id: 20042
+  sort_order: 4
+  super_class: "badge_base"
+  swf_name: "capitalist.swf"
+  name.ru: "Капиталист"
+  name.ko: "호주 매니아"
+  description_text.ru: "За рост капитала."
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: "Необходимо состояние в 5000000."
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "capitalist.png"
+  complete_text.ru: 'Отлично! твой капитал постоянно растет! Ты получаешь за это \”Золотую медаль\” в достижении \”Капиталист\”'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Мой капитал постоянно растет, благодаря этому я получил \”Золотую медаль\” в достижении \”Капиталист\”'
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru: '{0} постоянно наращивает свой капитал и за это [sex:получил|получила] \"Золотую медаль\" в достижении \"Капиталист\" !'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "capitalist_1"
+  goal:
+    - {type: user, klass: coins, count: 500000, initial: 100000}
+  require:
+    - {type: parent, klass: id, count: 20041}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 1000}
+          - auto: {min_quantity: 1000}
+
+capitalist_5:
+  <<: *quest
+  id: 20043
+  sort_order: 5
+  super_class: "badge_base"
+  swf_name: "capitalist.swf"
+  name.ru: "Капиталист"
+  name.ko: "호주 매니아"
+  description_text.ru: "За рост капитала."
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: "Необходимо состояние в 2000000."
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "capitalist.png"
+  complete_text.ru: 'Отлично! твой капитал постоянно растет! Ты получаешь за это \”Платиновую медаль\” в достижении \”Капиталист\”'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Мой капитал постоянно растет, благодаря этому я получил \”Платиновую медаль\” в достижении \”Капиталист\”'
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru: '{0} постоянно наращивает свой капитал и за это [sex:получил|получила] \"Платиновую медаль\" в достижении \"Капиталист\" !'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "capitalist_1"
+  goal:
+    - {type: user, klass: coins, count: 2000000, initial: 500000}
+  require:
+    - {type: parent, klass: id, count: 20042}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 2000}
+          - auto: {min_quantity: 2000}
+
+capitalist_6:
+  <<: *quest
+  id: 20044
+  sort_order: 6
+  super_class: "badge_base"
+  swf_name: "capitalist.swf"
+  name.ru: "Капиталист"
+  name.ko: "호주 매니아"
+  description_text.ru: "За рост капитала."
+  description_text.ko: " 캥거루,코알라,태즈메니안 데빌을 맵에 배치하세요~"
+  hint.ru: "Необходимо состояние в 7000000."
+  hint.ko: "300 경험치와 3000 코인 보상"
+  complete_image: "capitalist.png"
+  complete_text.ru: 'Отлично! твой капитал постоянно растет! Ты получаешь за это \”Алмазную медаль\” в достижении \”Капиталист\”'
+  complete_text.ko: '축하합니다! 호주산 3종 세트를 모두 모으셨네요~ \"호주 매니아\" 뱃지를 획득하셨습니다!'
+  wall_text.ru: 'Мой капитал постоянно растет, благодаря этому я получил \”Алмазную медаль\” в достижении \”Капиталист\”'
+  wall_text.ko: '축! \"호주 매니아\" 뱃지 획득!'
+  splash_text.ru: '{0} постоянно наращивает свой капитал и за это [sex:получил|получила] \"Алмазную медаль\" в достижении \"Капиталист\" !'
+  splash_text.ko: '{0} \"호주 매니아\" 뱃지를 획득했습니다!'
+  achievement: "capitalist_1"
+  goal:
+    - {type: user, klass: coins, count: 7000000, initial: 2000000}
+  require:
+    - {type: parent, klass: id, count: 20043}
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 4000}
+          - auto: {min_quantity: 4000}
+
+badge_tropic_decor_1:
+  <<: *quest
+  id: 20045
+  sort_order: 1
+  super_class: "badge_base"
+  swf_name: "badge_tropic_decor.swf"
+  name.ru: "Тропический гуру"
+  name.ko: ""
+  description_text.ru: "Размести все четыре тропические декорации и тропический дом"
+  description_text.ko: ""
+  hint.ru: "150 опыта"
+  hint.ko: ""
+  complete_image: "badge_tropic_decor.png"     #badge_australian_exotic.png
+  complete_text.ru: 'Поздравляем! Ты [sex:собрал|собрала] все тропические декорации на своей ферме! В награду ты получаешь медаль \"Тропический гуру\"'
+  complete_text.ko: ""
+  wall_text.ru: 'Я [sex:собрал|собрала] все тропические декорации и [sex:получил|получила] медаль \"Тропический гуру\"'
+  wall_text.ko: ""
+  splash_text.ru: '{0} [sex:собрал|собрала] все тропические декорации и [sex:получил|получила] медаль \"Тропический гуру\"'
+  splash_text.ko: ""
+  achievement: "tropic_decor"
+  goal:
+    - {type: user, klass: tropic_decor_count, count: 5, initial: 0}
+  require:
+  reward:
+    complete:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 150}

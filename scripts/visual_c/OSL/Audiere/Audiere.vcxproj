@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9BDED96-D474-4555-BA1B-D2DB7887BC47}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Audiere</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OSL_AUDIERE_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OSL_AUDIERE_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OSL_AUDIERE_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Winmm.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OSL_AUDIERE_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Winmm.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\audiere.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\audiere_dll.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\basic_source.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\debug.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\default_file.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_ds.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_ds_buffer.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_ds_stream.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_mixer.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_mm.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\device_null.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\dumb_resample.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\input_aiff.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\input_ogg.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\input_wav.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\internal.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\mci_device.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\memory_file.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\resampler.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\resource.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\threads.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\timer.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\types.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\audiere\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\basic_source.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\cd_win32.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\debug.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_ds.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_ds_buffer.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_ds_stream.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_mixer.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_mm.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\device_null.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\dumb_resample.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\dxguid.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\file_ansi.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input_aiff.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input_ogg.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\input_wav.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\loop_point_source.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\memory_file.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\midi_mci.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\noise.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\resampler.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\sample_buffer.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\sound.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\sound_effect.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\square_wave.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\threads_win32.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\timer_win32.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\tone.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\utility.cpp" />
+    <ClCompile Include="..\..\..\..\sources\osl\audiere\version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\JMSF\Stdal\Stdal.vcxproj">
+      <Project>{57d2be6c-986c-4fd0-ac12-f65e78e7b408}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\LibVorbis\LibVorbis.vcxproj">
+      <Project>{b279b208-4977-4c29-b8d7-673b9a25fc21}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

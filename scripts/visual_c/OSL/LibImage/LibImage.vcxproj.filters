@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{ccb48285-b572-4815-820d-649e1cdedaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libimage">
+      <UniqueIdentifier>{b70dbcf4-694a-44bd-bee0-c0b78f63aa39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libimage\il">
+      <UniqueIdentifier>{92c548a2-6c62-4d27-bc74-7245134f3de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libimage\ilu">
+      <UniqueIdentifier>{a7b65600-92d4-43a6-88ee-2038b6e65692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libimage\ilut">
+      <UniqueIdentifier>{51c50be1-11ab-43ff-a111-45352bbf18e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libimage\ilu\ilu_error">
+      <UniqueIdentifier>{e3432fd5-36f8-48d7-bcbd-1ba99e34deff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\devil_cpp_wrapper.hpp">
+      <Filter>osl\libimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\devil_internal_exports.h">
+      <Filter>osl\libimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\altivec_common.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\altivec_typeconversion.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_alloc.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_bits.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_bmp.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_dcx.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_dds.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_doompal.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_dpx.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_endian.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_files.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_gif.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_hdr.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_icns.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_icon.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_internal.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_jp2.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_jpeg.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_lif.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_manip.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_mdl.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_pal.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_pcx.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_pic.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_pnm.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_psd.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_psp.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_q2pal.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_register.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_rle.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_sgi.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_stack.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_states.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_targa.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_utx.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_vtf.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\il_wdp.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu.h">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_alloc.h">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_filter.h">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_internal.h">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_region.h">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_states.h">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error\ilu_err-arabic.h">
+      <Filter>osl\libimage\ilu\ilu_error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error\ilu_err-dutch.h">
+      <Filter>osl\libimage\ilu\ilu_error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error\ilu_err-english.h">
+      <Filter>osl\libimage\ilu\ilu_error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error\ilu_err-french.h">
+      <Filter>osl\libimage\ilu\ilu_error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error\ilu_err-german.h">
+      <Filter>osl\libimage\ilu\ilu_error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error\ilu_err-japanese.h">
+      <Filter>osl\libimage\ilu\ilu_error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error\ilu_err-spanish.h">
+      <Filter>osl\libimage\ilu\ilu_error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilut\ilut.h">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilut\ilut_allegro.h">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilut\ilut_config.h">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilut\ilut_internal.h">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilut\ilut_opengl.h">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\ilut\ilut_states.h">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\libimage_dll.h">
+      <Filter>osl\libimage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libimage\il\config.h">
+      <Filter>osl\libimage\il</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\altivec_common.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\altivec_typeconversion.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_alloc.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_bits.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_blp.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_bmp.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_convbuff.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_convert.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_cut.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_dcx.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_dds.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_dds-save.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_devil.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_dicom.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_doom.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_dpx.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_endian.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_error.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_fastconv.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_files.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_fits.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_ftx.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_gif.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_hdr.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_header.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_icns.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_icon.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_iff.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_ilbm.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_internal.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_io.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_iwi.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_jp2.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_jpeg.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_lif.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_manip.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_mdl.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_mng.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_mp3.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_neuquant.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_nvidia.cpp">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_pal.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_pcd.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_pcx.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_pic.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_pix.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_png.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_pnm.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_profiles.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_psd.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_psp.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_pxr.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_quantizer.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_raw.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_rawdata.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_register.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_rle.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_rot.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_sgi.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_size.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_stack.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_states.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_sun.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_targa.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_texture.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_tiff.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_tpl.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_utility.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_utx.cpp">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_vtf.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_wal.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_wbmp.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_wdp.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\il\il_xpm.c">
+      <Filter>osl\libimage\il</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_alloc.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_error.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_filter.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_filter_rcg.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_internal.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_manip.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_mipmap.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_noise.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_region.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_rotate.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_scale.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_scale2d.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_scale3d.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_scaling.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_states.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_utilities.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_allegro.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_directx.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_directx9.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_internal.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_opengl.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_sdlsurface.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_states.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_win32.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_x11.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilu\ilu_main.c">
+      <Filter>osl\libimage\ilu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libimage\ilut\ilut_main.c">
+      <Filter>osl\libimage\ilut</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

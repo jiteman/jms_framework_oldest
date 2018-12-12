@@ -1,0 +1,25 @@
+#pragma once
+
+#include "Memory_pointer.h"
+
+
+#include "jmsf/validating/Should.hin"
+#include "jmsf/validating/logging_macroses.h"
+
+
+namespace jmsf {
+namespace memorying {
+
+
+// static
+template< class A_type >
+Memory_pointer Memory_pointer::create_from_pointer( const A_type *const a_memory ) {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( a_memory == nullptr, "Memory_pointer::create_from_pointer( a_memory )", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null_native_pointer( a_memory );
+	return Memory_pointer( reinterpret_cast< typeing::internals::platform_byte * >( const_cast< A_type * >( a_memory ) ) );
+}
+
+
+} // namespace memorying
+} // namespace jmsf
+

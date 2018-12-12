@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\producting\snipet_decomposer\main_snipet_decomposer.cpp">
+      <Filter>producting\snipet_decomposer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="producting">
+      <UniqueIdentifier>{db6a45c9-0bb7-40e6-b281-bc5478713736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="producting\snipet_decomposer">
+      <UniqueIdentifier>{37df22bc-89ca-4849-8006-27bb97529cf5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

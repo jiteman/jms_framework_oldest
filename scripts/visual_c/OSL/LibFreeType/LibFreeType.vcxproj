@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3B1A54A-620C-4962-A443-837F4A59A423}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibFreeType</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OSL_FREETYPE_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OSL_FREETYPE_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OSL_FREETYPE_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>OSL_FREETYPE_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afangles.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afcjk.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afdummy.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afglobal.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afhints.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afindic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\aflatin.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\aflatin2.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afloader.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afmodule.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afpic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afwarp.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\basepic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\bdf\bdfdrivr.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\bdf\bdflib.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\bzip2\ftbzip2.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcbasic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftccache.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftccmap.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcglyph.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcimage.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcmanag.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcmru.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcsbits.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffcmap.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffdrivr.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffgload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffobjs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffparse.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffpic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidgload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidobjs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidparse.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidriver.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftadvanc.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftapi.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftbbox.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftbdf.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftbitmap.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftcalc.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftcid.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftdbgmem.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftdebug.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftfstype.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgasp.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgloadr.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftglyph.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgxval.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgzip.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftinit.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftlcdfil.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftmm.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftobjs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftotval.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftoutln.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftpatent.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftpfr.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftpic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftrfork.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftsnames.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftstream.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftstroke.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftsynth.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftsystem.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\fttrigon.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\fttype1.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftutil.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftwinfnt.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftxf86.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\lzw\ftlzw.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\lzw\ftzopen.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pcf\pcfdrivr.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pcf\pcfread.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pcf\pcfutil.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrcmap.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrdrivr.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrgload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrobjs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrsbit.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\afmparse.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\psauxmod.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\psconv.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\psobjs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\t1cmap.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\t1decode.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshalgo.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshglob.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshmod.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshpic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshrec.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psnames\psmodule.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psnames\pspic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\raster\ftraster.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\raster\ftrend1.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\raster\rastpic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\sfdriver.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\sfntpic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\sfobjs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttbdf.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttcmap.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttkern.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttmtx.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttpost.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttsbit.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\smooth\ftgrays.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\smooth\ftsmooth.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\smooth\ftspic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttdriver.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttgload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttgxvar.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttinterp.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttobjs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttpic.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttpload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1afm.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1driver.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1gload.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1load.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1objs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1parse.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type42\t42drivr.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type42\t42objs.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type42\t42parse.c" />
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\winfonts\winfnt.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afangles.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afcjk.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afdummy.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aferrors.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afglobal.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afhints.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afindic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aflatin.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aflatin2.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afloader.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afmodule.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afpic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aftypes.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afwarp.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\basepic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\bdf\bdf.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\bdf\bdfdrivr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\bdf\bdferror.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftccache.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftccback.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcerror.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcglyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcimage.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcmanag.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcmru.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcsbits.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffcmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffdrivr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cfferrs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffgload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffobjs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffparse.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffpic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cfftoken.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cfftypes.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\ciderrs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidgload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidobjs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidparse.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidriver.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidtoken.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftconfig.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftheader.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftmodule.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftoption.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftstdlib.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\freetype.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\freetype_dll.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ft2build.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftadvanc.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbase.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbbox.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbdf.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbitmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbzip2.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftcache.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftchapters.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftcid.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fterrdef.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fterrors.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftgasp.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftglyph.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftgxval.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftgzip.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftimage.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftincrem.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftlcdfil.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftlist.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftlzw.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmac.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmm.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmodapi.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmoderr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftotval.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftoutln.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftpfr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftrender.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsizes.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsnames.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftstroke.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsynth.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsystem.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fttrigon.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fttypes.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftwinfnt.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftxf86.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\autohint.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftcalc.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftdebug.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftdriver.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftgloadr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftmemory.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftobjs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftpic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftrfork.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftserv.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftstream.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\fttrace.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftvalid.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\psaux.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\pshints.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svbdf.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svcid.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svgldict.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svgxval.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svkern.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svmm.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svotval.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpfr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpostnm.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpscmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpsinfo.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svsfnt.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svttcmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svtteng.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svttglyf.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svwinfnt.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svxf86nm.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\sfnt.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\t1types.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\tttypes.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\lzw\ftzopen.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcf.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcfdrivr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcferror.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcfread.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcfutil.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrcmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrdrivr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrerror.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrgload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrobjs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrsbit.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrtypes.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\afmparse.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psauxerr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psauxmod.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psconv.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psobjs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\t1cmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\t1decode.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshalgo.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshglob.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshmod.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshnterr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshpic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshrec.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\psmodule.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\psnamerr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\pspic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\pstables.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\ftmisc.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\ftraster.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\ftrend1.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\rasterrs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\rastpic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sfdriver.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sferrors.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sfntpic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sfobjs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttbdf.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttcmap.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttcmapc.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttkern.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttmtx.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttpost.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttsbit.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftgrays.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftsmerrs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftsmooth.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftspic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\t1tables.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttdriver.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\tterrors.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttgload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttgxvar.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttinterp.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttobjs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttpic.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttpload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ttnameid.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\tttables.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\tttags.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ttunpat.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1afm.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1driver.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1errors.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1gload.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1load.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1objs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1parse.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1tokens.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42drivr.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42error.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42objs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42parse.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42types.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\winfonts\fnterrs.h" />
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\winfonts\winfnt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Zlib\Zlib.vcxproj">
+      <Project>{ffede780-c7f9-4c16-9bb2-8585e38b2d6f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

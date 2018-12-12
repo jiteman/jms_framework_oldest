@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{97c49658-e2a0-41f7-821f-12a4fe153928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\ftgl">
+      <UniqueIdentifier>{f0e1ac96-e0c9-4abc-bb88-22a1db76e7a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\ftgl\ftfont">
+      <UniqueIdentifier>{ec2571e2-f85f-4388-a961-e737912e2c42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\ftgl\ftglyph">
+      <UniqueIdentifier>{53ce18bd-f3d8-46e7-b520-7ba8daabe13b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\ftgl\ftlayout">
+      <UniqueIdentifier>{775274c7-6ade-4786-a29f-72964b9c8ccd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTBBox.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTBuffer.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTCharmap.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTContour.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTFace.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTGlyphContainer.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTLibrary.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTPoint.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTSize.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\FTVectoriser.cpp">
+      <Filter>osl\ftgl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBitmapFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBufferFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTExtrudeFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTOutlineFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPixmapFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPolygonFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftfont\FTTextureFont.cpp">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBitmapGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBufferGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTExtrudeGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTOutlineGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPixmapGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPolygonGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTTextureGlyph.cpp">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTLayout.cpp">
+      <Filter>osl\ftgl\ftlayout</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTSimpleLayout.cpp">
+      <Filter>osl\ftgl\ftlayout</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTBBox.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTBuffer.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTCharmap.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTCharToGlyphIndexMap.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTContour.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTFace.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftgl.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftgl_config.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftgl_dll.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTGlyphContainer.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTInternals.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTLibrary.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTList.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTPoint.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTSize.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTUnicode.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTVector.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\FTVectoriser.h">
+      <Filter>osl\ftgl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBitmapFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBufferFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTBufferFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTExtrudeFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLBitmapFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLExtrudeFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLOutlineFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLPixmapFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLPolygonFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTGLTextureFont.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTOutlineFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPixmapFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTPolygonFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftfont\FTTextureFontImpl.h">
+      <Filter>osl\ftgl\ftfont</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBitmapGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBitmapGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBufferGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTBufferGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTExtrudeGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTExtrudeGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTOutlineGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTOutlineGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPixmapGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPixmapGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPolygonGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTPolygonGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTTextureGlyph.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftglyph\FTTextureGlyphImpl.h">
+      <Filter>osl\ftgl\ftglyph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTLayout.h">
+      <Filter>osl\ftgl\ftlayout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTLayoutImpl.h">
+      <Filter>osl\ftgl\ftlayout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTSimpleLayout.h">
+      <Filter>osl\ftgl\ftlayout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\ftgl\ftlayout\FTSimpleLayoutImpl.h">
+      <Filter>osl\ftgl\ftlayout</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

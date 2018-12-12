@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{5c7c2596-e823-4755-afe4-41a9d3f75b07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\testing">
+      <UniqueIdentifier>{fc58b25a-4ab6-441c-a4da-86aeb5bf6f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\sensing">
+      <UniqueIdentifier>{74b498e3-d43e-418a-9657-7dd51a1ff4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\data_structures">
+      <UniqueIdentifier>{13329c51-98ed-44e4-86e6-b9e401ad3300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\sensing\realizing">
+      <UniqueIdentifier>{6e4adb3c-b8c3-4518-86b6-cd9c666097b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\testing\realizing">
+      <UniqueIdentifier>{7306d06c-ed84-40df-ad5c-101b20eb21a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\tests\jmsf\tests_Jmfs_launcher.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_Pointer.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_Proxy.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\testing\testing_Pointie.cpp">
+      <Filter>jmsf\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\testing\testing_Proxie.cpp">
+      <Filter>jmsf\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\sensing\sensing_Pointie.cpp">
+      <Filter>jmsf\sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\sensing\factory_Sensing.cpp">
+      <Filter>jmsf\sensing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\data_structures\test_List.cpp">
+      <Filter>jmsf\data_structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\data_structures\test_Stack.cpp">
+      <Filter>jmsf\data_structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\data_structures\test_Array.cpp">
+      <Filter>jmsf\data_structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\data_structures\test_Queue.cpp">
+      <Filter>jmsf\data_structures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_EmptyPointer.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_NonePointer.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_NonlinkedPointer.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_SharedPointer.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_UniquePointer.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\test_WeakPointer.cpp">
+      <Filter>jmsf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\sensing\realizing\realization_factory_Sensing.cpp">
+      <Filter>jmsf\sensing\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\sensing\realizing\realization_sensing_Pointie.cpp">
+      <Filter>jmsf\sensing\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\testing\factory_Pointie_and_Proxie.cpp">
+      <Filter>jmsf\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\testing\realizing\realization_factory_Pointie_and_Proxie.cpp">
+      <Filter>jmsf\testing\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\testing\realizing\realization_testing_Pointie.cpp">
+      <Filter>jmsf\testing\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\tests\jmsf\testing\realizing\realization_testing_Proxie.cpp">
+      <Filter>jmsf\testing\realizing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\testing_Pointie.h">
+      <Filter>jmsf\testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\testing_Proxie.h">
+      <Filter>jmsf\testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\testing_Pointie.hxx">
+      <Filter>jmsf\testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\testing_Proxie.hxx">
+      <Filter>jmsf\testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\sensing\sensing_Pointie.h">
+      <Filter>jmsf\sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\sensing\sensing_Pointie.hxx">
+      <Filter>jmsf\sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\sensing\factory_Sensing.h">
+      <Filter>jmsf\sensing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\sensing\realizing\realization_factory_Sensing.h">
+      <Filter>jmsf\sensing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\sensing\realizing\realization_factory_Sensing.hxx">
+      <Filter>jmsf\sensing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\sensing\realizing\realization_sensing_Pointie.h">
+      <Filter>jmsf\sensing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\factory_Pointie_and_Proxie.h">
+      <Filter>jmsf\testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\realizing\realization_factory_Pointie_and_Proxie.h">
+      <Filter>jmsf\testing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\realizing\realization_factory_Pointie_and_Proxie.hxx">
+      <Filter>jmsf\testing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\realizing\realization_testing_Pointie.h">
+      <Filter>jmsf\testing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\tests\jmsf\testing\realizing\realization_testing_Proxie.h">
+      <Filter>jmsf\testing\realizing</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

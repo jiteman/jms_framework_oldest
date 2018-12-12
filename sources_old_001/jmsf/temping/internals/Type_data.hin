@@ -1,0 +1,14 @@
+#pragma once
+
+
+#include "Type_data.hpp"
+
+
+namespace jmsf {
+namespace temping {
+namespace internals {
+
+
+} // namespace internals
+} // namespace temping
+} // namespace jmsf

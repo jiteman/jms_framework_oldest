@@ -1,0 +1,93 @@
+Memory Management (JMS Framework).
+
+1. Allocators (Heaps).
+	1.1. System Allocator (fully synchronized, original memory source: like original new and delete operators work).
+	1.2. Application Allocator (application-wide synchronization: allocation and deallocation are possible at any place, but have no dependency on the system).
+	1.3. Subsystem Allocator (subsystem-wide synchronization: allocation and deallocation are possible between several threads; for example: one child thread and main thread).
+	1.4. Thread Allocator (non-synchronized: allocation and deallocation are possible inside this thread only).
+	
+	Heaps.
+
+2. Memory Pools (Fixed allocation size heaps).
+	2.1. Application Memory Pool (application-wide synchronization: allocation and deallocation of fixed size memory blocks are possible at any place).
+	2.2. Subsystem Memory Pool (subsystem-wide synchronization: allocation and deallocation of fixed size memory blocks are possible between several threads).
+	2.3. Thread Memory Pool (non-synchronized: allocation and deallocation of fixed size memory blocks are possible inside this thread only).
+	
+	Fixed allocation size heaps.
+	
+In fact, 1.2 and 1.3, and also 2.1 and 2.2 are the same in functionality, but have differences in use.
+1.2 (2.1) are used as a single instance of 1.3 (2.2) in application-wide manner.
+
+If allocation and deallocation are perfomed in one thread, allocated objects could be used in any thread, if original thread will be alive long enough.
+
+( No interest at the moment
+3. Object Pools (Empty Object heaps).
+	3.1. Application Memory Pool.
+	3.2. Thread Memory Pool.
+)
+
+
+Structure.
+
+Remark.
+Debug version will store all required information in both internal structures and in allocated blocks.
+Release version will store required information only in one appropriate place.
+
+1. System allocator maintain memory allocate requests through ::malloc() calls from application allocator.
+
+	Allocation:	
+		- just dispatchs the request to ::malloc().
+	
+	Deallocation:	
+		- just dispatchs the request to ::free().
+
+2. Application allocator allocates memory via system allocator, maintains several heaps (chunks) and maintains memory allocate requests from SetOfPools allocators.
+
+	Additional information:
+		- on chunk: chunk address, chunk size, occupancy (free) list
+		- on allocation: block address, block size (block size can be stored in free list)
+	
+	Allocation:	
+		- if there is no preallocated chunks, the chunk of certain size will be allocated via system allocator.
+		- if there is not enough free space in existing chunks, the chunk of certain size will be allocated via system allocator.
+		- first fit space will be allocated in selected chunk.
+	
+	Deallocation:
+		- detects the appropriate chunk by its address
+		- modifies occupancy (free) list
+		- merges neighboring free blocks
+
+3. SetOfPools allocator maintains several MemoryPool and ArrayMemoryPool objects, each for every alignment and size pair.
+
+	Additional information:
+		- for allocation: alignment, size
+	
+	Allocation:
+		- dispatchs the request to determined MemoryPool object.
+	
+	Deallocation:
+		- dispatchs the request to determined MemoryPool object.
+
+4. MemoryPool allocator maintains several chunks of memory, maintains occupancy table for every chunk and maintains memory allocate request for certain alignment and
+size pair.
+
+	Allocation:
+		- if there is no preallocated chunks, the chunk of certain size will be allocated via application allocator.
+		- if there is no free cell in existing chunks, the chunk of certain size will be allocated via application allocator.
+		- cell will be allocated in selected chunk. Occupancy table cell will be marked.
+	
+	Deallocation:
+		- detects the appropriate chunk by its address
+		- modifies occupancy table
+
+5. ArrayMemoryPool allocator maintains several chunks of memory, maintains occupancy table for every chunk, maintains allocation size for every allocation and
+maintains memory allocate request for certain alignment and size pair.
+
+
+===============================================================================================================================
+
+Fixed_size_heap_allocator:
+	Top_pool_allocator: allocates Double_linked_node< Memory_block_descriptor > at the top of the heap.
+		It consists of the following structures: [ 4 or 8 bytes ] [ 31 or 63 elements of DLN< MBD > ]
+			size of one structure is: sizeof( Natural ) + sizeof( DLN< MBD > ) * ( sizeof( Natural ) * ( 8 (bpb) ) - 1 )
+			Highest bit of control word indicates the presence of following structure.

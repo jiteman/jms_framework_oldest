@@ -1,0 +1,330 @@
+#pragma once
+
+
+#include "Integers.hpp"
+
+#include "Naturals.hin"
+
+
+namespace jmsf {
+namespace typeing {
+
+
+// math
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator +( const Integers< A_type, dummy > &another ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result += another;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator +=( const Integers< A_type, dummy > &another ) noexcept {
+	_integer_value += another._integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator -( const Integers< A_type, dummy > &another ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result -= another;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator -=( const Integers< A_type, dummy > &another ) noexcept {
+	_integer_value -= another._integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator -() const noexcept {
+	return create( -_integer_value );
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator *( const Integers< A_type, dummy > &another ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result *= another._integer_value;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator *=( const Integers< A_type, dummy > &another ) noexcept {
+	_integer_value *= another._integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator /( const Integers< A_type, dummy > &another ) const {
+	if ( another._integer_value == A_type( 0 ) ) {
+		// throw division by zero
+	}
+
+	Integers< A_type, dummy > result = *this;
+	return result /= another;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator /=( const Integers< A_type, dummy > &another ) {
+	if ( another._integer_value == A_type( 0 ) ) {
+		// throw division by zero
+	}
+
+	_integer_value /= another._integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator %( const Integers< A_type, dummy > &another ) const {
+	if ( another._integer_value == A_type( 0 ) ) {
+		// throw division by zero
+	}
+
+	Integers< A_type, dummy > result = *this;
+	return result %= another;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator %=( const Integers< A_type, dummy > &another ) {
+	if ( another._integer_value == A_type( 0 ) ) {
+		// throw division by zero
+	}
+
+	if ( _integer_value < A_type( 0 ) ) {
+		_integer_value = -_integer_value;
+	}
+
+	_integer_value %= another._integer_value < A_type( 0 ) ? -another._integer_value : another._integer_value;
+	return *this;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// bitwise
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator ^( const Integers< A_type, dummy > &another ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result ^= another;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator ^=( const Integers< A_type, dummy > &another ) noexcept {
+	_integer_value ^= another._integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator &( const Integers< A_type, dummy > &another ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result &= another;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator &=( const Integers< A_type, dummy > &another ) noexcept {
+	_integer_value &= another._integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator |( const Integers< A_type, dummy > &another ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result |= another;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator |=( const Integers< A_type, dummy > &another ) noexcept {
+	_integer_value |= another._integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator ~() const noexcept {
+	return Integers< A_type, dummy >( static_cast< A_type >( ~_integer_value ) );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// comparison
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::operator ==( const Integers< A_type, dummy > &another ) const noexcept {
+	return Boolean::create( _integer_value == another._integer_value );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::operator !=( const Integers< A_type, dummy > &another ) const noexcept {
+	return Boolean::create( _integer_value != another._integer_value );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::operator <( const Integers< A_type, dummy > &another ) const noexcept {
+	return Boolean::create( _integer_value < another._integer_value );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::operator <=( const Integers< A_type, dummy > &another ) const noexcept {
+	return Boolean::create( _integer_value <= another._integer_value );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::operator >( const Integers< A_type, dummy > &another ) const noexcept {
+	return Boolean::create( _integer_value > another._integer_value );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::operator >=( const Integers< A_type, dummy > &another ) const noexcept {
+	return Boolean::create( _integer_value >= another._integer_value );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// shifts
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::get_shifted_left() const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result.shift_left();
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::shift_left() noexcept {
+	_integer_value <<= Memory_natural_one.get_native_value();
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator <<( const Memory_natural shift_value ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result <<= shift_value;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator <<=( const Memory_natural shift_value ) noexcept {
+	_integer_value <<= shift_value.get_native_value();
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::get_shifted_right() const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result.shift_right();
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::shift_right() noexcept {
+	_integer_value <<= Memory_natural_one.get_native_value();
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator >>( const Memory_natural shift_value ) const noexcept {
+	Integers< A_type, dummy > result = *this;
+	return result >>= shift_value;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator >>=( const Memory_natural shift_value ) noexcept {
+	_integer_value >>= shift_value.get_native_value();
+	return *this;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// increment/decrement
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator ++() noexcept {
+	++_integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator ++( int ) noexcept {
+	return Integers< A_type, dummy >( _integer_value++ );
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > &Integers< A_type, dummy >::operator --() noexcept {
+	--_integer_value;
+	return *this;
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::operator --( int ) noexcept {
+	return Integers< A_type, dummy >( _integer_value-- );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::is_nill() const noexcept {
+	return Boolean::create( _integer_value == A_type( 0 ) );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::is_not_nill() const noexcept {
+	return Boolean::create( _integer_value != A_type( 0 ) );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::is_positive() const noexcept {
+	return Boolean::create( _integer_value >= A_type( 0 ) );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::is_negative() const noexcept {
+	return Boolean::create( _integer_value < A_type( 0 ) );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::is_max() const noexcept {
+	return Boolean::create( _integer_value == ~A_type( 0 ) );
+}
+
+template< class A_type, int dummy >
+Boolean Integers< A_type, dummy >::is_not_max() const noexcept {
+	return Boolean::create( _integer_value != ~A_type( 0 ) );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//	operator internals::platform_template_type() const noexcept;
+template< class A_type, int dummy >
+A_type Integers< A_type, dummy >::get_native_value() const noexcept {
+	return _integer_value;
+}
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type, int dummy >
+Integers< A_type, dummy >::~Integers() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type, int dummy >
+Integers< A_type, dummy >::Integers() noexcept {
+	_integer_value = A_type( 0 );
+}
+
+// static
+template< class A_type, int dummy >
+Integers< A_type, dummy > Integers< A_type, dummy >::create( const A_type integer_value ) noexcept {
+	return Integers< A_type, dummy >( integer_value );
+}
+
+template< class A_type, int dummy >
+Integers< A_type, dummy >::Integers( const A_type integer_value ) noexcept {
+	_integer_value = integer_value;
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type, int dummy >
+Integers< A_type, dummy >::Integers( const Integers< A_type, dummy > &another ) noexcept { // another
+	_integer_value = another._integer_value;
+}
+
+template< class A_type, int dummy >
+const Integers< A_type, dummy > &Integers< A_type, dummy >::operator =( const Integers< A_type, dummy > &another ) noexcept {
+	if ( &another == this ) return *this;
+
+	_integer_value = another._integer_value;
+	return *this;
+}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+} // namespace typeing
+} // namespace jmsf

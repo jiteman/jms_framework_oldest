@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{4a9c8aa4-f2d7-49f0-b37e-2e5b24c704ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libtiff">
+      <UniqueIdentifier>{7b8a4f11-b811-43f2-be2a-d6e2cd56d80c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_aux.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_close.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_codec.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_color.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_compress.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_dir.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_dirinfo.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_dirread.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_dirwrite.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_dumpmode.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_error.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_extension.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_fax3.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_fax3sm.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_flush.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_getimage.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_jbig.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_jpeg.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_luv.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_lzw.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_next.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_ojpeg.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_open.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_packbits.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_pixarlog.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_predict.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_print.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_read.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_strip.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_swab.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_thunder.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_tile.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_version.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_warning.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_win32.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_write.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libtiff\tif_zip.c">
+      <Filter>osl\libtiff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\t4.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tif_config.vc.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tif_config.wince.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tif_dir.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tif_fax3.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tif_predict.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tiff.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tiffconf.vc.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tiffconf.wince.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tiffio.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tiffiop.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tiffvers.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\uvcode.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tiffconf.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\tif_config.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libtiff\libtiff_dll.h">
+      <Filter>osl\libtiff</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

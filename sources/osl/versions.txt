@@ -1,0 +1,16 @@
+audiere v1.9.4
+glew v1.9.0
+jpeglib v8c
+lcms v2.2
+libiconv v1.?.?
+libimage v1.7.8
+libjasper v1.900.1
+libmng v1.00.10
+libogg v1.3.0
+libpng v1.5.4
+libtiff v3.9.5
+libvorbis v1.3.2
+libxml v2.7.8
+libyaml v0.1.4
+libyaml_cpp v0.2.7
+zlib v1.2.5

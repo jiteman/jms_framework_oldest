@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="social_quantum">
+      <UniqueIdentifier>{ad7ae520-ab0b-4a70-b9b8-977c9b7e8d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone">
+      <UniqueIdentifier>{01a2e92b-ec8e-4ec5-a177-25f6f5bfc8f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\configurator">
+      <UniqueIdentifier>{d2f8b910-2060-4170-9ba5-3f20e87bd7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask">
+      <UniqueIdentifier>{1d828ed6-f70b-4613-89f6-dcf69a0ae942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources">
+      <UniqueIdentifier>{58823050-a885-4d6f-8e61-30d89edc7e4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources\common">
+      <UniqueIdentifier>{f9a2a94d-de0b-410d-8e25-244b4988e59c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources\common\sqc">
+      <UniqueIdentifier>{4b832262-d963-43e2-906e-2ae3e7622493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources\iFarm">
+      <UniqueIdentifier>{f407b9d1-4329-41ae-8211-38c4f664c560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources\iCity">
+      <UniqueIdentifier>{9f683f02-82c6-486c-9e3a-5903dbe7caad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc">
+      <UniqueIdentifier>{0e2d26ea-a4b9-497a-a33a-57da8b735727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc">
+      <UniqueIdentifier>{5bce3288-4c37-4bf8-a43a-6b6a89f374cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing">
+      <UniqueIdentifier>{e9884a09-779d-4a4a-9620-784c6a2ee182}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\configurator\main.cpp">
+      <Filter>social_quantum\testiphone\configurator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_info_load.cpp">
+      <Filter>social_quantum\testiphone\configurator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_name_formatter.cpp">
+      <Filter>social_quantum\testiphone\configurator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_base.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_utils.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_xml.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\farm_name_farmatter.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_plist.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_api.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_png.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city_objects.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm_objects.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_data_stream.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\find_section_arguments.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_access.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_container.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_fixed.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_identifier.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_raw.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_string.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_value.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_file.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_names.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_section.cpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_info_load.h">
+      <Filter>social_quantum\testiphone\configurator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_name_formatter.h">
+      <Filter>social_quantum\testiphone\configurator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_base.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_defs.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_yaml.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_utils.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_xml.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\farm_name_farmatter.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_plist.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_api.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_png.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_image_decoder.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_data_stream.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city_objects.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm_objects.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_data_stream.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\find_section_arguments.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\find_section_arguments.hxx">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\stl_container_storing.hpp">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_access.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_access.hxx">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_container.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_container.hxx">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry.hxx">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_fixed.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_identifier.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_raw.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_string.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_value.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_file.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_names.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_names.hxx">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_section.h">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_section.hxx">
+      <Filter>social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

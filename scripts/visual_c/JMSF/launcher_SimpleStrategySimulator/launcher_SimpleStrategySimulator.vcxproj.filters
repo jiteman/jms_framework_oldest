@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{0f724610-4e49-4462-a2a5-111278816a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\sss">
+      <UniqueIdentifier>{94d0d1b8-9b83-42f0-89dd-bf6359138ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\sss\launchers">
+      <UniqueIdentifier>{a6d76ff2-6add-4d19-91f3-92cb464d91f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\sss\launchers\launcher_SimpleStrategySimulator.cpp">
+      <Filter>jmsf\sss\launchers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

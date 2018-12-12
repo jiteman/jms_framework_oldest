@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{c05fa530-0b4f-47f6-ac67-4e284ff8b681}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\validating">
+      <UniqueIdentifier>{20a8bf00-62ad-4847-ae41-71edc88f2272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\validating\exepting">
+      <UniqueIdentifier>{02164d95-40fe-46bb-894f-909cc92405f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\pointing">
+      <UniqueIdentifier>{9df9dad9-7b9e-44a0-bfc8-2df1cfd118d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\patterning">
+      <UniqueIdentifier>{cef01cfb-e148-4c34-8e7b-4d699c44af09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\patterning\mixing">
+      <UniqueIdentifier>{4c80a914-853a-4c3c-971c-c0a542a6d3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\pointing\internals">
+      <UniqueIdentifier>{056ca241-b333-40e8-9298-4a69a78b9779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\typing">
+      <UniqueIdentifier>{a1944772-08ad-4054-9b56-2772b3c78e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\typing\internals">
+      <UniqueIdentifier>{69fec6d4-d82e-4f31-8202-c2c4505d34d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\memorying">
+      <UniqueIdentifier>{bc022104-393b-41d4-8f4e-5987a728e071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\patterning\mixing\excepting">
+      <UniqueIdentifier>{ac6d76e4-4c16-434c-9387-582724322791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\memorying\_samples">
+      <UniqueIdentifier>{c2d2dcec-fa7e-4773-8523-177afa5c50ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\utiltities">
+      <UniqueIdentifier>{d83c0d2b-0f40-4ee9-98b0-a1d43daee676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\memorying\allocating">
+      <UniqueIdentifier>{9f321766-2c4a-49e6-8b0a-96c84f254d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing">
+      <UniqueIdentifier>{77afb4b3-9fb0-4017-8f61-eaac451c94ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing\containing">
+      <UniqueIdentifier>{9558a038-fc40-44c8-b047-16c9d9fdf234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing\noding">
+      <UniqueIdentifier>{8fba68b7-7968-4c88-9a35-9d3958508b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing\traversing">
+      <UniqueIdentifier>{c04671eb-273c-4f33-a8cf-10ad0b94256d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\assisting">
+      <UniqueIdentifier>{ca370ffd-ea5b-4a10-aa7b-bcfdc135d702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\memorying\allocating\comparing">
+      <UniqueIdentifier>{af318cb6-89bd-4d19-8ed7-bd8bf0afd35b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\memorying\excepting">
+      <UniqueIdentifier>{e8183544-e6ee-4d97-aaac-7e8b8e22410b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\validating\mixing">
+      <UniqueIdentifier>{fb6a6922-8a35-417d-95cc-1ee1b0abad4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\typing\examples">
+      <UniqueIdentifier>{0c62c581-ad03-4069-a966-1d80403add1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\typing\deprecating">
+      <UniqueIdentifier>{21c4a58f-93a0-4195-afb7-8fd941503e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie">
+      <UniqueIdentifier>{990e9429-ee0c-4d1a-a308-25e41ca667d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\jmsf\jmsf.h">
+      <Filter>jmsf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\jmsf_dll.h">
+      <Filter>jmsf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\Should.h">
+      <Filter>jmsf\validating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\Exception.h">
+      <Filter>jmsf\validating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\Exception.hxx">
+      <Filter>jmsf\validating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\excepting\exception_Should.h">
+      <Filter>jmsf\validating\exepting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\mixing\mixin_Exception.h">
+      <Filter>jmsf\validating\mixing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_Object.hxx">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_exception_Object.h">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_exception_Object.hxx">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_null_Object.h">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_null_Object.hxx">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_Object.h">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\Object.h">
+      <Filter>jmsf\patterning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\Singleton.hpp">
+      <Filter>jmsf\patterning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\Singleton.hxx">
+      <Filter>jmsf\patterning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Pointer.hpp">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Pointer.hxx">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Proxy.hpp">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Proxy.hxx">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Bitwise.hpp">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Bitwise.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Boolean.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Boolean.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\internals\internal_types.h">
+      <Filter>jmsf\typing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\temporary_Allocator.h">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocated.h">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocated.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocator.h">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Allocator.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Buffer.hpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Buffer.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Constructor.hpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Constructor.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Destructor.hpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Destructor.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\patterning\mixing\excepting\exception_exception_Object.h">
+      <Filter>jmsf\patterning\mixing\excepting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeString.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeCharacter.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeCharacter.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\UnicodeString.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\utilities\AnsiiStream.hxx">
+      <Filter>jmsf\utiltities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\utilities\AnsiiStream.h">
+      <Filter>jmsf\utiltities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List.hpp">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List.hxx">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\jmsf_language_support.h">
+      <Filter>jmsf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List_agent.hxx">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\containing\List_agent.hpp">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\traversing\List_traverser.hxx">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\traversing\List_traverser.hpp">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\noding\Doubly_linked_node.hxx">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\structing\noding\Doubly_linked_node.hpp">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Fixed_size_heap_allocator.h">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Fixed_size_heap_allocator.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Memory_block_descriptor.h">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Memory_block_descriptor.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Top_pool_allocator.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Naturals.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Naturals.hpp">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Integers.hpp">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Integers.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Reals.hpp">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Reals.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_character.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_character.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Memory_pointer.h">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Memory_pointer.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Aso.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Aso.hpp">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\File_and_line.hxx">
+      <Filter>jmsf\validating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\validating\File_and_line.h">
+      <Filter>jmsf\validating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Amp.hpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Amp.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Omp.hpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Omp.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Wamp.hpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Wamp.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Womp.hpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\Womp.hxx">
+      <Filter>jmsf\memorying</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Heap_status_descriptor.h">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Heap_status_descriptor.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Pool_block_descriptor.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Comparator.hxx">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Pool_block_descriptor.hpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\Top_pool_allocator.hpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Comparator.hpp">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Comparasion_result.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Comparasion_result.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Find.hpp">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\assisting\Find.hxx">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_address_comparator.h">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_address_comparator.hxx">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_returned_address_comparator.h">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_returned_address_comparator.hxx">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_fit_comparator.hxx">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_fit_comparator.h">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_comparator.h">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_comparator.hxx">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Aso.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\examples\Char_string.h">
+      <Filter>jmsf\typing\examples</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\deprecating\C_character_string.h">
+      <Filter>jmsf\typing\deprecating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\deprecating\C_character_string.hxx">
+      <Filter>jmsf\typing\deprecating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\internals\String_input_and_output.h">
+      <Filter>jmsf\typing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\internals\Floating_point_converter.h">
+      <Filter>jmsf\typing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string.h">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\typing\Ansii_string.hxx">
+      <Filter>jmsf\typing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_proxy.hpp">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_proxy.hxx">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_pointer.hpp">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Constant_pointer.hxx">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Automatic_pointer.hpp">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\Automatic_pointer.hxx">
+      <Filter>jmsf\pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Proxy_deleter.hpp">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Proxy_deleter.hxx">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Pointer_deleter.hpp">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Pointer_deleter.hxx">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Type_data.hpp">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Type_data.hxx">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Reference_counters.h">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Reference_counters.hxx">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_pointer_and_proxy.hpp">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_pointer_and_proxy.hxx">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_constant_pointer_and_constant_proxy.hpp">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_constant_pointer_and_constant_proxy.hxx">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_both_constant_and_nonconstant.hpp">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_both_constant_and_nonconstant.hxx">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\excepting\exception_Memory_is_depleted.h">
+      <Filter>jmsf\memorying\excepting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\excepting\exception_Memory_is_depleted.hxx">
+      <Filter>jmsf\memorying\excepting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_block_descriptor.h">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_block_descriptor.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_list_allocator.h">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_list_allocator.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\System_memory_allocator.h">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\memorying\allocating\System_memory_allocator.hxx">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\Exception.cpp">
+      <Filter>jmsf\validating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\Should.cpp">
+      <Filter>jmsf\validating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\excepting\exception_Should.cpp">
+      <Filter>jmsf\validating\exepting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\mixing\mixin_Exception.cpp">
+      <Filter>jmsf\validating\mixing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_exception_Object.cpp">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_null_Object.cpp">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\mixin_Object.cpp">
+      <Filter>jmsf\patterning\mixing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\Object.cpp">
+      <Filter>jmsf\patterning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Boolean.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\internals\internal_types.cpp">
+      <Filter>jmsf\typing\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\Allocated.cpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\Allocator.cpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\temporary_Allocator.cpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\patterning\mixing\excepting\exception_exception_Object.cpp">
+      <Filter>jmsf\patterning\mixing\excepting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\UnicodeCharacter.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\UnicodeString.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\_samples\dl_malloc.c">
+      <Filter>jmsf\memorying\_samples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\utilities\AnsiiStream.cpp">
+      <Filter>jmsf\utiltities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Fixed_size_heap_allocator.cpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Memory_block_descriptor.cpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Ansii_character.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\Memory_pointer.cpp">
+      <Filter>jmsf\memorying</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\validating\File_and_line.cpp">
+      <Filter>jmsf\validating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Heap_status_descriptor.cpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Pool_block_descriptor.inl">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\Top_pool_allocator.inl">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Comparasion_result.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_address_comparator.cpp">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_returned_address_comparator.cpp">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_fit_comparator.cpp">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\comparing\Mbd_size_comparator.cpp">
+      <Filter>jmsf\memorying\allocating\comparing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Aso.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\examples\Char_string.cpp">
+      <Filter>jmsf\typing\examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\deprecating\C_character_string.cpp">
+      <Filter>jmsf\typing\deprecating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\internals\String_input_and_output.cpp">
+      <Filter>jmsf\typing\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\internals\Floating_point_converter.cpp">
+      <Filter>jmsf\typing\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Ansii_string.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Integers.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Naturals.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\pointing\internals\Reference_counters.cpp">
+      <Filter>jmsf\pointing\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\excepting\exception_Memory_is_depleted.cpp">
+      <Filter>jmsf\memorying\excepting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_block_descriptor.cpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\FSHA_list_allocator.cpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\memorying\allocating\System_memory_allocator.cpp">
+      <Filter>jmsf\memorying\allocating</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\typing\Reals.cpp">
+      <Filter>jmsf\typing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\sources\jmsf\patterning\Singleton.inl">
+      <Filter>jmsf\patterning</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\Pointer.inl">
+      <Filter>jmsf\pointing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\Proxy.inl">
+      <Filter>jmsf\pointing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\typing\Bitwise.inl">
+      <Filter>jmsf\typing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\memorying\Buffer.inl">
+      <Filter>jmsf\memorying</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\memorying\Constructor.inl">
+      <Filter>jmsf\memorying</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\memorying\Destructor.inl">
+      <Filter>jmsf\memorying</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\structing\containing\List.inl">
+      <Filter>jmsf\structing\containing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\structing\containing\List_agent.inl">
+      <Filter>jmsf\structing\containing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\structing\traversing\List_traverser.inl">
+      <Filter>jmsf\structing\traversing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\structing\noding\Doubly_linked_node.inl">
+      <Filter>jmsf\structing\noding</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\typing\Naturals.inl">
+      <Filter>jmsf\typing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\typing\Integers.inl">
+      <Filter>jmsf\typing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\typing\Reals.inl">
+      <Filter>jmsf\typing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\typing\Aso.inl">
+      <Filter>jmsf\typing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\memorying\Amp.inl">
+      <Filter>jmsf\memorying</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\memorying\Omp.inl">
+      <Filter>jmsf\memorying</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\memorying\Wamp.inl">
+      <Filter>jmsf\memorying</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\memorying\Womp.inl">
+      <Filter>jmsf\memorying</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\assisting\Comparator.inl">
+      <Filter>jmsf\assisting</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\assisting\Find.inl">
+      <Filter>jmsf\assisting</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\typing\Ansii_string_stream.inl">
+      <Filter>jmsf\typing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\Constant_proxy.inl">
+      <Filter>jmsf\pointing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\Constant_pointer.inl">
+      <Filter>jmsf\pointing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\Automatic_pointer.inl">
+      <Filter>jmsf\pointing</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Proxy_deleter.inl">
+      <Filter>jmsf\pointing\internals</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Pointer_deleter.inl">
+      <Filter>jmsf\pointing\internals</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Type_data.inl">
+      <Filter>jmsf\pointing\internals</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_pointer_and_proxy.inl">
+      <Filter>jmsf\pointing\internals</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_constant_pointer_and_constant_proxy.inl">
+      <Filter>jmsf\pointing\internals</Filter>
+    </None>
+    <None Include="..\..\..\..\sources\jmsf\pointing\internals\Base_for_both_constant_and_nonconstant.inl">
+      <Filter>jmsf\pointing\internals</Filter>
+    </None>
+  </ItemGroup>
+</Project>

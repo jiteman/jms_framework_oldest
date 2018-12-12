@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\producting\snipet_composer\main_snipet_composer.cpp">
+      <Filter>producting\snipet_composer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="producting">
+      <UniqueIdentifier>{4d3064b9-cf8a-4f14-abdf-830e69b4f646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="producting\snipet_composer">
+      <UniqueIdentifier>{a8687c7a-56c1-413a-aae5-24c2ce3e9d3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

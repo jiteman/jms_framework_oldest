@@ -1,0 +1,170 @@
+#pragma once
+
+#include "Womp.hpp"
+
+
+#include "Omp.hin"
+#include "Memory_pointer.h"
+#include "jmsf/typeing/Boolean.h"
+
+#include "Memory_pointer.hin"
+
+#include "jmsf/validating/Should.hin"
+#include "jmsf/validating/logging_macroses.h"
+
+#include <iostream>
+
+
+namespace jmsf {
+namespace memorying {
+
+
+template< class A_type >
+typeing::Boolean Womp< A_type >::is_empty() const noexcept {
+	return _the_memory_pointer.is_empty();
+}
+
+template< class A_type >
+typeing::Boolean Womp< A_type >::is_not_empty() const noexcept {
+	return _the_memory_pointer.is_not_empty();
+}
+
+// SenSEI: todonext add type name messaging to other memory pointers too
+template< class A_type >
+const A_type *Womp< A_type >::get() const {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Womp< A_type >::get()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< const A_type * >( _the_memory_pointer.get() );
+}
+
+template< class A_type >
+const A_type &Womp< A_type >::operator *() const {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Womp< A_type >::operator *()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< const A_type & >( *_the_memory_pointer.get() );
+}
+
+template< class A_type >
+const A_type *Womp< A_type >::operator ->() const {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Womp< A_type >::operator ->()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< const A_type * >( _the_memory_pointer.get() );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+A_type *Womp< A_type >::take() {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Womp< A_type >::take()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< A_type * >( _the_memory_pointer.take() );
+}
+
+template< class A_type >
+A_type &Womp< A_type >::operator *() {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Womp< A_type >::operator *()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< A_type & >( *_the_memory_pointer.take() );
+}
+
+template< class A_type >
+A_type *Womp< A_type >::operator ->() {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Womp< A_type >::operator ->()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return reinterpret_cast< A_type * >( _the_memory_pointer.take() );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Memory_pointer Womp< A_type >::get_memory() const {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( is_empty(), "Womp< A_type >::temp_get_memory()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( *this );
+	return _the_memory_pointer;
+}
+
+template< class A_type >
+typeing::Memory_natural Womp< A_type >::get_address() const noexcept {
+	return _the_memory_pointer.get_address();
+}
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type >
+Womp< A_type >::~Womp() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Womp< A_type >::Womp() noexcept
+{}
+
+// static
+template< class A_type >
+Womp< A_type > Womp< A_type >::create_from_memory_pointer( const Memory_pointer &a_memory_pointer ) {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( a_memory_pointer.is_empty(), "Womp< A_type >::create_from_memory_pointer( mp )", JMSF_TYPE_NAME( A_type ) );
+
+	if ( a_memory_pointer.is_empty() ) {
+		jmsf_Should_never_be_null( Womp< A_type >() );
+	}
+
+	return Womp< A_type >( a_memory_pointer );
+}
+
+// static
+template< class A_type >
+Womp< A_type > Womp< A_type >::create_from_pointer( const A_type *const an_object ) {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( an_object == nullptr, "Womp< A_type >::create_from_memory_pointer( pointer )", JMSF_TYPE_NAME( A_type ) );
+
+	if ( an_object == nullptr ) {
+		jmsf_Should_never_be_null( Womp< A_type >() );
+	}
+
+	return Womp< A_type >( Memory_pointer::create_from_pointer( an_object ) );
+}
+
+// static
+template< class A_type >
+Womp< A_type > Womp< A_type >::create_from_address( const typeing::Memory_natural an_address ) {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( an_address.is_nill(), "Womp< A_type >::create_from_address( an_address )", JMSF_TYPE_NAME( A_type ) );
+
+	if ( an_address.is_nill() ) {
+		jmsf_Should_never_be_null( Womp< A_type >() );
+	}
+
+	return Womp< A_type >( Memory_pointer::create_from_address( an_address ) );
+}
+
+// static
+// template< class A_type >
+// Womp< A_type > Womp< A_type >::create( const Omp< A_type > &object_memory_pointer ) noexcept {
+// 	return Womp< A_type >( object_memory_pointer.get_memory() );
+// }
+
+template< class A_type >
+Womp< A_type >::Womp( const Memory_pointer &a_memory_pointer ) noexcept
+	:
+		_the_memory_pointer( a_memory_pointer )
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Womp< A_type >::Womp( const Womp< A_type > &another ) noexcept
+	:
+		_the_memory_pointer( another._the_memory_pointer )
+{}
+
+template< class A_type >
+const Womp< A_type > &Womp< A_type >::operator =( const Womp< A_type > &another ) noexcept {
+	if ( &another == this ) return *this;
+
+	_the_memory_pointer = another._the_memory_pointer;
+	return *this;
+}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+} // namespace memorying
+} // namespace jmsf

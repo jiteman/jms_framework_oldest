@@ -1,0 +1,1088 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{38774b4f-5e87-4f4a-9ac0-9eedf7373221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\_data_structures">
+      <UniqueIdentifier>{4f367b5f-f543-4858-8eb4-8bf6a03ac117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\assists">
+      <UniqueIdentifier>{fd208472-8835-4a8e-a467-f2c03dba7331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\assists\realizations">
+      <UniqueIdentifier>{cc681830-985e-4bb3-b8c0-6d2f77f27d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\base_pointing">
+      <UniqueIdentifier>{4a1a90f8-1737-460d-b686-857ec6ab52c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\concrete_containers">
+      <UniqueIdentifier>{6ca083b7-f397-4596-8948-c58cec51f166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\containers">
+      <UniqueIdentifier>{bde99d32-325e-411a-8297-eb5ce6d45702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\containers\realizations">
+      <UniqueIdentifier>{14a9d568-349e-4a0d-8d7b-3512cf6d28e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\containers\realizations\nodes">
+      <UniqueIdentifier>{99318b3a-d268-46c4-86f3-d2c0434af7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging">
+      <UniqueIdentifier>{a131dcf5-daef-420a-b8c5-9476736fbb58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\mulan">
+      <UniqueIdentifier>{04fdb3a2-470e-4226-bdcc-cfcc8652a8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\realizations">
+      <UniqueIdentifier>{b148350d-6f2b-4288-b66c-c04bff165754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\mulan\launchers">
+      <UniqueIdentifier>{825957d7-ca0e-4512-83dd-0e196f14d9c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\mulan\realizations">
+      <UniqueIdentifier>{4cc8f3c2-38c4-491f-b1cd-fdc034cfeec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\exceptions">
+      <UniqueIdentifier>{3885adab-fe74-404d-b8ca-7cac9aa65da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\memory">
+      <UniqueIdentifier>{fcdb78a5-206e-41df-a440-aab3e7bfee10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\memory\realizations">
+      <UniqueIdentifier>{261f8bc3-d533-4f26-b154-fe44ba28e84e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\mixins">
+      <UniqueIdentifier>{f18946f0-af73-4006-8a9b-f7ed5fc8844d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\mtf">
+      <UniqueIdentifier>{255f94a8-9bf4-428c-a85c-793792b50ecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\mtf\assists">
+      <UniqueIdentifier>{41ee089d-9fb1-4002-9c69-6524c67d0b92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\mtf\exceptions">
+      <UniqueIdentifier>{39ab283c-7a7d-408c-872d-9f1c2a3e4416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\mtf\mixins">
+      <UniqueIdentifier>{df4158d6-e014-4dda-a7ec-a062cd172d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\mtf\realizations">
+      <UniqueIdentifier>{94006a08-539e-4156-937a-91a2fdc859d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie">
+      <UniqueIdentifier>{4ffd46cb-73a5-4e15-9a55-ba1368c52858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\assists">
+      <UniqueIdentifier>{75cd8e53-84c2-462f-b964-5a20cccf33da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\exceptions">
+      <UniqueIdentifier>{f714c398-ad31-423c-a4ce-dc6d0d4cc9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\hiddens">
+      <UniqueIdentifier>{c20c4033-326a-41ae-8241-5fe04a2653e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\mixins">
+      <UniqueIdentifier>{3b574ea4-0c82-45c2-8f6c-fa8651b25245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\mocks">
+      <UniqueIdentifier>{ef6d5686-3afd-477a-b5a3-db9cf2e1c2a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows">
+      <UniqueIdentifier>{c1ceaf23-524e-4717-a243-00e708c20100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows\hiddens">
+      <UniqueIdentifier>{045e1f0c-9ce8-40de-a4ef-31caa5cd24e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows\realizations">
+      <UniqueIdentifier>{1a0f22e7-9dc1-40fe-9a62-afa0f544bd12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\realizations">
+      <UniqueIdentifier>{5afc1295-f983-41ba-9831-9b519aa8e8f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\realizations\hiddens">
+      <UniqueIdentifier>{664d633f-93cb-4b78-ae47-c39b72d7025a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\types">
+      <UniqueIdentifier>{004ad863-c07b-47c5-bb4c-b0e1a0cdafb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\types\internals">
+      <UniqueIdentifier>{7d99c50a-d667-4124-9c4a-e71887220df3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\_data_structures\Buffer.hpp">
+      <Filter>jmsf\_data_structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\_data_structures\Queue.hpp">
+      <Filter>jmsf\_data_structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\_data_structures\Stack.hpp">
+      <Filter>jmsf\_data_structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_ConstantFunctor.hpp">
+      <Filter>jmsf\assists\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_flyweight_factory_Functor.hpp">
+      <Filter>jmsf\assists\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_flyweight_factory_Functor.hxx">
+      <Filter>jmsf\assists\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\realizations\realization_Functor.hpp">
+      <Filter>jmsf\assists\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\BitFields.hpp">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\ConstantFunctor.hpp">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\DoForEvery.hpp">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Find.hpp">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\flyweight_factory_Functor.hpp">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Functor.hpp">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Functors.hpp">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\assists\Functors.hxx">
+      <Filter>jmsf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForBothConstantAndNonconstant.hpp">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForBothConstantAndNonconstant.hxx">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForConstantPointerAndConstantProxy.hpp">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForConstantPointerAndConstantProxy.hxx">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForPointerAndProxy.hpp">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForPointerAndProxy.hxx">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\ReferenceCounters.h">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\base_pointing\ReferenceCounters.hxx">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\Array.hpp">
+      <Filter>jmsf\concrete_containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\Buffer.hpp">
+      <Filter>jmsf\concrete_containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\DoublyLinkedNode.hpp">
+      <Filter>jmsf\concrete_containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\concrete_containers\List.hpp">
+      <Filter>jmsf\concrete_containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\BinaryNode.hpp">
+      <Filter>jmsf\containers\realizations\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\BinaryNode.hxx">
+      <Filter>jmsf\containers\realizations\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\DoublyLinkedNode.hpp">
+      <Filter>jmsf\containers\realizations\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\DoublyLinkedNode.hxx">
+      <Filter>jmsf\containers\realizations\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\SinglyLinkedNode.hpp">
+      <Filter>jmsf\containers\realizations\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\nodes\SinglyLinkedNode.hxx">
+      <Filter>jmsf\containers\realizations\nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ArrayConstantIterator.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ArrayIterator.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ConstantIterator.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ContainerAgent.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ContainerArray.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ContainerList.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_Iterator.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ListConstantIterator.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\realizations\realization_ListIterator.hpp">
+      <Filter>jmsf\containers\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\ConstantIterator.hpp">
+      <Filter>jmsf\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Container.hpp">
+      <Filter>jmsf\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Container.hxx">
+      <Filter>jmsf\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\ContainerAgent.hpp">
+      <Filter>jmsf\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Iterator.hpp">
+      <Filter>jmsf\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Iterators.hpp">
+      <Filter>jmsf\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\containers\Iterators.hxx">
+      <Filter>jmsf\containers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\factory_MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\mulan.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\mulan_dll.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\mulan\MuleAnalyzer.hxx">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_factory_DebuggingObject.h">
+      <Filter>jmsf\debugging\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_factory_DebuggingObject.hxx">
+      <Filter>jmsf\debugging\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_Log.h">
+      <Filter>jmsf\debugging\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ArrayCreationLogging.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ArrayDeletionLogging.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\factory_DebuggingObject.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\FileAndLine.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\FileAndLine.hxx">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\Log.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\Log.hxx">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MemoryLoggingSwitch.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayCreationInformation.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayCreationInformation.hxx">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayDeletionInformation.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayDeletionInformation.hxx">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulInformationCreator.hpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectCreationInformation.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectCreationInformation.hxx">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectDeletionInformation.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectDeletionInformation.hxx">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ObjectCreationLogging.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\ObjectDeletionLogging.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayCreationLogger.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayDeletionLogger.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectCreationLogger.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectDeletionLogger.h">
+      <Filter>jmsf\debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadContainerDereferencing.h">
+      <Filter>jmsf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadDynamicCast.h">
+      <Filter>jmsf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_CantOpenFile.h">
+      <Filter>jmsf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_DivisionByZero.h">
+      <Filter>jmsf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_InitializationOrderIsViolated.h">
+      <Filter>jmsf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\exceptions\exception_UnexpectedStlException.h">
+      <Filter>jmsf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\memory\realizations\realization_SystemNativeAllocator.h">
+      <Filter>jmsf\memory\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\memory\memory.h">
+      <Filter>jmsf\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\memory\NativeAllocator.h">
+      <Filter>jmsf\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Exception.h">
+      <Filter>jmsf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Object.h">
+      <Filter>jmsf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observable.h">
+      <Filter>jmsf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observer.h">
+      <Filter>jmsf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Object.h">
+      <Filter>jmsf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Observable.h">
+      <Filter>jmsf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\assists\AutoLocker.h">
+      <Filter>jmsf\mtf\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableException.h">
+      <Filter>jmsf\mtf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableIsAlreadyRegisteredForThisThread.h">
+      <Filter>jmsf\mtf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\RunnableExceptionInformation.h">
+      <Filter>jmsf\mtf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\RunnableExceptionInformation.hxx">
+      <Filter>jmsf\mtf\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_Lockable.h">
+      <Filter>jmsf\mtf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Lockable.h">
+      <Filter>jmsf\mtf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Runnable.h">
+      <Filter>jmsf\mtf\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_GenericMultithreading.hpp">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_GenericMultithreading.hxx">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_Multithreading.h">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_Multithreading.hxx">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_SynchronizedQueue.hpp">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_Thread.h">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\factory_GenericMultithreading.hpp">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\factory_Multithreading.h">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Lockable.h">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Lockable.hxx">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Runnable.h">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Runnable.hxx">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\SynchronizedQueue.hpp">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\SynchronizedQueue.hxx">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Thread.h">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\mtf\Thread.hxx">
+      <Filter>jmsf\mtf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\assists\FileReader.hpp">
+      <Filter>jmsf\osie\assists</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventArrayIsNullptr.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsAlreadyAdded.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsNullptr.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventListIsEmpty.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_FileException.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_PriorityLevelIsOutOfRange.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnableToCreateThread.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnsetCreator.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_WaitingForEvenetIsFailed.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\hiddens\hidden_Thread.h">
+      <Filter>jmsf\osie\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\hiddens\hidden_Thread.hxx">
+      <Filter>jmsf\osie\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mixins\mixin_osie_Thread.h">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mixins\null_mixin_osie_Thread.h">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mocks\mocks.h">
+      <Filter>jmsf\osie\mocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\mocks\mocks_dll.h">
+      <Filter>jmsf\osie\mocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\hiddens\ms_windows_hidden_Thread.h">
+      <Filter>jmsf\osie\ms_windows\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\realizations\EventHandleCache.h">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\realizations\EventHandleCache.hxx">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_BufferedFile.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Event.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_EventArray.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_EventArray.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_File.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_FileSystemControl.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_FileSystemControl.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_include.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Mutex.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MutexSpecial.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_PopUpMessage.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Stopwatch.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UnbufferedFile.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UtilityControl.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UtilityControl.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextStream.h">
+      <Filter>jmsf\realizations\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextString.h">
+      <Filter>jmsf\realizations\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\constant_TextString.h">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\exception_exception_Object.h">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\exception_Should.h">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Container.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Container.hxx">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Pair.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_Pair.hxx">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_TextObject.h">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_Pair.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_Array.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_Array.hxx">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ConstantForwardIterator.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ConstantReverseIterator.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ForwardIterator.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_List.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_List.hxx">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_REMOVE_STL_ReverseIterator.hpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextStream.h">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextString.h">
+      <Filter>jmsf\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\internals\internal_types.h">
+      <Filter>jmsf\types\internals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\AlignmentAndSize.hpp">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\AlignmentAndSize.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Asd.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Asd.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Bitwise.hpp">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Bitwise.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Boolean.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Boolean.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Integer.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Integer.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongInteger.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongInteger.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongNatural.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\LongNatural.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Natural.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Natural.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Real.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\Real.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestInteger.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestInteger.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestNatural.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortestNatural.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortInteger.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortInteger.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortNatural.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortNatural.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortReal.h">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_oldest\jmsf\types\ShortReal.hxx">
+      <Filter>jmsf\types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForBothConstantAndNonconstant.inl">
+      <Filter>jmsf\base_pointing</Filter>
+    </None>
+    <None Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForConstantPointerAndConstantProxy.inl">
+      <Filter>jmsf\base_pointing</Filter>
+    </None>
+    <None Include="..\..\..\sources_oldest\jmsf\base_pointing\BaseForPointerAndProxy.inl">
+      <Filter>jmsf\base_pointing</Filter>
+    </None>
+    <None Include="..\..\..\sources_oldest\jmsf\types\AlignmentAndSize.inl">
+      <Filter>jmsf\types</Filter>
+    </None>
+    <None Include="..\..\..\sources_oldest\jmsf\types\Bitwise.inl">
+      <Filter>jmsf\types</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\base_pointing\ReferenceCounters.cpp">
+      <Filter>jmsf\base_pointing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\launchers\launcher_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan\launchers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\realizations\realization_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\factory_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\mulan\MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_factory_DebuggingObject.cpp">
+      <Filter>jmsf\debugging\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\realizations\realization_Log.cpp">
+      <Filter>jmsf\debugging\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\factory_DebuggingObject.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\FileAndLine.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\Log.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MemoryLoggingSwitch.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayCreationInformation.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulArrayDeletionInformation.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectCreationInformation.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\MulObjectDeletionInformation.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayCreationLogger.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ArrayDeletionLogger.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectCreationLogger.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\debugging\static_ObjectDeletionLogger.cpp">
+      <Filter>jmsf\debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadContainerDereferencing.cpp">
+      <Filter>jmsf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_BadDynamicCast.cpp">
+      <Filter>jmsf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_CantOpenFile.cpp">
+      <Filter>jmsf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_DivisionByZero.cpp">
+      <Filter>jmsf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_InitializationOrderIsViolated.cpp">
+      <Filter>jmsf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\exceptions\exception_UnexpectedStlException.cpp">
+      <Filter>jmsf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\memory\realizations\realization_SystemNativeAllocator.cpp">
+      <Filter>jmsf\memory\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\memory\NativeAllocator.cpp">
+      <Filter>jmsf\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Exception.cpp">
+      <Filter>jmsf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Object.cpp">
+      <Filter>jmsf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observable.cpp">
+      <Filter>jmsf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_null_Observer.cpp">
+      <Filter>jmsf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Object.cpp">
+      <Filter>jmsf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mixins\mixin_Observable.cpp">
+      <Filter>jmsf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\assists\AutoLocker.cpp">
+      <Filter>jmsf\mtf\assists</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableException.cpp">
+      <Filter>jmsf\mtf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\exception_RunnableIsAlreadyRegisteredForThisThread.cpp">
+      <Filter>jmsf\mtf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\exceptions\RunnableExceptionInformation.cpp">
+      <Filter>jmsf\mtf\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_Lockable.cpp">
+      <Filter>jmsf\mtf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Lockable.cpp">
+      <Filter>jmsf\mtf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\mixins\mixin_null_Runnable.cpp">
+      <Filter>jmsf\mtf\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_factory_Multithreading.cpp">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\realizations\realization_Thread.cpp">
+      <Filter>jmsf\mtf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\factory_Multithreading.cpp">
+      <Filter>jmsf\mtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\Lockable.cpp">
+      <Filter>jmsf\mtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\Runnable.cpp">
+      <Filter>jmsf\mtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\mtf\Thread.cpp">
+      <Filter>jmsf\mtf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventArrayIsNullptr.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsAlreadyAdded.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventIsNullptr.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_EventListIsEmpty.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_FileException.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_PriorityLevelIsOutOfRange.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnableToCreateThread.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_UnsetCreator.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\exceptions\exception_WaitingForEvenetIsFailed.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\hiddens\hidden_Thread.cpp">
+      <Filter>jmsf\osie\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\mixins\mixin_osie_Thread.cpp">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\mixins\null_mixin_osie_Thread.cpp">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\hiddens\ms_windows_hidden_Thread.cpp">
+      <Filter>jmsf\osie\ms_windows\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\realizations\EventHandleCache.cpp">
+      <Filter>jmsf\osie\ms_windows\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_BufferedFile.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Event.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_EventArray.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_factory_OperatingSystem.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_File.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_FileSystemControl.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MultithreadingControl.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Mutex.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_MutexSpecial.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_PopUpMessage.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_static_factory_OperatingSystemSpecial.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_Stopwatch.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UnbufferedFile.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\osie\ms_windows\ms_windows_UtilityControl.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextStream.cpp">
+      <Filter>jmsf\realizations\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\hiddens\hidden_realization_TextString.cpp">
+      <Filter>jmsf\realizations\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\constant_TextString.cpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\exception_exception_Object.cpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\exception_Should.cpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\realization_factory_TextObject.cpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextStream.cpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\realizations\realization_TextString.cpp">
+      <Filter>jmsf\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\internals\internal_types.cpp">
+      <Filter>jmsf\types\internals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Asd.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Boolean.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Integer.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\LongInteger.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\LongNatural.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Natural.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\Real.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortestInteger.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortestNatural.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortInteger.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortNatural.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_oldest\jmsf\types\ShortReal.cpp">
+      <Filter>jmsf\types</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

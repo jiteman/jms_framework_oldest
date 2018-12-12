@@ -1,0 +1,273 @@
+requests:
+
+  level_up:
+    request_type: common
+    reward:
+      - roll: 0
+        items:
+          - exp: {min_quantity: 5}
+    image: "items/farm/level_up.png"
+    send_post: "level_up_post"
+    send_button: "level_up_post_button"
+    receive_post: "level_up_receive"
+    receive_button: "level_up_receive_button"
+    expire: 24
+    max_count: 5
+    limited: false
+
+
+  hire_as_test_job:
+    id: 100000
+    request_type: staff
+    position: test_job
+    image: "items/energy/requests/atelier_shoemaker_wall.png"
+    send_post: "hire_as_job_test"
+    send_button: "hire_as_job_test_button"
+    receive_post: "hire_as_job_test_receive"
+    receive_button: "hire_as_job_test_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_test_job2:
+    id: 100001
+    request_type: staff
+    position: test_job2
+    image: "items/energy/requests/atelier_shoemaker_wall.png"
+    send_post: "hire_as_job_test"
+    send_button: "hire_as_job_test"
+    receive_post: "hire_as_job_test"
+    receive_button: "hire_as_job_test"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+
+  hire_as_pier_fisherman_job:
+    id: 100002
+    request_type: staff
+    position: pier_fisherman_job
+    image: "items/farm/requests/ribak.png"
+    send_post: "hire_as_pier_fisherman"
+    send_button: "hire_as_pier_fisherman_button"
+    receive_post: "hire_as_pier_fisherman_receive"
+    receive_button: "hire_as_pier_fisherman_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_fisherman_apprentice_job:
+    id: 100003
+    request_type: staff
+    position: pier_fisherman_apprentice_job
+    image: "items/farm/requests/pomoschnik.png"
+    send_post: "hire_as_pier_fisherman_apprentice"
+    send_button: "hire_as_pier_fisherman_apprentice_button"
+    receive_post: "hire_as_pier_fisherman_apprentice_receive"
+    receive_button: "hire_as_pier_fisherman_apprentice_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_boatman_job:
+    id: 100004
+    request_type: staff
+    position: pier_boatman_job
+    image: "items/farm/requests/lodochnik.png"
+    send_post: "hire_as_pier_boatman"
+    send_button: "hire_as_pier_boatman_button"
+    receive_post: "hire_as_pier_boatman_receive"
+    receive_button: "hire_as_pier_boatman_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_ceo_job:
+    id: 100005
+    request_type: staff
+    position: pier_ceo_job
+    image: "items/farm/requests/nachalnik.png"
+    send_post: "hire_as_pier_ceo"
+    send_button: "hire_as_pier_ceo_button"
+    receive_post: "hire_as_pier_ceo_receive"
+    receive_button: "hire_as_pier_ceo_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_doker_job:
+    id: 100006
+    request_type: staff
+    position: pier_doker_job
+    image: "items/farm/requests/doker.png"
+    send_post: "hire_as_pier_doker"
+    send_button: "hire_as_pier_doker_button"
+    receive_post: "hire_as_pier_doker_receive"
+    receive_button: "hire_as_pier_doker_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_inspektor_job:
+    id: 100007
+    request_type: staff
+    position: pier_inspektor_job
+    image: "items/farm/requests/inspektor.png"
+    send_post: "hire_as_pier_inspektor"
+    send_button: "hire_as_pier_inspektor_button"
+    receive_post: "hire_as_pier_inspektor_receive"
+    receive_button: "hire_as_pier_inspektor_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_kladovschik_job:
+    id: 100008
+    request_type: staff
+    position: pier_kladovschik_job
+    image: "items/farm/requests/kladovschik.png"
+    send_post: "hire_as_pier_kladovschik"
+    send_button: "hire_as_pier_kladovschik_button"
+    receive_post: "hire_as_pier_kladovschik_receive"
+    receive_button: "hire_as_pier_kladovschik_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_pletelschik_job:
+    id: 100009
+    request_type: staff
+    position: pier_pletelschik_job
+    image: "items/farm/requests/pletelschik.png"
+    send_post: "hire_as_pier_pletelschik"
+    send_button: "hire_as_pier_pletelschik_button"
+    receive_post: "hire_as_pier_pletelschik_receive"
+    receive_button: "hire_as_pier_pletelschik_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_plotnik_job:
+    id: 100010
+    request_type: staff
+    position: pier_plotnik_job
+    image: "items/farm/requests/plotnik.png"
+    send_post: "hire_as_pier_plotnik"
+    send_button: "hire_as_pier_plotnik_button"
+    receive_post: "hire_as_pier_plotnik_receive"
+    receive_button: "hire_as_pier_plotnik_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_povar_job:
+    id: 100011
+    request_type: staff
+    position: pier_povar_job
+    image: "items/farm/requests/povar.png"
+    send_post: "hire_as_pier_povar"
+    send_button: "hire_as_pier_povar_button"
+    receive_post: "hire_as_pier_povar_receive"
+    receive_button: "hire_as_pier_povar_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_razdelschik_job:
+    id: 100012
+    request_type: staff
+    position: pier_razdelschik_job
+    image: "items/farm/requests/razdelschik.png"
+    send_post: "hire_as_pier_razdelschik"
+    send_button: "hire_as_pier_razdelschik_button"
+    receive_post: "hire_as_pier_razdelschik_receive"
+    receive_button: "hire_as_pier_razdelschik_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_shvartovschik_job:
+    id: 100013
+    request_type: staff
+    position: pier_shvartovschik_job
+    image: "items/farm/requests/shvartovschik.png"
+    send_post: "hire_as_pier_shvartovschik"
+    send_button: "hire_as_pier_shvartovschik_button"
+    receive_post: "hire_as_pier_shvartovschik_receive"
+    receive_button: "hire_as_pier_shvartovschik_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false
+
+  hire_as_pier_uborschik_job:
+    id: 100014
+    request_type: staff
+    position: pier_uborschik_job
+    image: "items/farm/requests/uborschik.png"
+    send_post: "hire_as_pier_uborschik"
+    send_button: "hire_as_pier_uborschik_button"
+    receive_post: "hire_as_pier_uborschik_receive"
+    receive_button: "hire_as_pier_uborschik_receive_button"
+    reward:
+      - roll: 0
+        items:
+          - coins: {min_quantity: 1000}
+    expire: 24
+    max_count: 1
+    limited: false

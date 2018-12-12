@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\configurator\main.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_info_load.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_name_formatter.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\find_section_arguments.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_access.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_container.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_fixed.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_identifier.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_raw.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_string.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_value.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_file.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_names.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_section.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_base.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_api.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_data_stream.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_plist.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_png.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_utils.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_xml.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city_objects.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\farm_name_farmatter.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm.cpp" />
+    <ClCompile Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm_objects.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_info_load.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\configurator\sqc_name_formatter.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\find_section_arguments.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\find_section_arguments.hxx" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\stl_container_storing.hpp" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_access.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_access.hxx" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_container.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_container.hxx" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry.hxx" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_fixed.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_identifier.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_raw.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_string.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_entry_value.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_file.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_names.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_names.hxx" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_section.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\named_storing\storage_section.hxx" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_base.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_data_stream.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_defs.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_api.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_file_data_stream.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_image_decoder.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_plist.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_png.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_utils.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_xml.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\common\sqc\sqc_yaml.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity\sqc\sqc_city_objects.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\farm_name_farmatter.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm.h" />
+    <ClInclude Include="..\..\..\..\sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm\sqc\sqc_farm_objects.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OSL\LibPng\LibPng.vcxproj">
+      <Project>{8fe0177c-6ee4-440e-ad63-66ee9c1d87ac}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OSL\LibXml\LibXml.vcxproj">
+      <Project>{d51b821e-a7f7-4ec3-82fb-01a7959703ae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\OSL\LibYaml\LibYaml.vcxproj">
+      <Project>{caf352e3-c682-4195-8a6e-bcdd0d40186b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6C370F0D-9D0E-441A-8CDE-4FDA844B8106}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ObjectInfoConfigurator</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>Windows7.1SDK</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources\osl/libpng;$(ProjectDir)../../../../sources\osl/libiconv;$(ProjectDir)../../../../sources\osl;$(ProjectDir)../../../../sources\osl\libyaml;$(ProjectDir)../../../../sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm;$(ProjectDir)../../../../sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity;$(ProjectDir)../../../../sources\social_quantum\testiphone\iPhoneTestTask\sources\common;$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)../../../../sources\osl/libpng;$(ProjectDir)../../../../sources\osl/libiconv;$(ProjectDir)../../../../sources\osl;$(ProjectDir)../../../../sources\osl\libyaml;$(ProjectDir)../../../../sources\social_quantum\testiphone\iPhoneTestTask\sources\iFarm;$(ProjectDir)../../../../sources\social_quantum\testiphone\iPhoneTestTask\sources\iCity;$(ProjectDir)../../../../sources\social_quantum\testiphone\iPhoneTestTask\sources\common;$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)../../../../sources;$(IncludePath);$(VCInstallDir)atlmfc\include</IncludePath>
+    <OutDir>$(ProjectDir)..\..\..\..\versions\$(PlatformShortName)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\..\..\_int\$(PlatformShortName)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SQC_CONFIGURATOR;SOCIAL_QUANTUM_OBJECT_INFO_CONFIGURATOR_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290;4512;4514;4710;4365;4625;4626;4996</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SOCIAL_QUANTUM_OBJECT_INFO_CONFIGURATOR_DLL_INTERFACE_INTERNAL;_DEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SQC_CONFIGURATOR;SOCIAL_QUANTUM_OBJECT_INFO_CONFIGURATOR_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SOCIAL_QUANTUM_OBJECT_INFO_CONFIGURATOR_DLL_INTERFACE_INTERNAL;NDEBUG;JMSF_WINDOWS;JMSF_64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4820;4571;4290</DisableSpecificWarnings>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

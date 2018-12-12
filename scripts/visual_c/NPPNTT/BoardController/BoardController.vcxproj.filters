@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nppntt">
+      <UniqueIdentifier>{b45971da-ba8c-438f-a6da-371542fb7d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nppntt\board_controlling">
+      <UniqueIdentifier>{5a257bab-a320-4bb6-a896-d1d1bfafe11c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\BoardController.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\data_Finish.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\data_Prefix.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\data_Rand.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\data_Register.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\FinishToRandProcessingChannel.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\PrefixToFinishProcessingChannel.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\PrefixToRegisterConveyor.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\nppntt\board_controlling\RandToRegisterProcessingChannel.cpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\board_controller.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\board_controller_dll.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\BoardController.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\data_Finish.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\data_Prefix.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\data_Rand.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\data_Register.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\FinishToRandProcessingChannel.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\PrefixToFinishProcessingChannel.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\PrefixToRegisterConveyor.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\RandToRegisterProcessingChannel.h">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\nppntt\board_controlling\SynchronizedQueue.hpp">
+      <Filter>nppntt\board_controlling</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

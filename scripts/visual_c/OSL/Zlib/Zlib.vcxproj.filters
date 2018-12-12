@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{22f80d54-73eb-4b82-95e7-09c9f264fb1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\zlib">
+      <UniqueIdentifier>{8a30ada9-bb18-470c-a3c2-0daf30d5fc95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\adler32.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\compress.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\crc32.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\deflate.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\gzclose.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\gzlib.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\gzread.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\gzwrite.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\infback.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\inffast.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\inflate.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\inftrees.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\trees.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\uncompr.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\zlib\zutil.c">
+      <Filter>osl\zlib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\crc32.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\deflate.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\gzguts.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\inffast.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\inffixed.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\inflate.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\inftrees.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\trees.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\zconf.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\zlib.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\zutil.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\zlib\zlib_dll.h">
+      <Filter>osl\zlib</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

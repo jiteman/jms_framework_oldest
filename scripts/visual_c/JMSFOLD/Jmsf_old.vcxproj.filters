@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{d5596d3f-927d-4f6f-9af8-0b705cd192b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\assisting">
+      <UniqueIdentifier>{2caf6990-dbf4-4ff8-98cc-26a085107b8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\containing">
+      <UniqueIdentifier>{2c41f750-dad4-42e0-b436-1bee514ccb57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie">
+      <UniqueIdentifier>{b04d6e75-2d69-42bc-9c82-92f3712b303c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\runtiming">
+      <UniqueIdentifier>{498fbbcc-434c-4d83-9cb6-0acf29b2dbc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing">
+      <UniqueIdentifier>{70da4a35-3a01-461e-8420-4c9786b6d7aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\texting">
+      <UniqueIdentifier>{e3b851ad-8cb5-428d-a1ba-053f4b0e3bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\assisting\realizing">
+      <UniqueIdentifier>{3a532350-5013-4a55-9c90-9933132c5775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\containing\realizing">
+      <UniqueIdentifier>{f0bd89a8-c059-413e-a17c-fa0fc19c66e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\assist">
+      <UniqueIdentifier>{7ef73653-390b-4f35-aa91-e9af30363789}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\exceptions">
+      <UniqueIdentifier>{c189b2fa-3606-42ed-8fc0-e846f6afd772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\hiddens">
+      <UniqueIdentifier>{5c0d7410-95db-4ead-999a-a695766b9687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\mixins">
+      <UniqueIdentifier>{a41084f5-86b7-4a52-9b0e-f67034e7e821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\mocks">
+      <UniqueIdentifier>{29984788-b650-4638-93dc-cbd8641c129e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows">
+      <UniqueIdentifier>{79a98feb-659d-4868-907e-f3c3913ed51f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows\hiddens">
+      <UniqueIdentifier>{bba11de5-456e-4b97-8ecc-21aa7d7b2bd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\osie\ms_windows\realizing">
+      <UniqueIdentifier>{b22073a8-6dc6-48bf-a19b-2fc0a7a7e6c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\runtiming\excepting">
+      <UniqueIdentifier>{30150bd1-0163-46bd-a813-a2a38c5fb77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing\coupling">
+      <UniqueIdentifier>{224d6a7d-321c-4512-9e66-a96f37b1b15e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing\containing">
+      <UniqueIdentifier>{b61ecf13-5daa-420f-9df2-e214dfe50688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing\noding">
+      <UniqueIdentifier>{49eb9bf4-d5b9-4c15-b24d-23deb8fce38a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\structing\traversing">
+      <UniqueIdentifier>{5029e7f1-d8e0-4d10-b9fc-c2354ba16b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\texting\realizing">
+      <UniqueIdentifier>{2d6974e8-5119-4212-b7a1-0338b3c6746a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\texting\realizing\hiddens">
+      <UniqueIdentifier>{410a1481-1727-419c-ad1b-ccf7e1b89972}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_ConstantFunctor.hpp">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_ConstantFunctor.hxx">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_flyweight_factory_Functor.hpp">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_flyweight_factory_Functor.hxx">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_Functor.hpp">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_Functor.hxx">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\ConstantFunctor.hpp">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\ConstantFunctor.hxx">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\DoForEvery.hpp">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\DoForEvery.hxx">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\Find.hpp">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\Find.hxx">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\flyweight_factory_Functor.hpp">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\flyweight_factory_Functor.hxx">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\Functor.hpp">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\assisting\Functor.hxx">
+      <Filter>jmsf\assisting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ConstantIterator.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ConstantIterator.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerArray.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerArray.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerArrayAgent.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerArrayAgent.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerDeque.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerDeque.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerDequeAgent.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerDequeAgent.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerList.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerList.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerListAgent.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerListAgent.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_factory_AssociativeContainer.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_factory_AssociativeContainer.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_factory_Container.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_factory_Container.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_Iterator.hpp">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\realizing\realization_Iterator.hxx">
+      <Filter>jmsf\containing\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeConstantIterator.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeConstantIterator.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeContainer.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeContainer.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeContainerAgent.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeContainerAgent.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeIterator.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\AssociativeIterator.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\ConstantIterator.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\ConstantIterator.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\Container.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\Container.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\ContainerAgent.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\ContainerAgent.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\factory_AssociativeContainer.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\factory_AssociativeContainer.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\factory_Container.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\factory_Container.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\Iterator.hpp">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\containing\Iterator.hxx">
+      <Filter>jmsf\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\Event.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\Event.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\EventArray.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\EventArray.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\factory_OperatingSystem.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\factory_OperatingSystem.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\File.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\File.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\FileSystemControl.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\FileSystemControl.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\MultithreadingControl.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\MultithreadingControl.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\Mutex.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\Mutex.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\osie_Thread.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\osie_Thread.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\PopUpMessage.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\PopUpMessage.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\static_factory_OperatingSystemSpecial.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\static_factory_OperatingSystemSpecial.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\Stopwatch.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\Stopwatch.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\UtilityControl.h">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\UtilityControl.hxx">
+      <Filter>jmsf\osie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\assists\FileReader.hpp">
+      <Filter>jmsf\osie\assist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventArrayIsNullptr.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventIsAlreadyAdded.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventIsNullptr.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventListIsEmpty.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_FileException.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_PriorityLevelIsOutOfRange.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_UnableToCreateThread.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_UnsetCreator.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_WaitingForEvenetIsFailed.h">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\hiddens\hidden_Thread.h">
+      <Filter>jmsf\osie\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\hiddens\hidden_Thread.hxx">
+      <Filter>jmsf\osie\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\mixins\mixin_osie_Thread.h">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\mixins\null_mixin_osie_Thread.h">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\mocks\mocks.h">
+      <Filter>jmsf\osie\mocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\mocks\mocks_dll.h">
+      <Filter>jmsf\osie\mocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\ms_windows\hiddens\ms_windows_hidden_Thread.h">
+      <Filter>jmsf\osie\ms_windows\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\ms_windows\realizing\EventHandleCache.h">
+      <Filter>jmsf\osie\ms_windows\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\osie\ms_windows\realizing\EventHandleCache.hxx">
+      <Filter>jmsf\osie\ms_windows\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\runtiming\excepting\exception_BadDynamicCast.h">
+      <Filter>jmsf\runtiming\excepting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\runtiming\Casts.hpp">
+      <Filter>jmsf\runtiming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\runtiming\Casts.hxx">
+      <Filter>jmsf\runtiming</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\coupling\Pair.hpp">
+      <Filter>jmsf\structing\coupling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\coupling\Pair.hxx">
+      <Filter>jmsf\structing\coupling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\coupling\Quad.hpp">
+      <Filter>jmsf\structing\coupling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\coupling\Quad.hxx">
+      <Filter>jmsf\structing\coupling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\coupling\Triple.hpp">
+      <Filter>jmsf\structing\coupling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\coupling\Triple.hxx">
+      <Filter>jmsf\structing\coupling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\Array.hpp">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\Array.hxx">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\AvlTree.hpp">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\AvlTree.hxx">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\Deque.hpp">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\Deque.hxx">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\List.hpp">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\List.hxx">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\ListAgent.hpp">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\containing\ListAgent.hxx">
+      <Filter>jmsf\structing\containing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\traversing\ArrayTraverser.hpp">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\traversing\ArrayTraverser.hxx">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\traversing\DequeTraverser.hpp">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\traversing\DequeTraverser.hxx">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\traversing\ListTraverser.hpp">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\traversing\ListTraverser.hxx">
+      <Filter>jmsf\structing\traversing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\noding\AvlTreeNode.hpp">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\noding\AvlTreeNode.hxx">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\noding\DoublyLinkedNode.hpp">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\noding\DoublyLinkedNode.hxx">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\noding\SinglyLinkedNode.hpp">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\structing\noding\SinglyLinkedNode.hxx">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\realizing\hiddens\hidden_realization_TextStream.h">
+      <Filter>jmsf\texting\realizing\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\realizing\hiddens\hidden_realization_TextString.h">
+      <Filter>jmsf\texting\realizing\hiddens</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\realizing\C_Characters.h">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\realizing\constant_TextString.h">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\realizing\realization_factory_TextObject.h">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\realizing\realization_TextStream.h">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\realizing\realization_TextString.h">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\factory_TextObject.h">
+      <Filter>jmsf\texting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\TextStream.h">
+      <Filter>jmsf\texting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\TextStream.hxx">
+      <Filter>jmsf\texting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\TextString.h">
+      <Filter>jmsf\texting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources_old\jmsf\texting\TextString.hxx">
+      <Filter>jmsf\texting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_ConstantFunctor.inl">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_flyweight_factory_Functor.inl">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\assisting\realizing\realization_Functor.inl">
+      <Filter>jmsf\assisting\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\assisting\ConstantFunctor.inl">
+      <Filter>jmsf\assisting</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\assisting\DoForEvery.inl">
+      <Filter>jmsf\assisting</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\assisting\Find.inl">
+      <Filter>jmsf\assisting</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\assisting\flyweight_factory_Functor.inl">
+      <Filter>jmsf\assisting</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\assisting\Functor.inl">
+      <Filter>jmsf\assisting</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ConstantIterator.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerArray.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerArrayAgent.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerDeque.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerDequeAgent.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerList.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_ContainerListAgent.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_factory_AssociativeContainer.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_factory_Container.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\realizing\realization_Iterator.inl">
+      <Filter>jmsf\containing\realizing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\AssociativeConstantIterator.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\AssociativeContainer.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\AssociativeContainerAgent.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\AssociativeIterator.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\ConstantIterator.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\Container.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\ContainerAgent.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\factory_AssociativeContainer.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\factory_Container.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\containing\Iterator.inl">
+      <Filter>jmsf\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\runtiming\Casts.inl">
+      <Filter>jmsf\runtiming</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\coupling\Pair.inl">
+      <Filter>jmsf\structing\coupling</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\coupling\Quad.inl">
+      <Filter>jmsf\structing\coupling</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\coupling\Triple.inl">
+      <Filter>jmsf\structing\coupling</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\containing\Array.inl">
+      <Filter>jmsf\structing\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\containing\AvlTree.inl">
+      <Filter>jmsf\structing\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\containing\Deque.inl">
+      <Filter>jmsf\structing\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\containing\List.inl">
+      <Filter>jmsf\structing\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\containing\ListAgent.inl">
+      <Filter>jmsf\structing\containing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\traversing\ArrayTraverser.inl">
+      <Filter>jmsf\structing\traversing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\traversing\DequeTraverser.inl">
+      <Filter>jmsf\structing\traversing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\traversing\ListTraverser.inl">
+      <Filter>jmsf\structing\traversing</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\noding\AvlTreeNode.inl">
+      <Filter>jmsf\structing\noding</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\noding\DoublyLinkedNode.inl">
+      <Filter>jmsf\structing\noding</Filter>
+    </None>
+    <None Include="..\..\..\sources_old\jmsf\structing\noding\SinglyLinkedNode.inl">
+      <Filter>jmsf\structing\noding</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\Event.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\EventArray.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\factory_OperatingSystem.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\File.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\FileSystemControl.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\MultithreadingControl.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\Mutex.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\osie_Thread.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\PopUpMessage.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\Stopwatch.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\UtilityControl.cpp">
+      <Filter>jmsf\osie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventArrayIsNullptr.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventIsAlreadyAdded.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventIsNullptr.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_EventListIsEmpty.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_FileException.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_PriorityLevelIsOutOfRange.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_UnableToCreateThread.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_UnsetCreator.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\exceptions\exception_WaitingForEvenetIsFailed.cpp">
+      <Filter>jmsf\osie\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\hiddens\hidden_Thread.cpp">
+      <Filter>jmsf\osie\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\mixins\mixin_osie_Thread.cpp">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\mixins\null_mixin_osie_Thread.cpp">
+      <Filter>jmsf\osie\mixins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\ms_windows\hiddens\ms_windows_hidden_Thread.cpp">
+      <Filter>jmsf\osie\ms_windows\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\osie\ms_windows\realizing\EventHandleCache.cpp">
+      <Filter>jmsf\osie\ms_windows\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\structing\noding\AVL-tree.cpp">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\structing\noding\hash.cpp">
+      <Filter>jmsf\structing\noding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\realizing\hiddens\hidden_realization_TextStream.cpp">
+      <Filter>jmsf\texting\realizing\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\realizing\hiddens\hidden_realization_TextString.cpp">
+      <Filter>jmsf\texting\realizing\hiddens</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\realizing\C_Characters.cpp">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\realizing\constant_TextString.cpp">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\realizing\realization_factory_TextObject.cpp">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\realizing\realization_TextStream.cpp">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\realizing\realization_TextString.cpp">
+      <Filter>jmsf\texting\realizing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\factory_TextObject.cpp">
+      <Filter>jmsf\texting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\TextStream.cpp">
+      <Filter>jmsf\texting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources_old\jmsf\texting\TextString.cpp">
+      <Filter>jmsf\texting</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

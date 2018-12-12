@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{7cefc5df-b19f-4db1-b399-d73df1a5fa35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\jpeglib">
+      <UniqueIdentifier>{af18fcab-a658-4f58-8470-00a34461a89e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\cdjpeg.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jaricom.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcapimin.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcapistd.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcarith.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jccoefct.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jccolor.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcdctmgr.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jchuff.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcinit.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcmainct.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcmarker.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcmaster.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcomapi.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcparam.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcprepct.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jcsample.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jctrans.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdapimin.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdapistd.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdarith.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdatadst.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdatasrc.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdcoefct.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdcolor.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jddctmgr.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdhuff.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdinput.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdmainct.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdmarker.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdmaster.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdmerge.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdpostct.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdsample.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jdtrans.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jerror.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jfdctflt.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jfdctfst.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jfdctint.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jidctflt.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jidctfst.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jidctint.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jmemmgr.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jmemnobs.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jquant1.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jquant2.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\jutils.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\rdbmp.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\rdcolmap.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\rdgif.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\rdppm.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\rdrle.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\rdswitch.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\rdtarga.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\transupp.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\wrbmp.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\wrgif.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\wrppm.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\wrrle.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\jpeglib\wrtarga.c">
+      <Filter>osl\jpeglib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\cderror.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\cdjpeg.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jdct.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jerror.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jinclude.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jmemsys.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jmorecfg.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jpegint.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jpeglib.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jversion.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\transupp.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jconfig.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\jpeglib\jpeglib_dll.h">
+      <Filter>osl\jpeglib</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,347 @@
+#pragma once
+
+#include "Should.h"
+
+
+//#include "jmsf/pointing/Proxy.hin"
+//#include "jmsf/pointing/Constant_proxy.hin"
+//#include "jmsf/pointing/Pointer.hin"
+//#include "jmsf/pointing/Constant_pointer.hin"
+
+#include "jmsf/jmsf_Allocators.h"
+
+#include "jmsf/memorying/Awamp.hin"
+#include "jmsf/memorying/Owomp.hin"
+#include "jmsf/memorying/Wamp.hin"
+#include "jmsf/memorying/Amp.hin"
+#include "jmsf/memorying/Womp.hin"
+#include "jmsf/memorying/Omp.hin"
+
+
+//#include "jmsf/typeing/Ansii_string_stream.hin"
+
+#include "File_and_line.h"
+#include "excepting/exception_Should_with_type_information.h"
+
+#include "logging_macroses.h"
+
+
+namespace jmsf {
+namespace validating {
+
+
+// static
+template< class A_type >
+void Should::always_be_null( const memorying::Omp< A_type > &object_memory_pointer, const File_and_line &file_and_line ) {
+	if ( object_memory_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( memorying::Omp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Omp is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Omp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const memorying::Omp< A_type > &object_memory_pointer, const File_and_line &file_and_line ) {
+	if ( object_memory_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( memorying::Omp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Omp is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Omp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::always_be_null( const memorying::Womp< A_type > &weak_object_memory_pointer, const File_and_line &file_and_line ) {
+	if ( weak_object_memory_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( memorying::Womp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Womp is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Womp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const memorying::Womp< A_type > &weak_object_memory_pointer, const File_and_line &file_and_line ) {
+	if ( weak_object_memory_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( memorying::Womp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Womp is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Womp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::always_be_null( const memorying::Owomp< A_type > &object_weak_object_memory_pointer, const File_and_line &file_and_line ) {
+	if ( object_weak_object_memory_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( memorying::Owomp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Owomp is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Owomp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const memorying::Owomp< A_type > &object_weak_object_memory_pointer, const File_and_line &file_and_line ) {
+	if ( object_weak_object_memory_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( memorying::Owomp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null() - throwing..." );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Owomp is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Owomp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+//==============================================================================================================================
+
+// static
+template< class A_type >
+void Should::always_be_null( const memorying::Amp< A_type > &array_memory_pointer, const File_and_line &file_and_line ) {
+	if ( array_memory_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( memorying::Amp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Amp is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Amp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const memorying::Amp< A_type > &array_memory_pointer, const File_and_line &file_and_line ) {
+	if ( array_memory_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( memorying::Amp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Amp is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Amp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::always_be_null( const memorying::Wamp< A_type > &weak_array_memory_pointer, const File_and_line &file_and_line ) {
+	if ( weak_array_memory_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( memorying::Wamp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Wamp is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Wamp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const memorying::Wamp< A_type > &weak_array_memory_pointer, const File_and_line &file_and_line ) {
+	if ( weak_array_memory_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( memorying::Wamp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Wamp is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Wamp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::always_be_null( const memorying::Awamp< A_type > &array_weak_array_memory_pointer, const File_and_line &file_and_line ) {
+	if ( array_weak_array_memory_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( memorying::Awamp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Awamp is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Awamp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const memorying::Awamp< A_type > &array_weak_array_memory_pointer, const File_and_line &file_and_line ) {
+	if ( array_weak_array_memory_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( memorying::Awamp< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Awamp is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Awamp< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+//==============================================================================================================================
+
+// static
+template< class A_type >
+void Should::always_be_null( const pointing::Pointer< A_type > &a_pointer, const File_and_line &file_and_line ) {
+	if ( a_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( pointing::Pointer< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Pointer is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Pointer< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const pointing::Pointer< A_type > &a_pointer, const File_and_line &file_and_line ) {
+	if ( a_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( pointing::Pointer< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Pointer is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Pointer< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::always_be_null( const pointing::Constant_pointer< A_type > &a_constant_pointer, const File_and_line &file_and_line ) {
+	if ( a_constant_pointer.is_not_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::always_be_null( pointing::Constant_pointer< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::always_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Constant_pointer is not empty" ),
+				AS_string_literal( "Should::always_be_null( memorying::Constant_pointer< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+// static
+template< class A_type >
+void Should::never_be_null( const pointing::Constant_pointer< A_type > &a_constant_pointer, const File_and_line &file_and_line ) {
+	if ( a_constant_pointer.is_empty() ) {
+		JMSF_LOG_ERROR_OUTPUT_TYPED( "Should::never_be_null( pointing::Constant_pointer< %A_type% > )", JMSF_TYPE_NAME( A_type ) );
+		JMSF_LOG_INFORMING_OUTPUT( "Should::never_be_null()" );
+
+		throw
+			excepting::exception_Should_with_type_information(
+				AS_string_literal( "Constant_pointer is empty" ),
+				AS_string_literal( "Should::never_be_null( memorying::Constant_pointer< %A_type% > )" ),
+				AS_string_literal( JMSF_TYPE_NAME( A_type ) ),
+				file_and_line );
+	}
+}
+
+//// SenSEI: todonext - next two method should sound like "always/never be null" with parameters Proxy and Constant_proxy +
+//// method "never be null pointer" with parameters Proxy and Constant_proxy
+//// static
+//template< class A_type >
+//void Should::always_be_null( const pointing::Proxy< A_type > &a_proxy, const File_and_line &file_and_line );
+
+//// static
+//template< class A_type >
+//void Should::never_be_null( const pointing::Proxy< A_type > &a_proxy, const File_and_line &file_and_line );
+
+//// static
+//template< class A_type >
+//void Should::always_be_null( const pointing::Constant_proxy< A_type > &a_constant_proxy, const File_and_line &file_and_line );
+
+//// static
+//template< class A_type >
+//void Should::never_be_null( const pointing::Constant_proxy< A_type > &a_constant_proxy, const File_and_line &file_and_line );
+
+//// static
+//template< class A_type >
+//void Should::never_be_null_pointer( const pointing::Proxy< A_type > &a_proxy, const File_and_line &file_and_line );
+
+//// static
+//template< class A_type >
+//void Should::never_be_null_pointer( const pointing::Constant_proxy< A_type > &a_constant_proxy, const File_and_line &file_and_line );
+
+
+//// SenSEI: todonext - figure out how to process null objects
+//// static
+//template< class A_type >
+//void Should::always_be_null_object( const A_type *pointer, const File_and_line &fileAndLine ) {
+//	if ( pointer == nullptr ) {
+//		throw excepting::exception_Should( AS_string_literal( "Should::always_be_null_object( nullptr )" ), fileAndLine );
+//	}
+
+//	if ( pointer->isNull().inversion() ) {
+//		throw excepting::exception_Should( AS_string_literal( "Should::always_be_null_object( not NullObject )" ), fileAndLine );
+//	}
+//}
+
+//// static
+//template< class A_type >
+//void Should::never_be_null_object( const A_type *pointer, const File_and_line &fileAndLine ) {
+//	if ( pointer == nullptr ) {
+//		throw excepting::exception_Should( AS_string_literal( "Should::never_be_null_object( nullptr )" ), fileAndLine );
+//	}
+
+//	if ( pointer->isNull() ) {
+//		throw excepting::exception_Should( AS_string_literal( "Should::never_be_null_object( NullObject )" ), fileAndLine );
+//	}
+//}
+
+
+} // namespace validating
+} // namespace jmsf

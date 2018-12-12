@@ -1,0 +1,98 @@
+#pragma once
+
+
+#include "Singleton.hpp"
+
+
+//#include "osie/static_factory_OperatingSystemSpecial.h"
+//#include "osie/Mutex.h"
+//#include "jmsf/pointing/AutomaticPointer.inl"
+
+#include "jmsf/memorying/Owomp.hin"
+#include "jmsf/memorying/Destructor.hin"
+#include "jmsf/validating/Should.hin"
+#include "jmsf/typeing/Aso.hin"
+#include "jmsf/validating/logging_macroses.h"
+
+
+namespace jmsf {
+namespace patterning {
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type >
+Singleton< A_type >::~Singleton() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+// static
+memorying::Womp< A_type > &Singleton< A_type >::instance() {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( _owomp_singleton_instance.is_empty(), "Singleton< A_type >::instance()", JMSF_TYPE_NAME( A_type ) );
+	jmsf_Should_never_be_null( _owomp_singleton_instance );
+	return _owomp_singleton_instance.take_womp();
+}
+
+template< class A_type >
+// static
+void Singleton< A_type >::set_instance( const memorying::Omp< A_type > &an_instance ) noexcept {
+	JMSF_LOG_INFORMING_CONDITIONAL_PARANOIDAL_OUTPUT_TYPED( an_instance.is_empty(), "Singleton< %A_type% >::set_instance()", JMSF_TYPE_NAME( A_type ) );
+
+	if ( an_instance.is_empty() ) return;
+
+	_owomp_singleton_instance = memorying::Owomp< A_type >::create( an_instance );
+}
+
+template< class A_type >
+// static
+memorying::Omp< A_type > &Singleton< A_type >::take_instance() noexcept {
+	return _owomp_singleton_instance.get_omp();
+}
+
+template< class A_type >
+// static
+void Singleton< A_type >::destroy_instance() {
+//	if ( _owomp_singleton_instance.get_omp().is_not_empty() ) {
+		memorying::Destructor< A_type >::destruct( _owomp_singleton_instance.get_omp() );
+//	}
+
+	_owomp_singleton_instance = memorying::Owomp< A_type >();
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Singleton< A_type >::Singleton() noexcept
+{}
+
+// template< class A_type >
+// A_type *Singleton< A_type >::testing_setInstance( A_type *testingInstance ) {
+// 	A_type *previousInstance = static_cast< A_type * >( _instance.releasePointer() );
+// 	_instance.setPointer( testingInstance );
+// 	return previousInstance;
+// }
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Singleton< A_type >::Singleton( const Singleton< A_type > & ) noexcept // other
+{}
+
+template< class A_type >
+const Singleton< A_type > &Singleton< A_type >::operator =( const Singleton< A_type > &another ) noexcept {
+	if ( this == &another ) return *this;
+
+	// copy
+	return *this;
+}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+// static
+memorying::Owomp< A_type > Singleton< A_type >::_owomp_singleton_instance;
+
+
+} // namespace patterning
+} // namespace jmsf

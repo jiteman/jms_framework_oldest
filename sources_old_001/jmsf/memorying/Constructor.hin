@@ -1,0 +1,732 @@
+#pragma once
+
+#include "Constructor.hpp"
+
+
+#include "jmsf/memorying/Allocator.h"
+#include "Omp.hin"
+#include "Amp.hin"
+#include "Womp.hin"
+
+#include "jmsf/typeing/Aso.hin"
+
+
+#include "jmsf/validating/Should.hin"
+#include "jmsf/validating/logging_macroses.h"
+
+#include <new>
+
+
+namespace jmsf {
+namespace memorying {
+
+
+// SenSEI: todonext - allocation (not enough memory) error processing
+// SenSEI: todonext - create (memory appending)/(allocator changing) policies
+// SenSEI: todonext - constructor exception processing for both single and array constructions
+// SenSEI: todonext - remember to free allocated memory
+// SenSEI: todonext - remember to destroy objects, when processing exception for object in the middle of array
+// SenSEI: todonext - connect construction and desctruction to detect the same object (memory)
+// SenSEI: todonext - make dump for destruction (construction - ?) (few first hexes and/or characters).
+
+template< class A_type, class A_creating_type >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator )" );
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Constructor< %A_type%, A_creating_type >::construct( allocator )", JMSF_TYPE_NAME( A_type ) );
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Constructor< A_type, %A_creating_type% >::construct( allocator )", JMSF_TYPE_NAME( A_creating_type ) );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type;
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_creating_type &original ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, original )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( original );
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT_TYPED( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 1 )", JMSF_TYPE_NAME( A_creating_type ) );
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Constructor< *A_type*, A_creating_type >::construct( allocator, 1 )", JMSF_TYPE_NAME( A_type ) );
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Constructor< A_type, *A_creating_type* >::construct( allocator, 1 )", JMSF_TYPE_NAME( A_creating_type ) );
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Constructor< A_type, A_creating_type >::construct( allocator, *1* )", JMSF_TYPE_NAME( A_first ) );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first );
+
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 2 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first, second );
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &third ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 3 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first, second, third );
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 4 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first, second, third, fourth );
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 5 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first, second, third, fourth, fifth );
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 6 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first, second, third, fourth, fifth, sixth );
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 7 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first, second, third, fourth, fifth, sixth, seventh );
+	return object_memory_pointer;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh, class An_eighth >
+Omp< A_type > Constructor< A_type, A_creating_type >::construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh, const An_eighth &eighth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct( allocator, 8 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Omp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Omp< A_type > object_memory_pointer = Omp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >(),
+			typeing::alignment_of< A_creating_type >() ),
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( object_memory_pointer.is_empty() ) return Omp< A_type >();
+
+	::new ( reinterpret_cast< void * >( object_memory_pointer.get_memory().take() ) ) A_creating_type( first, second, third, fourth, fifth, sixth, seventh, eighth );
+	return object_memory_pointer;
+}
+
+
+template< class A_type, class A_creating_type >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_default_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type;
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_copy_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_creating_type &original ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, original )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, original )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( original );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 1 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 1 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 2 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 2 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first, second );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &third ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 3 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 3 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first, second, third );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 4 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 4 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first, second, third, fourth );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 5 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 5 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first, second, third, fourth, fifth );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 6 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 6 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first, second, third, fourth, fifth, sixth );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 7 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 7 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first, second, third, fourth, fifth, sixth, seventh );
+	}
+
+	return array_memory_object;
+}
+
+template< class A_type, class A_creating_type >
+template< class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh, class An_eighth >
+Amp< A_type > Constructor< A_type, A_creating_type >::construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &third, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh, const An_eighth &eighth ) noexcept {
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( an_allocator.is_empty(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 8 )" );
+	JMSF_LOG_ERROR_PRELIMINARY_OUTPUT( quantity_of_objects.is_nill(), "Constructor< A_type, A_creating_type >::construct_default_as_array( allocator, quantity, 8 )" );
+
+	if ( an_allocator.is_empty() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	if ( quantity_of_objects.is_nill() ) {
+		jmsf_Should_never_be_null( Amp< A_type >() );
+	}
+
+	Womp< Allocator > &non_const_allocator = const_cast< Womp< Allocator > & >( an_allocator );
+
+	Amp< A_type > array_memory_object = Amp< A_type >::create(
+		non_const_allocator->allocate_memory(
+			typeing::size_of< A_creating_type >() * quantity_of_objects,
+			typeing::alignment_of< A_creating_type >() ),
+		quantity_of_objects,
+		an_allocator,
+		typeing::alignment_of< A_creating_type >() );
+
+	if ( array_memory_object.is_empty() ) return Amp< A_type >();
+
+	A_type *pointer_to_object = array_memory_object.get_memory().take();
+
+	for ( typeing::Memory_natural counter = quantity_of_objects; counter.is_not_nill(); --counter ) {
+		::new ( reinterpret_cast< void * >( pointer_to_object++ ) ) A_type( first, second, third, fourth, fifth, sixth, seventh, eighth );
+	}
+
+	return array_memory_object;
+}
+
+
+// template< class A_type, class A_creating_type >
+// Omp< A_type > ConstructDefault( const Womp< Allocator > &an_allocator ) {
+// 	return Constructor< A_type, A_creating_type >::construct( anAllocator );
+// }
+//
+// template< class A_type, class A_creating_type >
+// Omp< A_type > ConstructCopy( const Womp< Allocator > &an_allocator, const A_creating_type &original ) {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, original );
+// }
+//
+// template< class A_type, class A_creating_type >
+// template< class A_first >
+// Omp< A_type > Construct( const Womp< Allocator > &an_allocator, const A_first &first ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first );
+// }
+//
+// template< class A_type, class A_first, class A_second >
+// Omp< A_type > construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first, second );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third >
+// Omp< A_type > construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &thrid ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first, second, third );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth >
+// Omp< A_type > construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first, second, third, fourth );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth >
+// Omp< A_type > construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first, second, third, fourth, fifth );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth >
+// Omp< A_type > construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first, second, third, fourth, fifth, sixth );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh >
+// Omp< A_type > construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first, second, third, fourth, fifth, sixth, seventh );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh, class An_eighth >
+// Omp< A_type > construct( const Womp< Allocator > &an_allocator, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh, const An_eighth &eighth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct( an_allocator, first, second, third, fourth, fifth, sixth, seventh, eighth );
+// }
+//
+//
+// template< class A_type, class A_creating_type >
+// Omp< A_type > construct_default_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects ) {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects );
+// }
+//
+// template< class A_type, class A_creating_type >
+// Omp< A_type > construct_copy_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_creating_type &original ) {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, original );
+// }
+//
+// template< class A_type, class A_first >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first );
+// }
+//
+// template< class A_type, class A_first, class A_second >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first, second );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &thrid ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first, second, third );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first, second, third, fourth );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first, second, third, fourth, fifth );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first, second, third, fourth, fifth, sixth );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first, second, third, fourth, fifth, sixth, seventh );
+// }
+//
+// template< class A_type, class A_first, class A_second, class A_third, class A_fourth, class A_fifth, class A_sixth, class A_seventh, class An_eighth >
+// Amp< A_type > construct_as_array( const Womp< Allocator > &an_allocator, const typeing::Memory_natural quantity_of_objects, const A_first &first, const A_second &second, const A_third &thrid, const A_fourth &fourth, const A_fifth &fifth, const A_sixth &sixth, const A_seventh &seventh, const An_eighth &eighth ) noexcept {
+// 	return Constructor< A_type, A_creating_type >::construct_as_array( an_allocator, quantityOfObjects, first, second, third, fourth, fifth, sixth, seventh, eighth );
+// }
+
+
+} // namespace memorying
+} // namespace jmsf

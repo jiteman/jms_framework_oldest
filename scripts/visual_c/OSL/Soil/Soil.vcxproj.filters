@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{2259a89d-0360-41c2-9186-c9e7ae594e21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\soil">
+      <UniqueIdentifier>{4cf388b5-7c0e-4292-99ce-59be7d167d48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\soil\image_DXT.c">
+      <Filter>osl\soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\soil\image_helper.c">
+      <Filter>osl\soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\soil\SOIL.c">
+      <Filter>osl\soil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\soil\stb_image_aug.c">
+      <Filter>osl\soil</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\soil\image_DXT.h">
+      <Filter>osl\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\soil\image_helper.h">
+      <Filter>osl\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\soil\SOIL.h">
+      <Filter>osl\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\soil\soil_dll.h">
+      <Filter>osl\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\soil\stb_image_aug.h">
+      <Filter>osl\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\soil\stbi_DDS_aug.h">
+      <Filter>osl\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\soil\stbi_DDS_aug_c.h">
+      <Filter>osl\soil</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

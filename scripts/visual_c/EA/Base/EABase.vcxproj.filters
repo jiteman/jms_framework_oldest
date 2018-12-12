@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ea">
+      <UniqueIdentifier>{45745a5b-4d26-42fb-84ae-934bdd0f8a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\basic">
+      <UniqueIdentifier>{59f94e8a-be13-43a9-8ebe-357bdc769d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\basic\config">
+      <UniqueIdentifier>{ce1cd3a1-7834-486f-9747-1509811ea41f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\ea\basic\config\eacompiler.h">
+      <Filter>ea\basic\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\basic\config\eacompilertraits.h">
+      <Filter>ea\basic\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\basic\config\eaplatform.h">
+      <Filter>ea\basic\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\basic\eabase.h">
+      <Filter>ea\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\basic\eahave.h">
+      <Filter>ea\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\basic\earesult.h">
+      <Filter>ea\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\basic\nullptr.h">
+      <Filter>ea\basic</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

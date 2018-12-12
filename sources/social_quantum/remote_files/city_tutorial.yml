@@ -1,0 +1,225 @@
+#------------------------------------TUTORIAL-----------------------------
+
+tutorial_quest: &tutorial_quest
+  <<: *quest
+  tutorial: yes
+  super_class: "tutorial_quest_base"
+  
+tutorial_stage_1:
+  <<: *tutorial_quest
+  id: 20000
+  name.ru: "Обучение"
+  name.en: "Tutorial"
+  name.ko: ""
+  description_text.ru: ""
+  description_text.en: "This simple tutorial will help you to become perfect City Mayor"
+  description_text.ko: ""
+  tutorial_type: hard
+  goal:
+    - {  gui_type: main,
+        character: demography_counselor,
+             type: event,
+            klass: next_button,
+           action: touch,
+            count: 1 }
+    - {  gui_type: bubble,
+        character: demography_counselor, 
+             type: event, 
+            klass: shop_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: none,
+        character: demography_counselor,
+             type: event, 
+            klass: buy_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: tip_bubble,
+        character: demography_counselor,
+             type: field,
+            klass: log_hut, 
+            count: 2, 
+          initial: 1 }
+    - {  gui_type: bubble,
+        character: demography_counselor, 
+             type: event, 
+            klass: event, 
+           action: pick_house, 
+            count: 2 }
+    - {  gui_type: bubble,
+        character: finance_counselor, 
+             type: event, 
+            klass: shop_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: none,
+        character: finance_counselor,
+             type: event, 
+            klass: buy_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: tip_bubble,
+        character: finance_counselor,
+             type: field, 
+            klass: coffee_house, 
+            count: 1, 
+          initial: 0 }
+    - {  gui_type: bubble,
+        character: finance_counselor, 
+             type: event, 
+            klass: event, 
+           action: pick_leisure, 
+            count: 1 }
+    - {  gui_type: main,
+        character: finance_counselor,
+             type: event, 
+            klass: next_button, 
+           action: touch, 
+            count: 1 }
+  require:
+  
+
+tutorial_stage_2:
+  <<: *tutorial_quest
+  id: 20001
+  name.ru: ""
+  name.en: "Factories"
+  name.ko: ""
+  description_text.ru: ""
+  description_text.en: "Learn how to deal with factories"
+  description_text.ko: ""
+  gui_settings:
+  character: industrial_counselor
+  tutorial_type: soft
+  goal:
+    - {  gui_type: main,
+             type: event, 
+            klass: next_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: bubble,
+             type: event, 
+            klass: blamco_inc, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: none,
+             type: event, 
+            klass: contract_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: tip_bubble,
+             type: event, 
+            klass: contract_base, 
+           action: pick, 
+            count: 1 }
+    - {  gui_type: tip_bubble,
+             type: event, 
+            klass: conveyor_city, 
+           action: clean, 
+            count: 1 }
+  require: 
+    - { type: parent, klass: id, count: 20000 }
+
+
+tutorial_stage_3:
+  <<: *tutorial_quest
+  id: 20002
+  name.ru: ""
+  name.en: "Decorations"
+  name.ko: ""
+  description_text.ru: ""
+  description_text.en: "Make your city the most beautiful place in the world"
+  description_text.ko: ""
+  character: ecology_counselor
+  tutorial_type: soft
+  goal:
+    - {  gui_type: bubble,
+        character: ecology_counselor,
+             type: event, 
+            klass: shop_button, 
+           action: touch, 
+             count: 1 }
+    - {  gui_type: none,
+        character: ecology_counselor,
+             type: event, 
+            klass: buy_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: tip_bubble,
+        character: ecology_counselor,
+             type: field, 
+            klass: red_flower_patch, 
+            count: 1, 
+          initial: 0 }
+  require: 
+    - { type: parent, klass: id, count: 20001 }
+
+tutorial_stage_4:
+  <<: *tutorial_quest
+  id: 20003
+  name.ru: ""
+  name.en: "Water and electricity"
+  name.ko: ""
+  description_text.ru: ""
+  description_text.en: "Learn how to supply your city with resources"
+  description_text.ko: ""
+  character: resources_counselor
+  tutorial_type: soft
+  goal:
+    - {  gui_type: bubble,
+             type: event, 
+            klass: shop_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: none,
+             type: event, 
+            klass: buy_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: tip_bubble,
+             type: field, 
+            klass: water_tower, 
+            count: 1, 
+          initial: 0 }
+    - {  gui_type: bubble,
+             type: event, 
+            klass: shop_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: none,
+             type: event, 
+            klass: buy_button, 
+           action: touch, 
+            count: 1 }
+    - {  gui_type: tip_bubble,
+             type: field, 
+            klass: wind_power, 
+            count: 1, 
+          initial: 0 }
+  require: 
+    - { type: parent, klass: id, count: 20002 }
+    - { } #this requirement seems unclear, need to be checked
+
+
+
+tutorial_stage_5:
+  <<: *tutorial_quest
+  id: 2004
+  name.ru: ""
+  name.en: "Building?"
+  name.ko: ""
+  description_text.ru: ""
+  description_text.en: "Learn how to build something really big"
+  description_text.ko: ""
+  character: unknown
+  tutorial_type: soft
+  goal:
+    - {  gui_type: main,
+             type: event, 
+            klass: next_button, 
+           action: touch, 
+            count: 1 }
+    # - {}
+  require: 
+    - { type: user, klass: level, count: 9 }
+    - { type: user, klass: level, action: less_or_equal, value: 9 }

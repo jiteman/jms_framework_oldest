@@ -1,0 +1,15 @@
+#pragma once
+
+#include "Native_C_string.hpp"
+
+
+#include "jmsf/structing/containing/Buffer.hin"
+
+
+namespace jmsf {
+namespace typeing {
+
+
+
+} // namespace typeing
+} // namespace jmsf

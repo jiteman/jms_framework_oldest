@@ -1,0 +1,112 @@
+#pragma once
+
+#include "Pointer.hpp"
+
+
+#include "jmsf/memorying/Omp.hin"
+#include "jmsf/memorying/Womp.hin"
+#include "jmsf/memorying/Allocator.h"
+#include "Constant_pointer.hin"
+
+
+namespace jmsf {
+namespace pointing {
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Pointer< A_type > Pointer< A_type >::get_as_weak() noexcept {
+	return get_as_weak< Pointer< A_type > >();
+}
+
+template< class A_type >
+Pointer< A_type > Pointer< A_type >::get_as_shared() noexcept {
+	return get_as_shared< Pointer< A_type > >();
+}
+
+template< class A_type >
+Constant_pointer< A_type > Pointer< A_type >::get_as_constant() noexcept {
+	if ( is_expired() ) return Constant_pointer< A_type >();
+
+	return get_as_weak< Constant_pointer< A_type > >();
+}
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type >
+Pointer< A_type >::~Pointer() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Pointer< A_type >::Pointer() noexcept
+{}
+
+template< class A_type >
+Pointer< A_type >::Pointer( const memorying::Omp< A_type > &object_memory_pointer ) noexcept
+	:
+		internalling_Pointer_base_class( object_memory_pointer )
+{}
+
+template< class A_type >
+Pointer< A_type >::Pointer( const memorying::Womp< memorying::Allocator > &reference_counters_allocator, const memorying::Omp< A_type > &object_memory_pointer ) noexcept
+	:
+		internalling_Pointer_base_class( reference_counters_allocator, object_memory_pointer )
+{}
+
+// static
+template< class A_type >
+Pointer< A_type > Pointer< A_type >::create_empty() noexcept {
+	return Pointer< A_type >();
+}
+
+// static
+template< class A_type >
+Pointer< A_type > Pointer< A_type >::create_non_linked( const memorying::Omp< A_type > &object_memory_pointer ) noexcept {
+	return Pointer< A_type >( object_memory_pointer );
+}
+
+// static
+template< class A_type >
+Pointer< A_type > Pointer< A_type >::create_shared(
+	const memorying::Womp< memorying::Allocator > &reference_counters_allocator,
+	const memorying::Omp< A_type > &object_memory_pointer ) noexcept
+{
+	return Pointer< A_type >( reference_counters_allocator, object_memory_pointer );
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//template< class A_type >
+//Pointer< A_type >::Pointer( const Pointer< A_type > &another ) noexcept {
+//}
+
+//template< class A_type >
+//const Pointer< A_type > &Pointer< A_type >::operator =( const Pointer< A_type > &another ) noexcept {
+//	if ( &another == this ) return *this;
+
+//	// copy
+//	return *this;
+//}
+
+//template< class A_type >
+//Pointer< A_type >::Pointer( Pointer< A_type > &&another ) noexcept {
+//}
+
+//template< class A_type >
+//Pointer &Pointer< A_type >::operator =( Pointer< A_type > &&another ) noexcept {
+//	if ( &another == this ) return *this;
+
+//	// copy
+//	return *this;
+//}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+} // namespace pointing
+} // namespace jmsf

@@ -1,0 +1,997 @@
+#
+# hirerarchy
+#
+hierarchy:
+  surrogate:
+    - "coins"
+    - "exp"
+    - "gold"
+    - "auto"
+  base:
+    - "farm_object_base"
+    #- "tree_base"
+    #- "crop_base"
+    #- "fertilizer_base"
+  road_base:
+    - "road"
+    - "road2"
+    - "road3"
+  livestock_base:
+    - "horse_livestock_base"
+    - "livestock_yard_base"
+  pen_base:
+    - "goose_pen_object_base"
+    - "pig_pen_object_base"
+  building_place:
+    - "pier_place"
+    - "bridge_place"
+  factory_base:
+    - "hive_factory_base"
+    - "cow_factory_base"
+    - "sheep_factory_base"
+    - "rabbit_factory_base"
+    - "camel_factory_base"
+    - "cheese_machine_factory_base"
+    - "wine_machine_factory_base"
+    - "ketchup_machine_factory_base"
+    - "water_mill_factory_base"
+    - "beer_machine_factory_base"
+    - "sugar_machine_factory_base"
+  multi_factory_base:
+    - "textile_machine_factory_base"
+    - "jam_machine_factory_base"
+    - "juice_machine_factory_base"
+    - "salting_machine_factory_base"
+    - "chips_machine_factory_base"
+    #- "chips_machine_lays_factory_base"
+    - "yoghurt_machine_factory_base"
+    - "pack_machine_factory_base"
+    - "perfume_machine_factory_base"
+    - "milk_machine_factory_base"
+    - "ice_cream_machine_factory_base"
+    - "canned_fruit_machine_factory_base"
+    - "bread_machine_factory_base"
+    - "chocolate_machine_factory_base"
+    - "grill_machine_factory_base"
+    - "flower_shop_factory_base"
+  decor_base:
+    - "fence_decor_base"
+    - "scarecrow_decor_base"
+    - "japan_pond_decor_base"
+    - "sundial_decor_base"
+    - "lamp_post_decor_base"
+    - "ranch_bell_decor_base"
+    - "picnic_basket_decor_base"
+    - "birdbath_decor_base"
+    - "globe_swing_decor_base"
+    - "fountain_decor_base"
+    - "bench_decor_base"
+    - "barbq_decor_base"
+    - "hammock_decor_base"
+    - "flower_cart_decor_base"
+    - "ecohouse_decor_base"
+    - "logcabin_decor_base"
+    - "top_house_decor_base"
+    - "manor_decor_base"
+    - "luxe_house_decor_base"
+    - "cottage_decor_base"
+    - "framehouse_decor_base"
+    - "shrub_donkey_decor_base"
+    - "shrub_pig_decor_base"
+    - "shrub_rabbit_decor_base"
+    - "butterfly_decor_base"
+    - "hedge_decor_base"
+    - "arbor_decor_base"
+    - "bench_march_decor_base"
+    - "fountain_march_decor_base"
+    - "fence_cats_decor_base"
+    - "flowerbed_snowdrop_decor_base"
+    - "flowerbed_violet_decor_base"
+    - "mimosa_decor_base"
+    - "stork_decor_base"
+    - "fence_manor_decor_base"
+    - "gate_manor_decor_base"
+    - "lantern_manor_decor_base"
+    - "well_manor_decor_base"
+    - "arbor_manor_decor_base"
+    - "romantic_house_decor_base"
+    - "korea_house_decor_base"
+    - "villa_bench_decor_base"
+    - "villa_bench2_decor_base"
+    - "villa_fountain_decor_base"
+    - "villa_statue_decor_base"
+    - "villa_table_decor_base"
+    - "villa_vase_decor_base"
+  farm_buildsite_base:
+    - "villa_buildsite_base"
+    - "tophouse_buildsite_object_base"
+    - "luxehouse_buildsite_object_base"
+    - "japan_house_buildsite_object_base"
+    - "spruce_buildsite_object_base"
+    - "shed_buildsite_object_base"
+    - "ice_cream_machine_building_base"
+    - "water_mill_building_base"
+    - "manor_buildsite_object_base"
+    - "romantic_house_buildsite_object_base"
+    - "korea_house_buildsite_object_base"
+    - "japan_house_buildsite_object_base"
+    - "barn_new_buildsite_object_base"
+    - "barn_triangular_buildsite_object_base"
+    - "ecohouse_buildsite_object_base"
+    - "logcabin_buildsite_object_base"
+    - "cottage_buildsite_object_base"
+#    - "bridge_buildsite_base"
+    - "pig_pen_buildsite_object_base"
+    - "goose_pen_buildsite_object_base"
+    - "fisherman_house_buildsite_object_base"
+    - "storage_fish_buildsite_object_base"
+    - "grill_building_base"
+  animal_place:
+    - "chicken_coop_base"
+    - "ostrich_yard_base"
+    - "lama_yard_base"
+    - "peacock_yard_base"
+    - "pond_base"
+  meat_animal_base:
+    - "ram_meat_animal_base"
+    - "goose_colored_meat_animal_base"
+    - "goose_meat_animal_base"
+    - "moose_meat_animal_base"
+    - "bison_meat_animal_base"
+  farm_automate:
+    - "automate500"
+    - "automate1500"
+    - "automate1000"
+    - "automate3500"
+    - "automate7500"
+    - "automate15000"
+    - "automate30000"
+    - "automate50000"
+# road_base:#не реализовано
+#    - "road"
+#    - "road2"
+    
+
+drawing:
+  has_animation:
+    - "fountain_yellow"
+    - "fountain_black"
+    - "fountain_black_real"
+    - "firepit"
+  
+  buildsite_stages: # values for all buildsites must be added  
+    japan_house_buildsite: 3
+    japan_house_buildsite_real: 3
+    japan_house_buildsite_real2: 3
+    barn_new_buildsite: 2
+    barn_new_buildsite_real: 2
+    romantic_house_buildsite: 2
+    romantic_house_buildsite_real: 2
+    construct_house_buildsite: 3
+    construct_house_buildsite_real: 3
+    manor_buildsite: 2
+    manor_buildsite_real: 2
+    top_house_buildsite: 2
+    top_house_buildsite_real: 2
+    top_house_buildsite_real2: 2
+    luxe_house_buildsite: 2
+    luxe_house_buildsite_real: 2
+    luxe_house_buildsite_real2: 2
+    korea_house_buildsite: 2
+    korea_house_buildsite_real: 2
+    water_mill_buildsite: 2
+    water_mill_buildsite_real: 2
+    shed_buildsite: 2
+    shed_buildsite_real0: 2
+    shed_buildsite_real1: 2
+    shed_new_buildsite: 2
+    barn_new_buildsite: 2
+    barn_triangular_buildsite: 2
+    barn_triangular_buildsite_real: 2
+    ice_cream_machine_buildsite: 2
+    ice_cream_machine_buildsite_real: 2
+    grill_buildsite: 2
+    grill_buildsite_real: 2
+    ecohouse_buildsite: 2
+    ecohouse_buildsite_real: 2
+    ecohouse_buildsite_just_real: 2
+    pig_pen_buildsite: 2
+    pig_pen_buildsite_real: 2
+    goose_pen_buildsite: 2
+    goose_pen_buildsite_real: 2
+    fisherman_house_buildsite: 2
+    fisherman_house_buildsite_real: 2
+
+  factory_settings:
+    cheese_machine_factory_base:
+      animations:
+        - process
+      no_ff:
+        - process
+      settings:
+        - hasNoBackground
+    ketchup_machine_factory_base:
+      animations:
+        - begin
+        - process
+        - end
+    sugar_machine_factory_base:
+      animations:
+        - begin
+        - process
+    beer_machine_factory_base:
+      animations:
+        - begin
+        - process
+        - end
+    cow_factory_base:
+      animations:
+        - process
+    rabbit_factory_base:
+      animations:
+        - idle:
+          - 1
+        - process
+      no_ff:
+        - idle
+        - process
+      settings:
+        - hasFront
+    sheep_factory_base:
+      animations:
+        - idle:
+          - 1
+        - process
+      no_ff:
+        - idle
+    hive_factory_base:
+      settings:
+        - hasNoBackground
+        - hasNoConsumes
+    water_mill_factory_base:
+      animations:
+        - process
+      no_ff:
+        - process
+      settings:
+        - hasNoBackground
+    mill:
+      animations:
+        - process
+      no_ff: 
+        - process
+      settings:
+        - hasNoBackground
+    camel_factory_base:
+      animations:
+        - idle:
+          - 1
+          - 2
+        - process
+      no_ff:
+        - idle
+      settings:
+        - hasEmptyInput
+    wine_machine_factory_base:
+      settings:
+        - hasNoBackground
+      animations:
+        - begin
+        - process
+        - end
+      no_ff:
+        - process
+        
+  meat_animals_settings:
+    bison_meat_animal_base:
+      animations_number: 1
+    goose_meat_animal_base:
+      animations_number: 3
+    goose_colored_meat_animal_base:
+      animations_number: 2
+    moose_meat_animal_base:
+      animations_number: 3
+    ram_meat_animal_base:
+      animations_number: 3
+    bull_black:
+      animations_number: 2
+    bull_black_real:
+      animations_number: 2
+    bull_brown:
+      animations_number: 2
+    bull_brown_real:
+      animations_number: 2
+    bull_spotted:
+      animations_number: 2
+    bull_spotted_real:
+      animations_number: 2
+    bull_spotted_new:
+      animations_number: 2
+    pig:
+      animations_number: 3
+    pig_real:
+      animations_number: 3
+    pig_black:
+      animations_number: 2
+    pig_black_real:
+      animations_number: 2
+    turkey:
+      animations_number: 4
+    turkey_real:
+      animations_number: 4
+
+  livestock_settings:
+    horse_arab_black:
+        stages_number: 3
+    horse_arab_black_real:
+        stages_number: 3
+    horse_arab_sport_black:
+        stages_number: 3
+    horse_arab_sport_black_real:
+        stages_number: 3
+    horse_yutland_black:
+        stages_number: 3
+    horse_yutland_black_real:
+        stages_number: 3
+    horse_yutland_gray:
+        stages_number: 3
+    horse_yutland_gray_real:
+        stages_number: 3
+    horse_yutland_brown:
+        stages_number: 3
+    
+  
+  buildsite_settings:
+    greenhouse:
+        drawingItems:
+             subitems: 24
+        settings:
+           - hasAnotherObjects
+           - subtractSoilAnchorForEachObject
+           - hasNoStages
+           
+  pen_settings:
+    goose_pen_object_base:
+        drawingItems:
+             subitems: 4
+        drawing_order:
+            - animal2
+            - animal1
+            - animal0
+            - animal3
+            - front
+            - part0
+        mirrored:
+           -  animal2
+           -  animal1
+           -  animal0
+    pig_pen_object_base:
+        drawingItems:
+             subitems: 4
+        drawing_order:
+            - animal2
+            - animal3            
+            - part0            
+            - animal1
+            - part1
+            - animal0
+            - part2
+        mirrored:
+           -  animal2
+           -  animal1
+           -  animal0
+    livestock_yard_base:
+        drawingItems:
+             subitems: 0
+  
+       
+  multifactory_settings: 
+    salting_machine_factory_base:
+        animations:
+           - process
+        no_ff:
+           - process
+        settings:
+           - hasEmptyInput
+           - hasEmptyExtra
+           - hasNoBackground
+        drawing_order:
+           - extra
+           - main
+           - input
+           - output
+    bread_machine_factory_base:
+        animations:
+           - begin
+           - process
+           - end
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - extra
+           - output
+    textile_machine_factory_base:
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - output
+           - front
+    yoghurt_machine_factory_base:
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - extra
+           - output
+    chocolate_machine_factory_base:
+        animations:
+           - begin
+           - process
+           - end
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - extra
+           - output
+    jam_machine_factory_base:
+        settings:
+           - hasNoBackground
+           - hasEmptyInput
+        drawing_order:
+           - main
+           - input
+           - extra
+           - output
+    ice_cream_machine_factory_base:
+        animations:
+           - begin
+           - process
+           - end
+        no_ff:
+           - process
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - extra
+           - output
+    milk_machine_factory_base:
+        animations:
+           - begin
+           - process
+           - end
+        settings:
+           - hasNoConsumes
+           - hasNoBackground
+        drawing_order:
+           - main
+           - extra
+           - output
+    grill_machine_factory_base:
+        settings:
+           - hasNoBackground
+        animations:
+           - begin
+           - process
+           - end
+        no_ff:
+           - process
+        drawing_order:
+           - main
+           - input
+           - output
+           - front
+    juice_machine_factory_base:
+        animations:
+          - process
+        no_ff:
+          - process
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - output
+    chips_machine_factory_base:
+        settings:
+           - hasEmptyExtra
+           - hasNoBackground
+        animations:
+           - begin
+           - process
+           - end
+        no_ff:
+           - begin
+           - process
+           - end
+        drawing_order:
+           - extra
+           - main
+           - input           
+           - output
+           - front
+    perfume_machine_factory_base:
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - output
+    canned_fruit_machine_factory_base:
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - extra
+           - output
+    flower_shop_factory_base:
+        settings:
+            - hasNoBackground
+            - hasNoOutput
+        drawing_order:
+            - main
+    pack_machine_factory_base:
+        settings:
+           - hasNoBackground
+        drawing_order:
+           - main
+           - input
+           - output
+           - front
+        mirrored:
+           - input0
+           
+  animal_place_settings:
+    lama_yard1:                                                         #lama_yard
+        drawingItems:
+             subitems: 1
+        animals:
+            - black:
+                lama_black
+            - brown:
+                lama_brown
+            - default:
+                lama_brown
+        drawing_order:
+           - input
+           - animal0       
+           - front
+           - output
+        settings:
+           - hasDefaultAnimal
+           - xmlKey
+           - sameTextureForAnimal
+    lama_yard1_real:
+        drawingItems:
+             subitems: 1
+        animals:
+            - black:
+                lama_black
+            - brown:
+                lama_brown
+            - default:
+                lama_brown
+        drawing_order:
+           - input
+           - animal0      
+           - front
+           - output
+        settings:
+           - hasDefaultAnimal
+           - xmlKey
+           - sameTextureForAnimal
+    lama_yard2:
+        drawingItems:
+             subitems: 2
+        animals:
+            - black:
+                lama_black
+            - brown:
+                lama_brown
+            - default:
+                lama_brown
+        drawing_order:
+           - input
+           - animal1
+           - animal0
+           - animal2       
+           - front
+           - output           
+        mirrored:
+           - "animal2"
+        settings:
+           - hasDefaultAnimal
+           - xmlKey
+           - sameTextureForAnimal
+    lama_yard3:
+        drawingItems:
+             subitems: 3
+        animals:
+            - black:
+                lama_black
+            - brown:
+                lama_brown
+            - default:
+                lama_brown
+        drawing_order:
+           - input
+           - animal1
+           - animal0
+           - animal2       
+           - front
+           - output           
+        mirrored:
+           - "animal2"
+        settings:
+           - hasDefaultAnimal
+           - xmlKey
+           - sameTextureForAnimal
+    chicken_coop1:                                                                  #chicken_coop
+        drawingItems:
+             subitems: 1
+        animals:
+            - chicken:
+                chicken
+            - default:
+                chicken
+    chicken_coop1_real:
+        drawingItems:
+             subitems: 1
+        animals:
+            - chicken:
+                chicken
+            - default:
+                chicken
+        drawing_order:
+            - input
+            - animal0
+            - output
+    chicken_coop2:
+        drawingItems:
+             subitems: 2
+        animals:
+            - chicken:
+                chicken
+            - default:
+                chicken
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - output
+        mirrored:
+           - "animal1"
+    chicken_coop3:
+        drawingItems:
+             subitems: 3
+        animals:
+            - chicken:
+                chicken
+            - default:
+                chicken
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - animal2   
+            - output
+        mirrored:
+           - "animal1"
+    chicken_coop4:
+        drawingItems:
+             subitems: 4
+        animals:
+            - chicken:
+                chicken
+            - default:
+                chicken
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - animal2
+            - animal3 
+            - output
+        mirrored:
+           - "animal1"
+           - "animal3"
+    chicken_coop5:
+        drawingItems:
+             subitems: 5
+             input: 4
+             output: 3
+        animals:
+            - chicken:
+                chicken
+            - default:
+                chicken
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - animal2
+            - animal3 
+            - animal4 
+            - output
+        mirrored:
+           - "animal1"
+           - "animal3"
+    pond1:                                                                          #pond
+        drawingItems:
+             subitems: 1
+        animals:
+            - normal:
+                utka
+            - default:
+                utka
+        drawing_order:
+            - input
+            - animal0
+            - output
+        settings:
+            - hasDefaultAnimal
+            - xmlKey
+    pond2:
+        drawingItems:
+             subitems: 2
+        animals:           
+            - normal:
+                utka
+            - black:
+                utka_black
+            - default:
+                utka
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - output
+        settings:
+            - hasDefaultAnimal
+            - xmlKey
+    pond3:
+        drawingItems:
+             subitems: 3
+        animals:           
+            - normal:
+                utka
+            - black:
+                utka_black
+            - default:
+                utka
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - animal2
+            - output
+        settings:
+            - hasDefaultAnimal
+            - xmlKey
+    pond4:
+        drawingItems:
+             subitems: 4
+        animals:           
+            - normal:
+                utka
+            - black:
+                utka_black
+            - default:
+                utka
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - animal2
+            - animal3
+            - output
+        settings:
+            - hasDefaultAnimal
+            - xmlKey
+    pond5:
+        drawingItems:
+             subitems: 5
+        animals:           
+            - normal:
+                utka
+            - black:
+                utka_black
+            - default:
+                utka
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - animal2
+            - animal3
+            - animal4
+            - output
+        settings:
+            - hasDefaultAnimal
+            - xmlKey
+    peacock_yard1:                                                                 #peacocks
+        drawingItems:
+             subitems: 1
+        animals:
+            - normal:
+                peacock
+            - default:
+                peacock
+        drawing_order:
+            - input
+            - animal0
+            - output        
+        settings:
+           - hasDefaultAnimal
+           - xmlKey
+    peacock_yard1_real:
+        drawingItems:
+             subitems: 1
+        animals:
+            - normal:
+                peacock
+            - default:
+                peacock       
+        drawing_order:
+            - input
+            - animal0
+            - output        
+        settings:
+           - hasDefaultAnimal
+           - xmlKey
+    peacock_yard1_real2:
+        drawingItems:
+             subitems: 1
+        animals:
+            - normal:
+                peacock
+            - default:
+                peacock
+        drawing_order:
+            - input
+            - animal0  
+            - output        
+        settings:
+           - hasDefaultAnimal
+           - xmlKey
+    peacock_yard2:
+        drawingItems:
+             subitems: 2
+        animals:
+            - purple:
+                peacock_purple
+            - white:
+                peacock_white
+            - normal:
+                peacock
+            - default:
+                peacock
+        drawing_order:
+            - input
+            - animal1 
+            - animal0  
+            - output        
+        settings:
+           - hasDefaultAnimal
+           - xmlKey           
+    peacock_yard3:
+        drawingItems:
+             subitems: 3
+        animals:
+            - normal:
+                peacock
+            - purple:
+                peacock_purple
+            - white:
+                peacock_white
+            - default:
+                peacock
+        drawing_order:
+            - input
+            - animal0
+            - animal1
+            - animal2
+            - output        
+        settings:
+           - hasDefaultAnimal
+           - xmlKey                                             
+    ostrich_yard1:                  #ostrich
+        drawingItems:
+             subitems: 1
+        animals:
+            - normal:
+                ostrich
+            - default:
+                ostrich
+        drawing_order:
+            - input
+            - animal0    
+            - front
+            - output
+        settings:
+           - hasDefaultAnimal
+           - xmlKey           
+           - sameTextureForAnimal
+        mirrored:
+           - "animal0"
+    ostrich_yard1_real:                
+        drawingItems:
+             subitems: 1
+        animals:
+            - normal:
+                ostrich
+            - default:
+                ostrich
+        drawing_order:
+            - input
+            - animal0    
+            - front
+            - output
+        settings:
+           - hasDefaultAnimal
+           - xmlKey           
+           - sameTextureForAnimal
+        mirrored:
+            - "animal0"
+    ostrich_yard2:                
+        drawingItems:
+             subitems: 2
+        animals:
+            - black:
+                ostrich_black
+            - purple:
+                ostrich_pink
+            - normal:
+                ostrich
+            - default:
+                ostrich
+        drawing_order:
+            - input             
+            - animal1
+            - animal0   
+            - front
+            - output
+        settings:
+           - hasDefaultAnimal
+           - xmlKey           
+           - sameTextureForAnimal
+        mirrored:
+            - "animal0"
+    ostrich_yard3:                
+        drawingItems:
+             subitems: 3
+        animals:
+            - black:
+                ostrich_black
+            - purple:
+                ostrich_pink
+            - normal:
+                ostrich
+            - default:
+                ostrich
+        drawing_order:
+            - input           
+            - animal1
+            - animal2 
+            - animal0 
+            - front
+            - output
+        settings:
+           - hasDefaultAnimal
+           - xmlKey           
+           - sameTextureForAnimal
+        mirrored:
+            - "animal0"
+
+           
+                                                
+

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{95855622-af85-4a22-9502-9d4d3740f7c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging">
+      <UniqueIdentifier>{7ae3dd1b-088f-4aa0-93b8-c8c7ff408d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\mulan">
+      <UniqueIdentifier>{453e628e-b2ab-4de0-939a-0f7ecb004c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\debugging\mulan\realizations">
+      <UniqueIdentifier>{052204c6-c9f3-41c2-9e03-0911b04870c2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\factory_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\realization_MuleAnalyzer.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.cpp">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\factory_MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\realization_MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\realization_factory_MuleAnalyzer.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\MuleAnalyzer.hxx">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanArrayCreationInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanArrayDeletionInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanObjectCreationInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.hxx">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\realizations\MulanObjectDeletionInformation.h">
+      <Filter>jmsf\debugging\mulan\realizations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\mulan.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\debugging\mulan\mulan_dll.h">
+      <Filter>jmsf\debugging\mulan</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

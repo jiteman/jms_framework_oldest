@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ea">
+      <UniqueIdentifier>{f720bdad-5fea-452a-9f75-d8081d6cc041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\allocators">
+      <UniqueIdentifier>{703a9bd1-11b4-4d1e-bfeb-ca5aa53e9adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ea\allocators\internal">
+      <UniqueIdentifier>{230f2fd3-4ca9-4537-841d-dad512edb8ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\sources\ea\allocators\internal\atomic.inl">
+      <Filter>ea\allocators\internal</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\internal\callstack.h">
+      <Filter>ea\allocators\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\internal\config.h">
+      <Filter>ea\allocators\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\internal\dllinfo.h">
+      <Filter>ea\allocators\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\internal\mutex.h">
+      <Filter>ea\allocators\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\internal\shared.h">
+      <Filter>ea\allocators\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EAAllocationRecorder.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EAFixedAllocator.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EAGeneralAllocator.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EAGeneralAllocatorDebug.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EAGeneralAllocatorSTL.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EAHandleAllocator.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EANonLocalAllocator.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EASmallObjectAllocator.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\EAStackAllocator.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\ea\allocators\version.h">
+      <Filter>ea\allocators</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\ea\allocators\EAGeneralAllocatorDebugWin32.cpp">
+      <Filter>ea\allocators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\ea\allocators\EAGeneralAllocatorDebugWin64.cpp">
+      <Filter>ea\allocators</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

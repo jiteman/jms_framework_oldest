@@ -1,0 +1,39 @@
+#pragma once
+
+
+#include "Proxy_deleter.hpp"
+#include "jmsf/memorying/Omp.hin"
+#include "jmsf/memorying/Womp.hin"
+#include "jmsf/memorying/Destructor.hin"
+
+
+namespace jmsf {
+namespace temping {
+namespace internals {
+
+// static
+template< class A_type >
+void Proxy_deleter< A_type >::delete_object( const memorying::Omp< A_type > &object_memory_pointer ) noexcept {
+	const A_type *the_object = object_memory_pointer.get();
+
+	if ( the_object != nullptr ) {
+		if ( the_object->is_null().disjunction( the_object->is_exception() ) ) return;
+
+		memorying::Destructor< A_type >::destruct( object_memory_pointer );
+	}
+}
+
+// static
+template< class A_type >
+memorying::Womp< A_type > Proxy_deleter< A_type >::get_null_object_via_deleter() noexcept {
+	return A_type::get_null_object();
+}
+
+template< class A_type >
+Proxy_deleter< A_type >::Proxy_deleter() noexcept
+{}
+
+
+} // namespace internals
+} // namespace temping
+} // jmsf

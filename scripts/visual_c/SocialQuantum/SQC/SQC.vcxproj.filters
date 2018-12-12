@@ -1,0 +1,1347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="social_quantum">
+      <UniqueIdentifier>{954389ab-1d34-48ba-8490-369d0b69cf1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country">
+      <UniqueIdentifier>{bf5f0476-6042-4575-846f-a171c8d744cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\animation">
+      <UniqueIdentifier>{9dac443c-3f25-46c9-8114-4f1ae3013c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base">
+      <UniqueIdentifier>{04468517-4219-418f-b5c2-3dc3f4640b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework">
+      <UniqueIdentifier>{0093ae30-522d-4e57-a288-19bd4306c402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\milk">
+      <UniqueIdentifier>{99cd1639-f553-40f2-81ff-1f48f9b13a0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\quests">
+      <UniqueIdentifier>{82b17254-11cd-4390-8eb8-528fd39e3588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\sound">
+      <UniqueIdentifier>{4962e31e-44df-4598-837d-51f910411e30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\sqc">
+      <UniqueIdentifier>{33ec8300-9038-42ea-8556-d71f6ad08115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\sstl">
+      <UniqueIdentifier>{1af2d53e-4570-43e0-ada5-38aa93712601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\surf">
+      <UniqueIdentifier>{78a43230-af4c-4894-9b17-6215539df302}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\utils">
+      <UniqueIdentifier>{d31961f3-8038-464f-b1d9-28f552793143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\surf\implementation">
+      <UniqueIdentifier>{beeaa8b8-9f13-424f-966e-c587d4c9bb16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\sstl\implementation">
+      <UniqueIdentifier>{1cfda761-ae18-487b-800a-067d0786df42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\animator">
+      <UniqueIdentifier>{a8c86df9-fa72-4f53-b8ce-ed3e01f88e2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\dialogs">
+      <UniqueIdentifier>{dc4e6498-3d87-4d05-baca-d97511ed7774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\formats">
+      <UniqueIdentifier>{e1315cd9-6b44-4f27-9149-1c5357eca56f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\http_service">
+      <UniqueIdentifier>{9bb9a504-0bb6-4fe9-8124-9028e7de5f53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\layouts">
+      <UniqueIdentifier>{39576421-26d1-4b36-aede-8202e07e94d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\notify_center">
+      <UniqueIdentifier>{673deead-6e4e-4166-beb7-27635bac7f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\resource">
+      <UniqueIdentifier>{8e229366-8474-42c6-ac8f-1a3077c32305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\social_network">
+      <UniqueIdentifier>{85fcfb64-3468-49f9-8d6d-73078783b4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\texture">
+      <UniqueIdentifier>{02197167-0b14-4fcd-b132-83a010eb6c43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\framework\theme">
+      <UniqueIdentifier>{ac808123-64d2-4fd2-aadc-e97d8e542fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\checkers">
+      <UniqueIdentifier>{d37e695f-7575-43ba-8a39-e781e0b0130c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city">
+      <UniqueIdentifier>{46d36439-2e33-4644-b281-1367251f0409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\commands">
+      <UniqueIdentifier>{976430e3-ca34-4834-b70f-2e035a34727f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\dialogs">
+      <UniqueIdentifier>{fa35e2df-7258-47b0-9c19-16b8d8dc8875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\friends">
+      <UniqueIdentifier>{93db6c2c-005c-45ef-8a45-b772d44f4409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\message_queue">
+      <UniqueIdentifier>{0b78854a-0688-425c-9628-a721225236c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\shop">
+      <UniqueIdentifier>{a89f4597-0e5f-4cad-bad6-047a15dd893d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\tools">
+      <UniqueIdentifier>{b839b78d-26ba-4151-9d97-c28ccb7d6fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\view">
+      <UniqueIdentifier>{ecc189dc-8a04-4391-988e-b5754f2825af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\dialogs\controls">
+      <UniqueIdentifier>{30b9b865-f4d6-442a-b3c6-fcf93d3973e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\dialogs\gift_wish">
+      <UniqueIdentifier>{114ddc3e-cfd4-4b43-a0f9-7c79a948f843}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\dialogs\select_construction">
+      <UniqueIdentifier>{43b3d7ef-f0f7-4a3b-99cf-dc9208eb02c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\dialogs\select_person">
+      <UniqueIdentifier>{2808169f-4a26-4a88-8162-ff8f22e30eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\dialogs">
+      <UniqueIdentifier>{1d17caa7-40d2-4a73-a5af-ac45a70c5d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\theme">
+      <UniqueIdentifier>{6ed38fcc-c6e2-407e-8121-f0ad0eb05229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\view">
+      <UniqueIdentifier>{4797f22e-0424-4ae6-a351-55c3461170f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\dialogs\city_friend_panel">
+      <UniqueIdentifier>{ddc8b3f1-e60e-4f1c-8940-963e75c959af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\dialogs\city_gift_wish">
+      <UniqueIdentifier>{246f90df-1e1a-491c-9e86-de5ae7ff636f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\dialogs\city_management">
+      <UniqueIdentifier>{810ad852-059a-4edf-9742-c0cf7b66d2fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\dialogs\city_select_person">
+      <UniqueIdentifier>{fbae8085-2ead-424d-93b6-6c01bfc87be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\country_base\city\dialogs\select_construction">
+      <UniqueIdentifier>{ca75b3db-4f41-4175-ad55-f2e141f019be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="social_quantum\a_country\sqc\named_storing">
+      <UniqueIdentifier>{d175f1dc-21fa-4a0a-92aa-e815f17b24e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\animation\animation_animators.cpp">
+      <Filter>social_quantum\a_country\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\animation\animation_server.cpp">
+      <Filter>social_quantum\a_country\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\animation\animation_transformer.cpp">
+      <Filter>social_quantum\a_country\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_backend_connection.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_buy_object.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_earth_base.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_field_base.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_framework_base.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_game_base.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_object_selection.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_zorder_sort.cpp">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_checker_base.cpp">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_daily_gift_checker.cpp">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_daily_request_checker.cpp">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_level_checker.cpp">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_net_changed_checker.cpp">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_update_message_checker.cpp">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\city_framework.cpp">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\sqc_building_area.cpp">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_base_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_building_base_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_construction_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_material_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_daily_gift_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_daily_gift_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_dialogs.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_game_settings_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_level_up_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_login_progress_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_main_menu_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_money_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_net_changed_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_on_next_level_available_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_network_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_categories_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_category_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_contracts_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_theme_elements.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_update_message_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_update_message_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_friends_panel\city_common_friends_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_friend_panel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_friends_panel\city_friends_panel_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_friend_panel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_gift_wish\city_gift_wish_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_gift_wish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_buy_management.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_cityhall_settings_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_hall_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_salary_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_salary_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_tax_admin_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_taxadmin_settings_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_person\city_select_person_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_select_person</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_person\city_select_person_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_select_person</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\select_construction\city_select_construction_cell.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\select_construction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\select_construction\city_select_construction_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\select_construction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_bubble.cpp">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_country_view.cpp">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_scene_view.cpp">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_tools_toolbar.cpp">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_tooltips.cpp">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_top_gui.cpp">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\theme\city_theme.cpp">
+      <Filter>social_quantum\a_country\country_base\city\theme</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\commands\sqc_command_processor.cpp">
+      <Filter>social_quantum\a_country\country_base\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\commands\sqc_command_proxy.cpp">
+      <Filter>social_quantum\a_country\country_base\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\commands\sqc_command_queue.cpp">
+      <Filter>social_quantum\a_country\country_base\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_daily_request_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_daily_request_dlg_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_login_progress_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_select_network_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_social_network_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_update_message_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_balance_widget.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_buttons.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_price_widget.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_property_widget.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_multipart_widget.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_person_cell.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_proxy_texture_widget.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_building_base_cell.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_construction_cell.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_contract_cell.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_item_cell.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_material_cell.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_slider.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_textured_button.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_theme_elements.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\gift_wish\sqc_gift_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\gift_wish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_person\sqc_select_person_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_person</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_person\sqc_select_person_dlg.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_person</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_construction\sqc_select_construction_controller.cpp">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_construction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\friends\sqc_friends.cpp">
+      <Filter>social_quantum\a_country\country_base\friends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\message_queue\sqc_checker_base.cpp">
+      <Filter>social_quantum\a_country\country_base\message_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\message_queue\sqc_message_queue_base.cpp">
+      <Filter>social_quantum\a_country\country_base\message_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_bubble.cpp">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_bubble_def.cpp">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_country_view.cpp">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_scene_view.cpp">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_tooltips.cpp">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_buy_tool.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_edit_tool.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_multi_tool.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_seed_tool.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_shovel_tool.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_tools.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_tools_adapter.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_tools_common.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_visit_field_tool.cpp">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\shop\sqc_shop.cpp">
+      <Filter>social_quantum\a_country\country_base\shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\sqc_framework.cpp">
+      <Filter>social_quantum\a_country\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\animator\sqc_animator.cpp">
+      <Filter>social_quantum\a_country\framework\animator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\dialogs\sqc_base_dialog.cpp">
+      <Filter>social_quantum\a_country\framework\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\dialogs\sqc_base_page.cpp">
+      <Filter>social_quantum\a_country\framework\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\formats\sqc_formats.cpp">
+      <Filter>social_quantum\a_country\framework\formats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\http_service\sqc_http_service.cpp">
+      <Filter>social_quantum\a_country\framework\http_service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\layouts\sqc_windows_factory.cpp">
+      <Filter>social_quantum\a_country\framework\layouts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\texture\sqc_texture_builder.cpp">
+      <Filter>social_quantum\a_country\framework\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\social_network\sqc_social_network.cpp">
+      <Filter>social_quantum\a_country\framework\social_network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\notify_center\sqc_notify_center.cpp">
+      <Filter>social_quantum\a_country\framework\notify_center</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\framework\theme\sqc_theme_base.cpp">
+      <Filter>social_quantum\a_country\framework\theme</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_controls.cpp">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_scroll_area.cpp">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_server.cpp">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_spinboard.cpp">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_widget.cpp">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_9way_image.cpp">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_gl.cpp">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_gl_font.cpp">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\surf\impl\sqc_font_loader.cpp">
+      <Filter>social_quantum\a_country\surf\implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\surf\impl\sqc_image_loader.cpp">
+      <Filter>social_quantum\a_country\surf\implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_format.cpp">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_ini.cpp">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_thread.cpp">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_base.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_file_api.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_file_data_stream.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_jpeg.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_locale_parser.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_plist.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_png.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_utils.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_xml.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\find_section_arguments.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_access.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_container.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_fixed.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_identifier.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_raw.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_string.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_value.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_file.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_names.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_section.cpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sound\sqc_sound.cpp">
+      <Filter>social_quantum\a_country\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\quests\quest_base.cpp">
+      <Filter>social_quantum\a_country\quests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_info_load.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_name_formatter.cpp">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\sqc_city.cpp">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\sqc_city_objects.cpp">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\animation\animation_animators.h">
+      <Filter>social_quantum\a_country\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\animation\animation_defs.h">
+      <Filter>social_quantum\a_country\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\animation\animation_server.h">
+      <Filter>social_quantum\a_country\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\animation\animation_transformer.h">
+      <Filter>social_quantum\a_country\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_backend_connection.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_buy_object.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_country_base_ui.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_country_common.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_earth_base.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_field_base.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_framework_base.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_game_base.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_object_selection.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\sqc_zorder_sort.h">
+      <Filter>social_quantum\a_country\country_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_checker_base.h">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_daily_gift_checker.h">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_daily_request_checker.h">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_level_checker.h">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_net_changed_checker.h">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\checkers\sqc_update_message_checker.h">
+      <Filter>social_quantum\a_country\country_base\checkers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\city_framework.h">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\sqc_building_area.h">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_base_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_base_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_building_base_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_building_base_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_construction_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_construction_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_material_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_buy_material_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_daily_gift_controller.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_daily_gift_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_daily_gift_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_dialogs.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_dialogs_params.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_game_settings_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_game_settings_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_level_up_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_level_up_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_login_progress_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_login_progress_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_main_menu_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_main_menu_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_money_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_money_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_net_changed_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_net_changed_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_on_next_level_available_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_on_next_level_available_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_network_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_network_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_categories_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_categories_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_category_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_category_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_contracts_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_shop_contracts_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_theme_elements.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_update_message_controller.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_update_message_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_update_message_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_friends_panel\city_common_friends_controller.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_friend_panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_friends_panel\city_friends_panel_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_friend_panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_friends_panel\city_friends_panel_dlg_delegate.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_friend_panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_friends_panel\city_friends_panel_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_friend_panel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_gift_wish\city_gift_wish_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_gift_wish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_gift_wish\city_gift_wish_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_gift_wish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_buy_management.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_buy_management_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_cityhall_settings_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_cityhall_settings_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_hall_controller.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_hall_delegate.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_salary_controller.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_salary_delegate.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_salary_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_salary_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_tax_admin_controller.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_tax_admin_delegate.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_taxadmin_settings_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_management\city_taxadmin_settings_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_person\city_select_person_controller.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_select_person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_person\city_select_person_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_select_person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\city_select_person\city_select_person_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\city_select_person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\select_construction\city_select_construction_cell.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\select_construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\select_construction\city_select_construction_cell_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\select_construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\select_construction\city_select_construction_dlg.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\select_construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\dialogs\select_construction\city_select_construction_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\dialogs\select_construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_bubble.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_country_view.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_country_view_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_scene_view.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_tools_toolbar.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_tools_toolbar_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_tooltips.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_top_gui.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\view\city_top_gui_layout.h">
+      <Filter>social_quantum\a_country\country_base\city\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\theme\city_theme.h">
+      <Filter>social_quantum\a_country\country_base\city\theme</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\commands\sqc_command_processor.h">
+      <Filter>social_quantum\a_country\country_base\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\commands\sqc_command_proxy.h">
+      <Filter>social_quantum\a_country\country_base\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\commands\sqc_command_queue.h">
+      <Filter>social_quantum\a_country\country_base\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_daily_request_dlg.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_daily_request_dlg_controller.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_daily_request_dlg_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_login_progress_dlg.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_select_network_dlg.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_social_network_controller.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_social_network_delegate.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\sqc_update_message_controller.h">
+      <Filter>social_quantum\a_country\country_base\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_balance_widget.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_balance_widget_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_buttons.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_buttons_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_price_widget.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_price_widget_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_property_widget.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_item_property_widget_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_multipart_widget.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_person_cell.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_proxy_texture_widget.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_building_base_cell.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_building_base_cell_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_construction_cell.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_construction_cell_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_contract_cell.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_contract_cell_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_item_cell.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_item_cell_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_material_cell.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_shop_material_cell_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_slider.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_slider_layout.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_textured_button.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\controls\sqc_theme_elements.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\gift_wish\sqc_gift_controller.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\gift_wish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\gift_wish\sqc_gift_delegate.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\gift_wish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_person\sqc_select_person_controller.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_person\sqc_select_person_delegate.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_person\sqc_select_person_dlg.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_person</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_construction\sqc_gift_select_construction_controller.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_construction\sqc_select_construction_controller.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\dialogs\select_construction\sqc_select_construction_delegate.h">
+      <Filter>social_quantum\a_country\country_base\dialogs\select_construction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\friends\sqc_friends.h">
+      <Filter>social_quantum\a_country\country_base\friends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\message_queue\sqc_checker_base.h">
+      <Filter>social_quantum\a_country\country_base\message_queue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\message_queue\sqc_message_queue_base.h">
+      <Filter>social_quantum\a_country\country_base\message_queue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_bubble.h">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_bubble_def.h">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_country_view.h">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_scene_view.h">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\view\sqc_tooltips.h">
+      <Filter>social_quantum\a_country\country_base\view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_buy_tool.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_edit_tool.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_multi_tool.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_seed_tool.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_shovel_tool.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_tools.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_tools_adapter.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_tools_common.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\tools\sqc_visit_field_tool.h">
+      <Filter>social_quantum\a_country\country_base\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\shop\sqc_shop.h">
+      <Filter>social_quantum\a_country\country_base\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\shop\sqc_shop_defs.h">
+      <Filter>social_quantum\a_country\country_base\shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\sqc_framework.h">
+      <Filter>social_quantum\a_country\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\sqc_framework_defs.h">
+      <Filter>social_quantum\a_country\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\sqc_platform_information.h">
+      <Filter>social_quantum\a_country\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\animator\sqc_animator.h">
+      <Filter>social_quantum\a_country\framework\animator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\dialogs\sqc_base_dialog.h">
+      <Filter>social_quantum\a_country\framework\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\dialogs\sqc_base_dialog_layout.h">
+      <Filter>social_quantum\a_country\framework\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\dialogs\sqc_base_page.h">
+      <Filter>social_quantum\a_country\framework\dialogs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\formats\sqc_formats.h">
+      <Filter>social_quantum\a_country\framework\formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\http_service\sqc_http_service.h">
+      <Filter>social_quantum\a_country\framework\http_service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\layouts\sqc_common_resources.h">
+      <Filter>social_quantum\a_country\framework\layouts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\layouts\sqc_layout_defs.h">
+      <Filter>social_quantum\a_country\framework\layouts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\layouts\sqc_windows_factory.h">
+      <Filter>social_quantum\a_country\framework\layouts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\texture\sqc_texture_builder.h">
+      <Filter>social_quantum\a_country\framework\texture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\social_network\sqc_social_network.h">
+      <Filter>social_quantum\a_country\framework\social_network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\social_network\sqc_social_network_defs.h">
+      <Filter>social_quantum\a_country\framework\social_network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\resource\sqc_string_resource.h">
+      <Filter>social_quantum\a_country\framework\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\notify_center\sqc_notify_center.h">
+      <Filter>social_quantum\a_country\framework\notify_center</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\framework\theme\sqc_theme_base.h">
+      <Filter>social_quantum\a_country\framework\theme</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_controls.h">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_defs.h">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_scroll_area.h">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_server.h">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_spinboard.h">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\milk\milk_widget.h">
+      <Filter>social_quantum\a_country\milk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\utils\crc32utils.h">
+      <Filter>social_quantum\a_country\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_9way_image.h">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_defs.h">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_gl.h">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_matrix2.h">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\surf\surf_transform2d.h">
+      <Filter>social_quantum\a_country\surf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\surf\impl\sqc_font_loader.h">
+      <Filter>social_quantum\a_country\surf\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\surf\impl\sqc_image_loader.h">
+      <Filter>social_quantum\a_country\surf\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_defs.h">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_format.h">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_ini.h">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_profiler.h">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_sync.h">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\sstl_thread.h">
+      <Filter>social_quantum\a_country\sstl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\impl\sstl_posix_sync.h">
+      <Filter>social_quantum\a_country\sstl\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sstl\impl\sstl_posix_thread.h">
+      <Filter>social_quantum\a_country\sstl\implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_base.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_data_stream.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_defs.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_file_api.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_file_data_stream.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_image_decoder.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_jpeg.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_locale_parser.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_plist.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_png.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_utils.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_xml.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_yaml.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\_unit_test.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\find_section_arguments.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\find_section_arguments.hxx">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\stl_container_storing.hpp">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_access.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_access.hxx">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_container.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_container.hxx">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry.hxx">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_fixed.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_identifier.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_raw.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_string.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_entry_value.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_file.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_names.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_names.hxx">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_section.h">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\named_storing\storage_section.hxx">
+      <Filter>social_quantum\a_country\sqc\named_storing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sound\sqc_sound.h">
+      <Filter>social_quantum\a_country\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\quests\quest_base.h">
+      <Filter>social_quantum\a_country\quests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\quests\quest_processor_base.h">
+      <Filter>social_quantum\a_country\quests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc_build_version.h">
+      <Filter>social_quantum\a_country</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_info_load.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\sqc\sqc_name_formatter.h">
+      <Filter>social_quantum\a_country\sqc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\sqc_city.h">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\social_quantum\a_country\country_base\city\sqc_city_objects.h">
+      <Filter>social_quantum\a_country\country_base\city</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

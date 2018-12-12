@@ -1,0 +1,60 @@
+#pragma once
+
+#include "Base_for_const_pap.hpp"
+
+
+#include "Base_for_canc_pap.hin"
+
+
+namespace jmsf {
+namespace pointing {
+namespace internalling {
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+template< class A_type >
+Base_for_const_pap< A_type >::~Base_for_const_pap() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Base_for_const_pap< A_type >::Base_for_const_pap() noexcept
+{}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+template< class A_type >
+Base_for_const_pap< A_type >::Base_for_const_pap( const Base_for_const_pap< A_type > &another ) noexcept {
+}
+
+template< class A_type >
+const Base_for_const_pap< A_type > &Base_for_const_pap< A_type >::operator =( const Base_for_const_pap< A_type > &another ) noexcept {
+	if ( &another == this ) return *this;
+
+	// copy
+	return *this;
+}
+
+template< class A_type >
+Base_for_const_pap< A_type >::Base_for_const_pap( Base_for_const_pap< A_type > &&another ) noexcept {
+}
+
+template< class A_type >
+Base_for_const_pap &Base_for_const_pap< A_type >::operator =( Base_for_const_pap< A_type > &&another ) noexcept {
+	if ( &another == this ) return *this;
+
+	// copy
+	return *this;
+}
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+} // namespace internalling
+} // namespace pointing
+} // namespace jmsf

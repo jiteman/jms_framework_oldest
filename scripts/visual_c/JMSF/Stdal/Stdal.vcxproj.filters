@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{daa799fb-9d7c-4336-a6b4-ec8db9f89ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\stdal">
+      <UniqueIdentifier>{fd2664fe-ef07-43ca-a6f4-21adb8e4bcc0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\jmsf\stdal\stdal.h">
+      <Filter>jmsf\stdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\stdal\stdal_dll.h">
+      <Filter>jmsf\stdal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\stdal\stdal_stl.h">
+      <Filter>jmsf\stdal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\stdal\stdal_stl.cpp">
+      <Filter>jmsf\stdal</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{dd8a9197-7c20-40ce-b725-41fa8926210a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libogg">
+      <UniqueIdentifier>{60312ab6-d97b-4074-8fc5-197f0cb36106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libogg\ogg">
+      <UniqueIdentifier>{2eacffaa-7f7c-4c05-8a8b-bc28836b9d6d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libogg\bitwise.c">
+      <Filter>osl\libogg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libogg\framing.c">
+      <Filter>osl\libogg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libogg\ogg\ogg.h">
+      <Filter>osl\libogg\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libogg\ogg\os_types.h">
+      <Filter>osl\libogg\ogg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libogg\libogg_dll.h">
+      <Filter>osl\libogg</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

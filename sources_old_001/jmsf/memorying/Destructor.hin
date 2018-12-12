@@ -1,0 +1,97 @@
+#pragma once
+
+
+#include "Destructor.hpp"
+
+#include "Omp.hin"
+#include "Amp.hin"
+#include "Allocator.h"
+#include "jmsf/typeing/Aso.hin"
+
+
+#include "jmsf/validating/logging_macroses.h"
+
+
+namespace jmsf {
+namespace memorying {
+
+
+template< class A_type >
+void Destructor< A_type >::destruct( const Omp< A_type > &an_object_memory_pointer ) {
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 0", JMSF_TYPE_NAME( A_type ) );
+	if ( an_object_memory_pointer.is_empty() ) return;
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 1", JMSF_TYPE_NAME( A_type ) );
+	if ( an_object_memory_pointer.get_allocator().is_empty() ) return;
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 2", JMSF_TYPE_NAME( A_type ) );
+	an_object_memory_pointer.get()->~A_type();
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 3", JMSF_TYPE_NAME( A_type ) );
+
+	const Memory_pointer the_memory_pointer = an_object_memory_pointer.get_memory();
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 4", JMSF_TYPE_NAME( A_type ) );
+	const typeing::Memory_natural the_alignment = an_object_memory_pointer.get_alignment();
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 5", JMSF_TYPE_NAME( A_type ) );
+
+	Womp< Allocator > the_allocator = an_object_memory_pointer.get_allocator();
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 6", JMSF_TYPE_NAME( A_type ) );
+
+	the_allocator->deallocate_memory( the_memory_pointer, the_alignment );
+
+//	an_object_memory_pointer.get_allocator()->deallocate_memory(
+//		an_object_memory_pointer.temp_get_memory(),
+//		an_object_memory_pointer.get_alignment() );
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_object_memory_pointer ) - 7", JMSF_TYPE_NAME( A_type ) );
+}
+
+template< class A_type >
+void Destructor< A_type >::destruct( const Amp< A_type > &an_array_memory_pointer ) {
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 0", JMSF_TYPE_NAME( A_type ) );
+	if ( an_array_memory_pointer.is_empty() ) return;
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 1", JMSF_TYPE_NAME( A_type ) );
+	if ( an_array_memory_pointer.get_allocator().is_empty() ) return;
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 2", JMSF_TYPE_NAME( A_type ) );
+	const A_type *pointer_to_object = an_array_memory_pointer.get();
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 3", JMSF_TYPE_NAME( A_type ) );
+
+	for ( typeing::Memory_natural counter = an_array_memory_pointer.get_quantity(); counter.is_not_nill(); --counter ) {
+//		JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 4", JMSF_TYPE_NAME( A_type ) );
+		pointer_to_object++->~A_type();
+//		JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 5", JMSF_TYPE_NAME( A_type ) );
+	}
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 6", JMSF_TYPE_NAME( A_type ) );
+
+	const Memory_pointer the_memory_pointer = an_array_memory_pointer.get_memory();
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 7", JMSF_TYPE_NAME( A_type ) );
+	const typeing::Memory_natural the_alignment = an_array_memory_pointer.get_alignment();
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 8", JMSF_TYPE_NAME( A_type ) );
+
+	Womp< Allocator > the_allocator = an_array_memory_pointer.get_allocator();
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 9", JMSF_TYPE_NAME( A_type ) );
+
+	the_allocator->deallocate_memory( the_memory_pointer, the_alignment );
+
+	JMSF_LOG_INFORMING_PARANOIDAL_OUTPUT_TYPED( "Destructor< A_type >::destruct( an_array_memory_pointer ) - 10", JMSF_TYPE_NAME( A_type ) );
+
+//	an_array_memory_pointer.get_allocator()->deallocate_memory(
+//		an_array_memory_pointer.get_memory(),
+//		an_array_memory_pointer.get_alignment() );
+}
+
+// template< typename A_type >
+// void Destruct( const Omp< A_type > &an_object_memory_pointer ) {
+// 	Destructor< A_type >::destruct( object );
+// }
+//
+// template< typename A_type >
+// void Destruct( const Amp< A_type > &an_array_memory_pointer ) {
+// 	Destructor< A_type >::destruct( object );
+// }
+
+
+} // namespace memorying
+} // namespace jmsf

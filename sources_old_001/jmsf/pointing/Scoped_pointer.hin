@@ -1,0 +1,14 @@
+#pragma once
+
+#include "Scoped_pointer.hpp"
+
+
+namespace jmsf {
+namespace pointing {
+
+
+
+
+
+} // namespace pointing
+} // namespace jmsf

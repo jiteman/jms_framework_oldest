@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{eadf12a0-c8ac-4bd9-81e3-85d90883b8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libvorbis">
+      <UniqueIdentifier>{2ad3fd47-bd4a-43db-b085-cd3149161072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libvorbis\vorbis">
+      <UniqueIdentifier>{5ca4ccfc-05a3-4564-bd40-9f6debdaa902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libvorbis\modes">
+      <UniqueIdentifier>{62541380-b38b-4321-9122-fc3e8bb14205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libvorbis\books">
+      <UniqueIdentifier>{5d38fb95-03cf-4c3e-9caf-41cb5c487b13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libvorbis\books\coupled">
+      <UniqueIdentifier>{bab92b75-f0f0-4a79-8492-35c4ce0fd472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libvorbis\books\floor">
+      <UniqueIdentifier>{3f811e1a-279a-4a51-a621-58cdde7bc091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libvorbis\books\uncoupled">
+      <UniqueIdentifier>{5556a79d-4f93-453d-90c5-3839c34f3880}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\analysis.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\bitrate.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\block.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\codebook.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\envelope.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\floor0.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\floor1.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\info.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\lookup.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\lpc.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\lsp.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\mapping0.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\mdct.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\psy.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\registry.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\res0.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\sharedbook.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\smallft.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\synthesis.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\vorbisenc.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\vorbisfile.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libvorbis\window.c">
+      <Filter>osl\libvorbis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\backends.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\bitrate.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\codebook.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\codec_internal.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\envelope.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\highlevel.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\lookup.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\lookup_data.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\lpc.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\lsp.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\masking.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\mdct.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\misc.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\os.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\psy.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\registry.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\scales.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\smallft.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\window.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\vorbis\codec.h">
+      <Filter>osl\libvorbis\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\vorbis\vorbisenc.h">
+      <Filter>osl\libvorbis\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\vorbis\vorbisfile.h">
+      <Filter>osl\libvorbis\vorbis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\floor_all.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\psych_8.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\psych_11.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\psych_16.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\psych_44.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\residue_8.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\residue_16.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\residue_44.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\residue_44p51.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\residue_44u.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_8.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_11.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_16.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_22.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_32.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_44.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_44p51.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_44u.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\modes\setup_X.h">
+      <Filter>osl\libvorbis\modes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\books\coupled\res_books_51.h">
+      <Filter>osl\libvorbis\books\coupled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\books\coupled\res_books_stereo.h">
+      <Filter>osl\libvorbis\books\coupled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\books\floor\floor_books.h">
+      <Filter>osl\libvorbis\books\floor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\books\uncoupled\res_books_uncoupled.h">
+      <Filter>osl\libvorbis\books\uncoupled</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libvorbis\libvorbis_dll.h">
+      <Filter>osl\libvorbis</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

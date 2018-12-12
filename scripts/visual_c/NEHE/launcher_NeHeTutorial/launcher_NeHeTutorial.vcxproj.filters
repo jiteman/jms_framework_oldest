@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="nehe">
+      <UniqueIdentifier>{2bc31fb2-ffdc-4769-917e-1bed3fdc61a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nehe\launcher">
+      <UniqueIdentifier>{21bfa6c6-795d-4094-a0f2-ab7757c6701c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\nehe\launcher\launcher_NeHeTutorial.cpp">
+      <Filter>nehe\launcher</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

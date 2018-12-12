@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="jmsf">
+      <UniqueIdentifier>{c904cb0c-1605-45e9-ac57-338aaf66de2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jmsf\researching">
+      <UniqueIdentifier>{6f7309be-c55e-4129-92d0-c162db0e6938}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\jmsf\researching\researching.h">
+      <Filter>jmsf\researching</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\researching\researching_dll.h">
+      <Filter>jmsf\researching</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\researching\File_system.h">
+      <Filter>jmsf\researching</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\researching\Operating_system.h">
+      <Filter>jmsf\researching</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\researching\nullptr_checking_assignment.hxx">
+      <Filter>jmsf\researching</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\researching\nullptr_checking_assignment.hpp">
+      <Filter>jmsf\researching</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\jmsf\researching\Sorting.h">
+      <Filter>jmsf\researching</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\jmsf\researching\File_system.cpp">
+      <Filter>jmsf\researching</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\researching\Operating_system.cpp">
+      <Filter>jmsf\researching</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\jmsf\researching\Sorting.cpp">
+      <Filter>jmsf\researching</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\sources\jmsf\researching\nullptr_checking_assignment.inl">
+      <Filter>jmsf\researching</Filter>
+    </None>
+  </ItemGroup>
+</Project>

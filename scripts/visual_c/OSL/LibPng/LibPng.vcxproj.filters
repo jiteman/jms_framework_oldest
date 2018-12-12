@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{616540c2-82fe-4dd2-87fe-37ef76ce2536}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\libpng">
+      <UniqueIdentifier>{9521dfd1-9d87-4115-b330-f28f84908c92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\libpng_dll.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\png.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\pngconf.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\pngdebug.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\pnginfo.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\pngpriv.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\pngstruct.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\pnglibconf.h">
+      <Filter>osl\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\libpng\cexcept.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\png.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngerror.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngget.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngmem.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngpread.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngread.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngrio.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngrtran.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngrutil.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngset.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngtrans.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngwio.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngwrite.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngwtran.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\libpng\pngwutil.c">
+      <Filter>osl\libpng</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

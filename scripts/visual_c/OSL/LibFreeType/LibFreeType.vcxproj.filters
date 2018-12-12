@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="osl">
+      <UniqueIdentifier>{6b879e87-8ba9-47ae-90b4-c3047423f11e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype">
+      <UniqueIdentifier>{9897214c-5e49-4f68-bf4e-e962541c7408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\autofit">
+      <UniqueIdentifier>{3d64e1ef-b2dc-49dc-b940-6218a0dbbd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\bdf">
+      <UniqueIdentifier>{aeb3df63-9a60-48c4-8b89-c4550ad88363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\bzip2">
+      <UniqueIdentifier>{e79d84c4-d6c5-417a-b86b-bbb1d8e7e901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\cache">
+      <UniqueIdentifier>{b3e39a08-23bb-48b9-9a50-94bf0850aebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\cff">
+      <UniqueIdentifier>{cfa97759-d96d-4e22-8597-649f7953fdac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\cid">
+      <UniqueIdentifier>{277d36b0-aec7-4b68-8af1-20dceae4c29e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\config">
+      <UniqueIdentifier>{763c99ce-ba6d-464e-9a58-c179db79c425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\internal">
+      <UniqueIdentifier>{91060b38-9fef-4f1c-b50e-4e188234df9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\internal\services">
+      <UniqueIdentifier>{b31821f5-86e9-4fbe-8927-e8ade6ef126b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\lzw">
+      <UniqueIdentifier>{1133e31b-688a-4f30-9566-ec73197ff285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\pcf">
+      <UniqueIdentifier>{65e609f2-f186-4283-ace7-c558362a7201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\pfr">
+      <UniqueIdentifier>{5d0c9c2e-9325-43f3-8ff5-e6b41d6dcf3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\psaux">
+      <UniqueIdentifier>{d6316461-a74e-42a7-b2e4-33b03f124acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\pshinter">
+      <UniqueIdentifier>{5cdd46ad-e0ae-44e0-bc45-e574d28e4409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\psnames">
+      <UniqueIdentifier>{77cf447f-f06c-4d62-94e7-20160e5b0c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\raster">
+      <UniqueIdentifier>{b8b61e1b-ab6f-4ba8-a82d-3e148efe20f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\sfnt">
+      <UniqueIdentifier>{f65e8574-7eed-44a3-b555-4dd80f4d8fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\smooth">
+      <UniqueIdentifier>{905c9b89-6454-4f19-bc5d-c12264b0cbb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\truetype">
+      <UniqueIdentifier>{0d07c493-2dac-4181-9d28-1629c902bde5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\type1">
+      <UniqueIdentifier>{c84c0e7c-50df-4791-84c4-70bb92806ecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\type42">
+      <UniqueIdentifier>{6d97e2d4-69bb-4e32-bbc9-8ae65f90d335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="osl\freetype\winfonts">
+      <UniqueIdentifier>{1ca17b26-77ba-4d68-9c1c-736693106667}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\basepic.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftadvanc.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftapi.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftbbox.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftbdf.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftbitmap.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftcalc.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftcid.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftdbgmem.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftdebug.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftfstype.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgasp.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgloadr.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftglyph.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgxval.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftinit.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftlcdfil.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftmm.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftobjs.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftotval.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftoutln.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftpatent.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftpfr.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftpic.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftrfork.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftsnames.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftstream.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftstroke.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftsynth.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftsystem.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\fttrigon.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\fttype1.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftutil.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftwinfnt.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftxf86.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afangles.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afcjk.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afdummy.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afglobal.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afhints.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afindic.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\aflatin.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\aflatin2.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afloader.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afmodule.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afpic.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\autofit\afwarp.c">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\bdf\bdfdrivr.c">
+      <Filter>osl\freetype\bdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\bdf\bdflib.c">
+      <Filter>osl\freetype\bdf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\bzip2\ftbzip2.c">
+      <Filter>osl\freetype\bzip2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcbasic.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftccache.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftccmap.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcglyph.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcimage.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcmanag.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcmru.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cache\ftcsbits.c">
+      <Filter>osl\freetype\cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffcmap.c">
+      <Filter>osl\freetype\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffdrivr.c">
+      <Filter>osl\freetype\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffgload.c">
+      <Filter>osl\freetype\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffload.c">
+      <Filter>osl\freetype\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffobjs.c">
+      <Filter>osl\freetype\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffparse.c">
+      <Filter>osl\freetype\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cff\cffpic.c">
+      <Filter>osl\freetype\cff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidgload.c">
+      <Filter>osl\freetype\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidload.c">
+      <Filter>osl\freetype\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidobjs.c">
+      <Filter>osl\freetype\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidparse.c">
+      <Filter>osl\freetype\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\cid\cidriver.c">
+      <Filter>osl\freetype\cid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\lzw\ftlzw.c">
+      <Filter>osl\freetype\lzw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\lzw\ftzopen.c">
+      <Filter>osl\freetype\lzw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pcf\pcfdrivr.c">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pcf\pcfread.c">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pcf\pcfutil.c">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrcmap.c">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrdrivr.c">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrgload.c">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrload.c">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrobjs.c">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pfr\pfrsbit.c">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\afmparse.c">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\psauxmod.c">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\psconv.c">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\psobjs.c">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\t1cmap.c">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psaux\t1decode.c">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshalgo.c">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshglob.c">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshmod.c">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshpic.c">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\pshinter\pshrec.c">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psnames\psmodule.c">
+      <Filter>osl\freetype\psnames</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\psnames\pspic.c">
+      <Filter>osl\freetype\psnames</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\raster\ftraster.c">
+      <Filter>osl\freetype\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\raster\ftrend1.c">
+      <Filter>osl\freetype\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\raster\rastpic.c">
+      <Filter>osl\freetype\raster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\sfdriver.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\sfntpic.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\sfobjs.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttbdf.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttcmap.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttkern.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttload.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttmtx.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttpost.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\sfnt\ttsbit.c">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\smooth\ftgrays.c">
+      <Filter>osl\freetype\smooth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\smooth\ftsmooth.c">
+      <Filter>osl\freetype\smooth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\smooth\ftspic.c">
+      <Filter>osl\freetype\smooth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttdriver.c">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttgload.c">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttgxvar.c">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttinterp.c">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttobjs.c">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttpic.c">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\truetype\ttpload.c">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1afm.c">
+      <Filter>osl\freetype\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1driver.c">
+      <Filter>osl\freetype\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1gload.c">
+      <Filter>osl\freetype\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1load.c">
+      <Filter>osl\freetype\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1objs.c">
+      <Filter>osl\freetype\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type1\t1parse.c">
+      <Filter>osl\freetype\type1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type42\t42drivr.c">
+      <Filter>osl\freetype\type42</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type42\t42objs.c">
+      <Filter>osl\freetype\type42</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\type42\t42parse.c">
+      <Filter>osl\freetype\type42</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\winfonts\winfnt.c">
+      <Filter>osl\freetype\winfonts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\sources\osl\freetype\ftgzip.c">
+      <Filter>osl\freetype</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\basepic.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\freetype.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\freetype_dll.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ft2build.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftadvanc.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbase.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbbox.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbdf.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbitmap.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftbzip2.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftcache.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftchapters.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftcid.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fterrdef.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fterrors.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftgasp.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftglyph.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftgxval.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftgzip.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftimage.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftincrem.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftlcdfil.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftlist.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftlzw.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmac.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmm.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmodapi.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftmoderr.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftotval.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftoutln.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftpfr.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftrender.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsizes.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsnames.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftstroke.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsynth.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftsystem.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fttrigon.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\fttypes.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftwinfnt.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ftxf86.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\t1tables.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ttnameid.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\tttables.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\tttags.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\ttunpat.h">
+      <Filter>osl\freetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afangles.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afcjk.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afdummy.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aferrors.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afglobal.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afhints.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afindic.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aflatin.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aflatin2.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afloader.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afmodule.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afpic.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\aftypes.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\autofit\afwarp.h">
+      <Filter>osl\freetype\autofit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\bdf\bdf.h">
+      <Filter>osl\freetype\bdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\bdf\bdfdrivr.h">
+      <Filter>osl\freetype\bdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\bdf\bdferror.h">
+      <Filter>osl\freetype\bdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftccache.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftccback.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcerror.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcglyph.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcimage.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcmanag.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcmru.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cache\ftcsbits.h">
+      <Filter>osl\freetype\cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffcmap.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffdrivr.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cfferrs.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffgload.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffload.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffobjs.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffparse.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cffpic.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cfftoken.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cff\cfftypes.h">
+      <Filter>osl\freetype\cff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\ciderrs.h">
+      <Filter>osl\freetype\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidgload.h">
+      <Filter>osl\freetype\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidload.h">
+      <Filter>osl\freetype\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidobjs.h">
+      <Filter>osl\freetype\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidparse.h">
+      <Filter>osl\freetype\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidriver.h">
+      <Filter>osl\freetype\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\cid\cidtoken.h">
+      <Filter>osl\freetype\cid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftconfig.h">
+      <Filter>osl\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftmodule.h">
+      <Filter>osl\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftoption.h">
+      <Filter>osl\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftstdlib.h">
+      <Filter>osl\freetype\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svbdf.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svcid.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svgldict.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svgxval.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svkern.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svmm.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svotval.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpfr.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpostnm.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpscmap.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svpsinfo.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svsfnt.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svttcmap.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svtteng.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svttglyf.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svwinfnt.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\services\svxf86nm.h">
+      <Filter>osl\freetype\internal\services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\autohint.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftcalc.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftdebug.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftdriver.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftgloadr.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftmemory.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftobjs.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftpic.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftrfork.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftserv.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftstream.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\fttrace.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\ftvalid.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\psaux.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\pshints.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\sfnt.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\t1types.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\internal\tttypes.h">
+      <Filter>osl\freetype\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\lzw\ftzopen.h">
+      <Filter>osl\freetype\lzw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcf.h">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcfdrivr.h">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcferror.h">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcfread.h">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pcf\pcfutil.h">
+      <Filter>osl\freetype\pcf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrcmap.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrdrivr.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrerror.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrgload.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrload.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrobjs.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrsbit.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pfr\pfrtypes.h">
+      <Filter>osl\freetype\pfr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\afmparse.h">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psauxerr.h">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psauxmod.h">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psconv.h">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\psobjs.h">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\t1cmap.h">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psaux\t1decode.h">
+      <Filter>osl\freetype\psaux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshalgo.h">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshglob.h">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshmod.h">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshnterr.h">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshpic.h">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\pshinter\pshrec.h">
+      <Filter>osl\freetype\pshinter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\psmodule.h">
+      <Filter>osl\freetype\psnames</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\psnamerr.h">
+      <Filter>osl\freetype\psnames</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\pspic.h">
+      <Filter>osl\freetype\psnames</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\psnames\pstables.h">
+      <Filter>osl\freetype\psnames</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\ftmisc.h">
+      <Filter>osl\freetype\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\ftraster.h">
+      <Filter>osl\freetype\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\ftrend1.h">
+      <Filter>osl\freetype\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\rasterrs.h">
+      <Filter>osl\freetype\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\raster\rastpic.h">
+      <Filter>osl\freetype\raster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sfdriver.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sferrors.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sfntpic.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\sfobjs.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttbdf.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttcmap.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttcmapc.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttkern.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttload.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttmtx.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttpost.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\sfnt\ttsbit.h">
+      <Filter>osl\freetype\sfnt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftgrays.h">
+      <Filter>osl\freetype\smooth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftsmerrs.h">
+      <Filter>osl\freetype\smooth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftsmooth.h">
+      <Filter>osl\freetype\smooth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\smooth\ftspic.h">
+      <Filter>osl\freetype\smooth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttdriver.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\tterrors.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttgload.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttgxvar.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttinterp.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttobjs.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttpic.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\truetype\ttpload.h">
+      <Filter>osl\freetype\truetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1afm.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1driver.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1errors.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1gload.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1load.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1objs.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1parse.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type1\t1tokens.h">
+      <Filter>osl\freetype\type1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42drivr.h">
+      <Filter>osl\freetype\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42error.h">
+      <Filter>osl\freetype\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42objs.h">
+      <Filter>osl\freetype\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42parse.h">
+      <Filter>osl\freetype\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\type42\t42types.h">
+      <Filter>osl\freetype\type42</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\winfonts\fnterrs.h">
+      <Filter>osl\freetype\winfonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\winfonts\winfnt.h">
+      <Filter>osl\freetype\winfonts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\sources\osl\freetype\config\ftheader.h">
+      <Filter>osl\freetype\config</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
